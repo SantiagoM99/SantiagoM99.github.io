@@ -1,0 +1,250 @@
+/* _sass/layout/_homepage.scss */
+
+/* Homepage specific styles - adaptable to dark/light theme */
+.homepage-bottom {
+  margin-top: 30px;
+  /* No background, no padding, no borders - solo spacing */
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.interests-education-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "interests education";
+  gap: 25px;
+  align-items: start;
+  margin-bottom: 25px;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.interests-section,
+.education-section {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.interests-section {
+  grid-area: interests;
+}
+
+.education-section {
+  grid-area: education;
+}
+
+/* Awards section - full width below */
+.awards-section {
+  margin-top: 20px;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  
+  h2 {
+    color: var(--global-text-color);
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    border-bottom: 2px solid var(--global-link-color);
+    padding-bottom: 6px;
+    transition: $global-transition;
+    
+    i {
+      color: var(--global-link-color);
+      margin-right: 8px;
+      font-size: 0.9em;
+    }
+  }
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Section headers */
+.interests-section h2, 
+.education-section h2, 
+.awards-section h2 {
+  color: var(--global-text-color);
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  border-bottom: 2px solid var(--global-link-color);
+  padding-bottom: 6px;
+  transition: $global-transition;
+  
+  i {
+    color: var(--global-link-color);
+    margin-right: 8px;
+    font-size: 0.9em;
+  }
+}
+
+/* Research Interests */
+.interests-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.interest-item {
+  background: var(--global-bg-color);
+  margin: 6px 0;
+  padding: 8px 12px;
+  border-left: 3px solid var(--global-link-color);
+  border-radius: 0 6px 6px 0;
+  transition: $global-transition;
+  color: var(--global-text-color);
+  font-size: 0.9em;
+  /* Eliminar cualquier sombra */
+  box-shadow: none !important;
+
+  &:hover {
+    transform: translateX(3px);
+    border-left-color: var(--global-link-color-hover);
+  }
+}
+
+/* Education and Awards */
+.education-item, 
+.award-item {
+  background: var(--global-bg-color);
+  margin: 12px 0;
+  padding: 12px;
+  border: 1px solid var(--global-link-color);
+  border-radius: 8px;
+  transition: $global-transition;
+  /* Eliminar cualquier sombra */
+  box-shadow: none !important;
+
+  &:hover {
+    border-color: var(--global-link-color-hover);
+    transform: translateY(-2px);
+  }
+}
+
+.degree-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.degree-icon, 
+.award-icon {
+  color: var(--global-link-color);
+  font-size: 1.2em;
+  margin-top: 3px;
+  min-width: 20px;
+}
+
+.degree-details,
+.award-details {
+  flex: 1;
+}
+
+.degree-title, 
+.award-title {
+  color: var(--global-text-color);
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
+.institution-name, 
+.award-institution {
+  color: var(--global-text-color-light);
+  font-style: italic;
+  font-size: 0.85em;
+}
+
+.education-date, 
+.award-date {
+  color: var(--global-link-color);
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.gpa-line {
+  color: var(--global-text-color-light);
+  font-size: 0.75em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Awards layout update */
+.award-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+/* Dark mode specific adjustments */
+html[data-theme="dark"] {
+  .homepage-bottom {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .interest-item,
+  .education-item,
+  .award-item {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    
+    &:hover {
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .interests-education-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .homepage-bottom {
+    padding: 15px;
+    margin-top: 25px;
+  }
+  
+  .degree-info {
+    gap: 10px;
+  }
+  
+  .degree-icon, 
+  .award-icon {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage-bottom {
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  .interests-section h2, 
+  .education-section h2, 
+  .awards-section h2 {
+    font-size: 1em;
+  }
+  
+  .interest-item,
+  .education-item,
+  .award-item {
+    padding: 10px;
+  }
+  
+  .degree-title, 
+  .award-title {
+    font-size: 0.9em;
+  }
+}

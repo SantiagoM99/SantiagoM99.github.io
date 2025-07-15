@@ -1,152 +1,620 @@
 {
-  "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
-    "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
-    },
-    "profiles": [
-      {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "http://orcid.org/yourorcidurl"
-      },
-      {
-        "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
-      }
-    ]
+  "metadata": {
+    "version": "1.0",
+    "lastUpdated": "2025-07-05",
+    "defaultLanguage": "en",
+    "availableLanguages": ["es", "en"]
   },
-  "work": [],
+  "personal": {
+    "name": "Santiago Martínez Novoa",
+    "title": {
+      "es": "Ingeniero de Sistemas y Computación",
+      "en": "Systems and Computing Engineer"
+    },
+    "contact": {
+      "email": "s.martinezn@uniandes.edu.co",
+      "phone": "+57 (315) 875-2426",
+      "linkedin": "linkedin.com/in/santiago-martinez-novoa/",
+      "github": "https://github.com/SantiagoM99",
+      "website": "santiagoMartinez.dev",
+      "location": "Bogotá, Colombia"
+    },
+    "research_interests": {
+      "es": "Mi investigación se centra en el desarrollo de técnicas avanzadas de procesamiento de lenguaje natural orientadas al mejoramiento de tareas lingüísticas en español, con particular énfasis en la comparación y evaluación de modelos altamente entrenados frente a Large Language Models (LLMs). En el área de visión computacional, me especializo en tareas de segmentación y clasificación de imágenes para aplicaciones médicas. Como ingeniero de sistemas y computación, estoy comprometido con la implementación de herramientas data-oriented y metodologías de Machine Learning para el mejoramiento del acompañamiento estudiantil en universidades, transformando cómo las instituciones académicas apoyan el éxito y bienestar de sus estudiantes.",
+      "en": "My research focuses on developing advanced natural language processing techniques aimed at improving linguistic tasks in Spanish, with particular emphasis on comparing and evaluating highly-trained models against Large Language Models (LLMs). In computer vision, I specialize in image segmentation and classification tasks for medical applications. As a systems and computer engineer, I am committed to implementing data-oriented tools and Machine Learning methodologies to enhance student support services in universities, transforming how academic institutions foster student success and well-being."
+    }
+  },
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
+      "id": "master-uniandes",
+      "institution": "Universidad de los Andes",
+      "location": "Bogotá, Colombia",
+      "degree": {
+        "es": "Maestría en Ingeniería de Información",
+        "en": "M.Sc. Information Engineering"
+      },
+      "startDate": "2025",
+      "endDate": "2026",
+      "status": "expected",
+      "gpa": "4.68/5.00",
+      "honors": [],
+      "relevant_courses": [
+        {
+          "es": "Sistemas de recomendación",
+          "en": "Recommender Systems"
+        },
+        {
+            "es": "Procesamiento de Lenguaje Natural",
+            "en": "Natural Language Processing"
+        },
+        {
+            "es": "Ciencia de Datos Aplicada",
+            "en": "Applied Data Science"
+        }
+      ]
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "id": "bachelor-uniandes",
+      "institution": "Universidad de los Andes", 
+      "location": "Bogotá, Colombia",
+      "degree": {
+        "es": "Ingeniería de Sistemas y Computación",
+        "en": "B.Sc. Systems and Computing Engineering"
+      },
+      "startDate": "2021",
+      "endDate": "2024",
+      "status": "completed",
+      "gpa": "4.58/5.00",
+      "honors": [
+        {
+          "es": "Cum Laude",
+          "en": "Cum Laude"
+        }
+      ],
+      "minors": [
+        {
+          "es": "Opción en Francés: Lengua y Cultura",
+          "en": "Minor in French: Language and Culture"
+        }
+      ],
+      "relevant_courses": [
+        {
+          "es": "Análisis con Deep Learning",
+          "en": "Deep Learning Analysis"
+        },
+        {
+          "es": "Inteligencia de Negocios", 
+          "en": "Business Intelligence"
+        },
+        {
+          "es": "Análisis con Machine Learning",
+          "en": "Machine Learning Analysis"
+        },
+        {
+          "es": "Sistemas Transaccionales",
+          "en": "Transactional Systems"
+        }
+      ]
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
-  "references": [],
+  "experience": [
+    {
+      "id": "llm-applications-assistant",
+      "title": {
+        "es": "Asistente de Investigación - Aplicaciones Basadas en LLM",
+        "en": "LLM-Based Applications - Research Assistant"
+      },
+      "company": "Universidad de los Andes",
+      "location": "Bogotá, Colombia",
+      "startDate": "2025-06",
+      "endDate": "present",
+      "type": "full-time",
+      "achievements": [
+        {
+          "es": "Desarrollar materiales educativos y ejercicios prácticos para un curso de nivel de maestría enfocado en aplicaciones de modelos de lenguaje grandes.",
+          "en": "Developing educational materials and practical exercises for a master's-level course focused on large language model applications."
+        },
+        {
+          "es": "Crear tutoriales y materiales de curso utilizando frameworks incluyendo LangChain, LangGraph y LangSmith para desarrollo de LLM y agentes.",
+          "en": "Created tutorials and course materials using frameworks including LangChain, LangGraph, and LangSmith for LLM and agent development."
+        },
+        {
+          "es": "Diseñar ejercicios prácticos y evaluaciones incorporando métricas de evaluación como RAGAS para medir el rendimiento de aplicaciones LLM.",
+          "en": "Designed practical exercises and assessments incorporating evaluation metrics such as RAGAS to measure LLM application performance."
+        }
+      ],
+      "technologies": ["LangChain", "LangGraph", "LangSmith", "RAGAS", "Python", "LLM"]
+    },
+    {
+      "id": "data-scientist-current",
+      "title": {
+        "es": "Científico de Datos - Asistente de Investigación Graduado",
+        "en": "Data Scientist - Graduate Research Assistant"
+      },
+      "company": {
+        "es": "Vicedecanatura de Estudiantes, Universidad de los Andes",
+        "en": "Vice Dean's Office of Student Affairs, Universidad de los Andes"
+      },
+      "location": "Bogotá, Colombia",
+      "startDate": "2025-01",
+      "endDate": "present",
+      "type": "full-time",
+      "achievements": [
+        {
+            "es": "Procesar datos académicos y desarrollar dashboards en Power BI bajo la tutoría de la profesora Marcela Hernández Hoyos, Ph.D., y el profesor Juan Pablo Reyes Gómez, Ph.D., generando insights accionables sobre el desempeño estudiantil y métricas institucionales.",
+            "en": "Process academic data and develop Power BI dashboards under the guidance of Professor Marcela Hernández Hoyos, Ph.D. and Professor Juan Pablo Reyes Gómez, Ph.D., delivering actionable insights on student performance and institutional metrics."
+        },
+        {
+            "es": "Diseñar y desarrollar dashboards en Power BI para entregar insights accionables sobre el historial estudiantil, tendencias de rendimiento y aspectos institucionales.",
+            "en": "Designed and developed Power BI dashboards to deliver actionable insights into student history, performance trends, and institutional matters."
+        },
+        {
+            "es": "Optimizar el rendimiento del pipeline ETL en un 87% (reduciendo el tiempo de procesamiento de 15 a 2 minutos) al migrar de Pandas a Polars para la obtención y almacenamiento de datos desde Azure Blob Storage.",
+            "en": "Optimized ETL pipeline performance by 87% (reduced processing time from 15 to 2 minutes) by migrating from Pandas to Polars for data retrieval and storage from Azure Blob Storage."
+        }
+      ],
+      "technologies": ["Power BI", "Python", "Polars", "Azure Blob Storage", "SQL"]
+    },
+    {
+      "id": "ml-intern-precia",
+      "title": {
+        "es": "Practicante de Machine Learning",
+        "en": "Machine Learning Intern"
+      },
+      "company": "Precia PPV S.A",
+      "location": {
+        "es": "Bogotá, Colombia", 
+        "en": "Bogotá, Colombia"
+      },
+      "startDate": "2024-08",
+      "endDate": "2024-12",
+      "type": "internship",
+      "achievements": [
+        {
+            "es": "Co-desarrollar y entrenar un Perceptrón Multicapa (MLP) para reducir el tiempo de cálculo de una métrica financiera crítica en 70%, brindando a los clientes acceso significativamente más rápido a estimaciones preliminares.",
+            "en": "Co-develop and train a Multi-layer Perceptron (MLP) to reduce the calculation time of a critical financial metric by 70%, providing clients with significantly faster access to preliminary estimates."
+        },
+        {
+            "es": "Diseñar e implementar una infraestructura completa en AWS, incluyendo pipelines ETL robustos que integran múltiples fuentes de datos (bases de datos, servidores FSx) y despliegue automatizado de modelos usando AWS Glue y funciones Lambda.",
+            "en": "Design and implement end-to-end AWS infrastructure including robust ETL pipelines integrating multiple data sources (databases, FSx servers) and automate model deployment using AWS Glue and Lambda functions."
+        },
+        {
+            "es": "Realizar exploración y transformación de datos para optimizar la precisión y eficiencia del modelo en entornos de desarrollo y producción.",
+            "en": "Conduct data exploration and engineering to optimize model accuracy and efficiency across development and production environments."
+        }
+        ],
+      "technologies": ["Python", "AWS", "AWS Glue", "Lambda", "Machine Learning", "ETL"]
+    },
+    {
+      "id": "data-scientist-undergraduate",
+      "title": {
+        "es": "Científico de Datos - Asistente de Investigación de Pregrado",
+        "en": "Data Scientist - Undergraduate Research Assistant"
+      },
+      "company": {
+        "es": "Vicedecanatura de Estudiantes, Universidad de los Andes",
+        "en": "Vice Dean's Office of Student Affairs, Universidad de los Andes"
+      },
+      "location": "Bogotá, Colombia",
+      "startDate": "2024-08",
+      "endDate": "2024-12",
+      "type": "part-time",
+      "achievements": [
+        {
+          "es": "Co-implementar el proceso ETL (inicialmente en Pandas, luego migrado a Polars) para obtener datos de Azure Blob Storage, estructurarlos y almacenarlos en una base de datos relacional.",
+          "en": "Co-implemented the ETL process (initially in Pandas, later migrated to Polars) to retrieve data from Azure Blob Storage, structure it, and store it in a relational database."
+        },
+        {
+          "es": "Desarrollar y realizar pruebas de integridad para asegurar la coherencia y precisión de un modelo multidimensional, validando contra los datos originales.",
+          "en": "Developed and conducted integrity tests to ensure the coherence and accuracy of a multidimensional model, validating against the original data."
+        }
+      ],
+      "technologies": ["Python", "Pandas", "Polars", "Azure Blob Storage", "SQL"]
+    },
+    {
+      "id": "backend-developer-digital",
+      "title": {
+        "es": "Desarrollador Backend",
+        "en": "Backend Developer"
+      },
+      "company": {
+        "es": "Transformación Digital, Universidad de los Andes",
+        "en": "Digital Transformation, Universidad de los Andes"
+      },
+      "location": "Bogotá, Colombia",
+      "startDate": "2023-09",
+      "endDate": "2024-05",
+      "type": "part-time",
+      "achievements": [
+        {
+          "es": "Aplicar experiencia en Azure Functions y Python para contribuir activamente a proyectos de desarrollo de software, particularmente enfocándose en la interacción fluida con la API de OpenAI.",
+          "en": "Applied expertise in Azure Functions and Python to actively contribute to software development projects, particularly focusing on seamless interaction with the Open AI API."
+        },
+        {
+          "es": "Crear documentación integral para la infraestructura del proyecto, enfatizando claridad y transparencia. Esta iniciativa facilitó una colaboración más fluida entre los miembros del equipo y mejoró la comprensión general de la arquitectura del software.",
+          "en": "Created comprehensive documentation for the project's infrastructure, emphasizing clarity and transparency. This initiative facilitated smoother collaboration among team members and enhanced the overall understanding of the software architecture."
+        }
+      ],
+      "technologies": ["Python", "Azure Functions", "OpenAI API", "Documentation"]
+    },
+    {
+      "id": "frontend-developer-research",
+      "title": {
+        "es": "Desarrollador Frontend",
+        "en": "Frontend Developer"
+      },
+      "company": {
+        "es": "Centro de Investigación de la Facultad de Ingeniería, Universidad de los Andes",
+        "en": "Research Center of the Faculty of Engineering, Universidad de los Andes"
+      },
+      "location": "Bogotá, Colombia",
+      "startDate": "2023-08",
+      "endDate": "2023-12",
+      "type": "part-time",
+      "achievements": [
+        {
+          "es": "Co-desarrollar e implementar soluciones frontend responsivas y amigables para el usuario para un proyecto de software en la Universidad de los Andes utilizando Angular.",
+          "en": "Co-developed and implemented responsive and user-friendly frontend solutions for a software project at the university using Angular."
+        },
+        {
+          "es": "Implementar controles de acceso dinámicos, adaptando los permisos de usuario basados en roles y responsabilidades.",
+          "en": "Implemented dynamic access controls, tailoring user permissions based on roles and responsibilities."
+        }
+      ],
+      "technologies": ["Angular", "TypeScript", "Frontend Development", "User Access Control"]
+    },
+    {
+      "id": "liaison-developer",
+      "title": {
+        "es": "Enlace Intercultural y Desarrollador de Software",
+        "en": "Cross-Cultural Liaison and Software Developer"
+      },
+      "company": {
+        "es": "Transformación Digital, Universidad de los Andes",
+        "en": "Digital Transformation, Universidad de los Andes"
+      },
+      "location": "Bogotá, Colombia",
+      "startDate": "2023-06",
+      "endDate": "2023-08",
+      "type": "part-time",
+      "achievements": [
+        {
+          "es": "Facilitar comunicación efectiva entre directores y 5 estudiantes de intercambio proporcionando servicios de traducción.",
+          "en": "Facilitated effective communication between directors and 5 exchange students by providing translation services."
+        },
+        {
+          "es": "Colaborar en proyectos de desarrollo de software utilizando OpenAI y Azure Functions, integrando exitosamente el software desarrollado en un chatbot interactivo.",
+          "en": "Collaborated on software development projects utilizing Open AI and Azure Functions, successfully integrating the developed software into an interactive chatbot."
+        }
+      ],
+      "technologies": ["OpenAI API", "Azure Functions", "Translation", "Chatbot Development"]
+    }
+  ],
+  "skills": {
+    "languages": [
+      {
+        "language": {
+          "es": "Español",
+          "en": "Spanish"
+        },
+        "level": {
+          "es": "Nativo",
+          "en": "Native"
+        }
+      },
+      {
+        "language": {
+          "es": "Inglés", 
+          "en": "English"
+        },
+        "level": {
+          "es": "Profesional",
+          "en": "Professional Working Proficiency"
+        }
+      },
+      {
+        "language": {
+          "es": "Francés",
+          "en": "French"
+        },
+        "level": {
+          "es": "Limitado",
+          "en": "Limited Working Proficiency"
+        }
+      }
+    ],
+    "technical": {
+      "programming": ["Python", "SQL", "JavaScript", "TypeScript"],
+      "frameworks": ["Pandas", "Polars", "Scikit-learn", "Keras", "PyTorch", "LangChain", "LangGraph", "LangSmith"],
+      "databases": ["MongoDB", "PostgreSQL", "Azure Blob Storage","ChromaDB","Pinecone"],
+      "cloud": ["AWS", "AWS Glue", "Lambda Functions", "Azure Functions"],
+      "tools": ["Power BI", "Databricks", "Git", "Docker", "Angular"],
+      "other": ["ETL Pipelines", "Machine Learning", "Data Science", "OpenAI API", "RAGAS"]
+    }
+  },
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+        "id": "thesis-undergraduate-melanoma",
+        "status": "published",
+        "citation_info": {
+            "author": {
+                "last_name": "Martínez Novoa",
+                "first_name": "Santiago",
+                "full_name": "Santiago Martínez Novoa",
+                "citation_name": "Martínez Novoa, S"
+            },
+            "title": "Detection and Segmentation of Malignant Melanoma Regions in Dermoscopic Images Using Machine Learning",
+            "document_type": {
+                "es": "Tesis de pregrado presentada en la Universidad de los Andes para obtener el título de Ingeniero de Sistemas y Computación",
+                "en": "Undergraduate thesis presented at Universidad de los Andes to obtain the degree of Systems and Computing Engineer"
+            },
+            "supervisor": "Juan Pablo Reyes Gómez Ph.D",
+            "institution": "Universidad de Los Andes",
+            "year": "2024",
+            "repository": {
+            "name": "Uniandes Repository",
+            "url": "https://hdl.handle.net/1992/75910"
+            }
+        },
+        "formatted_citations": {
+            "apa_style":"Martínez Novoa, S. (2024). Detection and Segmentation of Malignant Melanoma Regions in Dermoscopic Images Using Machine Learning. Undergraduate thesis, Universidad de Los Andes. Supervisor: Juan Pablo Reyes Gómez Ph.D. Uniandes Repository."
+        },
+        "category": "manuscripts",
+        "bibtex_website": "http://santiagom99.github.io/files/paper-melanoma.bib"
     }
   ],
-  "presentations": [
+  "research": [
     {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
+        "id": "flag-nlp-research",
+        "title": {
+            "es": "Evaluación y Mejoramiento de Modelos de Lenguaje Natural en español",
+            "en": "Evaluation and Enhancement of Natural Language Models in spanish"
+        },
+        "research_group": "FLAG Research Lab - A.I. and Machine Learning",
+        "institution":"Universidad de los Andes",
+        "location": "Bogotá, Colombia",
+        "supervisor": "Rubén Manrique Ph.D",
+        "startDate": "2025-01",
+        "endDate": "present",
+        "description": [
+            {
+                "es": "Investigar el mejoramiento de las capacidades de modelos de lenguaje natural para contextos médicos en español, enfocándose en tareas de clasificación de textos y extracción de entidades nombradas bajo la supervisión del profesor Ruben Manrique, Ph.D.",
+                "en": "Research on improving natural language model capabilities for Spanish medical contexts, focusing on text classification and named entity extraction tasks under Professor Ruben Manrique Ph.D."
+            },
+            {
+                "es": "Desarrollar y entrenar modelos especializados desde cero para tareas específicas del dominio médico en español.",
+                "en": "Develop and train specialized models from scratch for specific Spanish medical domain tasks."
+            },
+            {
+                "es": "Realizar evaluaciones comparativas entre modelos altamente entrenados y Large Language Models (LLMs) utilizando técnicas de prompting como zero-shot y few-shot learning.",
+                "en": "Conduct comparative evaluations between highly-trained models and Large Language Models (LLMs) using prompting techniques such as zero-shot and few-shot learning."
+            }
+        ],
+        "technologies": ["Python", "Transformers", "BERT", "Spanish Language Models", "Zero-shot Learning", "Few-shot Learning", "NER", "Text Classification", "Medical NLP"]
     },
     {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
+      "id": "generative-ai-research",
+      "title": {
+        "es": "Asistente de Investigación - Inteligencia Artificial Generativa para Investigación",
+        "en": "Generative Artificial Intelligence for Research - Research Assistant"
+      },
+      "institution": "Universidad de los Andes",
+      "research_group": "Augmented Artificial Intelligence Initiative",
+      "location": "Bogotá, Colombia",
+      "startDate": "2025-01",
+      "endDate": "2025-06",
+      "description": [
+        {
+          "es": "Enfocado en optimizar procesos de investigación universitaria a través del desarrollo de agentes de IA personalizados y sistemas de evaluación automatizados.",
+          "en": "Focused on optimizing university research processes through custom AI agent development and automated evaluation systems."
+        },
+        {
+          "es": "Construir sistemas RAG desplegados localmente utilizando modelos Ollama e integrar llamadas a la API de Gemini para responder preguntas específicas de dominio de investigación.",
+          "en": "Built locally-deployed RAG systems using Ollama models and integrated Gemini API calls to answer domain-specific research questions."
+        },
+        {
+          "es": "Diseñar arquitectura de evaluación de LLM para evaluar la calidad y precisión de respuestas en diferentes contextos de investigación utilizando Prometheus, BERT score y OpenAI API.",
+          "en": "Designed LLM evaluation architecture to assess response quality and accuracy across different research contexts using Prometheus, BERT score and OpenAI API."
+        },
+        {
+          "es": "Automatizar procesos de evaluación estudiantil desarrollando sistemas de evaluación basados en LLM que califican respuestas contra rúbricas establecidas y respuestas esperadas.",
+          "en": "Automated student assessment processes by developing LLM-based evaluation systems that grade responses against established rubrics and expected answers."
+        }
+      ],
+      "technologies": ["Python", "Ollama", "Gemini API", "RAG", "Prometheus", "BERT", "OpenAI API", "LLM Evaluation"]
     },
     {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
+      "id": "cornell-summer-research",
+      "title": {
+        "es": "Interno de Investigación de Verano",
+        "en": "Summer Research Intern"
+      },
+      "institution": {
+        "es": "Facultad de Informática y Ciencias de la Información, Cornell University",
+        "en": "College of Computing and Information Science, Cornell University"
+      },
+      "location": {
+        "es": "Ithaca, Estados Unidos",
+        "en": "Ithaca, United States"
+      },
+      "supervisor": "Sainyam Galhotra Ph.D.",
+      "startDate": "2024-06",
+      "endDate": "2024-08",
+      "description": [
+        {
+          "es": "Diseñar una arquitectura de Descubrimiento de Datos para explorar y modificar conjuntos de datos en varios formatos bajo la supervisión del profesor Sainyam Galhotra, Ph.D.",
+          "en": "Designed a Data Discovery architecture to explore and modify datasets in various formats under Professor Sainyam Galhotra Ph.D."
+        },
+        {
+          "es": "Desarrollar la primera versión de la arquitectura incluyendo la carga y puntuación a través de búsqueda semántica de múltiples bases de datos.",
+          "en": "Developed the first version of the architecture including the upload and scoring through semantic search of multiple databases."
+        }
+      ],
+      "technologies": ["Python", "Data Discovery", "Semantic Search", "Database Management"]
     }
   ],
   "teaching": [
     {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
+      "id": "cupitaller-supervisor",
+      "title": {
+        "es": "Asistente de Investigación de Pregrado",
+        "en": "Undergraduate Research Assistant"
+      },
+      "course": {
+        "es": "Centro de Apoyo en Programación CupiTaller",
+        "en": "CupiTaller Programming Support Center"
+      },
+      "institution": {
+        "es": "Departamento de Ingeniería de Sistemas y Computación, Universidad de los Andes",
+        "en": "Systems and Computing Engineering Department, Universidad de los Andes"
+      },
+      "location": "Bogotá, Colombia",
+      "startDate": "2024-01",
+      "endDate": "2024-12",
+      "description": [
+        {
+          "es": "Supervisar aproximadamente 40 tutores y 70 asistentes de cátedra como parte del equipo de 7 personas que supervisa las operaciones en CupiTaller, el centro de apoyo en programación de la Universidad de los Andes, bajo el profesor Eduardo Rosales, Ph.D.",
+          "en": "Supervised approximately 40 tutors and 70 teaching assistants as part of the 7-person team overseeing operations at CupiTaller, the university' programming support center, under Professor Eduardo Rosales, Ph.D."
+        },
+        {
+          "es": "Diseñar proyectos de programación para 'Introducción a la Programación', un curso con más de 1100 estudiantes cada semestre.",
+          "en": "Designed programming projects for 'Introducción a la Programación', a course with +1100 students each semester."
+        },
+        {
+          "es": "Limpiar, enriquecer y procesar conjuntos de datos esenciales para cada proyecto, asegurando precisión, completitud y consistencia de los datos.",
+          "en": "Cleaned, enriched, and processed datasets essential for each project, ensuring data accuracy completeness and consistency."
+        }
+      ]
     },
     {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
+      "id": "ta-programming-tutor",
+      "title": {
+        "es": "Asistente de Cátedra de Pregrado - Tutor de Programación",
+        "en": "Undergraduate Teaching Assistant - Programming Tutor"
+      },
+      "course": {
+        "es": "Centro de Apoyo en Programación",
+        "en": "Programming Support Center"
+      },
+      "institution": {
+        "es": "Departamento de Ingeniería de Sistemas y Computación, Universidad de los Andes",
+        "en": "Systems and Computing Engineering Department, Universidad de los Andes"
+      },
+      "location": "Bogotá, Colombia",
+      "startDate": "2021-08",
+      "endDate": "2023-08",
+      "description": [
+        {
+          "es": "Proporcionar 5 horas semanales de tutoría de programación en Python en el centro de ayuda de programación de la Universidad.",
+          "en": "Provided 5 hours of weekly Python programming tutoring at the University's programming help center."
+        },
+        {
+          "es": "Instruir a más de 100 estudiantes, ayudándoles a desarrollar habilidades fundamentales de codificación en Python.",
+          "en": "Instructed more than 100 students, helping them develop fundamental coding skills in Python."
+        }
+      ]
+    },
+    {
+      "id": "ta-intro-programming",
+      "title": {
+        "es": "Asistente de Cátedra de Pregrado",
+        "en": "Undergraduate Teaching Assistant"
+      },
+      "course": {
+        "es": "Introducción a la Programación",
+        "en": "Introduction to Programming"
+      },
+      "institution":"Universidad de los Andes",
+      "location": "Bogotá, Colombia",
+      "startDate": "2022-01",
+      "endDate": "2022-12",
+      "description": [
+        {
+          "es": "Proporcionar apoyo al profesor durante los laboratorios de enseñanza de programación, asistiendo aproximadamente a 40 estudiantes cada semestre.",
+          "en": "Provided support to the professor during programming teaching laboratories, assisting approximately 40 students each semester."
+        },
+        {
+          "es": "Corregir y calificar proyectos básicos de programación.",
+          "en": "Corrected and graded basic programming projects."
+        }
+      ]
+    },
+    {
+      "id": "ta-infrastructure",
+      "title": {
+        "es": "Asistente de Cátedra",
+        "en": "Undergraduate Teaching Assistant"
+      },
+      "course": {
+        "es": "Fundamentos de Infraestructura Tecnológica",
+        "en": "Fundamentals of Technological Infrastructure"
+      },
+      "institution": "Universidad de los Andes",
+      "location": "Bogotá, Colombia",
+      "startDate": "2023-01",
+      "endDate": "2023-06", 
+      "description": [
+        {
+          "es": "Corregí y calificé exámenes, actividades y evaluaciones",
+          "en": "Corrected and graded tests, activities, and assessments"
+        },
+        {
+          "es": "Guié aproximadamente 40 estudiantes hacia una comprensión profunda de los Fundamentos de Infraestructura Tecnológica",
+          "en": "Guided approximately 40 students to a thorough understanding of Fundamentals of Technological Infrastructure"
+        }
+      ]
     }
   ],
-  "portfolio": [
+  "awards": [
     {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+        "id": "cum-laude-bachelor",
+        "title": "Cum Laude",
+        "description": {
+            "es": "El título Cum Laude se otorga a los estudiantes con un GPA en el 3% más alto de todos los estudiantes que se han graduado de la Universidad de los Andes en una facultad determinada en los últimos cinco años.",
+            "en": "A Cum Laude degree is awarded to students with a GPA in the highest 3% GPA of all the students that have graduated from Universidad de Los Andes in a given faculty in the last five years."
+        },
+        "institution": "Universidad de los Andes",
+        "location": "Bogotá, Colombia",
+        "date": "2025-04"
+    },
+    {
+        "id": "surf-cornell",
+        "title": "Summer Undergraduate Research Fellowship (SURF)"
+        ,
+        "description": {
+            "es": "Apoyo financiero otorgado para participar en el programa Summer Undergraduate Research Fellowship (SURF) en Cornell University",
+            "en": "Financial support awarded to participate in the Summer Undergraduate Research Fellowship (SURF) program at Cornell University"
+        },
+        "institution": "Cornell University",
+        "location": {
+            "es": "Ithaca, Estados Unidos",
+            "en": "Ithaca, United States"
+        },
+        "date": "2024-06"
+    }
+  ],
+  "talks": [
+    {
+        "id": "analytics-forum-2025-poster",
+        "title": {
+            "es": "Acelerando el Credit Value Adjustment con Machine Learning",
+            "en": "Accelerating Credit Value Adjustment with Machine Learning"
+        },
+        "event": "Analytics Forum 2025 - Universidad de los Andes",
+        "location": "Bogotá, Colombia",
+        "date": "2025-05-09",
+        "type": "poster",
+        "coauthors": ["Nicolás Suarez", "Esteban Leiva", "Ernesto Pérez"],
+        "affiliation": "Universidad de los Andes, Precia PPV S.A.",
+        "abstract": {
+            "es": "Presentación de poster sobre la aplicación de algoritmos de Machine Learning para acelerar el cálculo del riesgo de crédito en contratos derivados, con enfoque en Credit Value Adjustment (CVA), demostrando mejoras significativas en tiempos de ejecución manteniendo la precisión.",
+            "en": "Poster presentation on the application of Machine Learning algorithms to accelerate credit risk calculation in derivative contracts, focusing on Credit Value Adjustment (CVA), demonstrating significant improvements in execution times while maintaining accuracy."
+        },
+        "url": "https://analyticsforum.uniandes.edu.co/",
+        "venue_details": {
+            "es": "Edificio Mario Laserna, Sesión de Posters y Networking",
+            "en": "Mario Laserna Building, Posters and Networking Session"
+        }
     }
   ]
 }

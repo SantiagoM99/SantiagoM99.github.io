@@ -34,8 +34,32 @@ layout: default
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
         {% endif %}
         
-        {% if page.collection == 'teaching' %}
-          <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% if page.collection == 'experience' %}
+          {% if page.type == 'work' %}
+            <div class="page__meta">
+              <p><i class="fa fa-building" aria-hidden="true"></i> <strong>{{ page.company }}</strong></p>
+              <p><i class="fa fa-calendar" aria-hidden="true"></i> {{ page.period }}</p>
+              <p><i class="fa fa-map-marker" aria-hidden="true"></i> {{ page.location }}</p>
+            </div>
+          {% elsif page.type == 'research' %}
+            <div class="page__meta">
+              <p><i class="fa fa-university" aria-hidden="true"></i> <strong>{{ page.institution }}</strong></p>
+              {% if page.research_group and page.research_group != 'N/A' %}
+                <p><i class="fa fa-users" aria-hidden="true"></i> {{ page.research_group }}</p>
+              {% endif %}
+              <p><i class="fa fa-calendar" aria-hidden="true"></i> {{ page.period }}</p>
+              <p><i class="fa fa-map-marker" aria-hidden="true"></i> {{ page.location }}</p>
+              {% if page.supervisor and page.supervisor != '' %}
+                <p><i class="fa fa-user-tie" aria-hidden="true"></i> {{ page.supervisor }}</p>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% elsif page.collection == 'teaching' %}
+          <div class="page__meta">
+            <p><i class="fa fa-chalkboard-teacher" aria-hidden="true"></i> <strong>{{ page.institution }}</strong></p>
+            <p><i class="fa fa-calendar" aria-hidden="true"></i> {{ page.period }}</p>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i> {{ page.location }}</p>
+          </div>
         {% elsif page.venue and page.date %}
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}

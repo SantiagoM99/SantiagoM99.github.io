@@ -1,0 +1,26 @@
+---
+layout: archive
+title: "Research Experience"
+permalink: /research-experience/
+author_profile: true
+---
+
+{% include base_path %}
+
+<div class="page__content">
+  <p class="text-center">
+    <a href="{{ base_path }}/experience/" class="btn btn--primary">
+      <i class="fa fa-briefcase" aria-hidden="true"></i> View Work Experience
+    </a>
+  </p>
+</div>
+
+{% assign research_posts = site.experience | where: "type", "research" | sort: "date" | reverse %}
+
+{% for post in research_posts %}
+  {% include cv-archive-single.html %}
+{% endfor %}
+
+{% if research_posts.size == 0 %}
+  <p>No research experience entries found.</p>
+{% endif %}

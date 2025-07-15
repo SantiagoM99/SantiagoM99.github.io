@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ARCHIVE
+   ARCHIVE - Updated to match homepage design with improved titles and spacing
    ========================================================================== */
 
 .archive {
@@ -12,6 +12,8 @@
   @include breakpoint($large) {
     @include span(10 of 12 last);
     @include prefix(0.5 of 12);
+    /* Add more space from sidebar */
+    margin-left: 2em;
   }
 
   a {
@@ -27,21 +29,68 @@
   }
 }
 
-.archive__subtitle {
-  margin: 1.414em 0 0;
+/* Enhanced page titles with blue color and better spacing */
+.page__title {
+  color: var(--global-link-color) !important;
+  font-size: $type-size-3 !important; /* Increased size */
+  font-weight: 700 !important;
+  margin-top: 0 !important;
+  margin-bottom: 1.5em !important; /* More space after title */
+  line-height: 1.2;
+  border-bottom: 3px solid var(--global-link-color);
   padding-bottom: 0.5em;
-  font-size: $type-size-5;
-  color: var(--global-text-color-light);
-  border-bottom: 1px solid var(--global-border-color);
+  
+  @include breakpoint($medium) {
+    font-size: $type-size-2 !important; /* Even larger on medium screens */
+  }
+}
+
+/* Archive subtitle with improved spacing */
+.archive__subtitle {
+  margin: 2em 0 1em; /* More space above and below */
+  padding-bottom: 0.5em;
+  font-size: $type-size-4; /* Slightly larger */
+  color: var(--global-link-color);
+  font-weight: 600;
+  border-bottom: 2px solid var(--global-link-color);
 
   + .list__item .archive__item-title {
-    margin-top: 0.5em;
+    margin-top: 1em; /* More space after subtitle */
+  }
+}
+
+/* Updated archive items to match homepage design */
+.archive__item {
+  background: var(--global-bg-color);
+  margin: 18px 0; /* Increased margin */
+  padding: 18px; /* Increased padding */
+  border: 1px solid var(--global-link-color);
+  border-radius: 8px;
+  transition: $global-transition;
+  box-shadow: none !important;
+
+  &:hover {
+    border-color: var(--global-link-color-hover);
+    transform: translateY(-2px);
   }
 }
 
 .archive__item-title {
-  margin-bottom: 0.25em;
+  margin-bottom: 0.8em; /* More space below title */
   font-family: $sans-serif-narrow;
+  font-size: 1.1em; /* Slightly larger */
+  font-weight: 700; /* Bolder */
+  color: var(--global-text-color);
+
+  a {
+    color: var(--global-text-color);
+    text-decoration: none;
+    
+    &:hover {
+      color: var(--global-link-color-hover);
+      text-decoration: none;
+    }
+  }
 
   a + a {
     opacity: 0.5;
@@ -50,46 +99,107 @@
 
 /* remove border*/
 .page__content {
-
   .archive__item-title {
-    margin-top: 1em;
+    margin-top: 0;
     border-bottom: none;
   }
 }
 
 .archive__item-excerpt {
-  margin-top: 0;
+  margin-top: 0.8em; /* More space above excerpt */
+  margin-bottom: 0.5em;
   font-size: $type-size-6;
+  color: var(--global-text-color-light);
+  line-height: 1.6;
 
   & + p {
     text-indent: 0;
   }
 }
 
+/* Archive item meta styling */
+.archive__item-meta {
+  margin-bottom: 0.8em; /* More space below meta */
+  
+  p {
+    margin: 0.25em 0;
+    font-size: 0.85em;
+    color: var(--global-text-color-light);
+  }
+}
+
 .archive__item-teaser {
   border-radius: $border-radius;
   overflow: hidden;
+  margin-bottom: 0.8em; /* More space below teaser */
+  
   img {
     width: 100%;
   }
 }
 
+/* Remove hover effects that conflict with new design */
 .archive__item:hover {
   .archive__item-teaser {
-    box-shadow: 0 0 10px rgba(#000, 0.25);
+    box-shadow: none;
   }
 
   .archive__item-title {
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 
+/* Enhanced tags styling with beautiful colors and shapes - THEME INDEPENDENT */
+.archive__item-tags {
+  margin: 1em 0; /* More space around tags */
+  
+  .archive__tag {
+    display: inline-block;
+    background: linear-gradient(135deg,mix(#fff, #2f7f93, 25%),mix(#000, #2f7f93, 25%)) !important;
+    color: #fff !important;
+    padding: 0.4em 0.8em;
+    margin: 0.2em 0.4em 0.2em 0;
+    border-radius: 20px; /* Pill shape */
+    font-size: 0.8em;
+    font-weight: 500;
+    border: none;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      background: linear-gradient(135deg, mix(#000, #2f7f93, 25%), mix(#fff, #2f7f93, 25%)) !important;
+      color: #fff !important;
+    }
+  }
+}
 
-/*
-   List view
-   ========================================================================== */
+/* Enhanced spacing for better readability */
+.page__content {
+  /* More space between sections */
+  h2 {
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid var(--global-link-color);
+    color: var(--global-link-color);
+    font-weight: 600;
+  }
+  
+  h3 {
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+    color: var(--global-text-color);
+    font-weight: 600;
+  }
+}
 
+/* Improved list spacing */
 .list__item {
+  margin-bottom: 1.5em; /* More space between list items */
+  
   @include breakpoint($medium) {
     padding-right: $right-sidebar-width-narrow;
   }
@@ -103,25 +213,25 @@
   }
 
   .page__meta {
-    margin: 0 0 4px;
+    margin: 0 0 8px; /* More space below meta */
   }
 }
 
-
 /*
-   Grid view
+   Grid view improvements
    ========================================================================== */
 
 .grid__item {
-  margin-bottom: 2em;
+  margin-bottom: 2.5em; /* More space between grid items */
 
   .page__meta {
-    margin: 0 0 4px;
+    margin: 0 0 8px;
   }
 
   .archive__item-title {
-    margin-top: 0.5em;
+    margin-top: 0.8em;
     font-size: $type-size-5;
+    font-weight: 600;
   }
 
   .archive__item-excerpt {
@@ -136,8 +246,8 @@
   }
 
   @include breakpoint($medium) {
-    margin-left: 0; /* reset before mixin does its thing*/
-    margin-right: 0; /* reset before mixin does its thing*/
+    margin-left: 0;
+    margin-right: 0;
     @include gallery(2.5 of 10);
 
     .archive__item-teaser {
@@ -151,19 +261,18 @@
   }
 }
 
-
 /*
-   Features
+   Features with improved spacing
    ========================================================================== */
 
 .feature__wrapper {
   @include clearfix();
-  margin-bottom: 2em;
+  margin-bottom: 3em; /* More space */
   border-bottom: 1px solid var(--global-border-color);
 }
 
 .feature__item {
-  margin-bottom: 2em;
+  margin-bottom: 3em; /* More space */
   font-size: 1.25rem;
 
   @include breakpoint($small) {
@@ -241,5 +350,26 @@
         width: span(7 of 12);
       }
     }
+  }
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .archive {
+    margin-left: 0;
+  }
+  
+  .page__title {
+    font-size: $type-size-3 !important;
+  }
+  
+  .archive__item {
+    margin: 12px 0;
+    padding: 12px;
+  }
+  
+  .archive__item-tags .archive__tag {
+    padding: 0.3em 0.6em;
+    font-size: 0.75em;
   }
 }

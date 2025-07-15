@@ -28,14 +28,24 @@
   margin: 0 auto;
 }
 
-/* Download links styling */
-.cv-download-links {
-  margin-top: 2rem;
-  text-align: center;
-  padding: 1rem;
-  border-top: 1px solid #f2f2f2;
+.cv-header {
+  display: flex;
+  justify-content: center;
 }
 
-.cv-download-links a {
-  margin: 0 0.5rem;
+.cv-container .cv-header .cv-download-links {
+  margin-top: 2rem !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 80% !important;
+  max-width: 600px !important;
+  text-align: center !important;
+  padding: 1rem !important;
+  border-top: 1px solid #f2f2f2 !important;
+  display: block !important;
+}
+
+.cv-container .cv-header .cv-download-links a {
+  margin: 0 0.5rem !important;
+  display: inline-block !important;
 }
