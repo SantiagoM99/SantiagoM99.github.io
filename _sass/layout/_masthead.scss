@@ -63,5 +63,51 @@
   &--lg {
     padding-right: 2em;
     font-weight: 700;
+    
+    /* Make the site name blue */
+    a {
+      color: var(--global-link-color) !important;
+      
+      &:hover {
+        color: var(--global-link-color-hover) !important;
+      }
+    }
+  }
+}
+
+/* ONLY target the theme toggle - don't touch anything else */
+#theme-toggle {
+  position: absolute !important;
+  right: 60px !important; /* Position it to the left of the burger menu */
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+
+/* Smart approach: Force navigation items to be VERY wide on mobile, normal on desktop */
+.greedy-nav {
+  .visible-links li:not(.persist) {
+    /* Reset to normal width on larger screens */
+    @media (min-width: 769px) {
+      min-width: auto !important;
+      width: auto !important;
+    }
+    
+    /* Force wide on mobile */
+    @media (max-width: 768px) {
+      min-width: 500px !important;
+    }
+  }
+}
+
+.greedy-nav button {
+  background-color: var(--global-bg-color) !important;
+  
+  .navicon {
+    background: var(--global-text-color) !important;
+    
+    &:before,
+    &:after {
+      background: var(--global-text-color) !important;
+    }
   }
 }

@@ -1,8 +1,20 @@
+/* CV Download Buttons - Existing styles */
 .cv-download-buttons {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: flex-start;
+  
+  /* Keep publications/talks buttons side by side */
+  &.side-by-side {
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    .cv-download-btn {
+      width: auto !important;
+      min-width: 160px !important;
+    }
+  }
 }
 
 .cv-download-btn {
@@ -18,7 +30,7 @@
   font-size: 0.85rem !important;
   font-weight: 500 !important;
   transition: all 0.3s ease !important;
-  background: var(--global-bg-color) !important;
+  background: #f8f9fa !important;
   color: var(--global-text-color) !important;
   box-shadow: none !important;
   margin: 0 !important;
@@ -28,5 +40,92 @@
     transform: translateY(-2px) !important;
     border-color: var(--global-link-color-hover) !important;
     color: var(--global-text-color) !important;
+    text-decoration: none !important;
+  }
+  
+  /* Icon styling */
+  i {
+    font-size: 0.9em !important;
+    color: var(--global-link-color) !important;
+    transition: color 0.3s ease !important;
+  }
+  
+  &:hover i {
+    color: var(--global-link-color-hover) !important;
   }
 }
+
+/* Dark mode adjustments */
+html[data-theme="dark"] .cv-download-btn {
+  background: var(--global-bg-color) !important;
+  
+  &:hover {
+    color: var(--global-text-color) !important;
+  }
+}
+
+/* Experience Navigation Buttons - SMALLER VERSION */
+.experience-nav-container .experience-nav-btn,
+.page__content .experience-nav-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.3rem !important;
+  padding: 0.5rem 1rem !important;         /* MUCH SMALLER */
+  text-decoration: none !important;
+  border: none !important;
+  border-radius: 6px !important;
+  font-size: 0.75rem !important;           /* SMALLER TEXT */
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.3px !important;
+  min-width: 160px !important;             /* SMALLER WIDTH */
+  
+  /* Light theme styling */
+  background: linear-gradient(135deg, #52adc8, #2f7f93) !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(82, 173, 200, 0.3) !important;
+  
+  &:hover {
+    transform: translateY(-2px) !important;
+    background: linear-gradient(135deg, #2f7f93, #52adc8) !important;
+    box-shadow: 0 4px 12px rgba(82, 173, 200, 0.4) !important;
+    color: #fff !important;
+    text-decoration: none !important;
+  }
+  
+  /* Icon styling */
+  i {
+    font-size: 0.8em !important;
+    color: #fff !important;
+  }
+}
+
+/* Dark theme adjustments */
+html[data-theme="dark"] .experience-nav-container .experience-nav-btn,
+html[data-theme="dark"] .page__content .experience-nav-btn {
+  background: linear-gradient(135deg, #0ea1c5, #2f7f93) !important;
+  box-shadow: 0 2px 8px rgba(14, 161, 197, 0.4) !important;
+  
+  &:hover {
+    background: linear-gradient(135deg, #2f7f93, #0ea1c5) !important;
+    box-shadow: 0 4px 12px rgba(14, 161, 197, 0.5) !important;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .experience-nav-container .experience-nav-btn,
+  .page__content .experience-nav-btn {
+    padding: 0.4rem 0.8rem !important;
+    font-size: 0.7rem !important;
+    min-width: 140px !important;
+  }
+  /* Stack CV buttons on mobile but keep side by side on desktop */
+  .cv-download-buttons.side-by-side {
+    flex-direction: column;
+  }
+
+}
+

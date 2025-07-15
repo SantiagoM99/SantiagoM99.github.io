@@ -7,12 +7,10 @@ author_profile: true
 
 {% include base_path %}
 
-<div class="page__content">
-  <p class="text-center">
-    <a href="{{ base_path }}/experience/" class="btn btn--primary">
-      <i class="fa fa-briefcase" aria-hidden="true"></i> View Work Experience
-    </a>
-  </p>
+<div class="experience-nav-container">
+  <a href="{{ base_path }}/experience/" class="experience-nav-btn">
+    <i class="fa fa-briefcase" aria-hidden="true"></i> View Work Experience
+  </a>
 </div>
 
 {% assign research_posts = site.experience | where: "type", "research" | sort: "date" | reverse %}

@@ -4,7 +4,7 @@ permalink: /
 redirect_from:
 - /about/
 - /about.html
-title: About Me
+title: About me
 ---
 
 I am a Systems and Computing Engineer currently pursuing my M.Sc. Information Engineering at Universidad de los Andes. I work as a LLM-Based Applications - Research Assistant at Universidad de los Andes.

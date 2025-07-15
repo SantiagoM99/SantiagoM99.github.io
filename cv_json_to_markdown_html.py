@@ -17,7 +17,7 @@ def sanitize_filename(text):
     return filename.strip('-')
 
 def generate_publications(cv_data, output_dir="_publications"):
-    """Genera archivos .md para publicaciones"""
+    """Genera archivos .md para publicaciones - Vista simplificada"""
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     
@@ -38,32 +38,31 @@ def generate_publications(cv_data, output_dir="_publications"):
         
         # Determinar categoría y venue
         doc_type = citation.get('document_type', {})
-        citation_info = pub.get('citation_info', {})
-        venue = ""
         if isinstance(doc_type, dict):
             excerpt = doc_type.get('en', 'Publication')
             category = pub.get('category', 'paper')
         else:
-            excerpt = str(doc_type),
-            category = 'thesis' if 'thesis' in venue.lower() else 'paper'
+            excerpt = str(doc_type)
+            category = 'thesis' if 'thesis' in str(doc_type).lower() else 'paper'
+        
         repository_name = citation.get('repository', {}).get('name', '')
         if isinstance(repository_name, dict):
-            venue = repository_name.get('en', venue)
+            venue = repository_name.get('en', '')
         else:
             venue = str(repository_name)
+        
         paperurl = citation.get('repository', {}).get('url', '')
-        abstract = citation.get('abstract', {}).get('en', f'Published in {year}')
+        abstract = citation.get('abstract', {}).get('en', '')
         keywords = citation.get('keywords', [])
-
         bibtex_path = pub.get('bibtex_website', '')
         
-        # Front matter
+        # Front matter - SOLO información esencial para vista de archivo
         front_matter = {
             'title': title,
             'collection': 'publications',
             'category': category,
             'permalink': f'/publication/{year}-{sanitize_filename(title)}',
-            'excerpt': excerpt,
+            'excerpt': f"{venue} ({year})",  # Solo venue y año
             'date': date,
             'venue': venue,
             'slidesurl': '',
@@ -73,7 +72,7 @@ def generate_publications(cv_data, output_dir="_publications"):
             'bibtexurl': bibtex_path if bibtex_path else '',
         }
         
-        # Preparar contenido fuera del f-string
+        # CONTENIDO COMPLETO - Solo visible al hacer clic
         supervisor_line = ""
         if citation.get('supervisor'):
             supervisor_line = f"**Supervisor:** {citation['supervisor']}  \n"
@@ -82,28 +81,42 @@ def generate_publications(cv_data, output_dir="_publications"):
         if keywords:
             keywords_line = f"**Keywords:** {', '.join(keywords)}  \n"
         
+        # Clean resources section
+        resources_section = ""
+        if paperurl or bibtex_path:
+            resources_section = "\n<div class='cv-download-buttons'>\n"
+            if paperurl:
+                resources_section += f"<a href='{paperurl}' class='cv-download-btn' target='_blank'><i class='fas fa-external-link'></i> See Paper</a>\n"
+            if bibtex_path:
+                resources_section += f"<a href='{bibtex_path}' class='cv-download-btn' target='_blank'><i class='fas fa-code'></i> Download BibTeX</a>\n"
+            resources_section += "</div>\n"
+        
+        # BibTeX section (separate from resources)
         bibtex_section = ""
         if pub.get('formatted_citations', {}).get('bibtex'):
             bibtex_content = pub['formatted_citations']['bibtex']
-            bibtex_section = f"\n## BibTeX\n\n```bibtex\n{bibtex_content}\n```\n"
+            bibtex_section = f"\n## BibTeX Citation\n\n```bibtex\n{bibtex_content}\n```\n"
         
-        download_link = ""
-        if paperurl:
-            download_link = f"\n[Download paper]({paperurl}){{: .btn}}\n"
-        
-        # Contenido del archivo
+        # Contenido del archivo - MÁS DETALLADO
         content = f"""---
 {yaml.dump(front_matter, default_flow_style=False, allow_unicode=True)}---
 
-{abstract if citation.get('abstract') else ''}
+## Abstract
+
+{abstract if abstract else 'No abstract available.'}
+
+## Details
 
 **Author:** {author}  
 **Year:** {year}  
 **Institution:** {citation['institution']}  
+**Publication Type:** {excerpt}  
 {supervisor_line}{keywords_line}
+
 ## Citation
+
 {pub.get("formatted_citations", {}).get("apa_style", "")}
-{bibtex_section}{download_link}"""
+{resources_section}{bibtex_section}"""
         
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(content)
@@ -112,7 +125,7 @@ def generate_publications(cv_data, output_dir="_publications"):
 
 
 def generate_talks(cv_data, output_dir="_talks"):
-    """Genera archivos .md para talks/presentations"""
+    """Genera archivos .md para talks/presentations - Vista simplificada"""
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     
@@ -133,9 +146,10 @@ def generate_talks(cv_data, output_dir="_talks"):
         
         abstract = talk.get('abstract', {}).get('en', '')
         talk_url = talk.get('url', '')
-        slides_url = talk.get('slides_url', '')
+        slides_name = talk.get('id', '')
         
-        # Front matter
+        slides_path = f"{{{{ base_path }}}}/files/slides/{slides_name}.pdf"
+        # Front matter - SOLO información esencial para vista de archivo
         front_matter = {
             'title': title,
             'collection': 'talks',
@@ -144,38 +158,45 @@ def generate_talks(cv_data, output_dir="_talks"):
             'venue': event,
             'date': date,
             'location': location,
-            'slidesurl': slides_url,
+            'slidesurl': slides_path if os.path.exists(slides_path) else '',
             'paperurl': talk_url
         }
         
-        # Preparar contenido fuera del f-string
+        # CONTENIDO COMPLETO - Solo visible al hacer clic
         coauthors_line = ""
         if talk.get('coauthors'):
             coauthors_line = f"**Co-authors:** {', '.join(talk['coauthors'])}  \n"
         
-        info_link = ""
-        if talk_url:
-            info_link = f"\n[More info here]({talk_url}){{: .btn}}\n"
-        
-        slides_link = ""
-        if slides_url:
-            slides_link = f"[Download slides]({slides_url}){{: .btn}}\n"
+        # Clean resources section for talks
+        resources_section = ""
+        if talk_url or slides_path:
+            resources_section = "\n<div class='cv-download-buttons'>\n"
+            if talk_url:
+                resources_section += f"<a href='{talk_url}' class='cv-download-btn' target='_blank'><i class='fas fa-info-circle'></i> More Info</a>\n"
+            if slides_path:
+                resources_section += f"<a href='{slides_path}' class='cv-download-btn' target='_blank'><i class='fas fa-file-powerpoint'></i> Download {talk_type}</a>\n"
+            resources_section += "</div>\n"
         
         content = f"""---
 {yaml.dump(front_matter, default_flow_style=False, allow_unicode=True)}---
 
-{abstract}
+## Abstract
+
+{abstract if abstract else 'No abstract available for this talk.'}
+
+## Event Details
 
 **Event:** {event}  
 **Type:** {talk_type.title()}  
 **Location:** {location}  
 **Date:** {date}  
-{coauthors_line}{info_link}{slides_link}"""
+{coauthors_line}{resources_section}"""
         
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(content)
         
         print(f"✅ Generated talk: {filename}")
+
 
 def generate_experience(cv_data, output_dir="_experience"):
     """Genera archivos .md para experiencia (work + research)"""
@@ -806,35 +827,24 @@ def main():
     
     # Generar todas las secciones
     generate_publications(cv_data)
+    print("\n📚 Publications generated!")
     generate_talks(cv_data)
+    print("\n🎤 Talks generated!")
     generate_experience(cv_data)  # Nueva sección
+    print("\n💼 Experience (work + research) generated!")
     generate_teaching(cv_data)
+    print("\n👨‍🏫 Teaching experience generated!")
     generate_homepage(cv_data)
-    generate_cv_page(cv_data)     # Nueva página CV
-    generate_data_files(cv_data)  # Archivos de datos para Jekyll
+    print("\n🏠 Homepage updated!")
+    generate_cv_page(cv_data)  
+    print("\n📄 CV web page generated!")
+    generate_data_files(cv_data)
+    print("\n📊 Data files for Jekyll generated!")
     
     
     print("\n✅ Generation complete!")
-    print("\nFiles generated:")
-    print("📂 _publications/ - Publication markdown files")
-    print("📂 _talks/ - Talk markdown files") 
-    print("📂 _portfolio/ - Experience (work + research) files")
-    print("📂 _teaching/ - Teaching markdown files")
-    print("📂 _data/ - Data files for Jekyll")
-    print("📄 _pages/about.md - Updated homepage")
-    print("📄 _pages/cv.md - CV web page")
-    print("\nRequired manual steps:")
-    print("1. Copy generated files to your Academic Pages repository")
-    print("2. Update _config.yml with ONLY the author section printed above")
-    print("3. Manually add these collections to _config.yml if not present:")
-    print("4. Create _pages/experience.html with the experience template")
-    print("5. Update _includes/author-profile.html with download buttons")
-    print("6. Add CV download CSS to your SCSS files") 
-    print("7. Update _data/navigation.yml with new navigation structure")
-    print("8. Add your CV and Resume PDFs to /files/ directory:")
-    print("   - files/CV_Santiago_Martinez.pdf")
-    print("   - files/Resume_Santiago_Martinez.pdf")
-    print("9. Commit and push to GitHub")
+
+
 
 if __name__ == "__main__":
     main()

@@ -262,3 +262,38 @@
     }
   }
 }
+
+//* Mobile-first sidebar redesign */
+@media (max-width: 1023px) {
+  .author__urls-wrapper {
+    display: block !important;
+    
+    button {
+      display: none !important; /* Hide follow button */
+    }
+  }
+  
+  .author__urls {
+    display: block !important; /* Always show links */
+    position: static !important; /* No floating dropdown */
+    margin-top: 1rem !important;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    
+    &:before, &:after {
+      display: none !important; /* Remove arrows */
+    }
+    
+    li {
+      margin-bottom: 0.5rem;
+    }
+    
+    a {
+      padding: 0.5rem 0 !important;
+      border-bottom: 1px solid var(--global-border-color);
+      font-size: 0.9rem !important;
+    }
+  }
+}

@@ -52,7 +52,6 @@
   font-size: $type-size-4; /* Slightly larger */
   color: var(--global-link-color);
   font-weight: 600;
-  border-bottom: 2px solid var(--global-link-color);
 
   + .list__item .archive__item-title {
     margin-top: 1em; /* More space after subtitle */
@@ -183,7 +182,6 @@
     margin-top: 2.5em;
     margin-bottom: 1em;
     padding-bottom: 0.5em;
-    border-bottom: 2px solid var(--global-link-color);
     color: var(--global-link-color);
     font-weight: 600;
   }
