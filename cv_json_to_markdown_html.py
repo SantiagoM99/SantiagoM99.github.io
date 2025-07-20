@@ -687,11 +687,13 @@ def generate_homepage(cv_data, output_file="_pages/about.md"):
     current_work = experience[0] if experience else {}
     
     # Generar párrafo biográfico (adaptarlo a la información de Santiago)
-    bio_paragraph = f"""I am a {title} currently pursuing my {current_education.get('degree', {}).get('en', 'M.Sc.')} at {current_education.get('institution', 'Universidad de los Andes')}. I work as a {current_work.get('title', {}).get('en', 'Research Assistant') if isinstance(current_work.get('title'), dict) else current_work.get('title', 'Research Assistant')} at {current_work.get('company', {}).get('en', current_work.get('company', '')) if isinstance(current_work.get('company'), dict) else current_work.get('company', '')}.
+    bio_paragraph = """
+I am a Data Scientist currently pursuing an M.Sc. in Information Engineering at Universidad de los Andes, where I also work as a Research Assistant on LLM-based applications. My work focuses on developing natural language processing techniques and data-driven tools to improve student support services in higher education. I specialize in evaluating Large Language Models (LLMs) for Spanish linguistic tasks, comparing their performance against traditional, highly-trained models to assess their suitability in real-world academic environments.
 
-My research focuses on developing advanced natural language processing techniques and data-oriented tools for improving student support services in universities. I specialize in comparing highly-trained models against Large Language Models (LLMs) for Spanish linguistic tasks, and work on computer vision applications for medical imaging.
+In parallel, I work on medical computer vision problems, particularly in image segmentation and classification for diagnostic support. My broader research interests lie in building intelligent, human-centered systems that enhance decision-making and well-being in both educational and healthcare contexts.
 
-{personal['research_interests']['en']}"""
+In my free time, I enjoy playing chess and bowling.
+    """
     
     # Obtener intereses de investigación para la sección de intereses
     interests = [

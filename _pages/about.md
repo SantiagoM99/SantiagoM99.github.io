@@ -7,11 +7,13 @@ redirect_from:
 title: About me
 ---
 
-I am a Systems and Computing Engineer currently pursuing my M.Sc. Information Engineering at Universidad de los Andes. I work as a LLM-Based Applications - Research Assistant at Universidad de los Andes.
 
-My research focuses on developing advanced natural language processing techniques and data-oriented tools for improving student support services in universities. I specialize in comparing highly-trained models against Large Language Models (LLMs) for Spanish linguistic tasks, and work on computer vision applications for medical imaging.
+I am a Data Scientist currently pursuing an M.Sc. in Information Engineering at Universidad de los Andes, where I also work as a Research Assistant on LLM-based applications. My work focuses on developing natural language processing techniques and data-driven tools to improve student support services in higher education. I specialize in evaluating Large Language Models (LLMs) for Spanish linguistic tasks, comparing their performance against traditional, highly-trained models to assess their suitability in real-world academic environments.
 
-My research focuses on developing advanced natural language processing techniques aimed at improving linguistic tasks in Spanish, with particular emphasis on comparing and evaluating highly-trained models against Large Language Models (LLMs). In computer vision, I specialize in image segmentation and classification tasks for medical applications. As a systems and computer engineer, I am committed to implementing data-oriented tools and Machine Learning methodologies to enhance student support services in universities, transforming how academic institutions foster student success and well-being.
+In parallel, I work on medical computer vision problems, particularly in image segmentation and classification for diagnostic support. My broader research interests lie in building intelligent, human-centered systems that enhance decision-making and well-being in both educational and healthcare contexts.
+
+In my free time, I enjoy playing chess and bowling.
+    
 
 <div class="homepage-bottom">
   <div class="interests-education-container">

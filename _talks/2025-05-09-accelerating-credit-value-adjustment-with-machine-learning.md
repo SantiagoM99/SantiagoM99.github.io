@@ -4,7 +4,7 @@ date: '2025-05-09'
 location: Bogotá, Colombia
 paperurl: https://analyticsforum.uniandes.edu.co/
 permalink: /talks/2025-05-09-accelerating-credit-value-adjustment-with-machine-learning
-slidesurl: files/slides/analytics-forum-2025-poster.pdf
+slidesurl: ''
 title: Accelerating Credit Value Adjustment with Machine Learning
 type: poster
 venue: Analytics Forum 2025 - Universidad de los Andes
@@ -24,5 +24,5 @@ Poster presentation on the application of Machine Learning algorithms to acceler
 
 <div class='cv-download-buttons'>
 <a href='https://analyticsforum.uniandes.edu.co/' class='cv-download-btn' target='_blank'><i class='fas fa-info-circle'></i> More Info</a>
-<a href='files/slides/analytics-forum-2025-poster.pdf' class='cv-download-btn' target='_blank'><i class='fas fa-file-powerpoint'></i> Download poster</a>
+<a href='{{ base_path }}/files/slides/analytics-forum-2025-poster.pdf' class='cv-download-btn' target='_blank'><i class='fas fa-file-powerpoint'></i> Download poster</a>
 </div>
