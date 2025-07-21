@@ -1,5 +1,5 @@
 ---
-bibtexurl: http://santiagom99.github.io/files/paper-melanoma.bib
+bibtexurl: https://santiagom99.github.io/files/paper-melanoma.bib
 category: manuscripts
 citation: 'Martínez Novoa, S. (2024). Detection and Segmentation of Malignant Melanoma
   Regions in Dermoscopic Images Using Machine Learning. Undergraduate thesis, Universidad
@@ -35,5 +35,5 @@ Martínez Novoa, S. (2024). Detection and Segmentation of Malignant Melanoma Reg
 
 <div class='cv-download-buttons'>
 <a href='https://hdl.handle.net/1992/75910' class='cv-download-btn' target='_blank'><i class='fas fa-external-link'></i> See Paper</a>
-<a href='http://santiagom99.github.io/files/paper-melanoma.bib' class='cv-download-btn' target='_blank'><i class='fas fa-code'></i> Download BibTeX</a>
+<a href='https://santiagom99.github.io/files/paper-melanoma.bib' class='cv-download-btn' target='_blank'><i class='fas fa-code'></i> Download BibTeX</a>
 </div>

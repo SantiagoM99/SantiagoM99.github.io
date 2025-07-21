@@ -316,7 +316,7 @@ personal:
     en: Systems and Computing Engineer
     es: Ingeniero de Sistemas y Computación
 publications:
-- bibtex_website: http://santiagom99.github.io/files/paper-melanoma.bib
+- bibtex_website: https://santiagom99.github.io/files/paper-melanoma.bib
   category: manuscripts
   citation_info:
     author:
