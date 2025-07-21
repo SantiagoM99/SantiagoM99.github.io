@@ -1,4 +1,4 @@
-/* CV Download Buttons - Existing styles */
+/* CV Download Buttons - SOLO cambia el ancho, mantiene proporción original */
 .cv-download-buttons {
   display: flex;
   flex-direction: column;
@@ -34,7 +34,11 @@
   color: var(--global-text-color) !important;
   box-shadow: none !important;
   margin: 0 !important;
-  width: 200px !important;
+  
+  /* SOLO cambiar el ancho - mantener todo lo demás igual */
+  width: 100% !important;
+  max-width: 200px !important; /* Máximo = ancho original */
+  min-width: 150px !important; /* Mínimo para que no se vea muy pequeño */
   
   &:hover {
     transform: translateY(-2px) !important;
@@ -43,7 +47,7 @@
     text-decoration: none !important;
   }
   
-  /* Icon styling */
+  /* Icon styling - MANTENER ORIGINAL */
   i {
     font-size: 0.9em !important;
     color: var(--global-link-color) !important;
@@ -64,23 +68,23 @@ html[data-theme="dark"] .cv-download-btn {
   }
 }
 
-/* Experience Navigation Buttons - SMALLER VERSION */
+/* Experience Navigation Buttons - MANTENER ORIGINAL */
 .experience-nav-container .experience-nav-btn,
 .page__content .experience-nav-btn {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
   gap: 0.3rem !important;
-  padding: 0.5rem 1rem !important;         /* MUCH SMALLER */
+  padding: 0.5rem 1rem !important;
   text-decoration: none !important;
   border: none !important;
   border-radius: 6px !important;
-  font-size: 0.75rem !important;           /* SMALLER TEXT */
+  font-size: 0.75rem !important;
   font-weight: 600 !important;
   transition: all 0.3s ease !important;
   text-transform: uppercase !important;
   letter-spacing: 0.3px !important;
-  min-width: 160px !important;             /* SMALLER WIDTH */
+  min-width: 160px !important;
   
   /* Light theme styling */
   background: linear-gradient(135deg, #52adc8, #2f7f93) !important;
@@ -114,18 +118,22 @@ html[data-theme="dark"] .page__content .experience-nav-btn {
   }
 }
 
-/* Mobile responsive */
+/* SOLO responsive para mobile - mantener proporción en desktop */
 @media (max-width: 768px) {
+  .cv-download-btn {
+    max-width: 100% !important; /* Permitir ancho completo en móvil */
+    min-width: auto !important;
+  }
+  
   .experience-nav-container .experience-nav-btn,
   .page__content .experience-nav-btn {
     padding: 0.4rem 0.8rem !important;
     font-size: 0.7rem !important;
     min-width: 140px !important;
   }
+  
   /* Stack CV buttons on mobile but keep side by side on desktop */
   .cv-download-buttons.side-by-side {
     flex-direction: column;
   }
-
 }
-

@@ -202,10 +202,14 @@ html[data-theme="dark"] {
   }
 }
 
-/* Responsive design */
+/* Responsive design - ACTUALIZADO para reordenar en móvil */
 @media (max-width: 768px) {
   .interests-education-container {
     grid-template-columns: 1fr;
+    /* Cambiar el orden: Research Interests ARRIBA, Education ABAJO */
+    grid-template-areas: 
+      "interests"
+      "education";
     gap: 15px;
   }
   
@@ -225,6 +229,14 @@ html[data-theme="dark"] {
 }
 
 @media (max-width: 480px) {
+  .interests-education-container {
+    /* Mantener el mismo orden en pantallas muy pequeñas */
+    grid-template-areas: 
+      "interests"
+      "education";
+    gap: 12px;
+  }
+  
   .homepage-bottom {
     padding: 12px;
     margin-top: 20px;

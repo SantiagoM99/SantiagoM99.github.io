@@ -25,7 +25,7 @@
   }
 
   @include breakpoint($large) {
-    @include span(2 of 12);
+    @include span(3 of 12);
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
@@ -33,6 +33,12 @@
     &:hover {
       opacity: 1;
     }
+  }
+
+  @include breakpoint($medium) {
+    @include span(2 of 12);
+    padding-right: 0;
+    padding-left: 0;
   }
 
   @include breakpoint($x-large) {
@@ -150,6 +156,7 @@
 
 .author__bio {
   margin: 0;
+
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -294,6 +301,297 @@
       padding: 0.5rem 0 !important;
       border-bottom: 1px solid var(--global-border-color);
       font-size: 0.9rem !important;
+    }
+  }
+  
+}
+
+/* Fix para el rango problemático 924px-768px */
+@media screen and (max-width: 924px) and (min-width: 769px) {
+  
+  /* SIDEBAR USA TODO EL ANCHO pero mantiene margin útil */
+  .sidebar {
+    position: relative !important; /* No fixed */
+    width: 100% !important;         /* TODO EL ANCHO */
+    max-width: 100% !important;
+    height: auto !important;        /* No height fixed */
+    overflow: visible !important;
+    padding-top: 1rem !important;   /* Reset padding-top */
+  }
+  
+  /* MANTENER MARGIN útil para el main content */
+  #main {
+    margin-left: 2rem !important;   /* Margin útil restaurado */
+    margin-right: 2rem !important;  /* Simetría */
+    padding-left: 0 !important;
+  }
+  
+  /* Reorganizar el author profile - LAYOUT VERTICAL MEJORADO */
+  .sidebar [itemscope] {
+    display: block !important;
+    width: 100% !important;
+    max-width: 800px !important;    /* Máximo razonable para legibilidad */
+    margin: 0 auto !important;      /* Centrado */
+    padding: 2rem !important;       /* Más generous padding */
+    box-sizing: border-box;
+  }
+  
+  /* Avatar centrado y más grande */
+  .author__avatar {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin: 0 auto 1rem auto !important;
+    
+    img {
+      width: 120px !important;
+      height: 120px !important;
+      border-radius: 50%;
+      border: 2px solid var(--global-border-color);
+      padding: 3px;
+    }
+  }
+  
+  /* Contenido centrado - USAR TODO EL ANCHO */
+  .author__content {
+    display: block !important;
+    width: 100% !important;
+    padding: 0 !important;
+    text-align: center !important;
+    margin-bottom: 1.5rem !important;
+    
+    .author__name {
+      font-size: 1.1rem !important;
+      margin: 0 0 0.5rem 0 !important;
+      font-weight: 600;
+    }
+    
+    .author__bio {
+      font-size: 0.85rem !important;
+      margin: 0 !important;
+      color: var(--global-text-color-light);
+      line-height: 1.4;
+    }
+  }
+  
+  /* Reorganizar urls wrapper - LAYOUT VERTICAL (links arriba, botones abajo) */
+  .author__urls-wrapper {
+    display: block !important;      /* NO grid - layout vertical */
+    width: 100% !important;
+    
+    /* Ocultar botón Follow */
+    button {
+      display: none !important;
+    }
+  }
+  
+  /* Links sociales - ARRIBA, restablecer estilo original COMPLETAMENTE */
+  .author__urls {
+    display: block !important;
+    position: static !important;
+    margin: 0 0 1.5rem 0 !important; /* Margin bottom para separar de botones */
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    text-align: left;
+    width: 100%;
+    
+    &:before, &:after {
+      display: none !important;
+    }
+    
+    li {
+      margin-bottom: 0.5rem;        /* Más espacio entre links */
+      white-space: nowrap;
+      
+      /* Ocultar elementos desktop que ocupan mucho espacio */
+      &.author__desktop {
+        display: none;
+      }
+    }
+    
+    a {
+      /* ESTILO COMPLETAMENTE ORIGINAL - NO FORZAR NADA */
+      display: block;                 /* Original */
+      margin-bottom: 5px;             /* Original */
+      padding-right: 5px;             /* Original */
+      padding-top: 2px;               /* Original */
+      padding-bottom: 2px;            /* Original */
+      /* NO especificar color NI font-size - usar defaults del tema */
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;   /* Original */
+      }
+    }
+  }
+  
+  /* Botones CV - ABAJO, horizontales MISMO TAMAÑO y más largos */
+  .cv-download-section {
+    margin-top: 1.5rem;            /* Separación de los links */
+    
+    .cv-download-buttons {
+      display: flex !important;
+      flex-direction: row !important;   /* HORIZONTAL */
+      gap: 1rem !important;             /* Espacio entre botones */
+      justify-content: center !important; /* Centrados */
+      align-items: center;
+    }
+    
+    .cv-download-btn {
+      /* MISMO TAMAÑO para ambos botones y MÁS LARGOS */
+      width: 180px !important;          /* Más largo que antes */
+      max-width: 180px !important;
+      min-width: 180px !important;
+      padding: 0.75rem 1rem !important; /* Padding original */
+      font-size: 0.85rem !important;    /* Tamaño original */
+      gap: 0.5rem !important;           /* Gap original */
+      
+      /* Asegurar que el texto se centre bien */
+      justify-content: center !important;
+      text-align: center;
+      
+      i {
+        font-size: 0.9em !important;   /* Tamaño original */
+      }
+      
+      span {
+        font-size: 1em;
+        white-space: nowrap;            /* No quebrar el texto */
+      }
+    }
+  }
+}
+
+/* Ajustes adicionales para transición suave */
+@media screen and (max-width: 768px) {
+  /* Asegurar que en móvil vuelva al layout normal */
+  .sidebar [itemscope] {
+    display: block;
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .author__avatar {
+    display: block !important;          /* FORZAR no table-cell */
+    table-layout: initial !important;   /* Reset table */
+    vertical-align: initial !important; /* Reset table-cell */
+    width: 100% !important;             /* No 36px */
+    height: auto !important;            /* No height fijo */
+    text-align: center !important;
+    margin: 0 auto 1rem auto !important;
+    float: none !important;             /* Por si tiene float */
+    position: static !important;        /* Reset position */
+    
+    img {
+      width: 120px !important;           /* Igual que intermedio */
+      height: 120px !important;          /* Igual que intermedio */
+      max-width: 120px !important;       /* Override cualquier max-width */
+      border-radius: 50% !important;
+      border: 2px solid var(--global-border-color) !important;
+      padding: 3px !important;
+      display: block !important;         /* No inline */
+      margin: 0 auto !important;         /* Centrado */
+      float: none !important;            /* Por si tiene float */
+    }
+  }
+  
+  .author__content {
+    display: block !important;          /* No table-cell */
+    table-layout: initial !important;   /* Reset table */
+    width: 100% !important;
+    padding: 0 !important;
+    padding-left: 0 !important;         /* Override existing padding */
+    padding-right: 0 !important;        /* Override existing padding */
+    text-align: center !important;
+    margin-bottom: 1.5rem !important;
+    vertical-align: initial !important; /* Reset table-cell */
+    line-height: 1 !important;          /* Reset line-height */
+    float: none !important;             /* Por si tiene float */
+    
+    .author__name {
+      font-size: 1.1rem !important;
+      margin: 0 0 0.5rem 0 !important;
+      margin-top: 10px !important;       /* Override existing */
+      margin-bottom: 10px !important;    /* Override existing */
+      font-weight: 600;
+      text-align: center !important;
+    }
+    
+    .author__bio {
+      font-size: 0.85rem !important;
+      margin: 0 !important;
+      margin-top: 10px !important;       /* Override existing */
+      margin-bottom: 20px !important;    /* Override existing */
+      color: var(--global-text-color-light);
+      line-height: 1.4;
+      text-align: center !important;
+    }
+  }
+  
+  .author__urls-wrapper {
+    display: block !important;
+    width: 100% !important;
+    margin-top: 1rem;
+    
+    /* Layout mobile normal para CV buttons */
+    .cv-download-section {
+      margin-top: 1rem;
+      
+      .cv-download-buttons {
+        flex-direction: column !important;
+        align-items: stretch;
+        gap: 0.5rem !important;
+      }
+      
+      .cv-download-btn {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: auto !important;
+        justify-content: center !important;
+      }
+    }
+  }
+}
+
+/* Muy importante: mantener el layout desktop normal en pantallas grandes */
+@media screen and (min-width: 925px) {
+  .sidebar [itemscope] {
+    display: block;
+    text-align: left;
+    padding: 0;
+  }
+  
+  .author__avatar {
+    display: block;
+    width: auto;
+    
+    img {
+      max-width: 175px;
+      width: auto;
+      height: auto;
+    }
+  }
+  
+  .author__content {
+    display: block;
+    width: 100%;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .author__urls-wrapper {
+    display: block;
+    grid-template-columns: none;
+    grid-template-areas: none;
+  }
+  
+  .author__urls {
+    display: block;
+    
+    li.author__desktop {
+      display: block;
     }
   }
 }

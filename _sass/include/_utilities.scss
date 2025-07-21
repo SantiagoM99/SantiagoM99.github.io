@@ -388,6 +388,7 @@ body:hover .visually-hidden button {
     position: -webkit-sticky;
     position: sticky;
     top: 2em;
+    z-index: 100;
 
     > * {
       display: block;
