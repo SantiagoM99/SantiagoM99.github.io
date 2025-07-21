@@ -595,3 +595,53 @@
     }
   }
 }
+
+/* Fix for short screen heights - Add this to your _sidebar.scss */
+
+/* When screen height is too short, scale down the entire sidebar */
+@media screen and (max-height: 680px) {
+  .sidebar {
+    zoom: 97% !important;                    /* Browser zoom method */
+    transform: scale(0.97) !important;       /* Fallback scaling method */
+    transform-origin: top center !important; /* Scale from top */
+  }
+  
+
+}
+
+/* For very short screens, be more aggressive */
+@media screen and (max-height: 650px) {
+  .sidebar {
+    zoom: 92% !important;
+    transform: scale(0.92) !important;
+    transform-origin: top center !important;
+  }
+  
+}
+
+/* Ultra short screens - emergency mode */
+@media screen and (max-height: 620px) {
+  .sidebar {
+    zoom: 90% !important;
+    transform: scale(0.90) !important;
+    overflow-y: auto !important;          /* Allow scrolling */
+    max-height: 100vh !important;
+  }
+
+  .sidebar [itemscope] {
+    padding: 0.5rem !important;
+  }
+  
+  .cv-download-buttons {
+    flex-direction: column !important;
+    gap: 0.3rem !important;
+  }
+  
+  .cv-download-btn {
+    width: 100% !important;
+    max-width: 160px !important;
+    margin: 0 auto !important;
+    padding: 0.4rem 0.6rem !important;
+    font-size: 0.7rem !important;
+  }
+}
