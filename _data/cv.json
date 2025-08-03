@@ -73,8 +73,8 @@
       ],
       "minors": [
         {
-          "es": "Opción en Francés: Lengua y Cultura",
-          "en": "Minor in French: Language and Culture"
+          "es": "Opción en Francés",
+          "en": "Minor in French"
         }
       ],
       "relevant_courses": [
@@ -100,6 +100,7 @@
   "experience": [
     {
       "id": "llm-applications-assistant",
+      "featured": true,
       "title": {
         "es": "Asistente de Investigación - Aplicaciones Basadas en LLM",
         "en": "LLM-Based Applications - Research Assistant"
@@ -123,10 +124,21 @@
           "en": "Designed practical exercises and assessments incorporating evaluation metrics such as RAGAS to measure LLM application performance."
         }
       ],
+      "achievements_short": [
+        {
+          "es": "Desarrollé curso completo de LLM para maestría utilizando LangChain, LangGraph y LangSmith",
+          "en": "Developed comprehensive master's-level LLM course using LangChain, LangGraph, and LangSmith frameworks"
+        },
+        {
+          "es": "Implementé sistema de evaluación con RAGAS para medir rendimiento de aplicaciones LLM",
+          "en": "Implemented RAGAS evaluation system to measure LLM application performance metrics"
+        }
+      ],
       "technologies": ["LangChain", "LangGraph", "LangSmith", "RAGAS", "Python", "LLM"]
     },
     {
       "id": "data-scientist-current",
+      "featured": true,
       "title": {
         "es": "Científico de Datos - Asistente de Investigación Graduado",
         "en": "Data Scientist - Graduate Research Assistant"
@@ -139,24 +151,59 @@
       "startDate": "2025-01",
       "endDate": "present",
       "type": "full-time",
-      "achievements": [
-        {
-            "es": "Procesar datos académicos y desarrollar dashboards en Power BI bajo la tutoría de la profesora Marcela Hernández Hoyos, Ph.D., y el profesor Juan Pablo Reyes Gómez, Ph.D., generando insights accionables sobre el desempeño estudiantil y métricas institucionales.",
-            "en": "Process academic data and develop Power BI dashboards under the guidance of Professor Marcela Hernández Hoyos, Ph.D. and Professor Juan Pablo Reyes Gómez, Ph.D., delivering actionable insights on student performance and institutional metrics."
-        },
-        {
-            "es": "Diseñar y desarrollar dashboards en Power BI para entregar insights accionables sobre el historial estudiantil, tendencias de rendimiento y aspectos institucionales.",
-            "en": "Designed and developed Power BI dashboards to deliver actionable insights into student history, performance trends, and institutional matters."
-        },
-        {
-            "es": "Optimizar el rendimiento del pipeline ETL en un 87% (reduciendo el tiempo de procesamiento de 15 a 2 minutos) al migrar de Pandas a Polars para la obtención y almacenamiento de datos desde Azure Blob Storage.",
-            "en": "Optimized ETL pipeline performance by 87% (reduced processing time from 15 to 2 minutes) by migrating from Pandas to Polars for data retrieval and storage from Azure Blob Storage."
-        }
-      ],
+    "achievements": [
+      {
+        "es": "Procesar datos académicos y desarrollar dashboards en Power BI bajo la tutoría de la profesora Marcela Hernández Hoyos, Ph.D., y el profesor Juan Pablo Reyes Gómez, Ph.D., generando insights accionables sobre el desempeño estudiantil y métricas institucionales.",
+        "en": "Process academic data and develop Power BI dashboards under the guidance of Professor Marcela Hernández Hoyos, Ph.D. and Professor Juan Pablo Reyes Gómez, Ph.D., delivering actionable insights on student performance and institutional metrics."
+      },
+      {
+        "es": "Diseñar y desarrollar dashboards en Power BI para entregar insights accionables sobre el historial estudiantil, tendencias de rendimiento y aspectos institucionales.",
+        "en": "Designed and developed Power BI dashboards to deliver actionable insights into student history, performance trends, and institutional matters."
+      },
+      {
+        "es": "Optimizar el rendimiento del pipeline ETL en un 87% (reduciendo el tiempo de procesamiento de 15 a 2 minutos) al migrar de Pandas a Polars para la obtención y almacenamiento de datos desde Azure Blob Storage.",
+        "en": "Optimized ETL pipeline performance by 87% (reduced processing time from 15 to 2 minutes) by migrating from Pandas to Polars for data retrieval and storage from Azure Blob Storage."
+      },
+      {
+        "es": "Reemplacé la plataforma externa de consejería académica, permitiendo a la universidad ahorrar aproximadamente USD $100,000 anuales.",
+        "en": "Enabled the university to save approximately $100K USD annually by replacing an external academic counseling platform."
+      },
+      {
+        "es": "Co-implementé un sistema de detección de riesgo que alerta a los actores clave sobre más de 1000 casos críticos estudiantiles.",
+        "en": "Co-implemented a risk detection system that alerts stakeholders about over 1000 critical student cases."
+      },
+      {
+        "es": "Diseñé e implementé la arquitectura medallón de los datos de la Universidad de los Andes, creando un punto de acceso estandarizado y organizado a la información institucional.",
+        "en": "Designed and implemented the university's medallion data architecture, establishing a standardized and organized access point for institutional information."
+      }
+    ],
+    "achievements_short": [
+      {
+        "es": "Optimicé pipeline ETL en 87% migrando de Pandas a Polars, reduciendo tiempo de 15 a 2 minutos",
+        "en": "Optimized ETL pipeline performance by 87% by migrating from Pandas to Polars, reducing processing time from 15 to 2 minutes"
+      },
+      {
+        "es": "Desarrollé dashboards Power BI para análisis de desempeño estudiantil e insights institucionales",
+        "en": "Developed Power BI dashboards delivering actionable insights on student performance and institutional metrics"
+      },
+      {
+        "es": "Reemplacé plataforma externa de consejería, ahorrando ~$100K USD anuales a la universidad",
+        "en": "Replaced external counseling platform, saving the university ~$100K USD annually"
+      },
+      {
+        "es": "Co-implementé sistema que alerta sobre +1000 casos críticos estudiantiles",
+        "en": "Co-implemented system alerting over 1000 critical student cases"
+      },
+      {
+        "es": "Implementé arquitectura medallón para acceso estandarizado a datos institucionales",
+        "en": "Implemented medallion architecture for standardized access to institutional data"
+      }
+    ],
       "technologies": ["Power BI", "Python", "Polars", "Azure Blob Storage", "SQL"]
     },
     {
       "id": "ml-intern-precia",
+      "featured": true,
       "title": {
         "es": "Practicante de Machine Learning",
         "en": "Machine Learning Intern"
@@ -181,12 +228,32 @@
         {
             "es": "Realizar exploración y transformación de datos para optimizar la precisión y eficiencia del modelo en entornos de desarrollo y producción.",
             "en": "Conduct data exploration and engineering to optimize model accuracy and efficiency across development and production environments."
+        },
+        {
+            "es": "Presentamos nuestro trabajo sobre optimización de modelos y arquitectura de infraestructura en el Analytics Forum 2025, incluyendo el uso de MLPs, pipelines en AWS y estrategias de transformación de datos.",
+            "en": "Presented our work at the Analytics Forum 2025 on model optimization and infrastructure architecture, including the use of MLPs, AWS pipelines, and data transformation strategies."
         }
+
         ],
+      "achievements_short": [
+        {
+          "es": "Desarrollé MLP que redujo tiempo de cálculo financiero en 70% para clientes",
+          "en": "Developed MLP model reducing financial calculation time by 70% for client applications"
+        },
+        {
+          "es": "Implementé infraestructura AWS completa con pipelines ETL automatizados usando Glue y Lambda",
+          "en": "Implemented end-to-end AWS infrastructure with automated ETL pipelines using Glue and Lambda"
+        },
+        {
+          "es": "Presentamos en el Analytics Forum 2025 nuestro trabajo en modelos de Machine Learning y arquitectura AWS",
+          "en": "Presented our work on models and AWS infrastructure at Analytics Forum 2025 "
+        }
+      ],
       "technologies": ["Python", "AWS", "AWS Glue", "Lambda", "Machine Learning", "ETL"]
     },
     {
       "id": "data-scientist-undergraduate",
+      "featured": false,
       "title": {
         "es": "Científico de Datos - Asistente de Investigación de Pregrado",
         "en": "Data Scientist - Undergraduate Research Assistant"
@@ -209,10 +276,21 @@
           "en": "Developed and conducted integrity tests to ensure the coherence and accuracy of a multidimensional model, validating against the original data."
         }
       ],
+      "achievements_short": [
+        {
+          "es": "Implementé pipeline ETL desde Azure Blob Storage a base de datos relacional usando Polars",
+          "en": "Implemented ETL pipeline from Azure Blob Storage to relational database using Polars"
+        },
+        {
+          "es": "Desarrollé pruebas de integridad para validación de modelo multidimensional",
+          "en": "Developed integrity tests ensuring multidimensional model accuracy and data coherence"
+        }
+      ],
       "technologies": ["Python", "Pandas", "Polars", "Azure Blob Storage", "SQL"]
     },
     {
       "id": "backend-developer-digital",
+      "featured": false,
       "title": {
         "es": "Desarrollador Backend",
         "en": "Backend Developer"
@@ -235,10 +313,21 @@
           "en": "Created comprehensive documentation for the project's infrastructure, emphasizing clarity and transparency. This initiative facilitated smoother collaboration among team members and enhanced the overall understanding of the software architecture."
         }
       ],
+      "achievements_short": [
+        {
+          "es": "Desarrollé soluciones backend usando Azure Functions y OpenAI API para proyectos universitarios",
+          "en": "Developed backend solutions using Azure Functions and OpenAI API for university software projects"
+        },
+        {
+          "es": "Creé documentación integral mejorando colaboración del equipo y comprensión de arquitectura",
+          "en": "Created comprehensive infrastructure documentation improving team collaboration and architecture understanding"
+        }
+      ],
       "technologies": ["Python", "Azure Functions", "OpenAI API", "Documentation"]
     },
     {
       "id": "frontend-developer-research",
+      "featured": false,
       "title": {
         "es": "Desarrollador Frontend",
         "en": "Frontend Developer"
@@ -261,10 +350,21 @@
           "en": "Implemented dynamic access controls, tailoring user permissions based on roles and responsibilities."
         }
       ],
+      "achievements_short": [
+        {
+          "es": "Desarrollé soluciones frontend responsivas usando Angular para proyecto universitario",
+          "en": "Developed responsive frontend solutions using Angular for university research project"
+        },
+        {
+          "es": "Implementé sistema de control de acceso dinámico basado en roles de usuario",
+          "en": "Implemented dynamic access control system with role-based user permissions"
+        }
+      ],
       "technologies": ["Angular", "TypeScript", "Frontend Development", "User Access Control"]
     },
     {
       "id": "liaison-developer",
+      "featured": false,
       "title": {
         "es": "Enlace Intercultural y Desarrollador de Software",
         "en": "Cross-Cultural Liaison and Software Developer"
@@ -287,10 +387,20 @@
           "en": "Collaborated on software development projects utilizing Open AI and Azure Functions, successfully integrating the developed software into an interactive chatbot."
         }
       ],
+      "achievements_short": [
+        {
+          "es": "Facilité comunicación entre directores y 5 estudiantes de intercambio mediante traducción",
+          "en": "Facilitated communication between directors and 5 exchange students through translation services"
+        },
+        {
+          "es": "Integré OpenAI y Azure Functions en chatbot interactivo para universidad",
+          "en": "Integrated OpenAI and Azure Functions into interactive chatbot for university applications"
+        }
+      ],
       "technologies": ["OpenAI API", "Azure Functions", "Translation", "Chatbot Development"]
     }
   ],
-  "skills": {
+"skills": {
     "languages": [
       {
         "language": {
@@ -309,7 +419,7 @@
         },
         "level": {
           "es": "Profesional",
-          "en": "Professional Working Proficiency"
+          "en": "Advanced"
         }
       },
       {
@@ -318,18 +428,18 @@
           "en": "French"
         },
         "level": {
-          "es": "Limitado",
-          "en": "Limited Working Proficiency"
+          "es": "Conversacional",
+          "en": "Conversational"
         }
       }
     ],
     "technical": {
       "programming": ["Python", "SQL", "JavaScript", "TypeScript"],
-      "frameworks": ["Pandas", "Polars", "Scikit-learn", "Keras", "PyTorch", "LangChain", "LangGraph", "LangSmith"],
-      "databases": ["MongoDB", "PostgreSQL", "Azure Blob Storage","ChromaDB","Pinecone"],
-      "cloud": ["AWS", "AWS Glue", "Lambda Functions", "Azure Functions"],
-      "tools": ["Power BI", "Databricks", "Git", "Docker", "Angular"],
-      "other": ["ETL Pipelines", "Machine Learning", "Data Science", "OpenAI API", "RAGAS"]
+      "ml_ai": ["Scikit-learn", "Keras", "PyTorch", "TensorFlow", "Transformers", "BERT"],
+      "llm_nlp": ["LangChain", "LangGraph", "LangSmith", "RAGAS", "Ollama"],
+      "data_processing": ["Pandas", "Polars", "Databricks"],
+      "cloud_devops": ["AWS", "Azure Functions", "Azure Blob Storage"],
+      "databases": ["PostgreSQL", "MongoDB", "ChromaDB", "Pinecone"]
     }
   },
   "publications": [
@@ -366,6 +476,7 @@
   "research": [
     {
         "id": "flag-nlp-research",
+        "featured": false,
         "title": {
             "es": "Evaluación y Mejoramiento de Modelos de Lenguaje Natural en español",
             "en": "Evaluation and Enhancement of Natural Language Models in spanish"
@@ -390,10 +501,21 @@
                 "en": "Conduct comparative evaluations between highly-trained models and Large Language Models (LLMs) using prompting techniques such as zero-shot and few-shot learning."
             }
         ],
+        "achievements_short": [
+            {
+                "es": "Investigué mejoramiento de modelos NLP para contextos médicos en español con enfoque en NER y clasificación",
+                "en": "Researched NLP model enhancement for Spanish medical contexts focusing on NER and text classification"
+            },
+            {
+                "es": "Desarrollé modelos especializados desde cero y comparé con LLMs usando zero-shot y few-shot learning",
+                "en": "Developed specialized models from scratch and compared with LLMs using zero-shot and few-shot learning"
+            }
+        ],
         "technologies": ["Python", "Transformers", "BERT", "Spanish Language Models", "Zero-shot Learning", "Few-shot Learning", "NER", "Text Classification", "Medical NLP"]
     },
     {
       "id": "generative-ai-research",
+      "featured": true,
       "title": {
         "es": "Asistente de Investigación - Inteligencia Artificial Generativa para Investigación",
         "en": "Generative Artificial Intelligence for Research - Research Assistant"
@@ -421,10 +543,29 @@
           "en": "Automated student assessment processes by developing LLM-based evaluation systems that grade responses against established rubrics and expected answers."
         }
       ],
+      "achievements_short": [
+        {
+          "es": "Construí sistemas RAG locales con Ollama y API Gemini para preguntas específicas de investigación",
+          "en": "Built locally-deployed RAG systems using Ollama and Gemini API for domain-specific research questions"
+        },
+        {
+          "es": "Diseñé arquitectura de evaluación LLM usando Prometheus, BERT score y OpenAI API para calidad de respuestas",
+          "en": "Designed LLM evaluation architecture using Prometheus, BERT score and OpenAI API for response quality assessment"
+        },
+        {
+          "es": "Desarrollé agentes de IA personalizados para optimizar procesos de investigación universitaria",
+          "en": "Developed custom AI agents to optimize university research processes"
+        },
+        {
+          "es": "Automatizé la evaluación estudiantil con LLMs alineados a rúbricas y respuestas esperadas",
+          "en": "Automated student assessment using LLMs aligned with rubrics and expected answers"
+        }
+      ],
       "technologies": ["Python", "Ollama", "Gemini API", "RAG", "Prometheus", "BERT", "OpenAI API", "LLM Evaluation"]
     },
     {
       "id": "cornell-summer-research",
+      "featured": true,
       "title": {
         "es": "Interno de Investigación de Verano",
         "en": "Summer Research Intern"
@@ -450,12 +591,23 @@
           "en": "Developed the first version of the architecture including the upload and scoring through semantic search of multiple databases."
         }
       ],
+      "achievements_short": [
+        {
+          "es": "Diseñé arquitectura de Data Discovery para explorar datasets en múltiples formatos",
+          "en": "Designed Data Discovery architecture to explore and modify datasets in various formats"
+        },
+        {
+          "es": "Desarrollé sistema de carga y puntuación con búsqueda semántica para múltiples bases de datos",
+          "en": "Developed upload and scoring system through semantic search across multiple databases"
+        }
+      ],
       "technologies": ["Python", "Data Discovery", "Semantic Search", "Database Management"]
     }
   ],
   "teaching": [
     {
       "id": "cupitaller-supervisor",
+      "featured": false,
       "title": {
         "es": "Asistente de Investigación de Pregrado",
         "en": "Undergraduate Research Assistant"
@@ -484,10 +636,25 @@
           "es": "Limpiar, enriquecer y procesar conjuntos de datos esenciales para cada proyecto, asegurando precisión, completitud y consistencia de los datos.",
           "en": "Cleaned, enriched, and processed datasets essential for each project, ensuring data accuracy completeness and consistency."
         }
+      ],
+      "achievements_short": [
+        {
+          "es": "Supervisé 110+ tutores y asistentes como parte del equipo de liderazgo en CupiTaller",
+          "en": "Supervised 110+ tutors and teaching assistants as part of CupiTaller leadership team"
+        },
+        {
+          "es": "Diseñé proyectos de programación para curso con 1100+ estudiantes por semestre",
+          "en": "Designed programming projects for course serving 1100+ students per semester"
+        },
+        {
+          "es": "Procesé datasets para proyectos educativos asegurando precisión y consistencia de datos",
+          "en": "Processed datasets for educational projects ensuring data accuracy and consistency"
+        }
       ]
     },
     {
       "id": "ta-programming-tutor",
+      "featured": false,
       "title": {
         "es": "Asistente de Cátedra de Pregrado - Tutor de Programación",
         "en": "Undergraduate Teaching Assistant - Programming Tutor"
@@ -512,10 +679,21 @@
           "es": "Instruir a más de 100 estudiantes, ayudándoles a desarrollar habilidades fundamentales de codificación en Python.",
           "en": "Instructed more than 100 students, helping them develop fundamental coding skills in Python."
         }
+      ],
+      "achievements_short": [
+        {
+          "es": "Brindé 5 horas semanales de tutoría Python durante 2 años en centro universitario",
+          "en": "Provided 5 weekly hours of Python tutoring for 2 years at university programming center"
+        },
+        {
+          "es": "Instruí 100+ estudiantes desarrollando habilidades fundamentales de programación",
+          "en": "Instructed 100+ students developing fundamental Python programming skills"
+        }
       ]
     },
     {
       "id": "ta-intro-programming",
+      "featured": false,
       "title": {
         "es": "Asistente de Cátedra de Pregrado",
         "en": "Undergraduate Teaching Assistant"
@@ -537,10 +715,21 @@
           "es": "Corregir y calificar proyectos básicos de programación.",
           "en": "Corrected and graded basic programming projects."
         }
+      ],
+      "achievements_short": [
+        {
+          "es": "Asistí profesor en laboratorios de programación con 40 estudiantes por semestre",
+          "en": "Assisted professor in programming laboratories with 40 students per semester"
+        },
+        {
+          "es": "Corregí y califiqué proyectos básicos de programación para curso introductorio",
+          "en": "Corrected and graded basic programming projects for introductory course"
+        }
       ]
     },
     {
       "id": "ta-infrastructure",
+      "featured": false,
       "title": {
         "es": "Asistente de Cátedra",
         "en": "Undergraduate Teaching Assistant"
@@ -561,6 +750,16 @@
         {
           "es": "Guié aproximadamente 40 estudiantes hacia una comprensión profunda de los Fundamentos de Infraestructura Tecnológica",
           "en": "Guided approximately 40 students to a thorough understanding of Fundamentals of Technological Infrastructure"
+        }
+      ],
+      "achievements_short": [
+        {
+          "es": "Corregí exámenes y actividades para curso de infraestructura tecnológica",
+          "en": "Corrected tests and activities for technological infrastructure fundamentals course"
+        },
+        {
+          "es": "Guié 40 estudiantes hacia comprensión profunda de fundamentos tecnológicos",
+          "en": "Guided 40 students toward deep understanding of technological infrastructure fundamentals"
         }
       ]
     }
