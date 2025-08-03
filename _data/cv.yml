@@ -54,8 +54,8 @@ education:
   institution: Universidad de los Andes
   location: Bogotá, Colombia
   minors:
-  - en: 'Minor in French: Language and Culture'
-    es: 'Opción en Francés: Lengua y Cultura'
+  - en: Minor in French
+    es: Opción en Francés
   relevant_courses:
   - en: Deep Learning Analysis
     es: Análisis con Deep Learning
@@ -81,8 +81,18 @@ experience:
       such as RAGAS to measure LLM application performance.
     es: Diseñar ejercicios prácticos y evaluaciones incorporando métricas de evaluación
       como RAGAS para medir el rendimiento de aplicaciones LLM.
+  achievements_short:
+  - en: Developed comprehensive master's-level LLM course using LangChain, LangGraph,
+      and LangSmith frameworks
+    es: Desarrollé curso completo de LLM para maestría utilizando LangChain, LangGraph
+      y LangSmith
+  - en: Implemented RAGAS evaluation system to measure LLM application performance
+      metrics
+    es: Implementé sistema de evaluación con RAGAS para medir rendimiento de aplicaciones
+      LLM
   company: Universidad de los Andes
   endDate: present
+  featured: true
   id: llm-applications-assistant
   location: Bogotá, Colombia
   startDate: 2025-06
@@ -116,10 +126,41 @@ experience:
     es: Optimizar el rendimiento del pipeline ETL en un 87% (reduciendo el tiempo
       de procesamiento de 15 a 2 minutos) al migrar de Pandas a Polars para la obtención
       y almacenamiento de datos desde Azure Blob Storage.
+  - en: Enabled the university to save approximately $100K USD annually by replacing
+      an external academic counseling platform.
+    es: Reemplacé la plataforma externa de consejería académica, permitiendo a la
+      universidad ahorrar aproximadamente USD $100,000 anuales.
+  - en: Co-implemented a risk detection system that alerts stakeholders about over
+      1000 critical student cases.
+    es: Co-implementé un sistema de detección de riesgo que alerta a los actores clave
+      sobre más de 1000 casos críticos estudiantiles.
+  - en: Designed and implemented the university's medallion data architecture, establishing
+      a standardized and organized access point for institutional information.
+    es: Diseñé e implementé la arquitectura medallón de los datos de la Universidad
+      de los Andes, creando un punto de acceso estandarizado y organizado a la información
+      institucional.
+  achievements_short:
+  - en: Optimized ETL pipeline performance by 87% by migrating from Pandas to Polars,
+      reducing processing time from 15 to 2 minutes
+    es: Optimicé pipeline ETL en 87% migrando de Pandas a Polars, reduciendo tiempo
+      de 15 a 2 minutos
+  - en: Developed Power BI dashboards delivering actionable insights on student performance
+      and institutional metrics
+    es: Desarrollé dashboards Power BI para análisis de desempeño estudiantil e insights
+      institucionales
+  - en: Replaced external counseling platform, saving the university ~$100K USD annually
+    es: Reemplacé plataforma externa de consejería, ahorrando ~$100K USD anuales a
+      la universidad
+  - en: Co-implemented system alerting over 1000 critical student cases
+    es: Co-implementé sistema que alerta sobre +1000 casos críticos estudiantiles
+  - en: Implemented medallion architecture for standardized access to institutional
+      data
+    es: Implementé arquitectura medallón para acceso estandarizado a datos institucionales
   company:
     en: Vice Dean's Office of Student Affairs, Universidad de los Andes
     es: Vicedecanatura de Estudiantes, Universidad de los Andes
   endDate: present
+  featured: true
   id: data-scientist-current
   location: Bogotá, Colombia
   startDate: 2025-01
@@ -150,8 +191,26 @@ experience:
       across development and production environments.
     es: Realizar exploración y transformación de datos para optimizar la precisión
       y eficiencia del modelo en entornos de desarrollo y producción.
+  - en: Presented our work at the Analytics Forum 2025 on model optimization and infrastructure
+      architecture, including the use of MLPs, AWS pipelines, and data transformation
+      strategies.
+    es: Presentamos nuestro trabajo sobre optimización de modelos y arquitectura de
+      infraestructura en el Analytics Forum 2025, incluyendo el uso de MLPs, pipelines
+      en AWS y estrategias de transformación de datos.
+  achievements_short:
+  - en: Developed MLP model reducing financial calculation time by 70% for client
+      applications
+    es: Desarrollé MLP que redujo tiempo de cálculo financiero en 70% para clientes
+  - en: Implemented end-to-end AWS infrastructure with automated ETL pipelines using
+      Glue and Lambda
+    es: Implementé infraestructura AWS completa con pipelines ETL automatizados usando
+      Glue y Lambda
+  - en: 'Presented our work on models and AWS infrastructure at Analytics Forum 2025 '
+    es: Presentamos en el Analytics Forum 2025 nuestro trabajo en modelos de Machine
+      Learning y arquitectura AWS
   company: Precia PPV S.A
   endDate: 2024-12
+  featured: true
   id: ml-intern-precia
   location:
     en: Bogotá, Colombia
@@ -179,10 +238,19 @@ experience:
       of a multidimensional model, validating against the original data.
     es: Desarrollar y realizar pruebas de integridad para asegurar la coherencia y
       precisión de un modelo multidimensional, validando contra los datos originales.
+  achievements_short:
+  - en: Implemented ETL pipeline from Azure Blob Storage to relational database using
+      Polars
+    es: Implementé pipeline ETL desde Azure Blob Storage a base de datos relacional
+      usando Polars
+  - en: Developed integrity tests ensuring multidimensional model accuracy and data
+      coherence
+    es: Desarrollé pruebas de integridad para validación de modelo multidimensional
   company:
     en: Vice Dean's Office of Student Affairs, Universidad de los Andes
     es: Vicedecanatura de Estudiantes, Universidad de los Andes
   endDate: 2024-12
+  featured: false
   id: data-scientist-undergraduate
   location: Bogotá, Colombia
   startDate: 2024-08
@@ -210,10 +278,20 @@ experience:
       claridad y transparencia. Esta iniciativa facilitó una colaboración más fluida
       entre los miembros del equipo y mejoró la comprensión general de la arquitectura
       del software.
+  achievements_short:
+  - en: Developed backend solutions using Azure Functions and OpenAI API for university
+      software projects
+    es: Desarrollé soluciones backend usando Azure Functions y OpenAI API para proyectos
+      universitarios
+  - en: Created comprehensive infrastructure documentation improving team collaboration
+      and architecture understanding
+    es: Creé documentación integral mejorando colaboración del equipo y comprensión
+      de arquitectura
   company:
     en: Digital Transformation, Universidad de los Andes
     es: Transformación Digital, Universidad de los Andes
   endDate: 2024-05
+  featured: false
   id: backend-developer-digital
   location: Bogotá, Colombia
   startDate: 2023-09
@@ -236,10 +314,17 @@ experience:
       and responsibilities.
     es: Implementar controles de acceso dinámicos, adaptando los permisos de usuario
       basados en roles y responsabilidades.
+  achievements_short:
+  - en: Developed responsive frontend solutions using Angular for university research
+      project
+    es: Desarrollé soluciones frontend responsivas usando Angular para proyecto universitario
+  - en: Implemented dynamic access control system with role-based user permissions
+    es: Implementé sistema de control de acceso dinámico basado en roles de usuario
   company:
     en: Research Center of the Faculty of Engineering, Universidad de los Andes
     es: Centro de Investigación de la Facultad de Ingeniería, Universidad de los Andes
   endDate: 2023-12
+  featured: false
   id: frontend-developer-research
   location: Bogotá, Colombia
   startDate: 2023-08
@@ -262,10 +347,19 @@ experience:
       chatbot.
     es: Colaborar en proyectos de desarrollo de software utilizando OpenAI y Azure
       Functions, integrando exitosamente el software desarrollado en un chatbot interactivo.
+  achievements_short:
+  - en: Facilitated communication between directors and 5 exchange students through
+      translation services
+    es: Facilité comunicación entre directores y 5 estudiantes de intercambio mediante
+      traducción
+  - en: Integrated OpenAI and Azure Functions into interactive chatbot for university
+      applications
+    es: Integré OpenAI y Azure Functions en chatbot interactivo para universidad
   company:
     en: Digital Transformation, Universidad de los Andes
     es: Transformación Digital, Universidad de los Andes
   endDate: 2023-08
+  featured: false
   id: liaison-developer
   location: Bogotá, Colombia
   startDate: 2023-06
@@ -345,7 +439,16 @@ publications:
   id: thesis-undergraduate-melanoma
   status: published
 research:
-- description:
+- achievements_short:
+  - en: Researched NLP model enhancement for Spanish medical contexts focusing on
+      NER and text classification
+    es: Investigué mejoramiento de modelos NLP para contextos médicos en español con
+      enfoque en NER y clasificación
+  - en: Developed specialized models from scratch and compared with LLMs using zero-shot
+      and few-shot learning
+    es: Desarrollé modelos especializados desde cero y comparé con LLMs usando zero-shot
+      y few-shot learning
+  description:
   - en: Research on improving natural language model capabilities for Spanish medical
       contexts, focusing on text classification and named entity extraction tasks
       under Professor Ruben Manrique Ph.D.
@@ -363,6 +466,7 @@ research:
       Language Models (LLMs) utilizando técnicas de prompting como zero-shot y few-shot
       learning.
   endDate: present
+  featured: false
   id: flag-nlp-research
   institution: Universidad de los Andes
   location: Bogotá, Colombia
@@ -382,7 +486,23 @@ research:
   title:
     en: Evaluation and Enhancement of Natural Language Models in spanish
     es: Evaluación y Mejoramiento de Modelos de Lenguaje Natural en español
-- description:
+- achievements_short:
+  - en: Built locally-deployed RAG systems using Ollama and Gemini API for domain-specific
+      research questions
+    es: Construí sistemas RAG locales con Ollama y API Gemini para preguntas específicas
+      de investigación
+  - en: Designed LLM evaluation architecture using Prometheus, BERT score and OpenAI
+      API for response quality assessment
+    es: Diseñé arquitectura de evaluación LLM usando Prometheus, BERT score y OpenAI
+      API para calidad de respuestas
+  - en: Developed custom AI agents to optimize university research processes
+    es: Desarrollé agentes de IA personalizados para optimizar procesos de investigación
+      universitaria
+  - en: Automated student assessment using LLMs aligned with rubrics and expected
+      answers
+    es: Automatizé la evaluación estudiantil con LLMs alineados a rúbricas y respuestas
+      esperadas
+  description:
   - en: Focused on optimizing university research processes through custom AI agent
       development and automated evaluation systems.
     es: Enfocado en optimizar procesos de investigación universitaria a través del
@@ -403,6 +523,7 @@ research:
       basados en LLM que califican respuestas contra rúbricas establecidas y respuestas
       esperadas.
   endDate: 2025-06
+  featured: true
   id: generative-ai-research
   institution: Universidad de los Andes
   location: Bogotá, Colombia
@@ -420,7 +541,16 @@ research:
   title:
     en: Generative Artificial Intelligence for Research - Research Assistant
     es: Asistente de Investigación - Inteligencia Artificial Generativa para Investigación
-- description:
+- achievements_short:
+  - en: Designed Data Discovery architecture to explore and modify datasets in various
+      formats
+    es: Diseñé arquitectura de Data Discovery para explorar datasets en múltiples
+      formatos
+  - en: Developed upload and scoring system through semantic search across multiple
+      databases
+    es: Desarrollé sistema de carga y puntuación con búsqueda semántica para múltiples
+      bases de datos
+  description:
   - en: Designed a Data Discovery architecture to explore and modify datasets in various
       formats under Professor Sainyam Galhotra Ph.D.
     es: Diseñar una arquitectura de Descubrimiento de Datos para explorar y modificar
@@ -431,6 +561,7 @@ research:
     es: Desarrollar la primera versión de la arquitectura incluyendo la carga y puntuación
       a través de búsqueda semántica de múltiples bases de datos.
   endDate: 2024-08
+  featured: true
   id: cornell-summer-research
   institution:
     en: College of Computing and Information Science, Cornell University
@@ -460,52 +591,46 @@ skills:
       en: English
       es: Inglés
     level:
-      en: Professional Working Proficiency
+      en: Advanced
       es: Profesional
   - language:
       en: French
       es: Francés
     level:
-      en: Limited Working Proficiency
-      es: Limitado
+      en: Conversational
+      es: Conversacional
   technical:
-    cloud:
+    cloud_devops:
     - AWS
-    - AWS Glue
-    - Lambda Functions
     - Azure Functions
-    databases:
-    - MongoDB
-    - PostgreSQL
     - Azure Blob Storage
-    - ChromaDB
-    - Pinecone
-    frameworks:
+    data_processing:
     - Pandas
     - Polars
-    - Scikit-learn
-    - Keras
-    - PyTorch
+    - Databricks
+    databases:
+    - PostgreSQL
+    - MongoDB
+    - ChromaDB
+    - Pinecone
+    llm_nlp:
     - LangChain
     - LangGraph
     - LangSmith
-    other:
-    - ETL Pipelines
-    - Machine Learning
-    - Data Science
-    - OpenAI API
     - RAGAS
+    - Ollama
+    ml_ai:
+    - Scikit-learn
+    - Keras
+    - PyTorch
+    - TensorFlow
+    - Transformers
+    - BERT
     programming:
     - Python
     - SQL
     - JavaScript
     - TypeScript
-    tools:
-    - Power BI
-    - Databricks
-    - Git
-    - Docker
-    - Angular
 talks:
 - abstract:
     en: Poster presentation on the application of Machine Learning algorithms to accelerate
@@ -534,7 +659,17 @@ talks:
     en: Mario Laserna Building, Posters and Networking Session
     es: Edificio Mario Laserna, Sesión de Posters y Networking
 teaching:
-- course:
+- achievements_short:
+  - en: Supervised 110+ tutors and teaching assistants as part of CupiTaller leadership
+      team
+    es: Supervisé 110+ tutores y asistentes como parte del equipo de liderazgo en
+      CupiTaller
+  - en: Designed programming projects for course serving 1100+ students per semester
+    es: Diseñé proyectos de programación para curso con 1100+ estudiantes por semestre
+  - en: Processed datasets for educational projects ensuring data accuracy and consistency
+    es: Procesé datasets para proyectos educativos asegurando precisión y consistencia
+      de datos
+  course:
     en: CupiTaller Programming Support Center
     es: Centro de Apoyo en Programación CupiTaller
   description:
@@ -554,6 +689,7 @@ teaching:
     es: Limpiar, enriquecer y procesar conjuntos de datos esenciales para cada proyecto,
       asegurando precisión, completitud y consistencia de los datos.
   endDate: 2024-12
+  featured: false
   id: cupitaller-supervisor
   institution:
     en: Systems and Computing Engineering Department, Universidad de los Andes
@@ -563,7 +699,13 @@ teaching:
   title:
     en: Undergraduate Research Assistant
     es: Asistente de Investigación de Pregrado
-- course:
+- achievements_short:
+  - en: Provided 5 weekly hours of Python tutoring for 2 years at university programming
+      center
+    es: Brindé 5 horas semanales de tutoría Python durante 2 años en centro universitario
+  - en: Instructed 100+ students developing fundamental Python programming skills
+    es: Instruí 100+ estudiantes desarrollando habilidades fundamentales de programación
+  course:
     en: Programming Support Center
     es: Centro de Apoyo en Programación
   description:
@@ -576,6 +718,7 @@ teaching:
     es: Instruir a más de 100 estudiantes, ayudándoles a desarrollar habilidades fundamentales
       de codificación en Python.
   endDate: 2023-08
+  featured: false
   id: ta-programming-tutor
   institution:
     en: Systems and Computing Engineering Department, Universidad de los Andes
@@ -585,7 +728,12 @@ teaching:
   title:
     en: Undergraduate Teaching Assistant - Programming Tutor
     es: Asistente de Cátedra de Pregrado - Tutor de Programación
-- course:
+- achievements_short:
+  - en: Assisted professor in programming laboratories with 40 students per semester
+    es: Asistí profesor en laboratorios de programación con 40 estudiantes por semestre
+  - en: Corrected and graded basic programming projects for introductory course
+    es: Corregí y califiqué proyectos básicos de programación para curso introductorio
+  course:
     en: Introduction to Programming
     es: Introducción a la Programación
   description:
@@ -596,6 +744,7 @@ teaching:
   - en: Corrected and graded basic programming projects.
     es: Corregir y calificar proyectos básicos de programación.
   endDate: 2022-12
+  featured: false
   id: ta-intro-programming
   institution: Universidad de los Andes
   location: Bogotá, Colombia
@@ -603,7 +752,14 @@ teaching:
   title:
     en: Undergraduate Teaching Assistant
     es: Asistente de Cátedra de Pregrado
-- course:
+- achievements_short:
+  - en: Corrected tests and activities for technological infrastructure fundamentals
+      course
+    es: Corregí exámenes y actividades para curso de infraestructura tecnológica
+  - en: Guided 40 students toward deep understanding of technological infrastructure
+      fundamentals
+    es: Guié 40 estudiantes hacia comprensión profunda de fundamentos tecnológicos
+  course:
     en: Fundamentals of Technological Infrastructure
     es: Fundamentos de Infraestructura Tecnológica
   description:
@@ -614,6 +770,7 @@ teaching:
     es: Guié aproximadamente 40 estudiantes hacia una comprensión profunda de los
       Fundamentos de Infraestructura Tecnológica
   endDate: 2023-06
+  featured: false
   id: ta-infrastructure
   institution: Universidad de los Andes
   location: Bogotá, Colombia
