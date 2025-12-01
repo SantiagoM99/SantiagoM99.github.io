@@ -688,9 +688,9 @@ def generate_homepage(cv_data, output_file="_pages/about.md"):
     
     # Generar párrafo biográfico (adaptarlo a la información de Santiago)
     bio_paragraph = """
-I am a Data Scientist currently pursuing an M.Sc. in Information Engineering at Universidad de los Andes, where I also work as a Research Assistant on LLM-based applications. My work focuses on developing natural language processing techniques and data-driven tools to improve student support services in higher education. I specialize in evaluating Large Language Models (LLMs) for Spanish linguistic tasks, comparing their performance against traditional, highly-trained models to assess their suitability in real-world academic environments.
+I am a Data Scientist currently pursuing an M.Sc. in Information Engineering at Universidad de los Andes, where I also work as a Research Assistant on LLM-based applications. My work focuses on multilingual NLP and the evaluation of Large Language Models for Spanish linguistic tasks, comparing their performance against highly-trained domain-specific models in real-world academic and medical settings.
 
-In parallel, I work on medical computer vision problems, particularly in image segmentation and classification for diagnostic support. My broader research interests lie in building intelligent, human-centered systems that enhance decision-making and well-being in both educational and healthcare contexts.
+In parallel, I work on multimodal systems for medical applications, particularly in image segmentation and classification for diagnostic support. More broadly, I am interested in building intelligent, human-centered AI systems that enhance decision-making and well-being in education and healthcare, especially for underrepresented languages and communities.
 
 In my free time, I enjoy playing chess and bowling.
     """

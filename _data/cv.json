@@ -16,12 +16,12 @@
       "phone": "+57 (315) 875-2426",
       "linkedin": "linkedin.com/in/santiago-martinez-novoa/",
       "github": "https://github.com/SantiagoM99",
-      "website": "santiagoMartinez.dev",
+      "website": "https://santiagom99.github.io/",
       "location": "Bogotá, Colombia"
     },
     "research_interests": {
-      "es": "Mi investigación se centra en el desarrollo de técnicas avanzadas de procesamiento de lenguaje natural orientadas al mejoramiento de tareas lingüísticas en español, con particular énfasis en la comparación y evaluación de modelos altamente entrenados frente a Large Language Models (LLMs). En el área de visión computacional, me especializo en tareas de segmentación y clasificación de imágenes para aplicaciones médicas. Como ingeniero de sistemas y computación, estoy comprometido con la implementación de herramientas data-oriented y metodologías de Machine Learning para el mejoramiento del acompañamiento estudiantil en universidades, transformando cómo las instituciones académicas apoyan el éxito y bienestar de sus estudiantes.",
-      "en": "My research focuses on developing advanced natural language processing techniques aimed at improving linguistic tasks in Spanish, with particular emphasis on comparing and evaluating highly-trained models against Large Language Models (LLMs). In computer vision, I specialize in image segmentation and classification tasks for medical applications. As a systems and computer engineer, I am committed to implementing data-oriented tools and Machine Learning methodologies to enhance student support services in universities, transforming how academic institutions foster student success and well-being."
+      "es": "Mi investigación se sitúa en la intersección entre el procesamiento de lenguaje natural multilingüe, los sistemas multimodales y las metodologías rigurosas de evaluación. Me interesa particularmente el desarrollo de técnicas para la transferencia de conocimiento entre lenguas con recursos limitados, así como el diseño de arquitecturas que integren información textual y visual en contextos lingüísticos diversos. He trabajado en la evaluación comparativa de modelos altamente entrenados frente a Large Language Models en tareas médicas en español, explorando su comportamiento bajo esquemas de zero-shot y few-shot learning. En visión computacional, me especializo en segmentación y clasificación de imágenes con aplicaciones médicas. Como ingeniero de sistemas y computación, estoy comprometido con el desarrollo de herramientas data-oriented y sistemas de Machine Learning en producción para mejorar el acompañamiento estudiantil en entornos universitarios, con énfasis en impacto real, interpretabilidad y toma de decisiones basada en datos.",
+      "en": "My research lies at the intersection of multilingual natural language processing, multimodal AI systems, and rigorous evaluation methodologies. I am particularly interested in developing techniques for effective cross-lingual knowledge transfer in low-resource settings, as well as in designing architectures that integrate textual and visual information across diverse linguistic contexts. I have worked on the comparative evaluation of highly-trained domain-specific models and Large Language Models for Spanish medical NLP tasks, exploring their behavior under zero-shot and few-shot learning settings. In computer vision, I specialize in image segmentation and classification for medical applications. As a systems and computer engineer, I am committed to building data-oriented tools and production-level Machine Learning systems to enhance student support in higher education, with an emphasis on real-world impact, interpretability, and data-driven decision-making."
     }
   },
   "education": [
@@ -435,8 +435,8 @@
     ],
     "technical": {
       "programming": ["Python", "SQL", "JavaScript", "TypeScript"],
-      "ml_ai": ["Scikit-learn", "Keras", "PyTorch", "TensorFlow", "Transformers", "BERT"],
-      "llm_nlp": ["LangChain", "LangGraph", "LangSmith", "RAGAS", "Ollama"],
+      "ml_ai": ["Scikit-learn", "Keras", "PyTorch", "TensorFlow"],
+      "llm_nlp": ["Transformers", "BERT", "LangChain", "LangGraph", "LangSmith", "Ollama"],
       "data_processing": ["Pandas", "Polars", "Databricks"],
       "cloud_devops": ["AWS", "Azure Functions", "Azure Blob Storage"],
       "databases": ["PostgreSQL", "MongoDB", "ChromaDB", "Pinecone"]
