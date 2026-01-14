@@ -34,9 +34,9 @@ author:
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    :
+  googlescholar    : https://scholar.google.com/citations?user=8SSLuHMAAAAJ&hl=en
   impactstory      : # URL
-  orcid            :
+  orcid            : https://orcid.org/0009-0002-4730-8507
   semantic         : # URL
   pubmed           :
   researchgate     : # URL
