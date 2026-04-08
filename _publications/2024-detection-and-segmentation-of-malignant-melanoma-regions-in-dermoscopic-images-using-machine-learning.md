@@ -22,8 +22,8 @@ No abstract available.
 
 ## Details
 
-**Author:** Santiago Martínez Novoa  
-**Year:** 2024  
+**Author:** Santiago Martínez Novoa
+**Year:** 2024
 **Institution:** Universidad de Los Andes  
 **Publication Type:** Undergraduate thesis presented at Universidad de los Andes to obtain the degree of Systems and Computing Engineer  
 **Supervisor:** Juan Pablo Reyes Gómez Ph.D  

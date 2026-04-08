@@ -11,6 +11,7 @@ technologies:
 - Python
 - Polars
 - Azure Blob Storage
+- Databricks
 - SQL
 title: Data Scientist - Graduate Research Assistant
 type: work
@@ -24,7 +25,7 @@ venue: Vice Dean's Office of Student Affairs, Universidad de los Andes
 * Optimized ETL pipeline performance by 87% (reduced processing time from 15 to 2 minutes) by migrating from Pandas to Polars for data retrieval and storage from Azure Blob Storage.
 * Enabled the university to save approximately $100K USD annually by replacing an external academic counseling platform.
 * Co-implemented a risk detection system that alerts stakeholders about over 1000 critical student cases.
-* Designed and implemented the university's medallion data architecture, establishing a standardized and organized access point for institutional information.
+* Designed and implemented the unit's complete data architecture in Databricks, following a medallion architecture and fully automating data processing and institutional information storage pipelines.
 
 
 
@@ -33,5 +34,6 @@ venue: Vice Dean's Office of Student Affairs, Universidad de los Andes
   <span class="archive__tag">Python</span>
   <span class="archive__tag">Polars</span>
   <span class="archive__tag">Azure Blob Storage</span>
+  <span class="archive__tag">Databricks</span>
   <span class="archive__tag">SQL</span>
 </div>

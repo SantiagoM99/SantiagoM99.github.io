@@ -69,27 +69,31 @@ education:
   status: completed
 experience:
 - achievements:
-  - en: Developing educational materials and practical exercises for a master's-level
-      course focused on large language model applications.
-    es: Desarrollar materiales educativos y ejercicios prácticos para un curso de
-      nivel de maestría enfocado en aplicaciones de modelos de lenguaje grandes.
-  - en: Created tutorials and course materials using frameworks including LangChain,
-      LangGraph, and LangSmith for LLM and agent development.
-    es: Crear tutoriales y materiales de curso utilizando frameworks incluyendo LangChain,
-      LangGraph y LangSmith para desarrollo de LLM y agentes.
-  - en: Designed practical exercises and assessments incorporating evaluation metrics
-      such as RAGAS to measure LLM application performance.
-    es: Diseñar ejercicios prácticos y evaluaciones incorporando métricas de evaluación
-      como RAGAS para medir el rendimiento de aplicaciones LLM.
+  - en: Developing educational materials and practical exercises for two master's-level
+      courses focused on large language model applications.
+    es: Desarrollar materiales educativos y ejercicios prácticos para dos cursos de
+      nivel de maestría enfocados en aplicaciones de modelos de lenguaje grandes.
+  - en: Created tutorials and course materials for a RAG-focused module using LangChain,
+      LangGraph, and LangSmith, covering retrieval techniques, indexing, and evaluation
+      with RAGAS.
+    es: Crear tutoriales y materiales de curso para un módulo enfocado en sistemas
+      RAG utilizando LangChain, LangGraph y LangSmith, cubriendo técnicas de retrieval,
+      indexación y evaluación con RAGAS.
+  - en: Created tutorials and course materials for an agent development module using
+      LangGraph and LangSmith, covering agent design, tool use, and multi-agent workflow
+      orchestration.
+    es: Crear tutoriales y materiales de curso para un módulo enfocado en desarrollo
+      de agentes utilizando LangGraph y LangSmith, cubriendo diseño de agentes, uso
+      de herramientas y orquestación de flujos multi-agente.
   achievements_short:
-  - en: Developed comprehensive master's-level LLM course using LangChain, LangGraph,
-      and LangSmith frameworks
-    es: Desarrollé curso completo de LLM para maestría utilizando LangChain, LangGraph
-      y LangSmith
-  - en: Implemented RAGAS evaluation system to measure LLM application performance
-      metrics
-    es: Implementé sistema de evaluación con RAGAS para medir rendimiento de aplicaciones
-      LLM
+  - en: Developed comprehensive master's-level RAG course using LangChain, LangGraph,
+      LangSmith, and RAGAS
+    es: Desarrollé curso completo de RAG para maestría utilizando LangChain, LangGraph,
+      LangSmith y RAGAS
+  - en: Developed comprehensive master's-level agent development course using LangGraph
+      and LangSmith
+    es: Desarrollé curso completo de agentes para maestría utilizando LangGraph y
+      LangSmith
   company: Universidad de los Andes
   endDate: present
   featured: true
@@ -134,11 +138,12 @@ experience:
       1000 critical student cases.
     es: Co-implementé un sistema de detección de riesgo que alerta a los actores clave
       sobre más de 1000 casos críticos estudiantiles.
-  - en: Designed and implemented the university's medallion data architecture, establishing
-      a standardized and organized access point for institutional information.
-    es: Diseñé e implementé la arquitectura medallón de los datos de la Universidad
-      de los Andes, creando un punto de acceso estandarizado y organizado a la información
-      institucional.
+  - en: Designed and implemented the unit's complete data architecture in Databricks,
+      following a medallion architecture and fully automating data processing and
+      institutional information storage pipelines.
+    es: Diseñar e implementar la arquitectura completa de datos de la unidad en Databricks,
+      siguiendo una arquitectura medallón y automatizando completamente los pipelines
+      de procesamiento y almacenamiento de información institucional.
   achievements_short:
   - en: Optimized ETL pipeline performance by 87% by migrating from Pandas to Polars,
       reducing processing time from 15 to 2 minutes
@@ -153,9 +158,10 @@ experience:
       la universidad
   - en: Co-implemented system alerting over 1000 critical student cases
     es: Co-implementé sistema que alerta sobre +1000 casos críticos estudiantiles
-  - en: Implemented medallion architecture for standardized access to institutional
-      data
-    es: Implementé arquitectura medallón para acceso estandarizado a datos institucionales
+  - en: Implemented complete medallion architecture in Databricks, fully automating
+      institutional data pipelines
+    es: Implementé arquitectura medallón completa en Databricks, automatizando completamente
+      los pipelines institucionales
   company:
     en: Vice Dean's Office of Student Affairs, Universidad de los Andes
     es: Vicedecanatura de Estudiantes, Universidad de los Andes
@@ -169,6 +175,7 @@ experience:
   - Python
   - Polars
   - Azure Blob Storage
+  - Databricks
   - SQL
   title:
     en: Data Scientist - Graduate Research Assistant
@@ -205,7 +212,7 @@ experience:
       Glue and Lambda
     es: Implementé infraestructura AWS completa con pipelines ETL automatizados usando
       Glue y Lambda
-  - en: 'Presented our work on models and AWS infrastructure at Analytics Forum 2025 '
+  - en: Presented our work on models and AWS infrastructure at Analytics Forum 2025
     es: Presentamos en el Analytics Forum 2025 nuestro trabajo en modelos de Machine
       Learning y arquitectura AWS
   company: Precia PPV S.A
@@ -377,8 +384,8 @@ metadata:
   - es
   - en
   defaultLanguage: en
-  lastUpdated: '2025-07-05'
-  version: '1.0'
+  lastUpdated: '2026-04-08'
+  version: '1.1'
 personal:
   contact:
     email: s.martinezn@uniandes.edu.co
@@ -419,34 +426,73 @@ personal:
     en: Systems and Computing Engineer
     es: Ingeniero de Sistemas y Computación
 publications:
-- bibtex_website: https://santiagom99.github.io/files/paper-melanoma.bib
-  category: manuscripts
-  citation_info:
-    author:
-      citation_name: Martínez Novoa, S
-      first_name: Santiago
-      full_name: Santiago Martínez Novoa
-      last_name: Martínez Novoa
-    document_type:
-      en: Undergraduate thesis presented at Universidad de los Andes to obtain the
-        degree of Systems and Computing Engineer
-      es: Tesis de pregrado presentada en la Universidad de los Andes para obtener
-        el título de Ingeniero de Sistemas y Computación
-    institution: Universidad de Los Andes
-    repository:
-      name: Uniandes Repository
-      url: https://hdl.handle.net/1992/75910
-    supervisor: Juan Pablo Reyes Gómez Ph.D
-    title: Detection and Segmentation of Malignant Melanoma Regions in Dermoscopic
-      Images Using Machine Learning
-    year: '2024'
-  formatted_citations:
-    apa_style: 'Martínez Novoa, S. (2024). Detection and Segmentation of Malignant
-      Melanoma Regions in Dermoscopic Images Using Machine Learning. Undergraduate
-      thesis, Universidad de Los Andes. Supervisor: Juan Pablo Reyes Gómez Ph.D. Uniandes
-      Repository.'
-  id: thesis-undergraduate-melanoma
-  status: published
+  preprints:
+  - _category_key: preprints
+    citation_info:
+      arxiv_id: '2601.10913'
+      authors:
+      - Santiago Martínez Novoa
+      - María Catalina Ibáñez
+      - Lina Gómez Mesa
+      - Jeremias Kramer
+      title: Classification of Chest XRay Diseases through image processing and analysis
+        techniques
+      url: https://arxiv.org/abs/2601.10913
+      year: '2026'
+    formatted_citations:
+      apa_style: Martínez Novoa, S., Ibáñez, M. C., Gómez Mesa, L., & Kramer, J. (2026).
+        Classification of Chest XRay Diseases through image processing and analysis
+        techniques. arXiv preprint arXiv:2601.10913.
+    id: preprint-chest-xray
+    status: preprint
+  - _category_key: preprints
+    citation_info:
+      arxiv_id: '2601.09059'
+      authors:
+      - Santiago Martínez Novoa
+      - Nicolás Rozo Fajardo
+      - Diego Alejandro González Vargas
+      - Nicolás Bedoya Figueroa
+      title: Efficient Multilingual Dialogue Processing via Translation Pipelines
+        and Distilled Language Models
+      url: https://arxiv.org/abs/2601.09059
+      year: '2026'
+    formatted_citations:
+      apa_style: Martínez Novoa, S., Rozo Fajardo, N., González Vargas, D. A., & Bedoya
+        Figueroa, N. (2026). Efficient Multilingual Dialogue Processing via Translation
+        Pipelines and Distilled Language Models. arXiv preprint arXiv:2601.09059.
+    id: preprint-multilingual-dialogue
+    status: preprint
+  theses:
+  - _category_key: theses
+    bibtex_website: https://santiagom99.github.io/files/paper-melanoma.bib
+    category: manuscripts
+    citation_info:
+      author:
+        citation_name: Martínez Novoa, S
+        first_name: Santiago
+        full_name: Santiago Martínez Novoa
+        last_name: Martínez Novoa
+      document_type:
+        en: Undergraduate thesis presented at Universidad de los Andes to obtain the
+          degree of Systems and Computing Engineer
+        es: Tesis de pregrado presentada en la Universidad de los Andes para obtener
+          el título de Ingeniero de Sistemas y Computación
+      institution: Universidad de Los Andes
+      repository:
+        name: Uniandes Repository
+        url: https://hdl.handle.net/1992/75910
+      supervisor: Juan Pablo Reyes Gómez Ph.D
+      title: Detection and Segmentation of Malignant Melanoma Regions in Dermoscopic
+        Images Using Machine Learning
+      year: '2024'
+    formatted_citations:
+      apa_style: 'Martínez Novoa, S. (2024). Detection and Segmentation of Malignant
+        Melanoma Regions in Dermoscopic Images Using Machine Learning. Undergraduate
+        thesis, Universidad de Los Andes. Supervisor: Juan Pablo Reyes Gómez Ph.D.
+        Uniandes Repository.'
+    id: thesis-undergraduate-melanoma
+    status: published
 research:
 - achievements_short:
   - en: Researched NLP model enhancement for Spanish medical contexts focusing on
@@ -667,6 +713,34 @@ talks:
     en: Mario Laserna Building, Posters and Networking Session
     es: Edificio Mario Laserna, Sesión de Posters y Networking
 teaching:
+- achievements_short:
+  - en: Supervised 100+ master's students in RAG and agent development courses
+    es: Supervisé 100+ estudiantes de maestría en cursos de RAG y desarrollo de agentes
+  - en: Evaluated student performance on practical LLM implementation projects
+    es: Evalué desempeño estudiantil en proyectos prácticos de implementación LLM
+  course:
+    en: LLM-Based Applications
+    es: Aplicaciones Basadas en LLM
+  description:
+  - en: 'Supervised over 100 master''s students across two courses focused on large
+      language model applications: one centered on RAG systems and the other on agent
+      development.'
+    es: 'Supervisar a más de 100 estudiantes de maestría en dos cursos enfocados en
+      aplicaciones de modelos de lenguaje grandes: uno centrado en sistemas RAG y
+      otro en desarrollo de agentes.'
+  - en: Evaluated student performance on practical projects and implementation exercises
+      throughout both courses.
+    es: Evaluar el desempeño estudiantil en proyectos prácticos y ejercicios de implementación
+      a lo largo de ambos cursos.
+  endDate: present
+  featured: true
+  id: ta-llm-applications
+  institution: Universidad de los Andes
+  location: Bogotá, Colombia
+  startDate: 2025-06
+  title:
+    en: Graduate Teaching Assistant
+    es: Asistente de Cátedra Graduado
 - achievements_short:
   - en: Supervised 110+ tutors and teaching assistants as part of CupiTaller leadership
       team

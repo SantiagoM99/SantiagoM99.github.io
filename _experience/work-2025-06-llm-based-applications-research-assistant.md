@@ -20,9 +20,9 @@ venue: Universidad de los Andes
 
 ### Key Achievements
 
-* Developing educational materials and practical exercises for a master's-level course focused on large language model applications.
-* Created tutorials and course materials using frameworks including LangChain, LangGraph, and LangSmith for LLM and agent development.
-* Designed practical exercises and assessments incorporating evaluation metrics such as RAGAS to measure LLM application performance.
+* Developing educational materials and practical exercises for two master's-level courses focused on large language model applications.
+* Created tutorials and course materials for a RAG-focused module using LangChain, LangGraph, and LangSmith, covering retrieval techniques, indexing, and evaluation with RAGAS.
+* Created tutorials and course materials for an agent development module using LangGraph and LangSmith, covering agent design, tool use, and multi-agent workflow orchestration.
 
 
 

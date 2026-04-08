@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.0",
-    "lastUpdated": "2025-07-05",
+    "version": "1.1",
+    "lastUpdated": "2026-04-08",
     "defaultLanguage": "en",
     "availableLanguages": ["es", "en"]
   },
@@ -44,18 +44,18 @@
           "en": "Recommender Systems"
         },
         {
-            "es": "Procesamiento de Lenguaje Natural",
-            "en": "Natural Language Processing"
+          "es": "Procesamiento de Lenguaje Natural",
+          "en": "Natural Language Processing"
         },
         {
-            "es": "Ciencia de Datos Aplicada",
-            "en": "Applied Data Science"
+          "es": "Ciencia de Datos Aplicada",
+          "en": "Applied Data Science"
         }
       ]
     },
     {
       "id": "bachelor-uniandes",
-      "institution": "Universidad de los Andes", 
+      "institution": "Universidad de los Andes",
       "location": "Bogotá, Colombia",
       "degree": {
         "es": "Ingeniería de Sistemas y Computación",
@@ -83,7 +83,7 @@
           "en": "Deep Learning Analysis"
         },
         {
-          "es": "Inteligencia de Negocios", 
+          "es": "Inteligencia de Negocios",
           "en": "Business Intelligence"
         },
         {
@@ -112,26 +112,26 @@
       "type": "full-time",
       "achievements": [
         {
-          "es": "Desarrollar materiales educativos y ejercicios prácticos para un curso de nivel de maestría enfocado en aplicaciones de modelos de lenguaje grandes.",
-          "en": "Developing educational materials and practical exercises for a master's-level course focused on large language model applications."
+          "es": "Desarrollar materiales educativos y ejercicios prácticos para dos cursos de nivel de maestría enfocados en aplicaciones de modelos de lenguaje grandes.",
+          "en": "Developing educational materials and practical exercises for two master's-level courses focused on large language model applications."
         },
         {
-          "es": "Crear tutoriales y materiales de curso utilizando frameworks incluyendo LangChain, LangGraph y LangSmith para desarrollo de LLM y agentes.",
-          "en": "Created tutorials and course materials using frameworks including LangChain, LangGraph, and LangSmith for LLM and agent development."
+          "es": "Crear tutoriales y materiales de curso para un módulo enfocado en sistemas RAG utilizando LangChain, LangGraph y LangSmith, cubriendo técnicas de retrieval, indexación y evaluación con RAGAS.",
+          "en": "Created tutorials and course materials for a RAG-focused module using LangChain, LangGraph, and LangSmith, covering retrieval techniques, indexing, and evaluation with RAGAS."
         },
         {
-          "es": "Diseñar ejercicios prácticos y evaluaciones incorporando métricas de evaluación como RAGAS para medir el rendimiento de aplicaciones LLM.",
-          "en": "Designed practical exercises and assessments incorporating evaluation metrics such as RAGAS to measure LLM application performance."
+          "es": "Crear tutoriales y materiales de curso para un módulo enfocado en desarrollo de agentes utilizando LangGraph y LangSmith, cubriendo diseño de agentes, uso de herramientas y orquestación de flujos multi-agente.",
+          "en": "Created tutorials and course materials for an agent development module using LangGraph and LangSmith, covering agent design, tool use, and multi-agent workflow orchestration."
         }
       ],
       "achievements_short": [
         {
-          "es": "Desarrollé curso completo de LLM para maestría utilizando LangChain, LangGraph y LangSmith",
-          "en": "Developed comprehensive master's-level LLM course using LangChain, LangGraph, and LangSmith frameworks"
+          "es": "Desarrollé curso completo de RAG para maestría utilizando LangChain, LangGraph, LangSmith y RAGAS",
+          "en": "Developed comprehensive master's-level RAG course using LangChain, LangGraph, LangSmith, and RAGAS"
         },
         {
-          "es": "Implementé sistema de evaluación con RAGAS para medir rendimiento de aplicaciones LLM",
-          "en": "Implemented RAGAS evaluation system to measure LLM application performance metrics"
+          "es": "Desarrollé curso completo de agentes para maestría utilizando LangGraph y LangSmith",
+          "en": "Developed comprehensive master's-level agent development course using LangGraph and LangSmith"
         }
       ],
       "technologies": ["LangChain", "LangGraph", "LangSmith", "RAGAS", "Python", "LLM"]
@@ -151,55 +151,55 @@
       "startDate": "2025-01",
       "endDate": "present",
       "type": "full-time",
-    "achievements": [
-      {
-        "es": "Procesar datos académicos y desarrollar dashboards en Power BI bajo la tutoría de la profesora Marcela Hernández Hoyos, Ph.D., y el profesor Juan Pablo Reyes Gómez, Ph.D., generando insights accionables sobre el desempeño estudiantil y métricas institucionales.",
-        "en": "Process academic data and develop Power BI dashboards under the guidance of Professor Marcela Hernández Hoyos, Ph.D. and Professor Juan Pablo Reyes Gómez, Ph.D., delivering actionable insights on student performance and institutional metrics."
-      },
-      {
-        "es": "Diseñar y desarrollar dashboards en Power BI para entregar insights accionables sobre el historial estudiantil, tendencias de rendimiento y aspectos institucionales.",
-        "en": "Designed and developed Power BI dashboards to deliver actionable insights into student history, performance trends, and institutional matters."
-      },
-      {
-        "es": "Optimizar el rendimiento del pipeline ETL en un 87% (reduciendo el tiempo de procesamiento de 15 a 2 minutos) al migrar de Pandas a Polars para la obtención y almacenamiento de datos desde Azure Blob Storage.",
-        "en": "Optimized ETL pipeline performance by 87% (reduced processing time from 15 to 2 minutes) by migrating from Pandas to Polars for data retrieval and storage from Azure Blob Storage."
-      },
-      {
-        "es": "Reemplacé la plataforma externa de consejería académica, permitiendo a la universidad ahorrar aproximadamente USD $100,000 anuales.",
-        "en": "Enabled the university to save approximately $100K USD annually by replacing an external academic counseling platform."
-      },
-      {
-        "es": "Co-implementé un sistema de detección de riesgo que alerta a los actores clave sobre más de 1000 casos críticos estudiantiles.",
-        "en": "Co-implemented a risk detection system that alerts stakeholders about over 1000 critical student cases."
-      },
-      {
-        "es": "Diseñé e implementé la arquitectura medallón de los datos de la Universidad de los Andes, creando un punto de acceso estandarizado y organizado a la información institucional.",
-        "en": "Designed and implemented the university's medallion data architecture, establishing a standardized and organized access point for institutional information."
-      }
-    ],
-    "achievements_short": [
-      {
-        "es": "Optimicé pipeline ETL en 87% migrando de Pandas a Polars, reduciendo tiempo de 15 a 2 minutos",
-        "en": "Optimized ETL pipeline performance by 87% by migrating from Pandas to Polars, reducing processing time from 15 to 2 minutes"
-      },
-      {
-        "es": "Desarrollé dashboards Power BI para análisis de desempeño estudiantil e insights institucionales",
-        "en": "Developed Power BI dashboards delivering actionable insights on student performance and institutional metrics"
-      },
-      {
-        "es": "Reemplacé plataforma externa de consejería, ahorrando ~$100K USD anuales a la universidad",
-        "en": "Replaced external counseling platform, saving the university ~$100K USD annually"
-      },
-      {
-        "es": "Co-implementé sistema que alerta sobre +1000 casos críticos estudiantiles",
-        "en": "Co-implemented system alerting over 1000 critical student cases"
-      },
-      {
-        "es": "Implementé arquitectura medallón para acceso estandarizado a datos institucionales",
-        "en": "Implemented medallion architecture for standardized access to institutional data"
-      }
-    ],
-      "technologies": ["Power BI", "Python", "Polars", "Azure Blob Storage", "SQL"]
+      "achievements": [
+        {
+          "es": "Procesar datos académicos y desarrollar dashboards en Power BI bajo la tutoría de la profesora Marcela Hernández Hoyos, Ph.D., y el profesor Juan Pablo Reyes Gómez, Ph.D., generando insights accionables sobre el desempeño estudiantil y métricas institucionales.",
+          "en": "Process academic data and develop Power BI dashboards under the guidance of Professor Marcela Hernández Hoyos, Ph.D. and Professor Juan Pablo Reyes Gómez, Ph.D., delivering actionable insights on student performance and institutional metrics."
+        },
+        {
+          "es": "Diseñar y desarrollar dashboards en Power BI para entregar insights accionables sobre el historial estudiantil, tendencias de rendimiento y aspectos institucionales.",
+          "en": "Designed and developed Power BI dashboards to deliver actionable insights into student history, performance trends, and institutional matters."
+        },
+        {
+          "es": "Optimizar el rendimiento del pipeline ETL en un 87% (reduciendo el tiempo de procesamiento de 15 a 2 minutos) al migrar de Pandas a Polars para la obtención y almacenamiento de datos desde Azure Blob Storage.",
+          "en": "Optimized ETL pipeline performance by 87% (reduced processing time from 15 to 2 minutes) by migrating from Pandas to Polars for data retrieval and storage from Azure Blob Storage."
+        },
+        {
+          "es": "Reemplacé la plataforma externa de consejería académica, permitiendo a la universidad ahorrar aproximadamente USD $100,000 anuales.",
+          "en": "Enabled the university to save approximately $100K USD annually by replacing an external academic counseling platform."
+        },
+        {
+          "es": "Co-implementé un sistema de detección de riesgo que alerta a los actores clave sobre más de 1000 casos críticos estudiantiles.",
+          "en": "Co-implemented a risk detection system that alerts stakeholders about over 1000 critical student cases."
+        },
+        {
+          "es": "Diseñar e implementar la arquitectura completa de datos de la unidad en Databricks, siguiendo una arquitectura medallón y automatizando completamente los pipelines de procesamiento y almacenamiento de información institucional.",
+          "en": "Designed and implemented the unit's complete data architecture in Databricks, following a medallion architecture and fully automating data processing and institutional information storage pipelines."
+        }
+      ],
+      "achievements_short": [
+        {
+          "es": "Optimicé pipeline ETL en 87% migrando de Pandas a Polars, reduciendo tiempo de 15 a 2 minutos",
+          "en": "Optimized ETL pipeline performance by 87% by migrating from Pandas to Polars, reducing processing time from 15 to 2 minutes"
+        },
+        {
+          "es": "Desarrollé dashboards Power BI para análisis de desempeño estudiantil e insights institucionales",
+          "en": "Developed Power BI dashboards delivering actionable insights on student performance and institutional metrics"
+        },
+        {
+          "es": "Reemplacé plataforma externa de consejería, ahorrando ~$100K USD anuales a la universidad",
+          "en": "Replaced external counseling platform, saving the university ~$100K USD annually"
+        },
+        {
+          "es": "Co-implementé sistema que alerta sobre +1000 casos críticos estudiantiles",
+          "en": "Co-implemented system alerting over 1000 critical student cases"
+        },
+        {
+          "es": "Implementé arquitectura medallón completa en Databricks, automatizando completamente los pipelines institucionales",
+          "en": "Implemented complete medallion architecture in Databricks, fully automating institutional data pipelines"
+        }
+      ],
+      "technologies": ["Power BI", "Python", "Polars", "Azure Blob Storage", "Databricks", "SQL"]
     },
     {
       "id": "ml-intern-precia",
@@ -210,7 +210,7 @@
       },
       "company": "Precia PPV S.A",
       "location": {
-        "es": "Bogotá, Colombia", 
+        "es": "Bogotá, Colombia",
         "en": "Bogotá, Colombia"
       },
       "startDate": "2024-08",
@@ -218,23 +218,22 @@
       "type": "internship",
       "achievements": [
         {
-            "es": "Co-desarrollar y entrenar un Perceptrón Multicapa (MLP) para reducir el tiempo de cálculo de una métrica financiera crítica en 70%, brindando a los clientes acceso significativamente más rápido a estimaciones preliminares.",
-            "en": "Co-develop and train a Multi-layer Perceptron (MLP) to reduce the calculation time of a critical financial metric by 70%, providing clients with significantly faster access to preliminary estimates."
+          "es": "Co-desarrollar y entrenar un Perceptrón Multicapa (MLP) para reducir el tiempo de cálculo de una métrica financiera crítica en 70%, brindando a los clientes acceso significativamente más rápido a estimaciones preliminares.",
+          "en": "Co-develop and train a Multi-layer Perceptron (MLP) to reduce the calculation time of a critical financial metric by 70%, providing clients with significantly faster access to preliminary estimates."
         },
         {
-            "es": "Diseñar e implementar una infraestructura completa en AWS, incluyendo pipelines ETL robustos que integran múltiples fuentes de datos (bases de datos, servidores FSx) y despliegue automatizado de modelos usando AWS Glue y funciones Lambda.",
-            "en": "Design and implement end-to-end AWS infrastructure including robust ETL pipelines integrating multiple data sources (databases, FSx servers) and automate model deployment using AWS Glue and Lambda functions."
+          "es": "Diseñar e implementar una infraestructura completa en AWS, incluyendo pipelines ETL robustos que integran múltiples fuentes de datos (bases de datos, servidores FSx) y despliegue automatizado de modelos usando AWS Glue y funciones Lambda.",
+          "en": "Design and implement end-to-end AWS infrastructure including robust ETL pipelines integrating multiple data sources (databases, FSx servers) and automate model deployment using AWS Glue and Lambda functions."
         },
         {
-            "es": "Realizar exploración y transformación de datos para optimizar la precisión y eficiencia del modelo en entornos de desarrollo y producción.",
-            "en": "Conduct data exploration and engineering to optimize model accuracy and efficiency across development and production environments."
+          "es": "Realizar exploración y transformación de datos para optimizar la precisión y eficiencia del modelo en entornos de desarrollo y producción.",
+          "en": "Conduct data exploration and engineering to optimize model accuracy and efficiency across development and production environments."
         },
         {
-            "es": "Presentamos nuestro trabajo sobre optimización de modelos y arquitectura de infraestructura en el Analytics Forum 2025, incluyendo el uso de MLPs, pipelines en AWS y estrategias de transformación de datos.",
-            "en": "Presented our work at the Analytics Forum 2025 on model optimization and infrastructure architecture, including the use of MLPs, AWS pipelines, and data transformation strategies."
+          "es": "Presentamos nuestro trabajo sobre optimización de modelos y arquitectura de infraestructura en el Analytics Forum 2025, incluyendo el uso de MLPs, pipelines en AWS y estrategias de transformación de datos.",
+          "en": "Presented our work at the Analytics Forum 2025 on model optimization and infrastructure architecture, including the use of MLPs, AWS pipelines, and data transformation strategies."
         }
-
-        ],
+      ],
       "achievements_short": [
         {
           "es": "Desarrollé MLP que redujo tiempo de cálculo financiero en 70% para clientes",
@@ -246,7 +245,7 @@
         },
         {
           "es": "Presentamos en el Analytics Forum 2025 nuestro trabajo en modelos de Machine Learning y arquitectura AWS",
-          "en": "Presented our work on models and AWS infrastructure at Analytics Forum 2025 "
+          "en": "Presented our work on models and AWS infrastructure at Analytics Forum 2025"
         }
       ],
       "technologies": ["Python", "AWS", "AWS Glue", "Lambda", "Machine Learning", "ETL"]
@@ -400,7 +399,7 @@
       "technologies": ["OpenAI API", "Azure Functions", "Translation", "Chatbot Development"]
     }
   ],
-"skills": {
+  "skills": {
     "languages": [
       {
         "language": {
@@ -414,7 +413,7 @@
       },
       {
         "language": {
-          "es": "Inglés", 
+          "es": "Inglés",
           "en": "English"
         },
         "level": {
@@ -442,76 +441,108 @@
       "databases": ["PostgreSQL", "MongoDB", "ChromaDB", "Pinecone"]
     }
   },
-  "publications": [
+  "publications": {
+  "preprints": [
     {
-        "id": "thesis-undergraduate-melanoma",
-        "status": "published",
-        "citation_info": {
-            "author": {
-                "last_name": "Martínez Novoa",
-                "first_name": "Santiago",
-                "full_name": "Santiago Martínez Novoa",
-                "citation_name": "Martínez Novoa, S"
-            },
-            "title": "Detection and Segmentation of Malignant Melanoma Regions in Dermoscopic Images Using Machine Learning",
-            "document_type": {
-                "es": "Tesis de pregrado presentada en la Universidad de los Andes para obtener el título de Ingeniero de Sistemas y Computación",
-                "en": "Undergraduate thesis presented at Universidad de los Andes to obtain the degree of Systems and Computing Engineer"
-            },
-            "supervisor": "Juan Pablo Reyes Gómez Ph.D",
-            "institution": "Universidad de Los Andes",
-            "year": "2024",
-            "repository": {
-            "name": "Uniandes Repository",
-            "url": "https://hdl.handle.net/1992/75910"
-            }
-        },
-        "formatted_citations": {
-            "apa_style":"Martínez Novoa, S. (2024). Detection and Segmentation of Malignant Melanoma Regions in Dermoscopic Images Using Machine Learning. Undergraduate thesis, Universidad de Los Andes. Supervisor: Juan Pablo Reyes Gómez Ph.D. Uniandes Repository."
-        },
-        "category": "manuscripts",
-        "bibtex_website": "https://santiagom99.github.io/files/paper-melanoma.bib"
+      "id": "preprint-chest-xray",
+      "status": "preprint",
+      "citation_info": {
+        "authors": ["Santiago Martínez Novoa", "María Catalina Ibáñez", "Lina Gómez Mesa", "Jeremias Kramer"],
+        "title": "Classification of Chest XRay Diseases through image processing and analysis techniques",
+        "year": "2026",
+        "arxiv_id": "2601.10913",
+        "url": "https://arxiv.org/abs/2601.10913"
+      },
+      "formatted_citations": {
+        "apa_style": "Martínez Novoa, S., Ibáñez, M. C., Gómez Mesa, L., & Kramer, J. (2026). Classification of Chest XRay Diseases through image processing and analysis techniques. arXiv preprint arXiv:2601.10913."
+      }
+    },
+    {
+      "id": "preprint-multilingual-dialogue",
+      "status": "preprint",
+      "citation_info": {
+        "authors": ["Santiago Martínez Novoa", "Nicolás Rozo Fajardo", "Diego Alejandro González Vargas", "Nicolás Bedoya Figueroa"],
+        "title": "Efficient Multilingual Dialogue Processing via Translation Pipelines and Distilled Language Models",
+        "year": "2026",
+        "arxiv_id": "2601.09059",
+        "url": "https://arxiv.org/abs/2601.09059"
+      },
+      "formatted_citations": {
+        "apa_style": "Martínez Novoa, S., Rozo Fajardo, N., González Vargas, D. A., & Bedoya Figueroa, N. (2026). Efficient Multilingual Dialogue Processing via Translation Pipelines and Distilled Language Models. arXiv preprint arXiv:2601.09059."
+      }
     }
   ],
+  "theses": [
+    {
+      "id": "thesis-undergraduate-melanoma",
+      "status": "published",
+      "citation_info": {
+        "author": {
+          "last_name": "Martínez Novoa",
+          "first_name": "Santiago",
+          "full_name": "Santiago Martínez Novoa",
+          "citation_name": "Martínez Novoa, S"
+        },
+        "title": "Detection and Segmentation of Malignant Melanoma Regions in Dermoscopic Images Using Machine Learning",
+        "document_type": {
+          "es": "Tesis de pregrado presentada en la Universidad de los Andes para obtener el título de Ingeniero de Sistemas y Computación",
+          "en": "Undergraduate thesis presented at Universidad de los Andes to obtain the degree of Systems and Computing Engineer"
+        },
+        "supervisor": "Juan Pablo Reyes Gómez Ph.D",
+        "institution": "Universidad de Los Andes",
+        "year": "2024",
+        "repository": {
+          "name": "Uniandes Repository",
+          "url": "https://hdl.handle.net/1992/75910"
+        }
+      },
+      "formatted_citations": {
+        "apa_style": "Martínez Novoa, S. (2024). Detection and Segmentation of Malignant Melanoma Regions in Dermoscopic Images Using Machine Learning. Undergraduate thesis, Universidad de Los Andes. Supervisor: Juan Pablo Reyes Gómez Ph.D. Uniandes Repository."
+      },
+      "category": "manuscripts",
+      "bibtex_website": "https://santiagom99.github.io/files/paper-melanoma.bib"
+    }
+  ]
+},
   "research": [
     {
-        "id": "flag-nlp-research",
-        "featured": false,
-        "title": {
-            "es": "Evaluación y Mejoramiento de Modelos de Lenguaje Natural en español",
-            "en": "Evaluation and Enhancement of Natural Language Models in spanish"
+      "id": "flag-nlp-research",
+      "featured": false,
+      "title": {
+        "es": "Evaluación y Mejoramiento de Modelos de Lenguaje Natural en español",
+        "en": "Evaluation and Enhancement of Natural Language Models in spanish"
+      },
+      "research_group": "FLAG Research Lab - A.I. and Machine Learning",
+      "institution": "Universidad de los Andes",
+      "location": "Bogotá, Colombia",
+      "supervisor": "Rubén Manrique Ph.D",
+      "startDate": "2025-01",
+      "endDate": "present",
+      "description": [
+        {
+          "es": "Investigar el mejoramiento de las capacidades de modelos de lenguaje natural para contextos médicos en español, enfocándose en tareas de clasificación de textos y extracción de entidades nombradas bajo la supervisión del profesor Ruben Manrique, Ph.D.",
+          "en": "Research on improving natural language model capabilities for Spanish medical contexts, focusing on text classification and named entity extraction tasks under Professor Ruben Manrique Ph.D."
         },
-        "research_group": "FLAG Research Lab - A.I. and Machine Learning",
-        "institution":"Universidad de los Andes",
-        "location": "Bogotá, Colombia",
-        "supervisor": "Rubén Manrique Ph.D",
-        "startDate": "2025-01",
-        "endDate": "present",
-        "description": [
-            {
-                "es": "Investigar el mejoramiento de las capacidades de modelos de lenguaje natural para contextos médicos en español, enfocándose en tareas de clasificación de textos y extracción de entidades nombradas bajo la supervisión del profesor Ruben Manrique, Ph.D.",
-                "en": "Research on improving natural language model capabilities for Spanish medical contexts, focusing on text classification and named entity extraction tasks under Professor Ruben Manrique Ph.D."
-            },
-            {
-                "es": "Desarrollar y entrenar modelos especializados desde cero para tareas específicas del dominio médico en español.",
-                "en": "Develop and train specialized models from scratch for specific Spanish medical domain tasks."
-            },
-            {
-                "es": "Realizar evaluaciones comparativas entre modelos altamente entrenados y Large Language Models (LLMs) utilizando técnicas de prompting como zero-shot y few-shot learning.",
-                "en": "Conduct comparative evaluations between highly-trained models and Large Language Models (LLMs) using prompting techniques such as zero-shot and few-shot learning."
-            }
-        ],
-        "achievements_short": [
-            {
-                "es": "Investigué mejoramiento de modelos NLP para contextos médicos en español con enfoque en NER y clasificación",
-                "en": "Researched NLP model enhancement for Spanish medical contexts focusing on NER and text classification"
-            },
-            {
-                "es": "Desarrollé modelos especializados desde cero y comparé con LLMs usando zero-shot y few-shot learning",
-                "en": "Developed specialized models from scratch and compared with LLMs using zero-shot and few-shot learning"
-            }
-        ],
-        "technologies": ["Python", "Transformers", "BERT", "Spanish Language Models", "Zero-shot Learning", "Few-shot Learning", "NER", "Text Classification", "Medical NLP"]
+        {
+          "es": "Desarrollar y entrenar modelos especializados desde cero para tareas específicas del dominio médico en español.",
+          "en": "Develop and train specialized models from scratch for specific Spanish medical domain tasks."
+        },
+        {
+          "es": "Realizar evaluaciones comparativas entre modelos altamente entrenados y Large Language Models (LLMs) utilizando técnicas de prompting como zero-shot y few-shot learning.",
+          "en": "Conduct comparative evaluations between highly-trained models and Large Language Models (LLMs) using prompting techniques such as zero-shot and few-shot learning."
+        }
+      ],
+      "achievements_short": [
+        {
+          "es": "Investigué mejoramiento de modelos NLP para contextos médicos en español con enfoque en NER y clasificación",
+          "en": "Researched NLP model enhancement for Spanish medical contexts focusing on NER and text classification"
+        },
+        {
+          "es": "Desarrollé modelos especializados desde cero y comparé con LLMs usando zero-shot y few-shot learning",
+          "en": "Developed specialized models from scratch and compared with LLMs using zero-shot and few-shot learning"
+        }
+      ],
+      "technologies": ["Python", "Transformers", "BERT", "Spanish Language Models", "Zero-shot Learning", "Few-shot Learning", "NER", "Text Classification", "Medical NLP"]
     },
     {
       "id": "generative-ai-research",
@@ -605,6 +636,42 @@
     }
   ],
   "teaching": [
+    {
+      "id": "ta-llm-applications",
+      "featured": true,
+      "title": {
+        "es": "Asistente de Cátedra Graduado",
+        "en": "Graduate Teaching Assistant"
+      },
+      "course": {
+        "es": "Aplicaciones Basadas en LLM",
+        "en": "LLM-Based Applications"
+      },
+      "institution": "Universidad de los Andes",
+      "location": "Bogotá, Colombia",
+      "startDate": "2025-06",
+      "endDate": "present",
+      "description": [
+        {
+          "es": "Supervisar a más de 100 estudiantes de maestría en dos cursos enfocados en aplicaciones de modelos de lenguaje grandes: uno centrado en sistemas RAG y otro en desarrollo de agentes.",
+          "en": "Supervised over 100 master's students across two courses focused on large language model applications: one centered on RAG systems and the other on agent development."
+        },
+        {
+          "es": "Evaluar el desempeño estudiantil en proyectos prácticos y ejercicios de implementación a lo largo de ambos cursos.",
+          "en": "Evaluated student performance on practical projects and implementation exercises throughout both courses."
+        }
+      ],
+      "achievements_short": [
+        {
+          "es": "Supervisé 100+ estudiantes de maestría en cursos de RAG y desarrollo de agentes",
+          "en": "Supervised 100+ master's students in RAG and agent development courses"
+        },
+        {
+          "es": "Evalué desempeño estudiantil en proyectos prácticos de implementación LLM",
+          "en": "Evaluated student performance on practical LLM implementation projects"
+        }
+      ]
+    },
     {
       "id": "cupitaller-supervisor",
       "featured": false,
@@ -702,7 +769,7 @@
         "es": "Introducción a la Programación",
         "en": "Introduction to Programming"
       },
-      "institution":"Universidad de los Andes",
+      "institution": "Universidad de los Andes",
       "location": "Bogotá, Colombia",
       "startDate": "2022-01",
       "endDate": "2022-12",
@@ -741,7 +808,7 @@
       "institution": "Universidad de los Andes",
       "location": "Bogotá, Colombia",
       "startDate": "2023-01",
-      "endDate": "2023-06", 
+      "endDate": "2023-06",
       "description": [
         {
           "es": "Corregí y calificé exámenes, actividades y evaluaciones",
@@ -766,54 +833,53 @@
   ],
   "awards": [
     {
-        "id": "cum-laude-bachelor",
-        "title": "Cum Laude",
-        "description": {
-            "es": "El título Cum Laude se otorga a los estudiantes con un GPA en el 3% más alto de todos los estudiantes que se han graduado de la Universidad de los Andes en una facultad determinada en los últimos cinco años.",
-            "en": "A Cum Laude degree is awarded to students with a GPA in the highest 3% GPA of all the students that have graduated from Universidad de Los Andes in a given faculty in the last five years."
-        },
-        "institution": "Universidad de los Andes",
-        "location": "Bogotá, Colombia",
-        "date": "2025-04"
+      "id": "cum-laude-bachelor",
+      "title": "Cum Laude",
+      "description": {
+        "es": "El título Cum Laude se otorga a los estudiantes con un GPA en el 3% más alto de todos los estudiantes que se han graduado de la Universidad de los Andes en una facultad determinada en los últimos cinco años.",
+        "en": "A Cum Laude degree is awarded to students with a GPA in the highest 3% GPA of all the students that have graduated from Universidad de Los Andes in a given faculty in the last five years."
+      },
+      "institution": "Universidad de los Andes",
+      "location": "Bogotá, Colombia",
+      "date": "2025-04"
     },
     {
-        "id": "surf-cornell",
-        "title": "Summer Undergraduate Research Fellowship (SURF)"
-        ,
-        "description": {
-            "es": "Apoyo financiero otorgado para participar en el programa Summer Undergraduate Research Fellowship (SURF) en Cornell University",
-            "en": "Financial support awarded to participate in the Summer Undergraduate Research Fellowship (SURF) program at Cornell University"
-        },
-        "institution": "Cornell University",
-        "location": {
-            "es": "Ithaca, Estados Unidos",
-            "en": "Ithaca, United States"
-        },
-        "date": "2024-06"
+      "id": "surf-cornell",
+      "title": "Summer Undergraduate Research Fellowship (SURF)",
+      "description": {
+        "es": "Apoyo financiero otorgado para participar en el programa Summer Undergraduate Research Fellowship (SURF) en Cornell University",
+        "en": "Financial support awarded to participate in the Summer Undergraduate Research Fellowship (SURF) program at Cornell University"
+      },
+      "institution": "Cornell University",
+      "location": {
+        "es": "Ithaca, Estados Unidos",
+        "en": "Ithaca, United States"
+      },
+      "date": "2024-06"
     }
   ],
   "talks": [
     {
-        "id": "analytics-forum-2025-poster",
-        "title": {
-            "es": "Acelerando el Credit Value Adjustment con Machine Learning",
-            "en": "Accelerating Credit Value Adjustment with Machine Learning"
-        },
-        "event": "Analytics Forum 2025 - Universidad de los Andes",
-        "location": "Bogotá, Colombia",
-        "date": "2025-05-09",
-        "type": "poster",
-        "coauthors": ["Nicolás Suarez", "Esteban Leiva", "Ernesto Pérez"],
-        "affiliation": "Universidad de los Andes, Precia PPV S.A.",
-        "abstract": {
-            "es": "Presentación de poster sobre la aplicación de algoritmos de Machine Learning para acelerar el cálculo del riesgo de crédito en contratos derivados, con enfoque en Credit Value Adjustment (CVA), demostrando mejoras significativas en tiempos de ejecución manteniendo la precisión.",
-            "en": "Poster presentation on the application of Machine Learning algorithms to accelerate credit risk calculation in derivative contracts, focusing on Credit Value Adjustment (CVA), demonstrating significant improvements in execution times while maintaining accuracy."
-        },
-        "url": "https://analyticsforum.uniandes.edu.co/",
-        "venue_details": {
-            "es": "Edificio Mario Laserna, Sesión de Posters y Networking",
-            "en": "Mario Laserna Building, Posters and Networking Session"
-        }
+      "id": "analytics-forum-2025-poster",
+      "title": {
+        "es": "Acelerando el Credit Value Adjustment con Machine Learning",
+        "en": "Accelerating Credit Value Adjustment with Machine Learning"
+      },
+      "event": "Analytics Forum 2025 - Universidad de los Andes",
+      "location": "Bogotá, Colombia",
+      "date": "2025-05-09",
+      "type": "poster",
+      "coauthors": ["Nicolás Suarez", "Esteban Leiva", "Ernesto Pérez"],
+      "affiliation": "Universidad de los Andes, Precia PPV S.A.",
+      "abstract": {
+        "es": "Presentación de poster sobre la aplicación de algoritmos de Machine Learning para acelerar el cálculo del riesgo de crédito en contratos derivados, con enfoque en Credit Value Adjustment (CVA), demostrando mejoras significativas en tiempos de ejecución manteniendo la precisión.",
+        "en": "Poster presentation on the application of Machine Learning algorithms to accelerate credit risk calculation in derivative contracts, focusing on Credit Value Adjustment (CVA), demonstrating significant improvements in execution times while maintaining accuracy."
+      },
+      "url": "https://analyticsforum.uniandes.edu.co/",
+      "venue_details": {
+        "es": "Edificio Mario Laserna, Sesión de Posters y Networking",
+        "en": "Mario Laserna Building, Posters and Networking Session"
+      }
     }
   ]
 }

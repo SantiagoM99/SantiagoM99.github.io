@@ -20,42 +20,77 @@ def generate_publications(cv_data, output_dir="_publications"):
     """Genera archivos .md para publicaciones - Vista simplificada"""
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
-    
+
     # Limpiar directorio existente
     for file in os.listdir(output_dir):
         if file.endswith('.md'):
             os.remove(os.path.join(output_dir, file))
-    
-    for pub in cv_data.get('publications', []):
+
+    # Flatten publications from nested structure (preprints, theses, etc.)
+    publications_data = cv_data.get('publications', {})
+    all_pubs = []
+    if isinstance(publications_data, list):
+        # Legacy flat array format
+        all_pubs = publications_data
+    elif isinstance(publications_data, dict):
+        # New nested format: { "preprints": [...], "theses": [...] }
+        for category_key, pubs_list in publications_data.items():
+            if isinstance(pubs_list, list):
+                for pub in pubs_list:
+                    pub['_category_key'] = category_key
+                    all_pubs.append(pub)
+
+    for pub in all_pubs:
         citation = pub['citation_info']
         title = citation['title']
         year = citation['year']
         date = citation.get('date', f"{year}-01-01")
-        author = citation['author']['full_name']
-        
+
+        # Handle both author formats:
+        # - preprints: "authors" is a list of strings
+        # - theses: "author" is an object with "full_name"
+        if 'author' in citation and isinstance(citation['author'], dict):
+            author = citation['author']['full_name']
+        elif 'authors' in citation and isinstance(citation['authors'], list):
+            author = ', '.join(citation['authors'])
+        else:
+            author = 'Unknown Author'
+
         filename = f"{year}-{sanitize_filename(title)}.md"
         filepath = os.path.join(output_dir, filename)
-        
+
         # Determinar categoría y venue
+        category_key = pub.get('_category_key', '')
         doc_type = citation.get('document_type', {})
         if isinstance(doc_type, dict):
             excerpt = doc_type.get('en', 'Publication')
-            category = pub.get('category', 'paper')
+            category = pub.get('category', category_key or 'paper')
         else:
-            excerpt = str(doc_type)
-            category = 'thesis' if 'thesis' in str(doc_type).lower() else 'paper'
-        
+            excerpt = str(doc_type) if doc_type else ''
+            category = 'thesis' if 'thesis' in str(doc_type).lower() else category_key or 'paper'
+
+        # Determine venue: repository name, arxiv, or status
         repository_name = citation.get('repository', {}).get('name', '')
         if isinstance(repository_name, dict):
             venue = repository_name.get('en', '')
         else:
             venue = str(repository_name)
-        
-        paperurl = citation.get('repository', {}).get('url', '')
+
+        if not venue and citation.get('arxiv_id'):
+            venue = f"arXiv:{citation['arxiv_id']}"
+        if not venue:
+            venue = pub.get('status', 'Publication').capitalize()
+
+        # If no excerpt from doc_type, use venue
+        if not excerpt:
+            excerpt = venue
+
+        # Determine paper URL: repository url or direct url
+        paperurl = citation.get('repository', {}).get('url', '') or citation.get('url', '')
         abstract = citation.get('abstract', {}).get('en', '')
         keywords = citation.get('keywords', [])
         bibtex_path = pub.get('bibtex_website', '')
-        
+
         # Front matter - SOLO información esencial para vista de archivo
         front_matter = {
             'title': title,
@@ -71,16 +106,21 @@ def generate_publications(cv_data, output_dir="_publications"):
             'tags': keywords,
             'bibtexurl': bibtex_path if bibtex_path else '',
         }
-        
+
         # CONTENIDO COMPLETO - Solo visible al hacer clic
         supervisor_line = ""
         if citation.get('supervisor'):
             supervisor_line = f"**Supervisor:** {citation['supervisor']}  \n"
-        
+
         keywords_line = ""
         if keywords:
             keywords_line = f"**Keywords:** {', '.join(keywords)}  \n"
-        
+
+        institution = citation.get('institution', '')
+        institution_line = f"**Institution:** {institution}  \n" if institution else ""
+
+        pub_type_line = f"**Publication Type:** {excerpt}  \n" if excerpt and excerpt != venue else ""
+
         # Clean resources section
         resources_section = ""
         if paperurl or bibtex_path:
@@ -90,13 +130,13 @@ def generate_publications(cv_data, output_dir="_publications"):
             if bibtex_path:
                 resources_section += f"<a href='{bibtex_path}' class='cv-download-btn' target='_blank'><i class='fas fa-code'></i> Download BibTeX</a>\n"
             resources_section += "</div>\n"
-        
+
         # BibTeX section (separate from resources)
         bibtex_section = ""
         if pub.get('formatted_citations', {}).get('bibtex'):
             bibtex_content = pub['formatted_citations']['bibtex']
             bibtex_section = f"\n## BibTeX Citation\n\n```bibtex\n{bibtex_content}\n```\n"
-        
+
         # Contenido del archivo - MÁS DETALLADO
         content = f"""---
 {yaml.dump(front_matter, default_flow_style=False, allow_unicode=True)}---
@@ -107,20 +147,18 @@ def generate_publications(cv_data, output_dir="_publications"):
 
 ## Details
 
-**Author:** {author}  
-**Year:** {year}  
-**Institution:** {citation['institution']}  
-**Publication Type:** {excerpt}  
-{supervisor_line}{keywords_line}
+**Author:** {author}
+**Year:** {year}
+{institution_line}{pub_type_line}{supervisor_line}{keywords_line}
 
 ## Citation
 
 {pub.get("formatted_citations", {}).get("apa_style", "")}
 {resources_section}{bibtex_section}"""
-        
+
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(content)
-        
+
         print(f"✅ Generated publication: {filename}")
 
 
