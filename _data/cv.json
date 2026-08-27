@@ -118,20 +118,20 @@
       "type": "full-time",
       "achievements": [
         {
-          "es": "Gestionar los datos de la unidad de extremo a extremo, desde los sistemas fuente hasta los productos publicados: la información institucional detrás de la plataforma de consejería académica y de productos de datos transversales para la universidad, como los percentiles académicos y los indicadores de deserción estudiantil.",
-          "en": "Manage the unit's data end to end, from source systems to published products: the institutional information behind the academic advising platform and university-wide data products such as academic percentiles and student dropout indicators."
-        },
-        {
           "es": "Liderar el empalme de la unidad con las políticas institucionales de gobierno y calidad de datos: acordar con las unidades fuente la propiedad y el origen de los datos, construir definiciones a nivel de columna y definir reglas de calidad para revisar, corregir y monitorear sus productos de datos.",
           "en": "Lead the unit's adoption of institutional data governance and quality policies: establishing data ownership and origin with source units, building column-level definitions, and defining quality rules to audit, correct, and monitor its data products."
         },
         {
-          "es": "Diseñar, validar y desplegar modelos de machine learning para predecir la deserción y el riesgo académico estudiantil.",
-          "en": "Design, validate, and deploy machine learning models to predict student dropout and academic risk."
+          "es": "Gestionar los datos de la unidad de extremo a extremo, desde los sistemas fuente hasta los productos publicados: la información institucional detrás de la plataforma de consejería académica y de productos de datos transversales para la universidad, como los percentiles académicos y los indicadores de deserción estudiantil.",
+          "en": "Manage the unit's data end to end, from source systems to published products: the institutional information behind the academic advising platform and university-wide data products such as academic percentiles and student dropout indicators."
         },
         {
           "es": "Liderar la línea de investigación del equipo, que ha producido dos publicaciones arbitradas (AIED 2026 y WEEF 2026) y un artículo de revista en preparación.",
           "en": "Lead the team's research line, which has produced two peer-reviewed publications (AIED 2026 and WEEF 2026) and a journal article in preparation."
+        },
+        {
+          "es": "Diseñar, validar y desplegar modelos de machine learning para predecir la deserción y el riesgo académico estudiantil.",
+          "en": "Design, validate, and deploy machine learning models to predict student dropout and academic risk."
         }
       ],
       "achievements_short": [
@@ -170,14 +170,6 @@
       "type": "full-time",
       "achievements": [
         {
-          "es": "Procesar datos académicos y desarrollar dashboards en Power BI bajo la tutoría de la profesora Marcela Hernández Hoyos, Ph.D., y el profesor Juan Pablo Reyes Gómez, Ph.D., generando insights accionables sobre el desempeño estudiantil y las métricas institucionales.",
-          "en": "Processed academic data and developed Power BI dashboards under the guidance of Professor Marcela Hernández Hoyos, Ph.D. and Professor Juan Pablo Reyes Gómez, Ph.D., delivering actionable insights on student performance and institutional metrics."
-        },
-        {
-          "es": "Optimizar el rendimiento del pipeline ETL en un 87% (reduciendo el tiempo de procesamiento de 15 a 2 minutos) al migrar de Pandas a Polars para la obtención y almacenamiento de datos desde Azure Blob Storage.",
-          "en": "Optimized ETL pipeline performance by 87% (reduced processing time from 15 to 2 minutes) by migrating from Pandas to Polars for data retrieval and storage from Azure Blob Storage."
-        },
-        {
           "es": "Reemplacé la plataforma externa de consejería académica, con un ahorro aproximado de USD $100,000 anuales para la universidad.",
           "en": "Enabled the university to save approximately $100K USD annually by replacing an external academic counseling platform."
         },
@@ -188,17 +180,17 @@
         {
           "es": "Diseñé e implementé la arquitectura completa de datos de la unidad en Databricks, siguiendo una arquitectura medallón y automatizando completamente los pipelines de procesamiento y almacenamiento de información institucional.",
           "en": "Designed and implemented the unit's complete data architecture in Databricks, following a medallion architecture and fully automating data processing and institutional information storage pipelines."
+        },
+        {
+          "es": "Optimizar el rendimiento del pipeline ETL en un 87% (reduciendo el tiempo de procesamiento de 15 a 2 minutos) al migrar de Pandas a Polars para la obtención y almacenamiento de datos desde Azure Blob Storage.",
+          "en": "Optimized ETL pipeline performance by 87% (reduced processing time from 15 to 2 minutes) by migrating from Pandas to Polars for data retrieval and storage from Azure Blob Storage."
+        },
+        {
+          "es": "Procesar datos académicos y desarrollar dashboards en Power BI bajo la tutoría de la profesora Marcela Hernández Hoyos, Ph.D., y el profesor Juan Pablo Reyes Gómez, Ph.D., generando insights accionables sobre el desempeño estudiantil y las métricas institucionales.",
+          "en": "Processed academic data and developed Power BI dashboards under the guidance of Professor Marcela Hernández Hoyos, Ph.D. and Professor Juan Pablo Reyes Gómez, Ph.D., delivering actionable insights on student performance and institutional metrics."
         }
       ],
       "achievements_short": [
-        {
-          "es": "Implementé la arquitectura medallón de la unidad en Databricks, automatizando por completo los pipelines institucionales",
-          "en": "Implemented complete medallion architecture in Databricks, fully automating institutional data pipelines"
-        },
-        {
-          "es": "Optimicé el pipeline ETL en un 87% migrando de Pandas a Polars (de 15 a 2 minutos)",
-          "en": "Optimized ETL pipeline performance by 87% by migrating from Pandas to Polars, reducing processing time from 15 to 2 minutes"
-        },
         {
           "es": "Reemplacé plataforma externa de consejería, ahorrando ~$100K USD anuales a la universidad",
           "en": "Replaced external counseling platform, saving the university ~$100K USD annually"
@@ -206,6 +198,14 @@
         {
           "es": "Co-implementé un sistema de alertas para más de 1000 casos críticos estudiantiles",
           "en": "Co-implemented system alerting over 1000 critical student cases"
+        },
+        {
+          "es": "Implementé la arquitectura medallón de la unidad en Databricks, automatizando por completo los pipelines institucionales",
+          "en": "Implemented complete medallion architecture in Databricks, fully automating institutional data pipelines"
+        },
+        {
+          "es": "Optimicé el pipeline ETL en un 87% migrando de Pandas a Polars (de 15 a 2 minutos)",
+          "en": "Optimized ETL pipeline performance by 87% by migrating from Pandas to Polars, reducing processing time from 15 to 2 minutes"
         }
       ],
       "technologies": [
@@ -238,12 +238,12 @@
           "en": "Co-develop and train a Multi-layer Perceptron (MLP) to reduce the calculation time of a critical financial metric by 70%, providing clients with significantly faster access to preliminary estimates."
         },
         {
-          "es": "Diseñar e implementar una infraestructura completa en AWS, con pipelines ETL robustos que integran múltiples fuentes de datos (bases de datos, servidores FSx) y despliegue automatizado de modelos con AWS Glue y funciones Lambda.",
-          "en": "Design and implement end-to-end AWS infrastructure including robust ETL pipelines integrating multiple data sources (databases, FSx servers) and automate model deployment using AWS Glue and Lambda functions."
-        },
-        {
           "es": "Presentar el trabajo del equipo sobre optimización de modelos y arquitectura de infraestructura en el Analytics Forum 2025: uso de MLPs, pipelines en AWS y estrategias de transformación de datos.",
           "en": "Presented our work at the Analytics Forum 2025 on model optimization and infrastructure architecture, including the use of MLPs, AWS pipelines, and data transformation strategies."
+        },
+        {
+          "es": "Diseñar e implementar una infraestructura completa en AWS, con pipelines ETL robustos que integran múltiples fuentes de datos (bases de datos, servidores FSx) y despliegue automatizado de modelos con AWS Glue y funciones Lambda.",
+          "en": "Design and implement end-to-end AWS infrastructure including robust ETL pipelines integrating multiple data sources (databases, FSx servers) and automate model deployment using AWS Glue and Lambda functions."
         }
       ],
       "achievements_short": [
@@ -252,12 +252,12 @@
           "en": "Developed MLP model reducing financial calculation time by 70% for client applications"
         },
         {
-          "es": "Implementé una infraestructura completa en AWS con pipelines ETL automatizados usando Glue y Lambda",
-          "en": "Implemented end-to-end AWS infrastructure with automated ETL pipelines using Glue and Lambda"
-        },
-        {
           "es": "Presentamos nuestro trabajo de machine learning y arquitectura AWS en el Analytics Forum 2025",
           "en": "Presented our work on models and AWS infrastructure at Analytics Forum 2025"
+        },
+        {
+          "es": "Implementé una infraestructura completa en AWS con pipelines ETL automatizados usando Glue y Lambda",
+          "en": "Implemented end-to-end AWS infrastructure with automated ETL pipelines using Glue and Lambda"
         }
       ],
       "technologies": [
@@ -806,7 +806,7 @@
       "description": [
         {
           "es": "Investigar cómo mejorar modelos de lenguaje para el dominio médico en español, con foco en clasificación de textos y extracción de entidades nombradas, bajo la supervisión del profesor Rubén Manrique, Ph.D.",
-          "en": "Research on improving natural language model capabilities for Spanish medical contexts, focusing on text classification and named entity extraction tasks under Professor Ruben Manrique Ph.D."
+          "en": "Research on improving natural language model capabilities for Spanish medical contexts, focusing on text classification and named entity extraction tasks under Professor Rubén Manrique Ph.D."
         },
         {
           "es": "Desarrollar y entrenar modelos especializados desde cero para tareas específicas del dominio médico en español.",
@@ -853,38 +853,38 @@
       "endDate": "2025-06",
       "description": [
         {
-          "es": "Optimizar procesos de investigación universitaria mediante agentes de IA personalizados y sistemas de evaluación automatizados.",
-          "en": "Focused on optimizing university research processes through custom AI agent development and automated evaluation systems."
-        },
-        {
-          "es": "Construir sistemas RAG desplegados localmente utilizando modelos Ollama e integrar llamadas a la API de Gemini para responder preguntas específicas de dominio de investigación.",
-          "en": "Built locally-deployed RAG systems using Ollama models and integrated Gemini API calls to answer domain-specific research questions."
+          "es": "Automatizar la evaluación estudiantil con sistemas basados en LLM que califican las respuestas según rúbricas y respuestas esperadas.",
+          "en": "Automated student assessment processes by developing LLM-based evaluation systems that grade responses against established rubrics and expected answers."
         },
         {
           "es": "Diseñar una arquitectura de evaluación de LLMs que mide la calidad y precisión de las respuestas en distintos contextos de investigación, utilizando Prometheus, BERTScore y la API de OpenAI.",
           "en": "Designed LLM evaluation architecture to assess response quality and accuracy across different research contexts using Prometheus, BERTScore, and the OpenAI API."
         },
         {
-          "es": "Automatizar la evaluación estudiantil con sistemas basados en LLM que califican las respuestas según rúbricas y respuestas esperadas.",
-          "en": "Automated student assessment processes by developing LLM-based evaluation systems that grade responses against established rubrics and expected answers."
+          "es": "Construir sistemas RAG desplegados localmente utilizando modelos Ollama e integrar llamadas a la API de Gemini para responder preguntas específicas de dominio de investigación.",
+          "en": "Built locally-deployed RAG systems using Ollama models and integrated Gemini API calls to answer domain-specific research questions."
+        },
+        {
+          "es": "Optimizar procesos de investigación universitaria mediante agentes de IA personalizados y sistemas de evaluación automatizados.",
+          "en": "Focused on optimizing university research processes through custom AI agent development and automated evaluation systems."
         }
       ],
       "achievements_short": [
         {
-          "es": "Construí sistemas RAG locales con Ollama y la API de Gemini para responder preguntas de investigación",
-          "en": "Built locally-deployed RAG systems using Ollama and Gemini API for domain-specific research questions"
+          "es": "Automaticé la evaluación estudiantil con LLMs que califican según rúbricas y respuestas esperadas",
+          "en": "Automated student assessment using LLMs aligned with rubrics and expected answers"
         },
         {
           "es": "Diseñé una arquitectura de evaluación de LLMs con Prometheus, BERTScore y la API de OpenAI",
           "en": "Designed LLM evaluation architecture using Prometheus, BERTScore, and the OpenAI API for response quality assessment"
         },
         {
-          "es": "Desarrollé agentes de IA personalizados para optimizar procesos de investigación universitaria",
-          "en": "Developed custom AI agents to optimize university research processes"
+          "es": "Construí sistemas RAG locales con Ollama y la API de Gemini para responder preguntas de investigación",
+          "en": "Built locally-deployed RAG systems using Ollama and Gemini API for domain-specific research questions"
         },
         {
-          "es": "Automaticé la evaluación estudiantil con LLMs que califican según rúbricas y respuestas esperadas",
-          "en": "Automated student assessment using LLMs aligned with rubrics and expected answers"
+          "es": "Desarrollé agentes de IA personalizados para optimizar procesos de investigación universitaria",
+          "en": "Developed custom AI agents to optimize university research processes"
         }
       ],
       "technologies": [
