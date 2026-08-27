@@ -1,5 +1,18 @@
 ---
+layout: archive
 title: "Research Experience"
 permalink: /research-experience/
-redirect_to: /experience/#research
+author_profile: true
 ---
+
+{% include base_path %}
+
+{% assign research_posts = site.experience | where: "type", "research" | sort: "date" | reverse %}
+
+{% for post in research_posts %}
+  {% include cv-archive-single.html %}
+{% endfor %}
+
+{% if research_posts.size == 0 %}
+  <p>No research experience entries found.</p>
+{% endif %}
