@@ -9,7 +9,7 @@
 {% assign authors = post.authors | replace: "Martínez Novoa, S.", "<strong>Martínez Novoa, S.</strong>" | replace: "Santiago Martínez Novoa", "<strong>Santiago Martínez Novoa</strong>" %}
 
 <article class="pub">
-  <div class="pub__year">{{ post.year | default: post.date | date: "%Y" }}</div>
+  <div class="pub__year">{% if post.year and post.year != '' %}{{ post.year }}{% else %}{{ post.date | date: "%Y" }}{% endif %}</div>
 
   <div class="pub__body">
     <h3 class="pub__title">
