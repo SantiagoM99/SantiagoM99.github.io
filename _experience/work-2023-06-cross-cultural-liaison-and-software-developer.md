@@ -19,7 +19,7 @@ venue: Digital Transformation, Universidad de los Andes
 ### Key Achievements
 
 * Facilitated effective communication between directors and 5 exchange students by providing translation services.
-* Collaborated on software development projects utilizing Open AI and Azure Functions, successfully integrating the developed software into an interactive chatbot.
+* Collaborated on software development projects utilizing OpenAI and Azure Functions, successfully integrating the developed software into an interactive chatbot.
 
 
 

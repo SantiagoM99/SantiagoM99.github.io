@@ -18,7 +18,7 @@ technologies:
 - NER
 - Text Classification
 - Medical NLP
-title: Evaluation and Enhancement of Natural Language Models in spanish
+title: Evaluation and Enhancement of Natural Language Models in Spanish
 type: research
 venue: Universidad de los Andes
 ---
@@ -27,7 +27,7 @@ venue: Universidad de los Andes
 
 * Research on improving natural language model capabilities for Spanish medical contexts, focusing on text classification and named entity extraction tasks under Professor Ruben Manrique Ph.D.
 * Develop and train specialized models from scratch for specific Spanish medical domain tasks.
-* Conduct comparative evaluations between highly-trained models and Large Language Models (LLMs) using prompting techniques such as zero-shot and few-shot learning.
+* Conduct comparative evaluations between highly-trained models and large language models (LLMs) using prompting techniques such as zero-shot and few-shot learning.
 
 
 

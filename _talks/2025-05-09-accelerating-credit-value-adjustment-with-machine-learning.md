@@ -12,7 +12,7 @@ venue: Analytics Forum 2025 - Universidad de los Andes
 
 ## Abstract
 
-Poster presentation on the application of Machine Learning algorithms to accelerate credit risk calculation in derivative contracts, focusing on Credit Value Adjustment (CVA), demonstrating significant improvements in execution times while maintaining accuracy.
+Poster presentation on the application of machine learning algorithms to accelerate credit risk calculation in derivative contracts, focusing on Credit Value Adjustment (CVA), demonstrating significant improvements in execution times while maintaining accuracy.
 
 ## Event Details
 

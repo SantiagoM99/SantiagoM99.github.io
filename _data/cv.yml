@@ -15,9 +15,8 @@ awards:
   title: Mitacs Globalink Research Internship
 - date: 2025-04
   description:
-    en: A Cum Laude degree is awarded to students with a GPA in the highest 3% GPA
-      of all the students that have graduated from Universidad de Los Andes in a given
-      faculty in the last five years.
+    en: Distinction awarded to graduates with a GPA in the top 3% of their faculty
+      at Universidad de los Andes over the last five years.
     es: Distinción otorgada a quienes se gradúan con un GPA en el 3% más alto de su
       facultad en la Universidad de los Andes durante los últimos cinco años.
   id: cum-laude-bachelor
@@ -230,7 +229,7 @@ experience:
     es: Implementé una infraestructura completa en AWS con pipelines ETL automatizados
       usando Glue y Lambda
   - en: Presented our work on models and AWS infrastructure at Analytics Forum 2025
-    es: Presentamos nuestro trabajo de Machine Learning y arquitectura AWS en el Analytics
+    es: Presentamos nuestro trabajo de machine learning y arquitectura AWS en el Analytics
       Forum 2025
   company: Precia PPV S.A
   endDate: 2024-12
@@ -362,9 +361,8 @@ experience:
       by providing translation services.
     es: Facilitar la comunicación entre los directores y 5 estudiantes de intercambio,
       sirviendo de intérprete y traductor.
-  - en: Collaborated on software development projects utilizing Open AI and Azure
-      Functions, successfully integrating the developed software into an interactive
-      chatbot.
+  - en: Collaborated on software development projects utilizing OpenAI and Azure Functions,
+      successfully integrating the developed software into an interactive chatbot.
     es: Colaborar en proyectos de desarrollo de software con OpenAI y Azure Functions,
       integrando el resultado en un chatbot interactivo.
   achievements_short:
@@ -812,9 +810,9 @@ research:
       domain tasks.
     es: Desarrollar y entrenar modelos especializados desde cero para tareas específicas
       del dominio médico en español.
-  - en: Conduct comparative evaluations between highly-trained models and Large Language
-      Models (LLMs) using prompting techniques such as zero-shot and few-shot learning.
-    es: Comparar modelos especializados con Large Language Models (LLMs) en esquemas
+  - en: Conduct comparative evaluations between highly-trained models and large language
+      models (LLMs) using prompting techniques such as zero-shot and few-shot learning.
+    es: Comparar modelos especializados con large language models (LLMs) en esquemas
       de zero-shot y few-shot learning.
   endDate: present
   featured: false
@@ -835,15 +833,15 @@ research:
   - Text Classification
   - Medical NLP
   title:
-    en: Evaluation and Enhancement of Natural Language Models in spanish
+    en: Evaluation and Enhancement of Natural Language Models in Spanish
     es: Evaluación y Mejora de Modelos de Lenguaje Natural en Español
 - achievements_short:
   - en: Built locally-deployed RAG systems using Ollama and Gemini API for domain-specific
       research questions
     es: Construí sistemas RAG locales con Ollama y la API de Gemini para responder
       preguntas de investigación
-  - en: Designed LLM evaluation architecture using Prometheus, BERT score and OpenAI
-      API for response quality assessment
+  - en: Designed LLM evaluation architecture using Prometheus, BERTScore, and the
+      OpenAI API for response quality assessment
     es: Diseñé una arquitectura de evaluación de LLMs con Prometheus, BERTScore y
       la API de OpenAI
   - en: Developed custom AI agents to optimize university research processes
@@ -864,7 +862,8 @@ research:
       integrar llamadas a la API de Gemini para responder preguntas específicas de
       dominio de investigación.
   - en: Designed LLM evaluation architecture to assess response quality and accuracy
-      across different research contexts using Prometheus, BERT score and OpenAI API.
+      across different research contexts using Prometheus, BERTScore, and the OpenAI
+      API.
     es: Diseñar una arquitectura de evaluación de LLMs que mide la calidad y precisión
       de las respuestas en distintos contextos de investigación, utilizando Prometheus,
       BERTScore y la API de OpenAI.
@@ -982,11 +981,11 @@ skills:
     - TypeScript
 talks:
 - abstract:
-    en: Poster presentation on the application of Machine Learning algorithms to accelerate
+    en: Poster presentation on the application of machine learning algorithms to accelerate
       credit risk calculation in derivative contracts, focusing on Credit Value Adjustment
       (CVA), demonstrating significant improvements in execution times while maintaining
       accuracy.
-    es: Presentación de póster sobre la aplicación de Machine Learning para acelerar
+    es: Presentación de póster sobre la aplicación de machine learning para acelerar
       el cálculo del riesgo de crédito en contratos derivados, con foco en Credit
       Value Adjustment (CVA), logrando mejoras significativas en tiempos de ejecución
       sin perder precisión.
