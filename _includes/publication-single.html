@@ -1,0 +1,47 @@
+{% include base_path %}
+
+{% comment %}
+  Listado de publicaciones en estilo cita academica: titulo, autores (con el
+  nombre propio en negrilla), venue + anio + estado, y una fila de enlaces.
+  Los campos vienen del front matter que genera cv_json_to_markdown_html.py.
+{% endcomment %}
+
+{% assign authors = post.authors | replace: "Martínez Novoa, S.", "<strong>Martínez Novoa, S.</strong>" | replace: "Santiago Martínez Novoa", "<strong>Santiago Martínez Novoa</strong>" %}
+
+<article class="pub-item" itemscope itemtype="https://schema.org/ScholarlyArticle">
+  <h3 class="pub-item__title" itemprop="headline">
+    <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+  </h3>
+
+  {% if post.authors and post.authors != '' %}
+    <p class="pub-item__authors">{{ authors }}</p>
+  {% endif %}
+
+  <p class="pub-item__meta">
+    {% if post.venue and post.venue != '' %}
+      <span class="pub-item__venue">{{ post.venue }}</span>
+    {% endif %}
+    {% if post.year %}
+      <span class="pub-item__year">{{ post.year }}</span>
+    {% endif %}
+    {% if post.status and post.status != '' %}
+      <span class="pub-item__badge">{{ post.status }}</span>
+    {% endif %}
+  </p>
+
+  <p class="pub-item__links">
+    {% if post.doiurl and post.doiurl != '' %}
+      <a href="{{ post.doiurl }}" class="pub-link" target="_blank" rel="noopener"><i class="fas fa-link" aria-hidden="true"></i> DOI</a>
+    {% endif %}
+    {% if post.arxivurl and post.arxivurl != '' %}
+      <a href="{{ post.arxivurl }}" class="pub-link" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i> arXiv</a>
+    {% endif %}
+    {% if post.paperurl and post.paperurl != '' and post.doiurl == '' and post.arxivurl == '' %}
+      <a href="{{ post.paperurl }}" class="pub-link" target="_blank" rel="noopener"><i class="fas fa-up-right-from-square" aria-hidden="true"></i> Read</a>
+    {% endif %}
+    {% if post.bibtexurl and post.bibtexurl != '' %}
+      <a href="{{ post.bibtexurl }}" class="pub-link" target="_blank" rel="noopener"><i class="fas fa-quote-right" aria-hidden="true"></i> BibTeX</a>
+    {% endif %}
+    <a href="{{ base_path }}{{ post.url }}" class="pub-link pub-link--details">Details</a>
+  </p>
+</article>

@@ -1,24 +1,81 @@
 ---
 layout: archive
-title: "Work Experience"
+title: "Experience"
 permalink: /experience/
 author_profile: true
 ---
 
 {% include base_path %}
 
-<div class="experience-nav-container">
-  <a href="{{ base_path }}/research-experience/" class="experience-nav-btn">
-    <i class="fa fa-flask" aria-hidden="true"></i> View Research Experience
-  </a>
-</div>
+<script>document.documentElement.classList.add('js-tabs');</script>
 
 {% assign work_posts = site.experience | where: "type", "work" | sort: "date" | reverse %}
+{% assign research_posts = site.experience | where: "type", "research" | sort: "date" | reverse %}
 
-{% for post in work_posts %}
-  {% include cv-archive-single.html %}
-{% endfor %}
+<div class="exp-tabs" role="tablist" aria-label="Experience type">
+  <button type="button" class="exp-tab is-active" id="tab-work" role="tab"
+          aria-controls="panel-work" aria-selected="true" data-panel="work">
+    <i class="fas fa-briefcase" aria-hidden="true"></i> Work
+    <span class="exp-tab__count">{{ work_posts.size }}</span>
+  </button>
+  <button type="button" class="exp-tab" id="tab-research" role="tab"
+          aria-controls="panel-research" aria-selected="false" data-panel="research">
+    <i class="fas fa-flask" aria-hidden="true"></i> Research
+    <span class="exp-tab__count">{{ research_posts.size }}</span>
+  </button>
+</div>
 
-{% if work_posts.size == 0 %}
-  <p>No work experience entries found.</p>
-{% endif %}
+<section class="exp-panel is-active" id="panel-work" role="tabpanel" aria-labelledby="tab-work">
+  <h2 class="exp-panel__title">Work Experience</h2>
+  {% for post in work_posts %}
+    {% include cv-archive-single.html %}
+  {% endfor %}
+  {% if work_posts.size == 0 %}<p>No work experience entries found.</p>{% endif %}
+</section>
+
+<section class="exp-panel" id="panel-research" role="tabpanel" aria-labelledby="tab-research">
+  <h2 class="exp-panel__title">Research Experience</h2>
+  {% for post in research_posts %}
+    {% include cv-archive-single.html %}
+  {% endfor %}
+  {% if research_posts.size == 0 %}<p>No research experience entries found.</p>{% endif %}
+</section>
+
+<script>
+(function () {
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.exp-tab'));
+  var panels = Array.prototype.slice.call(document.querySelectorAll('.exp-panel'));
+  if (!tabs.length) { return; }
+
+  function activate(name, updateHash) {
+    tabs.forEach(function (tab) {
+      var on = tab.getAttribute('data-panel') === name;
+      tab.classList.toggle('is-active', on);
+      tab.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    panels.forEach(function (panel) {
+      panel.classList.toggle('is-active', panel.id === 'panel-' + name);
+    });
+    if (updateHash && history.replaceState) {
+      history.replaceState(null, '', '#' + name);
+    }
+  }
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      activate(tab.getAttribute('data-panel'), true);
+    });
+    // Flechas izquierda/derecha entre pestañas, como espera un lector de pantalla
+    tab.addEventListener('keydown', function (event) {
+      if (event.key !== 'ArrowRight' && event.key !== 'ArrowLeft') { return; }
+      var index = tabs.indexOf(tab);
+      var next = tabs[(index + (event.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+      next.focus();
+      activate(next.getAttribute('data-panel'), true);
+    });
+  });
+
+  var initial = (window.location.hash || '').replace('#', '');
+  if (initial === 'research' || initial === 'work') { activate(initial, false); }
+})();
+</script>

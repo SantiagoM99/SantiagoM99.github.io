@@ -1,0 +1,258 @@
+/* ==========================================================================
+   SITE POLISH
+   Pestañas de experiencia, listado de publicaciones y ajustes de tarjetas.
+   Todo se apoya en las variables --global-* para funcionar en claro y oscuro.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Pestañas: Work / Research
+   -------------------------------------------------------------------------- */
+
+.exp-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin: 0 0 1.75em;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.exp-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.65em 1.1em;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  background: transparent;
+  font-family: $sans-serif-narrow;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--global-text-color-light);
+  cursor: pointer;
+  transition: $global-transition;
+
+  &:hover {
+    color: var(--global-text-color);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--global-link-color);
+    outline-offset: 2px;
+  }
+
+  &.is-active {
+    color: var(--global-link-color);
+    border-bottom-color: var(--global-link-color);
+  }
+}
+
+.exp-tab__count {
+  padding: 0.1em 0.55em;
+  border-radius: 999px;
+  background: var(--global-border-color);
+  color: var(--global-text-color);
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.exp-tab.is-active .exp-tab__count {
+  background: var(--global-link-color);
+  color: #fff;
+}
+
+/* Con JavaScript activo solo se ve el panel seleccionado y el titulo sobra,
+   porque la pestaña ya lo nombra. Sin JavaScript se ven ambos, con titulo. */
+.js-tabs .exp-panel:not(.is-active) {
+  display: none;
+}
+
+.js-tabs .exp-panel__title {
+  display: none;
+}
+
+.exp-panel__title {
+  margin-top: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Publicaciones
+   -------------------------------------------------------------------------- */
+
+.pub-intro {
+  margin-bottom: 2em;
+  color: var(--global-text-color-light);
+  font-size: 0.95em;
+}
+
+.pub-group {
+  margin-bottom: 2.75em;
+}
+
+.pub-group__title {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  margin: 0 0 0.35em;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid var(--global-border-color);
+  font-family: $sans-serif-narrow;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-text-color);
+}
+
+.pub-group__count {
+  padding: 0.1em 0.55em;
+  border-radius: 999px;
+  background: var(--global-border-color);
+  color: var(--global-text-color);
+  font-size: 0.75em;
+  letter-spacing: 0;
+}
+
+.pub-item {
+  position: relative;
+  padding: 1.1em 0 1.1em 1em;
+  border-left: 3px solid transparent;
+  transition: $global-transition;
+
+  + .pub-item {
+    border-top: 1px solid var(--global-border-color);
+  }
+
+  &:hover {
+    border-left-color: var(--global-link-color);
+  }
+}
+
+.pub-item__title {
+  margin: 0 0 0.4em;
+  font-family: $sans-serif-narrow;
+  font-size: 1.05em;
+  font-weight: 700;
+  line-height: 1.4;
+
+  a {
+    color: var(--global-text-color);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-link-color);
+      text-decoration: underline;
+    }
+  }
+}
+
+.pub-item__authors {
+  margin: 0 0 0.35em;
+  font-size: 0.9em;
+  line-height: 1.5;
+  color: var(--global-text-color);
+
+  strong {
+    font-weight: 700;
+  }
+}
+
+/* Flujo de texto normal, no flex: con venues largos el año no queda huérfano
+   en su propia línea, sino pegado al final del venue. */
+.pub-item__meta {
+  margin: 0 0 0.6em;
+  font-size: 0.88em;
+  line-height: 1.7;
+  color: var(--global-text-color-light);
+}
+
+.pub-item__venue {
+  font-style: italic;
+}
+
+/* El separador solo aparece si hay venue antes del año. Los márgenes evitan
+   depender del espacio en blanco del HTML. */
+.pub-item__venue + .pub-item__year::before {
+  content: "·";
+  margin: 0 0.35em 0 0.15em;
+}
+
+.pub-item__badge {
+  display: inline-block;
+  margin-left: 0.35em;
+  padding: 0.15em 0.65em;
+  border: 1px solid var(--global-link-color);
+  border-radius: 999px;
+  color: var(--global-link-color);
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.pub-item__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: 0;
+}
+
+.pub-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  font-size: 0.85em;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  i {
+    font-size: 0.9em;
+  }
+}
+
+.pub-link--details {
+  color: var(--global-text-color-light);
+}
+
+/* --------------------------------------------------------------------------
+   Tarjetas de experiencia, docencia y charlas
+   -------------------------------------------------------------------------- */
+
+/* El borde en color de enlace hacia cada tarjeta competia con el contenido:
+   borde neutro en reposo y acento solo al pasar el cursor. */
+.archive__item {
+  border-color: var(--global-border-color) !important;
+
+  &:hover {
+    border-color: var(--global-link-color) !important;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07) !important;
+  }
+}
+
+/* Los datos de cada entrada iban uno por linea y estiraban mucho la tarjeta */
+.archive__item-meta {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1.4em;
+  row-gap: 0.15em;
+
+  p {
+    margin: 0.1em 0;
+  }
+}
+
+.archive__item-title {
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
