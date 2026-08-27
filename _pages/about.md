@@ -10,7 +10,7 @@ title: About me
 
 I am a Data Scientist at the EdTech Node of Universidad de los Andes, where I am also pursuing an M.Sc. in Information Engineering. My research focuses on multilingual NLP and multimodal systems that work for low-resource and underrepresented languages, with an emphasis on cross-lingual transfer and rigorous, culturally grounded evaluation. I pursue this line as a collaborating researcher at the Lee Language Lab (Ontario Tech University), which I joined through a Mitacs Globalink Research Internship.
 
-In parallel, I build production machine learning systems for higher education: learning analytics, student-success prediction, and university-wide data products that support academic advising, work that has led to peer-reviewed publications at AIED and WEEF. More broadly, I care about human-centered AI that serves people, from underrepresented language communities to university classrooms.
+In parallel, I build production data and machine learning systems for higher education: learning analytics, student-success prediction, and university-wide data products that support academic advising, work that has led to peer-reviewed publications at AIED and WEEF. More broadly, I care about human-centered AI that serves people, from underrepresented language communities to university classrooms.
 
 In my free time, I enjoy playing chess and bowling.
     
