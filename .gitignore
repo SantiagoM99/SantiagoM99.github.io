@@ -18,3 +18,7 @@ package-lock.json
 
 # Ignore folders related to IDEs
 .vscode/
+
+# Python (scripts de generación)
+.venv/
+__pycache__/
