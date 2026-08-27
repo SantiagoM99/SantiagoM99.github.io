@@ -8,9 +8,9 @@ title: About me
 ---
 
 
-I am a Data Scientist currently pursuing an M.Sc. in Information Engineering at Universidad de los Andes, where I also work as a Research Assistant on LLM-based applications. My work focuses on multilingual NLP and the evaluation of Large Language Models for Spanish linguistic tasks, comparing their performance against highly-trained domain-specific models in real-world academic and medical settings.
+I am a Data Scientist at the EdTech Node of Universidad de los Andes, where I am also pursuing an M.Sc. in Information Engineering. My research focuses on multilingual NLP and multimodal systems that work for low-resource and underrepresented languages, with an emphasis on cross-lingual transfer and rigorous, culturally grounded evaluation. I pursue this line as a collaborating researcher at the Lee Language Lab (Ontario Tech University), which I joined through a Mitacs Globalink Research Internship.
 
-In parallel, I work on multimodal systems for medical applications, particularly in image segmentation and classification for diagnostic support. More broadly, I am interested in building intelligent, human-centered AI systems that enhance decision-making and well-being in education and healthcare, especially for underrepresented languages and communities.
+In parallel, I build production machine learning for higher education: learning analytics, student-success prediction, and university-wide data products that support academic advising, work that has led to peer-reviewed publications at AIED and WEEF. More broadly, I care about human-centered AI that serves people, from underrepresented language communities to university classrooms.
 
 In my free time, I enjoy playing chess and bowling.
     
@@ -20,11 +20,11 @@ In my free time, I enjoy playing chess and bowling.
     <div class="interests-section">
       <h2><i class="fas fa-flask"></i> Research Interests</h2>
       <ul class="interests-list">
-        <li class='interest-item'>Natural Language Processing</li>
-        <li class='interest-item'>Large Language Models</li>
-        <li class='interest-item'>Computer Vision</li>
-        <li class='interest-item'>Medical Imaging</li>
-        <li class='interest-item'>Data Science</li>
+        <li class='interest-item'>Multilingual NLP</li>
+        <li class='interest-item'>Low-Resource Languages</li>
+        <li class='interest-item'>Vision-Language Models</li>
+        <li class='interest-item'>LLM Evaluation</li>
+        <li class='interest-item'>Learning Analytics</li>
         <li class='interest-item'>Machine Learning</li>
       </ul>
     </div>
@@ -58,6 +58,13 @@ In my free time, I enjoy playing chess and bowling.
   <div class="awards-section">
     <h2><i class="fas fa-trophy"></i> Distinctions</h2>
     <div class="awards-grid">
+      <div class="award-item">
+        <i class="fas fa-medal award-icon"></i>
+        <div class="award-details">
+          <strong class="award-title">Mitacs Globalink Research Internship</strong><br>
+          <span class="award-institution">Ontario Tech University</span> | <span class="award-date">2026-05</span>
+        </div>
+      </div>
       <div class="award-item">
         <i class="fas fa-medal award-icon"></i>
         <div class="award-details">
