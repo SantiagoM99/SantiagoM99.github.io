@@ -1,4 +1,8 @@
 ---
+arxivid: ''
+arxivurl: ''
+authors: Martínez Novoa, S., Melo Barrero, F., Ruiz Giraldo, M., Velásquez Marín,
+  S., Carvajal Chaves, N., Hernández Hoyos, M., Reyes, J. P.
 bibtexurl: https://santiagom99.github.io/files/paper-weef-sasp.bib
 category: conferences
 citation: 'Martínez Novoa, S., Melo Barrero, F., Ruiz Giraldo, M., Velásquez Marín,
@@ -8,14 +12,18 @@ citation: 'Martínez Novoa, S., Melo Barrero, F., Ruiz Giraldo, M., Velásquez M
   Education Forum, WEEF (IFEES & GEDC) 2026, Cartagena de Indias, Colombia.'
 collection: publications
 date: '2026-09-22'
-excerpt: WEEF (IFEES & GEDC) 2026 (2026)
+doi: ''
+doiurl: ''
+excerpt: WEEF (IFEES & GEDC) 2026, Cartagena de Indias, Colombia (2026)
 paperurl: ''
 permalink: /publication/2026-centralizing-the-student-lens-design-and-evaluation-of-a-learning-analytics-dashboard-for-academic-advising-in-higher-education
 slidesurl: ''
+status: To appear
 tags: []
 title: 'Centralizing the Student Lens: Design and Evaluation of a Learning Analytics
   Dashboard for Academic Advising in Higher Education'
-venue: WEEF (IFEES & GEDC) 2026
+venue: WEEF (IFEES & GEDC) 2026, Cartagena de Indias, Colombia
+year: '2026'
 ---
 
 ## Abstract

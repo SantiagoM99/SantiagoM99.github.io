@@ -4,7 +4,7 @@ date: 2025-01-01-01
 excerpt: ''
 institution: Universidad de los Andes
 location: Bogotá, Colombia
-period: 2025-01 - present
+period: Jan 2025 - Present
 permalink: /experience/research-2025-01-evaluation-and-enhancement-of-natural-language-models-in-spanish
 research_group: FLAG Research Lab - A.I. and Machine Learning
 supervisor: Rubén Manrique Ph.D

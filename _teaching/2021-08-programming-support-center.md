@@ -5,7 +5,7 @@ date: 2021-08-01-01
 excerpt: ''
 institution: Systems and Computing Engineering Department, Universidad de los Andes
 location: Bogotá, Colombia
-period: 2021-08 - 2023-08
+period: Aug 2021 - Aug 2023
 permalink: /teaching/2021-08-programming-support-center
 title: Undergraduate Teaching Assistant - Programming Tutor - Programming Support
   Center

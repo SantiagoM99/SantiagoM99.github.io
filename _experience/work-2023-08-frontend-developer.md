@@ -4,7 +4,7 @@ company: Research Center of the Faculty of Engineering, Universidad de los Andes
 date: 2023-08-01-01
 excerpt: ''
 location: Bogotá, Colombia
-period: 2023-08 - 2023-12
+period: Aug 2023 - Dec 2023
 permalink: /experience/work-2023-08-frontend-developer
 technologies:
 - Angular

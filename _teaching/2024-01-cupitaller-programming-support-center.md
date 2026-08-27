@@ -5,7 +5,7 @@ date: 2024-01-01-01
 excerpt: ''
 institution: Systems and Computing Engineering Department, Universidad de los Andes
 location: Bogotá, Colombia
-period: 2024-01 - 2024-12
+period: Jan 2024 - Dec 2024
 permalink: /teaching/2024-01-cupitaller-programming-support-center
 title: Undergraduate Research Assistant - CupiTaller Programming Support Center
 type: Teaching Assistant

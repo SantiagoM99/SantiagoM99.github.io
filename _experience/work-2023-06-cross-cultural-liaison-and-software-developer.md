@@ -4,7 +4,7 @@ company: Digital Transformation, Universidad de los Andes
 date: 2023-06-01-01
 excerpt: ''
 location: Bogotá, Colombia
-period: 2023-06 - 2023-08
+period: Jun 2023 - Aug 2023
 permalink: /experience/work-2023-06-cross-cultural-liaison-and-software-developer
 technologies:
 - OpenAI API

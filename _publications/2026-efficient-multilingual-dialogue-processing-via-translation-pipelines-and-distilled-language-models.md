@@ -1,4 +1,8 @@
 ---
+arxivid: '2601.09059'
+arxivurl: https://arxiv.org/abs/2601.09059
+authors: Martínez Novoa, S., Rozo Fajardo, N., González Vargas, D. A., Bedoya Figueroa,
+  N.
 bibtexurl: ''
 category: preprints
 citation: Martínez Novoa, S., Rozo Fajardo, N., González Vargas, D. A., & Bedoya Figueroa,
@@ -6,14 +10,18 @@ citation: Martínez Novoa, S., Rozo Fajardo, N., González Vargas, D. A., & Bedo
   and Distilled Language Models. arXiv preprint arXiv:2601.09059.
 collection: publications
 date: '2026-01-13'
+doi: ''
+doiurl: ''
 excerpt: arXiv:2601.09059 (2026)
 paperurl: https://arxiv.org/abs/2601.09059
 permalink: /publication/2026-efficient-multilingual-dialogue-processing-via-translation-pipelines-and-distilled-language-models
 slidesurl: ''
+status: ''
 tags: []
 title: Efficient Multilingual Dialogue Processing via Translation Pipelines and Distilled
   Language Models
 venue: arXiv:2601.09059
+year: '2026'
 ---
 
 ## Abstract

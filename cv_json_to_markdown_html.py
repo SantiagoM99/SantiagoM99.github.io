@@ -16,6 +16,46 @@ def sanitize_filename(text):
     filename = re.sub(r'[-\s]+', '-', filename)
     return filename.strip('-')
 
+MONTHS_EN = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+             'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
+# Etiqueta legible para el estado de una publicación
+STATUS_LABELS = {
+    'in_press': 'To appear',
+    'accepted': 'Accepted',
+    'under_review': 'Under review',
+    'submitted': 'Submitted',
+    'work_in_progress': 'Work in progress',
+    'in_preparation': 'In preparation',
+}
+
+
+def pretty_date(value):
+    """'2026-03' -> 'Mar 2026'; 'present' -> 'Present'; lo demás intacto."""
+    if not value:
+        return ''
+    text = str(value).strip()
+    if text.lower() in ('present', 'presente'):
+        return 'Present'
+    parts = text.split('-')
+    if len(parts) >= 2 and parts[0].isdigit() and parts[1].isdigit():
+        month = int(parts[1])
+        if 1 <= month <= 12:
+            return f"{MONTHS_EN[month - 1]} {parts[0]}"
+    return text
+
+
+def pretty_period(start, end):
+    """Rango de fechas legible para la web."""
+    return f"{pretty_date(start)} - {pretty_date(end)}"
+
+
+def localized(value, lang='en'):
+    """Devuelve el texto en `lang` si el valor es un dict {es, en}."""
+    if isinstance(value, dict):
+        return value.get(lang, '') or value.get('es', '')
+    return str(value) if value else ''
+
 def generate_publications(cv_data, output_dir="_publications"):
     """Genera archivos .md para publicaciones - Vista simplificada"""
     if not os.path.exists(output_dir):
@@ -69,13 +109,10 @@ def generate_publications(cv_data, output_dir="_publications"):
             excerpt = str(doc_type) if doc_type else ''
             category = 'thesis' if 'thesis' in str(doc_type).lower() else category_key or 'paper'
 
-        # Determine venue: repository name, arxiv, or status
-        repository_name = citation.get('repository', {}).get('name', '')
-        if isinstance(repository_name, dict):
-            venue = repository_name.get('en', '')
-        else:
-            venue = str(repository_name)
-
+        # Venue: el campo dedicado manda; luego repositorio, arXiv y estado
+        venue = localized(citation.get('venue', ''))
+        if not venue:
+            venue = localized(citation.get('repository', {}).get('name', ''))
         if not venue and citation.get('arxiv_id'):
             venue = f"arXiv:{citation['arxiv_id']}"
         if not venue:
@@ -91,6 +128,13 @@ def generate_publications(cv_data, output_dir="_publications"):
         keywords = citation.get('keywords', [])
         bibtex_path = pub.get('bibtex_website', '')
 
+        # Lista de autores en estilo cita ("Apellido, I.") para el listado web
+        authors_line = ', '.join(citation.get('authors_citation', [])) or author
+
+        status_key = str(pub.get('status', 'published')).lower().replace(' ', '_')
+        doi = pub.get('doi', '')
+        arxiv_id = citation.get('arxiv_id', '')
+
         # Front matter - SOLO información esencial para vista de archivo
         front_matter = {
             'title': title,
@@ -99,7 +143,14 @@ def generate_publications(cv_data, output_dir="_publications"):
             'permalink': f'/publication/{year}-{sanitize_filename(title)}',
             'excerpt': f"{venue} ({year})",  # Solo venue y año
             'date': date,
+            'year': year,
             'venue': venue,
+            'authors': authors_line,
+            'status': STATUS_LABELS.get(status_key, ''),
+            'doi': doi,
+            'doiurl': f"https://doi.org/{doi}" if doi else '',
+            'arxivurl': citation.get('url', '') if arxiv_id else '',
+            'arxivid': arxiv_id,
             'slidesurl': '',
             'paperurl': paperurl,
             'citation': pub.get("formatted_citations", {}).get("apa_style", ""),
@@ -278,7 +329,7 @@ def generate_experience(cv_data, output_dir="_experience"):
             'date': f"{start_date}-01-01",
             'location': exp['location'],
             'company': company,
-            'period': f"{start_date} - {end_date}",
+            'period': pretty_period(start_date, end_date),
             'venue': company,  # Para compatibilidad con el template
             'technologies': exp.get('technologies', []),
             'excerpt': excerpt
@@ -332,7 +383,7 @@ def generate_experience(cv_data, output_dir="_experience"):
             'date': f"{start_date}-01-01",
             'location': research['location'],
             'institution': institution,
-            'period': f"{start_date} - {end_date}",
+            'period': pretty_period(start_date, end_date),
             'venue': institution,  # Para compatibilidad con el template
             'research_group': research_group,
             'supervisor': research.get('supervisor', ''),
@@ -402,7 +453,7 @@ def generate_experience(cv_data, output_dir="_experience"):
             'date': f"{start_date}-01-01",
             'location': location,
             'company': company,
-            'period': f"{start_date} - {end_date}",
+            'period': pretty_period(start_date, end_date),
             'venue': company,  # Para compatibilidad con el template
             'technologies': exp.get('technologies', []),
             'excerpt': excerpt
@@ -475,7 +526,7 @@ def generate_experience(cv_data, output_dir="_experience"):
             'date': f"{start_date}-01-01",
             'location': location,
             'institution': institution,
-            'period': f"{start_date} - {end_date}",
+            'period': pretty_period(start_date, end_date),
             'venue': institution,  # Para compatibilidad con el template
             'research_group': research_group,
             'technologies': research.get('technologies', []),
@@ -561,7 +612,7 @@ def generate_teaching(cv_data, output_dir="_teaching"):
             'institution': institution,
             'date': f"{start_date}-01-01",
             'location': teaching['location'],
-            'period': f"{start_date} - {end_date}",
+            'period': pretty_period(start_date, end_date),
             'course_name': course_name,
             'excerpt': excerpt
         }
@@ -642,7 +693,7 @@ def generate_teaching(cv_data, output_dir="_teaching"):
             'institution': institution,
             'date': f"{start_date}-01-01",
             'location': teaching['location'],
-            'period': f"{start_date} - {end_date}",
+            'period': pretty_period(start_date, end_date),
             'course_name': course_name,
             'excerpt': excerpt
         }

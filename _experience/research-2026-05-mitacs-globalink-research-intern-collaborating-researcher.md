@@ -4,7 +4,7 @@ date: 2026-05-01-01
 excerpt: ''
 institution: Ontario Tech University
 location: Oshawa, Canada
-period: 2026-05 - present
+period: May 2026 - Present
 permalink: /experience/research-2026-05-mitacs-globalink-research-intern-collaborating-researcher
 research_group: Lee Language Lab
 supervisor: Annie En-Shiun Lee Ph.D.

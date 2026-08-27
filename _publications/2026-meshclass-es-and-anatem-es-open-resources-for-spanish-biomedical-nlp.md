@@ -1,4 +1,7 @@
 ---
+arxivid: ''
+arxivurl: ''
+authors: Martínez Novoa, S., Gómez Mesa, L., Prieto, J., Manrique, R.
 bibtexurl: https://santiagom99.github.io/files/paper-bionlp-meshclass.bib
 category: workshops
 citation: 'Martínez Novoa, S., Gómez Mesa, L., Prieto, J., & Manrique, R. (2026).
@@ -6,13 +9,17 @@ citation: 'Martínez Novoa, S., Gómez Mesa, L., Prieto, J., & Manrique, R. (202
   2026, pp. 617-629. Association for Computational Linguistics. https://doi.org/10.18653/v1/2026.bionlp-1.49'
 collection: publications
 date: '2026-07-01'
-excerpt: ACL Anthology (2026)
+doi: 10.18653/v1/2026.bionlp-1.49
+doiurl: https://doi.org/10.18653/v1/2026.bionlp-1.49
+excerpt: BioNLP 2026 (ACL Workshop), San Diego, California, pp. 617–629 (2026)
 paperurl: https://aclanthology.org/2026.bionlp-1.49/
 permalink: /publication/2026-meshclass-es-and-anatem-es-open-resources-for-spanish-biomedical-nlp
 slidesurl: ''
+status: ''
 tags: []
 title: 'MeSHClass-ES and AnatEM-ES: Open Resources for Spanish Biomedical NLP'
-venue: ACL Anthology
+venue: BioNLP 2026 (ACL Workshop), San Diego, California, pp. 617–629
+year: '2026'
 ---
 
 ## Abstract

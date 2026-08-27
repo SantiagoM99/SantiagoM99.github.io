@@ -4,7 +4,7 @@ company: Precia PPV S.A
 date: 2024-08-01-01
 excerpt: ''
 location: Bogotá, Colombia
-period: 2024-08 - 2024-12
+period: Aug 2024 - Dec 2024
 permalink: /experience/work-2024-08-machine-learning-intern
 technologies:
 - Python

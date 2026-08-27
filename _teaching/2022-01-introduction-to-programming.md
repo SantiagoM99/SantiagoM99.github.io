@@ -5,7 +5,7 @@ date: 2022-01-01-01
 excerpt: ''
 institution: Universidad de los Andes
 location: Bogotá, Colombia
-period: 2022-01 - 2022-12
+period: Jan 2022 - Dec 2022
 permalink: /teaching/2022-01-introduction-to-programming
 title: Undergraduate Teaching Assistant - Introduction to Programming
 type: Teaching Assistant

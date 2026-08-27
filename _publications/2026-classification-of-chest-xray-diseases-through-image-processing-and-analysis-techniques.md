@@ -1,4 +1,7 @@
 ---
+arxivid: '2601.10913'
+arxivurl: https://arxiv.org/abs/2601.10913
+authors: Martínez Novoa, S., Ibáñez, M. C., Gómez Mesa, L., Kramer, J.
 bibtexurl: ''
 category: preprints
 citation: Martínez Novoa, S., Ibáñez, M. C., Gómez Mesa, L., & Kramer, J. (2026).
@@ -6,14 +9,18 @@ citation: Martínez Novoa, S., Ibáñez, M. C., Gómez Mesa, L., & Kramer, J. (2
   arXiv preprint arXiv:2601.10913.
 collection: publications
 date: '2026-01-16'
+doi: ''
+doiurl: ''
 excerpt: arXiv:2601.10913 (2026)
 paperurl: https://arxiv.org/abs/2601.10913
 permalink: /publication/2026-classification-of-chest-xray-diseases-through-image-processing-and-analysis-techniques
 slidesurl: ''
+status: ''
 tags: []
 title: Classification of Chest XRay Diseases through image processing and analysis
   techniques
 venue: arXiv:2601.10913
+year: '2026'
 ---
 
 ## Abstract

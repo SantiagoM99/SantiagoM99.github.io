@@ -4,7 +4,7 @@ date: 2025-01-01-01
 excerpt: ''
 institution: Universidad de los Andes
 location: Bogotá, Colombia
-period: 2025-01 - 2025-06
+period: Jan 2025 - Jun 2025
 permalink: /experience/research-2025-01-generative-artificial-intelligence-for-research-research-assistant
 research_group: Augmented Artificial Intelligence Initiative
 technologies:

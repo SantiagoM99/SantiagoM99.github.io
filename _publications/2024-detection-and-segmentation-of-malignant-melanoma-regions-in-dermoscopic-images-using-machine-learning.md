@@ -1,4 +1,7 @@
 ---
+arxivid: ''
+arxivurl: ''
+authors: Martínez Novoa, S.
 bibtexurl: https://santiagom99.github.io/files/paper-melanoma.bib
 category: theses
 citation: 'Martínez Novoa, S. (2024). Detection and Segmentation of Malignant Melanoma
@@ -6,14 +9,18 @@ citation: 'Martínez Novoa, S. (2024). Detection and Segmentation of Malignant M
   de Los Andes. Supervisor: Juan Pablo Reyes Gómez Ph.D. Uniandes Repository.'
 collection: publications
 date: '2024-01-01'
-excerpt: Uniandes Repository (2024)
+doi: ''
+doiurl: ''
+excerpt: Undergraduate thesis, Universidad de los Andes (2024)
 paperurl: https://hdl.handle.net/1992/75910
 permalink: /publication/2024-detection-and-segmentation-of-malignant-melanoma-regions-in-dermoscopic-images-using-machine-learning
 slidesurl: ''
+status: ''
 tags: []
 title: Detection and Segmentation of Malignant Melanoma Regions in Dermoscopic Images
   Using Machine Learning
-venue: Uniandes Repository
+venue: Undergraduate thesis, Universidad de los Andes
+year: '2024'
 ---
 
 ## Abstract

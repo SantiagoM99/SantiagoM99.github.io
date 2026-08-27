@@ -1,4 +1,8 @@
 ---
+arxivid: ''
+arxivurl: ''
+authors: Soto Parada, E. G., Martínez Novoa, S., Klopstock Triana, N., Fuquen Florez,
+  D. A., Peña, F. C., Hernández Hoyos, M., Reyes, J. P.
 bibtexurl: https://santiagom99.github.io/files/paper-aied-limbo.bib
 category: conferences
 citation: 'Soto Parada, E. G., Martínez Novoa, S., Klopstock Triana, N., Fuquen Florez,
@@ -8,14 +12,20 @@ citation: 'Soto Parada, E. G., Martínez Novoa, S., Klopstock Triana, N., Fuquen
   in Computer and Information Science, pp. 63-77. Springer. https://doi.org/10.1007/978-3-032-29791-4_5'
 collection: publications
 date: '2026-06-27'
-excerpt: Springer (AIED 2026 Proceedings) (2026)
+doi: 10.1007/978-3-032-29791-4_5
+doiurl: https://doi.org/10.1007/978-3-032-29791-4_5
+excerpt: AIED 2026, WideAIED Track, Communications in Computer and Information Science,
+  Springer, pp. 63–77 (2026)
 paperurl: https://doi.org/10.1007/978-3-032-29791-4_5
 permalink: /publication/2026-no-student-left-in-limbo-multi-level-clustering-for-success-prediction-in-a-latin-american-university
 slidesurl: ''
+status: ''
 tags: []
 title: 'No Student Left in Limbo: Multi-Level Clustering for Success Prediction in
   a Latin American University'
-venue: Springer (AIED 2026 Proceedings)
+venue: AIED 2026, WideAIED Track, Communications in Computer and Information Science,
+  Springer, pp. 63–77
+year: '2026'
 ---
 
 ## Abstract

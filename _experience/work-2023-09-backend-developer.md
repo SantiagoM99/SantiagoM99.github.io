@@ -4,7 +4,7 @@ company: Digital Transformation, Universidad de los Andes
 date: 2023-09-01-01
 excerpt: ''
 location: Bogotá, Colombia
-period: 2023-09 - 2024-05
+period: Sep 2023 - May 2024
 permalink: /experience/work-2023-09-backend-developer
 technologies:
 - Python

@@ -4,7 +4,7 @@ company: EdTech Node, Universidad de los Andes
 date: 2026-03-01-01
 excerpt: ''
 location: Bogotá, Colombia
-period: 2026-03 - present
+period: Mar 2026 - Present
 permalink: /experience/work-2026-03-data-scientist
 technologies:
 - Databricks

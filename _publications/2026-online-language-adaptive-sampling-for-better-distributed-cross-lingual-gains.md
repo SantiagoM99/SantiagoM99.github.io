@@ -1,4 +1,7 @@
 ---
+arxivid: ''
+arxivurl: ''
+authors: Nguyen, Q. P., Gaschi, F., Anugraha, D., Martínez Novoa, S., Lee, E.-S. A.
 bibtexurl: https://santiagom99.github.io/files/paper-emnlp-sampling.bib
 category: conferences
 citation: 'Nguyen, Q. P., Gaschi, F., Anugraha, D., Martínez Novoa, S., & Lee, E.-S.
@@ -7,13 +10,17 @@ citation: 'Nguyen, Q. P., Gaschi, F., Anugraha, D., Martínez Novoa, S., & Lee, 
   2026, Budapest, Hungary.'
 collection: publications
 date: '2026-10-24'
-excerpt: In_press (2026)
+doi: ''
+doiurl: ''
+excerpt: Findings of EMNLP 2026, Budapest, Hungary (2026)
 paperurl: ''
 permalink: /publication/2026-online-language-adaptive-sampling-for-better-distributed-cross-lingual-gains
 slidesurl: ''
+status: To appear
 tags: []
 title: Online Language Adaptive Sampling for Better Distributed Cross-lingual Gains
-venue: In_press
+venue: Findings of EMNLP 2026, Budapest, Hungary
+year: '2026'
 ---
 
 ## Abstract

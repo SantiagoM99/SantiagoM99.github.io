@@ -5,7 +5,7 @@ date: 2025-06-01-01
 excerpt: ''
 institution: Universidad de los Andes
 location: Bogotá, Colombia
-period: 2025-06 - present
+period: Jun 2025 - Present
 permalink: /teaching/2025-06-llm-based-applications-agent-development
 title: Graduate Teaching Assistant - LLM-Based Applications & Agent Development
 type: Teaching Assistant

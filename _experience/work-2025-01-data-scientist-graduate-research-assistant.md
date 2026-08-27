@@ -4,7 +4,7 @@ company: Vice Dean's Office of Student Affairs, Universidad de los Andes
 date: 2025-01-01-01
 excerpt: ''
 location: Bogotá, Colombia
-period: 2025-01 - 2026-03
+period: Jan 2025 - Mar 2026
 permalink: /experience/work-2025-01-data-scientist-graduate-research-assistant
 technologies:
 - Power BI

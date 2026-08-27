@@ -4,7 +4,7 @@ date: 2024-06-01-01
 excerpt: ''
 institution: College of Computing and Information Science, Cornell University
 location: Ithaca, United States
-period: 2024-06 - 2024-08
+period: Jun 2024 - Aug 2024
 permalink: /experience/research-2024-06-summer-research-intern
 research_group: N/A
 supervisor: Sainyam Galhotra Ph.D.
