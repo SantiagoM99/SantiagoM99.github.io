@@ -1,9 +1,12 @@
 {
   "metadata": {
-    "version": "1.1",
-    "lastUpdated": "2026-04-08",
+    "version": "1.3",
+    "lastUpdated": "2026-08-25",
     "defaultLanguage": "en",
-    "availableLanguages": ["es", "en"]
+    "availableLanguages": [
+      "es",
+      "en"
+    ]
   },
   "personal": {
     "name": "Santiago Martínez Novoa",
@@ -20,8 +23,8 @@
       "location": "Bogotá, Colombia"
     },
     "research_interests": {
-      "es": "Mi investigación se sitúa en la intersección entre el procesamiento de lenguaje natural multilingüe, los sistemas multimodales y las metodologías rigurosas de evaluación. Me interesa particularmente el desarrollo de técnicas para la transferencia de conocimiento entre lenguas con recursos limitados, así como el diseño de arquitecturas que integren información textual y visual en contextos lingüísticos diversos. He trabajado en la evaluación comparativa de modelos altamente entrenados frente a Large Language Models en tareas médicas en español, explorando su comportamiento bajo esquemas de zero-shot y few-shot learning. En visión computacional, me especializo en segmentación y clasificación de imágenes con aplicaciones médicas. Como ingeniero de sistemas y computación, estoy comprometido con el desarrollo de herramientas data-oriented y sistemas de Machine Learning en producción para mejorar el acompañamiento estudiantil en entornos universitarios, con énfasis en impacto real, interpretabilidad y toma de decisiones basada en datos.",
-      "en": "My research lies at the intersection of multilingual natural language processing, multimodal AI systems, and rigorous evaluation methodologies. I am particularly interested in developing techniques for effective cross-lingual knowledge transfer in low-resource settings, as well as in designing architectures that integrate textual and visual information across diverse linguistic contexts. I have worked on the comparative evaluation of highly-trained domain-specific models and Large Language Models for Spanish medical NLP tasks, exploring their behavior under zero-shot and few-shot learning settings. In computer vision, I specialize in image segmentation and classification for medical applications. As a systems and computer engineer, I am committed to building data-oriented tools and production-level Machine Learning systems to enhance student support in higher education, with an emphasis on real-world impact, interpretability, and data-driven decision-making."
+      "es": "Mi investigación se centra en NLP multilingüe y sistemas multimodales para lenguas de bajos recursos y poco representadas, con énfasis en la transferencia cross-lingüe y la evaluación rigurosa con fundamento cultural. En paralelo, desarrollo sistemas de machine learning en producción para la educación superior, desde learning analytics hasta la predicción del éxito estudiantil.",
+      "en": "My research focuses on multilingual NLP and multimodal systems that work for low-resource and underrepresented languages, with an emphasis on cross-lingual transfer and rigorous, culturally grounded evaluation. In parallel, I build production machine learning for higher education, from learning analytics to student-success prediction."
     }
   },
   "education": [
@@ -99,42 +102,56 @@
   ],
   "experience": [
     {
-      "id": "llm-applications-assistant",
+      "id": "data-scientist-edtech-node",
       "featured": true,
       "title": {
-        "es": "Asistente de Investigación - Aplicaciones Basadas en LLM",
-        "en": "LLM-Based Applications - Research Assistant"
+        "es": "Científico de Datos",
+        "en": "Data Scientist"
       },
-      "company": "Universidad de los Andes",
+      "company": {
+        "es": "Nodo EdTech, Universidad de los Andes",
+        "en": "EdTech Node, Universidad de los Andes"
+      },
       "location": "Bogotá, Colombia",
-      "startDate": "2025-06",
+      "startDate": "2026-03",
       "endDate": "present",
       "type": "full-time",
       "achievements": [
         {
-          "es": "Desarrollar materiales educativos y ejercicios prácticos para dos cursos de nivel de maestría enfocados en aplicaciones de modelos de lenguaje grandes.",
-          "en": "Developing educational materials and practical exercises for two master's-level courses focused on large language model applications."
+          "es": "Gestionar los datos de la unidad de extremo a extremo, desde los sistemas fuente hasta los productos publicados: la información institucional detrás de la plataforma de consejería académica y de productos de datos transversales para la universidad, como los percentiles académicos y los indicadores de deserción estudiantil.",
+          "en": "Manage the unit's data end to end, from source systems to published products: the institutional information behind the academic advising platform and university-wide data products such as academic percentiles and student dropout indicators."
         },
         {
-          "es": "Crear tutoriales y materiales de curso para un módulo enfocado en sistemas RAG utilizando LangChain, LangGraph y LangSmith, cubriendo técnicas de retrieval, indexación y evaluación con RAGAS.",
-          "en": "Created tutorials and course materials for a RAG-focused module using LangChain, LangGraph, and LangSmith, covering retrieval techniques, indexing, and evaluation with RAGAS."
+          "es": "Liderar el empalme de la unidad con las políticas institucionales de gobierno y calidad de datos: acordar con las unidades fuente la propiedad y el origen de los datos, construir definiciones a nivel de columna y definir reglas de calidad para revisar, corregir y monitorear sus productos de datos.",
+          "en": "Lead the unit's adoption of institutional data governance and quality policies: establishing data ownership and origin with source units, building column-level definitions, and defining quality rules to audit, correct, and monitor its data products."
         },
         {
-          "es": "Crear tutoriales y materiales de curso para un módulo enfocado en desarrollo de agentes utilizando LangGraph y LangSmith, cubriendo diseño de agentes, uso de herramientas y orquestación de flujos multi-agente.",
-          "en": "Created tutorials and course materials for an agent development module using LangGraph and LangSmith, covering agent design, tool use, and multi-agent workflow orchestration."
+          "es": "Diseñar, validar y desplegar modelos de machine learning para predecir la deserción y el riesgo académico estudiantil.",
+          "en": "Design, validate, and deploy machine learning models to predict student dropout and academic risk."
+        },
+        {
+          "es": "Liderar la línea de investigación del equipo, que ha producido dos publicaciones arbitradas (AIED 2026 y WEEF 2026) y un artículo de revista en preparación.",
+          "en": "Lead the team's research line, which has produced two peer-reviewed publications (AIED 2026 and WEEF 2026) and a journal article in preparation."
         }
       ],
       "achievements_short": [
         {
-          "es": "Desarrollé curso completo de RAG para maestría utilizando LangChain, LangGraph, LangSmith y RAGAS",
-          "en": "Developed comprehensive master's-level RAG course using LangChain, LangGraph, LangSmith, and RAGAS"
+          "es": "Lidero el empalme con las políticas de gobierno y calidad de datos, habilitando productos transversales como los percentiles académicos y los indicadores de deserción",
+          "en": "Lead the unit's adoption of data governance and quality policies, enabling university-wide data products such as academic percentiles and dropout indicators"
         },
         {
-          "es": "Desarrollé curso completo de agentes para maestría utilizando LangGraph y LangSmith",
-          "en": "Developed comprehensive master's-level agent development course using LangGraph and LangSmith"
+          "es": "Lidero la línea de investigación del equipo: modelos ML de deserción detrás de 2 publicaciones arbitradas (AIED y WEEF 2026)",
+          "en": "Lead the team's research line: dropout-prediction ML models behind 2 peer-reviewed publications (AIED & WEEF 2026)"
         }
       ],
-      "technologies": ["LangChain", "LangGraph", "LangSmith", "RAGAS", "Python", "LLM"]
+      "technologies": [
+        "Databricks",
+        "Python",
+        "Polars",
+        "Power BI",
+        "Azure Blob Storage",
+        "SQL"
+      ]
     },
     {
       "id": "data-scientist-current",
@@ -149,23 +166,19 @@
       },
       "location": "Bogotá, Colombia",
       "startDate": "2025-01",
-      "endDate": "present",
+      "endDate": "2026-03",
       "type": "full-time",
       "achievements": [
         {
-          "es": "Procesar datos académicos y desarrollar dashboards en Power BI bajo la tutoría de la profesora Marcela Hernández Hoyos, Ph.D., y el profesor Juan Pablo Reyes Gómez, Ph.D., generando insights accionables sobre el desempeño estudiantil y métricas institucionales.",
-          "en": "Process academic data and develop Power BI dashboards under the guidance of Professor Marcela Hernández Hoyos, Ph.D. and Professor Juan Pablo Reyes Gómez, Ph.D., delivering actionable insights on student performance and institutional metrics."
-        },
-        {
-          "es": "Diseñar y desarrollar dashboards en Power BI para entregar insights accionables sobre el historial estudiantil, tendencias de rendimiento y aspectos institucionales.",
-          "en": "Designed and developed Power BI dashboards to deliver actionable insights into student history, performance trends, and institutional matters."
+          "es": "Procesar datos académicos y desarrollar dashboards en Power BI bajo la tutoría de la profesora Marcela Hernández Hoyos, Ph.D., y el profesor Juan Pablo Reyes Gómez, Ph.D., generando insights accionables sobre el desempeño estudiantil y las métricas institucionales.",
+          "en": "Processed academic data and developed Power BI dashboards under the guidance of Professor Marcela Hernández Hoyos, Ph.D. and Professor Juan Pablo Reyes Gómez, Ph.D., delivering actionable insights on student performance and institutional metrics."
         },
         {
           "es": "Optimizar el rendimiento del pipeline ETL en un 87% (reduciendo el tiempo de procesamiento de 15 a 2 minutos) al migrar de Pandas a Polars para la obtención y almacenamiento de datos desde Azure Blob Storage.",
           "en": "Optimized ETL pipeline performance by 87% (reduced processing time from 15 to 2 minutes) by migrating from Pandas to Polars for data retrieval and storage from Azure Blob Storage."
         },
         {
-          "es": "Reemplacé la plataforma externa de consejería académica, permitiendo a la universidad ahorrar aproximadamente USD $100,000 anuales.",
+          "es": "Reemplacé la plataforma externa de consejería académica, con un ahorro aproximado de USD $100,000 anuales para la universidad.",
           "en": "Enabled the university to save approximately $100K USD annually by replacing an external academic counseling platform."
         },
         {
@@ -173,33 +186,36 @@
           "en": "Co-implemented a risk detection system that alerts stakeholders about over 1000 critical student cases."
         },
         {
-          "es": "Diseñar e implementar la arquitectura completa de datos de la unidad en Databricks, siguiendo una arquitectura medallón y automatizando completamente los pipelines de procesamiento y almacenamiento de información institucional.",
+          "es": "Diseñé e implementé la arquitectura completa de datos de la unidad en Databricks, siguiendo una arquitectura medallón y automatizando completamente los pipelines de procesamiento y almacenamiento de información institucional.",
           "en": "Designed and implemented the unit's complete data architecture in Databricks, following a medallion architecture and fully automating data processing and institutional information storage pipelines."
         }
       ],
       "achievements_short": [
         {
-          "es": "Optimicé pipeline ETL en 87% migrando de Pandas a Polars, reduciendo tiempo de 15 a 2 minutos",
-          "en": "Optimized ETL pipeline performance by 87% by migrating from Pandas to Polars, reducing processing time from 15 to 2 minutes"
+          "es": "Implementé la arquitectura medallón de la unidad en Databricks, automatizando por completo los pipelines institucionales",
+          "en": "Implemented complete medallion architecture in Databricks, fully automating institutional data pipelines"
         },
         {
-          "es": "Desarrollé dashboards Power BI para análisis de desempeño estudiantil e insights institucionales",
-          "en": "Developed Power BI dashboards delivering actionable insights on student performance and institutional metrics"
+          "es": "Optimicé el pipeline ETL en un 87% migrando de Pandas a Polars (de 15 a 2 minutos)",
+          "en": "Optimized ETL pipeline performance by 87% by migrating from Pandas to Polars, reducing processing time from 15 to 2 minutes"
         },
         {
           "es": "Reemplacé plataforma externa de consejería, ahorrando ~$100K USD anuales a la universidad",
           "en": "Replaced external counseling platform, saving the university ~$100K USD annually"
         },
         {
-          "es": "Co-implementé sistema que alerta sobre +1000 casos críticos estudiantiles",
+          "es": "Co-implementé un sistema de alertas para más de 1000 casos críticos estudiantiles",
           "en": "Co-implemented system alerting over 1000 critical student cases"
-        },
-        {
-          "es": "Implementé arquitectura medallón completa en Databricks, automatizando completamente los pipelines institucionales",
-          "en": "Implemented complete medallion architecture in Databricks, fully automating institutional data pipelines"
         }
       ],
-      "technologies": ["Power BI", "Python", "Polars", "Azure Blob Storage", "Databricks", "SQL"]
+      "technologies": [
+        "Power BI",
+        "Python",
+        "Polars",
+        "Azure Blob Storage",
+        "Databricks",
+        "SQL"
+      ]
     },
     {
       "id": "ml-intern-precia",
@@ -218,37 +234,44 @@
       "type": "internship",
       "achievements": [
         {
-          "es": "Co-desarrollar y entrenar un Perceptrón Multicapa (MLP) para reducir el tiempo de cálculo de una métrica financiera crítica en 70%, brindando a los clientes acceso significativamente más rápido a estimaciones preliminares.",
+          "es": "Co-desarrollar y entrenar un Perceptrón Multicapa (MLP) que redujo en un 70% el tiempo de cálculo de una métrica financiera crítica, acelerando el acceso de los clientes a las estimaciones preliminares.",
           "en": "Co-develop and train a Multi-layer Perceptron (MLP) to reduce the calculation time of a critical financial metric by 70%, providing clients with significantly faster access to preliminary estimates."
         },
         {
-          "es": "Diseñar e implementar una infraestructura completa en AWS, incluyendo pipelines ETL robustos que integran múltiples fuentes de datos (bases de datos, servidores FSx) y despliegue automatizado de modelos usando AWS Glue y funciones Lambda.",
+          "es": "Diseñar e implementar una infraestructura completa en AWS, con pipelines ETL robustos que integran múltiples fuentes de datos (bases de datos, servidores FSx) y despliegue automatizado de modelos con AWS Glue y funciones Lambda.",
           "en": "Design and implement end-to-end AWS infrastructure including robust ETL pipelines integrating multiple data sources (databases, FSx servers) and automate model deployment using AWS Glue and Lambda functions."
         },
         {
-          "es": "Realizar exploración y transformación de datos para optimizar la precisión y eficiencia del modelo en entornos de desarrollo y producción.",
+          "es": "Explorar y transformar datos para mejorar la precisión y la eficiencia del modelo en los entornos de desarrollo y producción.",
           "en": "Conduct data exploration and engineering to optimize model accuracy and efficiency across development and production environments."
         },
         {
-          "es": "Presentamos nuestro trabajo sobre optimización de modelos y arquitectura de infraestructura en el Analytics Forum 2025, incluyendo el uso de MLPs, pipelines en AWS y estrategias de transformación de datos.",
+          "es": "Presentar el trabajo del equipo sobre optimización de modelos y arquitectura de infraestructura en el Analytics Forum 2025: uso de MLPs, pipelines en AWS y estrategias de transformación de datos.",
           "en": "Presented our work at the Analytics Forum 2025 on model optimization and infrastructure architecture, including the use of MLPs, AWS pipelines, and data transformation strategies."
         }
       ],
       "achievements_short": [
         {
-          "es": "Desarrollé MLP que redujo tiempo de cálculo financiero en 70% para clientes",
+          "es": "Desarrollé un MLP que redujo en un 70% el tiempo de cálculo de una métrica financiera para clientes",
           "en": "Developed MLP model reducing financial calculation time by 70% for client applications"
         },
         {
-          "es": "Implementé infraestructura AWS completa con pipelines ETL automatizados usando Glue y Lambda",
+          "es": "Implementé una infraestructura completa en AWS con pipelines ETL automatizados usando Glue y Lambda",
           "en": "Implemented end-to-end AWS infrastructure with automated ETL pipelines using Glue and Lambda"
         },
         {
-          "es": "Presentamos en el Analytics Forum 2025 nuestro trabajo en modelos de Machine Learning y arquitectura AWS",
+          "es": "Presentamos nuestro trabajo de Machine Learning y arquitectura AWS en el Analytics Forum 2025",
           "en": "Presented our work on models and AWS infrastructure at Analytics Forum 2025"
         }
       ],
-      "technologies": ["Python", "AWS", "AWS Glue", "Lambda", "Machine Learning", "ETL"]
+      "technologies": [
+        "Python",
+        "AWS",
+        "AWS Glue",
+        "Lambda",
+        "Machine Learning",
+        "ETL"
+      ]
     },
     {
       "id": "data-scientist-undergraduate",
@@ -271,7 +294,7 @@
           "en": "Co-implemented the ETL process (initially in Pandas, later migrated to Polars) to retrieve data from Azure Blob Storage, structure it, and store it in a relational database."
         },
         {
-          "es": "Desarrollar y realizar pruebas de integridad para asegurar la coherencia y precisión de un modelo multidimensional, validando contra los datos originales.",
+          "es": "Desarrollar y ejecutar pruebas de integridad para asegurar la coherencia y precisión de un modelo multidimensional, contrastándolo con los datos originales.",
           "en": "Developed and conducted integrity tests to ensure the coherence and accuracy of a multidimensional model, validating against the original data."
         }
       ],
@@ -281,11 +304,17 @@
           "en": "Implemented ETL pipeline from Azure Blob Storage to relational database using Polars"
         },
         {
-          "es": "Desarrollé pruebas de integridad para validación de modelo multidimensional",
+          "es": "Desarrollé pruebas de integridad para validar el modelo multidimensional",
           "en": "Developed integrity tests ensuring multidimensional model accuracy and data coherence"
         }
       ],
-      "technologies": ["Python", "Pandas", "Polars", "Azure Blob Storage", "SQL"]
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Polars",
+        "Azure Blob Storage",
+        "SQL"
+      ]
     },
     {
       "id": "backend-developer-digital",
@@ -304,25 +333,30 @@
       "type": "part-time",
       "achievements": [
         {
-          "es": "Aplicar experiencia en Azure Functions y Python para contribuir activamente a proyectos de desarrollo de software, particularmente enfocándose en la interacción fluida con la API de OpenAI.",
+          "es": "Contribuir a proyectos de desarrollo de software con Azure Functions y Python, en particular a la integración con la API de OpenAI.",
           "en": "Applied expertise in Azure Functions and Python to actively contribute to software development projects, particularly focusing on seamless interaction with the Open AI API."
         },
         {
-          "es": "Crear documentación integral para la infraestructura del proyecto, enfatizando claridad y transparencia. Esta iniciativa facilitó una colaboración más fluida entre los miembros del equipo y mejoró la comprensión general de la arquitectura del software.",
+          "es": "Documentar la infraestructura del proyecto con énfasis en la claridad, facilitando la colaboración del equipo y la comprensión de la arquitectura del software.",
           "en": "Created comprehensive documentation for the project's infrastructure, emphasizing clarity and transparency. This initiative facilitated smoother collaboration among team members and enhanced the overall understanding of the software architecture."
         }
       ],
       "achievements_short": [
         {
-          "es": "Desarrollé soluciones backend usando Azure Functions y OpenAI API para proyectos universitarios",
+          "es": "Desarrollé soluciones backend con Azure Functions y la API de OpenAI para proyectos universitarios",
           "en": "Developed backend solutions using Azure Functions and OpenAI API for university software projects"
         },
         {
-          "es": "Creé documentación integral mejorando colaboración del equipo y comprensión de arquitectura",
+          "es": "Documenté la infraestructura del proyecto, facilitando la colaboración del equipo",
           "en": "Created comprehensive infrastructure documentation improving team collaboration and architecture understanding"
         }
       ],
-      "technologies": ["Python", "Azure Functions", "OpenAI API", "Documentation"]
+      "technologies": [
+        "Python",
+        "Azure Functions",
+        "OpenAI API",
+        "Documentation"
+      ]
     },
     {
       "id": "frontend-developer-research",
@@ -341,25 +375,30 @@
       "type": "part-time",
       "achievements": [
         {
-          "es": "Co-desarrollar e implementar soluciones frontend responsivas y amigables para el usuario para un proyecto de software en la Universidad de los Andes utilizando Angular.",
+          "es": "Co-desarrollar soluciones frontend responsivas e intuitivas en Angular para un proyecto de software de la Universidad de los Andes.",
           "en": "Co-developed and implemented responsive and user-friendly frontend solutions for a software project at the university using Angular."
         },
         {
-          "es": "Implementar controles de acceso dinámicos, adaptando los permisos de usuario basados en roles y responsabilidades.",
+          "es": "Implementar controles de acceso dinámicos que adaptan los permisos según el rol y las responsabilidades de cada usuario.",
           "en": "Implemented dynamic access controls, tailoring user permissions based on roles and responsibilities."
         }
       ],
       "achievements_short": [
         {
-          "es": "Desarrollé soluciones frontend responsivas usando Angular para proyecto universitario",
+          "es": "Desarrollé soluciones frontend responsivas en Angular para un proyecto universitario",
           "en": "Developed responsive frontend solutions using Angular for university research project"
         },
         {
-          "es": "Implementé sistema de control de acceso dinámico basado en roles de usuario",
+          "es": "Implementé un control de acceso dinámico basado en roles de usuario",
           "en": "Implemented dynamic access control system with role-based user permissions"
         }
       ],
-      "technologies": ["Angular", "TypeScript", "Frontend Development", "User Access Control"]
+      "technologies": [
+        "Angular",
+        "TypeScript",
+        "Frontend Development",
+        "User Access Control"
+      ]
     },
     {
       "id": "liaison-developer",
@@ -378,25 +417,30 @@
       "type": "part-time",
       "achievements": [
         {
-          "es": "Facilitar comunicación efectiva entre directores y 5 estudiantes de intercambio proporcionando servicios de traducción.",
+          "es": "Facilitar la comunicación entre los directores y 5 estudiantes de intercambio, sirviendo de intérprete y traductor.",
           "en": "Facilitated effective communication between directors and 5 exchange students by providing translation services."
         },
         {
-          "es": "Colaborar en proyectos de desarrollo de software utilizando OpenAI y Azure Functions, integrando exitosamente el software desarrollado en un chatbot interactivo.",
+          "es": "Colaborar en proyectos de desarrollo de software con OpenAI y Azure Functions, integrando el resultado en un chatbot interactivo.",
           "en": "Collaborated on software development projects utilizing Open AI and Azure Functions, successfully integrating the developed software into an interactive chatbot."
         }
       ],
       "achievements_short": [
         {
-          "es": "Facilité comunicación entre directores y 5 estudiantes de intercambio mediante traducción",
+          "es": "Facilité la comunicación entre directores y 5 estudiantes de intercambio como intérprete",
           "en": "Facilitated communication between directors and 5 exchange students through translation services"
         },
         {
-          "es": "Integré OpenAI y Azure Functions en chatbot interactivo para universidad",
+          "es": "Integré OpenAI y Azure Functions en un chatbot interactivo para la universidad",
           "en": "Integrated OpenAI and Azure Functions into interactive chatbot for university applications"
         }
       ],
-      "technologies": ["OpenAI API", "Azure Functions", "Translation", "Chatbot Development"]
+      "technologies": [
+        "OpenAI API",
+        "Azure Functions",
+        "Translation",
+        "Chatbot Development"
+      ]
     }
   ],
   "skills": {
@@ -433,83 +477,360 @@
       }
     ],
     "technical": {
-      "programming": ["Python", "SQL", "JavaScript", "TypeScript"],
-      "ml_ai": ["Scikit-learn", "Keras", "PyTorch", "TensorFlow"],
-      "llm_nlp": ["Transformers", "BERT", "LangChain", "LangGraph", "LangSmith", "Ollama"],
-      "data_processing": ["Pandas", "Polars", "Databricks"],
-      "cloud_devops": ["AWS", "Azure Functions", "Azure Blob Storage"],
-      "databases": ["PostgreSQL", "MongoDB", "ChromaDB", "Pinecone"]
+      "programming": [
+        "Python",
+        "SQL",
+        "JavaScript",
+        "TypeScript"
+      ],
+      "ml_ai": [
+        "Scikit-learn",
+        "Keras",
+        "PyTorch",
+        "TensorFlow"
+      ],
+      "llm_nlp": [
+        "Transformers",
+        "BERT",
+        "LangChain",
+        "LangGraph",
+        "LangSmith",
+        "Ollama"
+      ],
+      "data_processing": [
+        "Pandas",
+        "Polars",
+        "Databricks"
+      ],
+      "cloud_devops": [
+        "AWS",
+        "Azure Functions",
+        "Azure Blob Storage"
+      ],
+      "databases": [
+        "PostgreSQL",
+        "MongoDB",
+        "ChromaDB",
+        "Pinecone"
+      ]
     }
   },
   "publications": {
-  "preprints": [
-    {
-      "id": "preprint-chest-xray",
-      "status": "preprint",
-      "citation_info": {
-        "authors": ["Santiago Martínez Novoa", "María Catalina Ibáñez", "Lina Gómez Mesa", "Jeremias Kramer"],
-        "title": "Classification of Chest XRay Diseases through image processing and analysis techniques",
-        "year": "2026",
-        "arxiv_id": "2601.10913",
-        "url": "https://arxiv.org/abs/2601.10913"
-      },
-      "formatted_citations": {
-        "apa_style": "Martínez Novoa, S., Ibáñez, M. C., Gómez Mesa, L., & Kramer, J. (2026). Classification of Chest XRay Diseases through image processing and analysis techniques. arXiv preprint arXiv:2601.10913."
-      }
-    },
-    {
-      "id": "preprint-multilingual-dialogue",
-      "status": "preprint",
-      "citation_info": {
-        "authors": ["Santiago Martínez Novoa", "Nicolás Rozo Fajardo", "Diego Alejandro González Vargas", "Nicolás Bedoya Figueroa"],
-        "title": "Efficient Multilingual Dialogue Processing via Translation Pipelines and Distilled Language Models",
-        "year": "2026",
-        "arxiv_id": "2601.09059",
-        "url": "https://arxiv.org/abs/2601.09059"
-      },
-      "formatted_citations": {
-        "apa_style": "Martínez Novoa, S., Rozo Fajardo, N., González Vargas, D. A., & Bedoya Figueroa, N. (2026). Efficient Multilingual Dialogue Processing via Translation Pipelines and Distilled Language Models. arXiv preprint arXiv:2601.09059."
-      }
-    }
-  ],
-  "theses": [
-    {
-      "id": "thesis-undergraduate-melanoma",
-      "status": "published",
-      "citation_info": {
-        "author": {
-          "last_name": "Martínez Novoa",
-          "first_name": "Santiago",
-          "full_name": "Santiago Martínez Novoa",
-          "citation_name": "Martínez Novoa, S"
+    "conferences": [
+      {
+        "id": "conference-emnlp-findings-sampling",
+        "status": "in_press",
+        "citation_info": {
+          "authors": [
+            "Quang Phuoc Nguyen",
+            "Félix Gaschi",
+            "David Anugraha",
+            "Santiago Martínez Novoa",
+            "En-Shiun Annie Lee"
+          ],
+          "authors_citation": [
+            "Nguyen, Q. P.",
+            "Gaschi, F.",
+            "Anugraha, D.",
+            "Martínez Novoa, S.",
+            "Lee, E.-S. A."
+          ],
+          "title": "Online Language Adaptive Sampling for Better Distributed Cross-lingual Gains",
+          "document_type": {
+            "es": "Artículo aceptado en Findings of EMNLP 2026 (Conference on Empirical Methods in Natural Language Processing), Budapest, Hungría, 24-29 de octubre de 2026. Tasa de aceptación de Findings: 14.3%",
+            "en": "Paper accepted at Findings of EMNLP 2026 (Conference on Empirical Methods in Natural Language Processing), Budapest, Hungary, October 24-29, 2026. Findings acceptance rate: 14.3%"
+          },
+          "year": "2026",
+          "date": "2026-10-24",
+          "venue": "Findings of EMNLP 2026, Budapest, Hungary"
         },
-        "title": "Detection and Segmentation of Malignant Melanoma Regions in Dermoscopic Images Using Machine Learning",
-        "document_type": {
-          "es": "Tesis de pregrado presentada en la Universidad de los Andes para obtener el título de Ingeniero de Sistemas y Computación",
-          "en": "Undergraduate thesis presented at Universidad de los Andes to obtain the degree of Systems and Computing Engineer"
+        "formatted_citations": {
+          "apa_style": "Nguyen, Q. P., Gaschi, F., Anugraha, D., Martínez Novoa, S., & Lee, E.-S. A. (2026). Online Language Adaptive Sampling for Better Distributed Cross-lingual Gains. To appear in Findings of the Association for Computational Linguistics: EMNLP 2026, Budapest, Hungary."
         },
-        "supervisor": "Juan Pablo Reyes Gómez Ph.D",
-        "institution": "Universidad de Los Andes",
-        "year": "2024",
-        "repository": {
-          "name": "Uniandes Repository",
-          "url": "https://hdl.handle.net/1992/75910"
+        "bibtex_website": "https://santiagom99.github.io/files/paper-emnlp-sampling.bib"
+      },
+      {
+        "id": "conference-weef-sasp",
+        "status": "in_press",
+        "citation_info": {
+          "authors": [
+            "Santiago Martínez Novoa",
+            "Federico Melo Barrero",
+            "Mariana Ruiz Giraldo",
+            "Sofia Velásquez Marín",
+            "Nicolás Carvajal Chaves",
+            "Marcela Hernández Hoyos",
+            "Juan Pablo Reyes"
+          ],
+          "title": "Centralizing the Student Lens: Design and Evaluation of a Learning Analytics Dashboard for Academic Advising in Higher Education",
+          "document_type": {
+            "es": "Artículo aceptado en el World Engineering Education Forum, WEEF (IFEES & GEDC) 2026, Cartagena de Indias, Colombia, 22-25 de septiembre de 2026",
+            "en": "Paper accepted at the World Engineering Education Forum, WEEF (IFEES & GEDC) 2026, Cartagena de Indias, Colombia, September 22-25, 2026"
+          },
+          "year": "2026",
+          "date": "2026-09-22",
+          "repository": {
+            "name": "WEEF (IFEES & GEDC) 2026",
+            "url": ""
+          },
+          "abstract": {
+            "en": "This paper presents SASP (Socioeconomic and Academic Student Profile), an institution-wide learning analytics dashboard developed and deployed at Universidad de los Andes (Colombia) — embedded within *No estás solx*, the university's existing student support platform — designed to improve the quality of academic advising in engineering education. SASP addresses a persistent challenge in higher education: student information relevant to advising is often fragmented across multiple institutional systems, limiting timely, consistent, and evidence-based support. SASP was created through a year-long iterative co-design process with the Vice Dean's Office for Student Affairs in the School of Engineering and integrates academic performance, course history, socioeconomic context, scheduling, and institutional support records into a single interface. The dashboard embodies four design principles: (1) multi-dimensional centralization; (2) per-academic-level context switching; (3) subject-area filtering as a cross-cutting analytical lens; and (4) embedding within an existing, trusted portal. To evaluate its contribution, we gathered survey data from 117 academic advisors and nine months of behavioral telemetry. Results show strong institutional adoption (94.9% of respondents had used SASP; 72.7% were returning users) and positive perceptions of its value for advising. Data centralization was the highest-rated feature, 91% of respondents who used SASP during counseling sessions found it useful, and advisors reported that the dashboard improved access to relevant information, facilitated understanding of students' academic trajectories, and supported the identification of at-risk cases. Advisors also rated SASP as sufficiently complete to serve as the primary tool during a counseling session. These findings suggest that integrated learning analytics tools can strengthen the quality, consistency, and timeliness of academic support in engineering education when they are embedded into real institutional workflows. Beyond the specific system, this study contributes empirically grounded design principles for scalable advising infrastructures in higher education."
+          },
+          "authors_citation": [
+            "Martínez Novoa, S.",
+            "Melo Barrero, F.",
+            "Ruiz Giraldo, M.",
+            "Velásquez Marín, S.",
+            "Carvajal Chaves, N.",
+            "Hernández Hoyos, M.",
+            "Reyes, J. P."
+          ],
+          "venue": "WEEF (IFEES & GEDC) 2026, Cartagena de Indias, Colombia"
+        },
+        "formatted_citations": {
+          "apa_style": "Martínez Novoa, S., Melo Barrero, F., Ruiz Giraldo, M., Velásquez Marín, S., Carvajal Chaves, N., Hernández Hoyos, M., & Reyes, J. P. (2026). Centralizing the Student Lens: Design and Evaluation of a Learning Analytics Dashboard for Academic Advising in Higher Education. To appear in Proceedings of the World Engineering Education Forum, WEEF (IFEES & GEDC) 2026, Cartagena de Indias, Colombia."
+        },
+        "bibtex_website": "https://santiagom99.github.io/files/paper-weef-sasp.bib"
+      },
+      {
+        "id": "conference-aied-limbo",
+        "status": "published",
+        "doi": "10.1007/978-3-032-29791-4_5",
+        "citation_info": {
+          "authors": [
+            "Erich Giusseppe Soto Parada",
+            "Santiago Martínez Novoa",
+            "Nicolás Klopstock Triana",
+            "David Alejandro Fuquen Florez",
+            "Fabian C. Peña",
+            "Marcela Hernández Hoyos",
+            "Juan Pablo Reyes"
+          ],
+          "title": "No Student Left in Limbo: Multi-Level Clustering for Success Prediction in a Latin American University",
+          "document_type": {
+            "es": "Artículo presentado en AIED 2026 (27th International Conference on Artificial Intelligence in Education, track WideAIED), Seúl, Corea del Sur. Publicado por Springer en Communications in Computer and Information Science, Proceedings Part II, pp. 63-77",
+            "en": "Paper presented at AIED 2026 (27th International Conference on Artificial Intelligence in Education, WideAIED track), Seoul, South Korea. Published by Springer in Communications in Computer and Information Science, Proceedings Part II, pp. 63-77"
+          },
+          "year": "2026",
+          "date": "2026-06-27",
+          "repository": {
+            "name": "Springer (AIED 2026 Proceedings)",
+            "url": "https://doi.org/10.1007/978-3-032-29791-4_5"
+          },
+          "authors_citation": [
+            "Soto Parada, E. G.",
+            "Martínez Novoa, S.",
+            "Klopstock Triana, N.",
+            "Fuquen Florez, D. A.",
+            "Peña, F. C.",
+            "Hernández Hoyos, M.",
+            "Reyes, J. P."
+          ],
+          "venue": "AIED 2026, WideAIED Track, Communications in Computer and Information Science, Springer, pp. 63–77"
+        },
+        "formatted_citations": {
+          "apa_style": "Soto Parada, E. G., Martínez Novoa, S., Klopstock Triana, N., Fuquen Florez, D. A., Peña, F. C., Hernández Hoyos, M., & Reyes, J. P. (2026). No Student Left in Limbo: Multi-Level Clustering for Success Prediction in a Latin American University. In Artificial Intelligence in Education (AIED 2026, WideAIED Track), Communications in Computer and Information Science, pp. 63-77. Springer. https://doi.org/10.1007/978-3-032-29791-4_5"
+        },
+        "bibtex_website": "https://santiagom99.github.io/files/paper-aied-limbo.bib"
+      }
+    ],
+    "workshops": [
+      {
+        "id": "workshop-bionlp-meshclass",
+        "status": "published",
+        "doi": "10.18653/v1/2026.bionlp-1.49",
+        "citation_info": {
+          "authors": [
+            "Santiago Martínez Novoa",
+            "Lina Gómez Mesa",
+            "Juan Prieto",
+            "Rubén Manrique"
+          ],
+          "title": "MeSHClass-ES and AnatEM-ES: Open Resources for Spanish Biomedical NLP",
+          "document_type": {
+            "es": "Artículo presentado en BioNLP 2026 (Biomedical Natural Language Processing Workshop, ACL), San Diego, California, pp. 617-629",
+            "en": "Paper presented at BioNLP 2026 (Biomedical Natural Language Processing Workshop, ACL), San Diego, California, pp. 617-629"
+          },
+          "year": "2026",
+          "date": "2026-07-01",
+          "repository": {
+            "name": "ACL Anthology",
+            "url": "https://aclanthology.org/2026.bionlp-1.49/"
+          },
+          "abstract": {
+            "en": "Despite Spanish being one of the most widely spoken languages in the world, biomedical NLP resources and systematic evaluations remain limited relative to English. We address this gap by constructing and releasing two Spanish biomedical corpora: (1) MeSHClass-ES, a 29,063 abstract bilingual corpus translated from PubMed with Opus-MT, and (2) AnatEM-ES, the AnatEM anatomical entity corpus translated with a chunk-level LLM-based pipeline that jointly preserves BIO annotations across 13,849 entity mentions. Both corpora achieve a mean COMET score of 0.73 despite using different translation systems. We benchmark nine encoder models spanning general-domain Spanish, domain-specific, and multilingual architectures for both tasks. RigoBERTa-2.0 leads both tasks (micro-F1 classification 0.69, tied with SciBETO-large; NER F1 0.66). Both domain pretraining and model capacity drive performance, with the gap slightly more pronounced for NER (4-point spread) than classification (3-point spread). XLM-RoBERTa-large emerges as a competitive multilingual baseline. A parallel evaluation of four open-weight decoders (7-9B) reveals a task-dependent encoder-decoder gap: QLoRA-adapted Gemma-2-9B reaches 88% of the best encoder on classification (micro-F1 .61 vs .69), but for NER every decoder configuration we tested stays at or below 40% of the best encoder F1. We release both corpora on the HuggingFace Hub, translation pipelines, and evaluation code on GitHub."
+          },
+          "authors_citation": [
+            "Martínez Novoa, S.",
+            "Gómez Mesa, L.",
+            "Prieto, J.",
+            "Manrique, R."
+          ],
+          "venue": "BioNLP 2026 (ACL Workshop), San Diego, California, pp. 617–629"
+        },
+        "formatted_citations": {
+          "apa_style": "Martínez Novoa, S., Gómez Mesa, L., Prieto, J., & Manrique, R. (2026). MeSHClass-ES and AnatEM-ES: Open Resources for Spanish Biomedical NLP. In BioNLP 2026, pp. 617-629. Association for Computational Linguistics. https://doi.org/10.18653/v1/2026.bionlp-1.49"
+        },
+        "bibtex_website": "https://santiagom99.github.io/files/paper-bionlp-meshclass.bib"
+      }
+    ],
+    "preprints": [
+      {
+        "id": "preprint-chest-xray",
+        "status": "preprint",
+        "citation_info": {
+          "authors": [
+            "Santiago Martínez Novoa",
+            "María Catalina Ibáñez",
+            "Lina Gómez Mesa",
+            "Jeremias Kramer"
+          ],
+          "title": "Classification of Chest XRay Diseases through image processing and analysis techniques",
+          "year": "2026",
+          "arxiv_id": "2601.10913",
+          "url": "https://arxiv.org/abs/2601.10913",
+          "date": "2026-01-16",
+          "abstract": {
+            "en": "Multi-Classification Chest X-Ray Images are one of the most prevalent forms of radiological examination used for diagnosing thoracic diseases. In this study, we offer a concise overview of several methods employed for tackling this task, including DenseNet121. In addition, we deploy an open-source web-based application. In our study, we conduct tests to compare different methods and see how well they work. We also look closely at the weaknesses of the methods we propose and suggest ideas for making them better in the future. Our code is available at: https://github.com/AML4206-MINE20242/Proyecto_AML"
+          },
+          "authors_citation": [
+            "Martínez Novoa, S.",
+            "Ibáñez, M. C.",
+            "Gómez Mesa, L.",
+            "Kramer, J."
+          ]
+        },
+        "formatted_citations": {
+          "apa_style": "Martínez Novoa, S., Ibáñez, M. C., Gómez Mesa, L., & Kramer, J. (2026). Classification of Chest XRay Diseases through image processing and analysis techniques. arXiv preprint arXiv:2601.10913."
         }
       },
-      "formatted_citations": {
-        "apa_style": "Martínez Novoa, S. (2024). Detection and Segmentation of Malignant Melanoma Regions in Dermoscopic Images Using Machine Learning. Undergraduate thesis, Universidad de Los Andes. Supervisor: Juan Pablo Reyes Gómez Ph.D. Uniandes Repository."
-      },
-      "category": "manuscripts",
-      "bibtex_website": "https://santiagom99.github.io/files/paper-melanoma.bib"
-    }
-  ]
-},
+      {
+        "id": "preprint-multilingual-dialogue",
+        "status": "preprint",
+        "citation_info": {
+          "authors": [
+            "Santiago Martínez Novoa",
+            "Nicolás Rozo Fajardo",
+            "Diego Alejandro González Vargas",
+            "Nicolás Bedoya Figueroa"
+          ],
+          "title": "Efficient Multilingual Dialogue Processing via Translation Pipelines and Distilled Language Models",
+          "year": "2026",
+          "arxiv_id": "2601.09059",
+          "url": "https://arxiv.org/abs/2601.09059",
+          "date": "2026-01-13",
+          "abstract": {
+            "en": "This paper presents team Kl33n3x's multilingual dialogue summarization and question answering system developed for the NLPAI4Health 2025 shared task. The approach employs a three-stage pipeline: forward translation from Indic languages to English, multitask text generation using a 2.55B parameter distilled language model, and reverse translation back to source languages. By leveraging knowledge distillation techniques, this work demonstrates that compact models can achieve highly competitive performance across nine languages. The system achieved strong win rates across the competition's tasks, with particularly robust performance on Marathi (86.7% QnA), Tamil (86.7% QnA), and Hindi (80.0% QnA), demonstrating the effectiveness of translation-based approaches for low-resource language processing without task-specific fine-tuning."
+          },
+          "authors_citation": [
+            "Martínez Novoa, S.",
+            "Rozo Fajardo, N.",
+            "González Vargas, D. A.",
+            "Bedoya Figueroa, N."
+          ]
+        },
+        "formatted_citations": {
+          "apa_style": "Martínez Novoa, S., Rozo Fajardo, N., González Vargas, D. A., & Bedoya Figueroa, N. (2026). Efficient Multilingual Dialogue Processing via Translation Pipelines and Distilled Language Models. arXiv preprint arXiv:2601.09059."
+        }
+      }
+    ],
+    "theses": [
+      {
+        "id": "thesis-undergraduate-melanoma",
+        "status": "published",
+        "citation_info": {
+          "author": {
+            "last_name": "Martínez Novoa",
+            "first_name": "Santiago",
+            "full_name": "Santiago Martínez Novoa",
+            "citation_name": "Martínez Novoa, S"
+          },
+          "title": "Detection and Segmentation of Malignant Melanoma Regions in Dermoscopic Images Using Machine Learning",
+          "document_type": {
+            "es": "Tesis de pregrado presentada en la Universidad de los Andes para obtener el título de Ingeniero de Sistemas y Computación",
+            "en": "Undergraduate thesis presented at Universidad de los Andes to obtain the degree of Systems and Computing Engineer"
+          },
+          "supervisor": "Juan Pablo Reyes Gómez Ph.D",
+          "institution": "Universidad de Los Andes",
+          "year": "2024",
+          "repository": {
+            "name": "Uniandes Repository",
+            "url": "https://hdl.handle.net/1992/75910"
+          },
+          "authors_citation": [
+            "Martínez Novoa, S."
+          ],
+          "venue": {
+            "es": "Tesis de pregrado, Universidad de los Andes",
+            "en": "Undergraduate thesis, Universidad de los Andes"
+          }
+        },
+        "formatted_citations": {
+          "apa_style": "Martínez Novoa, S. (2024). Detection and Segmentation of Malignant Melanoma Regions in Dermoscopic Images Using Machine Learning. Undergraduate thesis, Universidad de Los Andes. Supervisor: Juan Pablo Reyes Gómez Ph.D. Uniandes Repository."
+        },
+        "bibtex_website": "https://santiagom99.github.io/files/paper-melanoma.bib"
+      }
+    ]
+  },
   "research": [
+    {
+      "id": "lee-language-lab",
+      "featured": true,
+      "title": {
+        "es": "Pasante de Investigación Mitacs Globalink - Investigador Colaborador",
+        "en": "Mitacs Globalink Research Intern - Collaborating Researcher"
+      },
+      "research_group": "Lee Language Lab",
+      "institution": "Ontario Tech University",
+      "location": {
+        "es": "Oshawa, Canadá",
+        "en": "Oshawa, Canada"
+      },
+      "supervisor": "Annie En-Shiun Lee Ph.D.",
+      "startDate": "2026-05",
+      "endDate": "present",
+      "description": [
+        {
+          "es": "Coautor de un estudio sobre muestreo adaptativo de lenguas en línea para mejorar la transferencia cross-lingüe distribuida, aceptado en Findings of EMNLP 2026.",
+          "en": "Co-authored a study on online adaptive language sampling for better distributed cross-lingual transfer, accepted to Findings of EMNLP 2026."
+        },
+        {
+          "es": "Liderar su continuación directa, estudiando cuándo detener el realineamiento cross-lingüe: más realineamiento no siempre mejora la transferencia, y las lenguas de bajos recursos no ofrecen datos etiquetados para saber cuándo parar; artículo en revisión en ACL Rolling Review (ARR).",
+          "en": "Lead its direct continuation, studying when to stop cross-lingual realignment: more realignment is not always better for transfer, and low-resource languages offer no labeled data to tell when to stop; paper under review at ACL Rolling Review (ARR)."
+        },
+        {
+          "es": "Co-desarrollar M2-ALIGN, estudiando dónde debe vivir el alineamiento multilingüe en los modelos de visión y lenguaje: cómo extender el grounding visual a 11 lenguas, incluidas lenguas de bajos recursos, sin erosionar el razonamiento multilingüe que los modelos base ya tienen; trabajo en curso sobre evaluación culturalmente situada (CVQA).",
+          "en": "Co-develop M2-ALIGN, studying where multilingual alignment should live in vision-language models: how to extend visual grounding to 11 languages, including low-resource ones, without eroding the multilingual reasoning the base models already have; ongoing work on culturally grounded evaluation (CVQA)."
+        },
+        {
+          "es": "Contribuir a una revisión sistemática de literatura (PRISMA) sobre agentes conversacionales multilingües, multimodales y multiculturales.",
+          "en": "Contributed to a PRISMA systematic literature review of multilingual, multimodal, and multicultural conversational agents."
+        }
+      ],
+      "achievements_short": [
+        {
+          "es": "Coautor de un paper en Findings of EMNLP 2026 sobre muestreo adaptativo de lenguas; lidero su continuación sobre cuándo detener el realineamiento cross-lingüe, en revisión en ARR",
+          "en": "Co-authored a Findings of EMNLP 2026 paper on adaptive language sampling; leading its follow-up on when to stop cross-lingual realignment, under review at ARR"
+        },
+        {
+          "es": "Co-desarrollo M2-ALIGN: extender modelos de visión y lenguaje a 11 lenguas preservando su razonamiento multilingüe",
+          "en": "Co-developing M2-ALIGN: extending vision-language models to 11 languages while preserving their multilingual reasoning"
+        }
+      ],
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "Hugging Face Transformers",
+        "SLURM",
+        "Multilingual NLP",
+        "Vision-Language Models"
+      ]
+    },
     {
       "id": "flag-nlp-research",
       "featured": false,
       "title": {
-        "es": "Evaluación y Mejoramiento de Modelos de Lenguaje Natural en español",
+        "es": "Evaluación y Mejora de Modelos de Lenguaje Natural en Español",
         "en": "Evaluation and Enhancement of Natural Language Models in spanish"
       },
       "research_group": "FLAG Research Lab - A.I. and Machine Learning",
@@ -520,7 +841,7 @@
       "endDate": "present",
       "description": [
         {
-          "es": "Investigar el mejoramiento de las capacidades de modelos de lenguaje natural para contextos médicos en español, enfocándose en tareas de clasificación de textos y extracción de entidades nombradas bajo la supervisión del profesor Ruben Manrique, Ph.D.",
+          "es": "Investigar cómo mejorar modelos de lenguaje para el dominio médico en español, con foco en clasificación de textos y extracción de entidades nombradas, bajo la supervisión del profesor Rubén Manrique, Ph.D.",
           "en": "Research on improving natural language model capabilities for Spanish medical contexts, focusing on text classification and named entity extraction tasks under Professor Ruben Manrique Ph.D."
         },
         {
@@ -528,21 +849,31 @@
           "en": "Develop and train specialized models from scratch for specific Spanish medical domain tasks."
         },
         {
-          "es": "Realizar evaluaciones comparativas entre modelos altamente entrenados y Large Language Models (LLMs) utilizando técnicas de prompting como zero-shot y few-shot learning.",
+          "es": "Comparar modelos especializados con Large Language Models (LLMs) en esquemas de zero-shot y few-shot learning.",
           "en": "Conduct comparative evaluations between highly-trained models and Large Language Models (LLMs) using prompting techniques such as zero-shot and few-shot learning."
         }
       ],
       "achievements_short": [
         {
-          "es": "Investigué mejoramiento de modelos NLP para contextos médicos en español con enfoque en NER y clasificación",
+          "es": "Investigué la mejora de modelos NLP para el dominio médico en español, con foco en NER y clasificación",
           "en": "Researched NLP model enhancement for Spanish medical contexts focusing on NER and text classification"
         },
         {
-          "es": "Desarrollé modelos especializados desde cero y comparé con LLMs usando zero-shot y few-shot learning",
+          "es": "Desarrollé modelos especializados desde cero y los comparé con LLMs en zero-shot y few-shot",
           "en": "Developed specialized models from scratch and compared with LLMs using zero-shot and few-shot learning"
         }
       ],
-      "technologies": ["Python", "Transformers", "BERT", "Spanish Language Models", "Zero-shot Learning", "Few-shot Learning", "NER", "Text Classification", "Medical NLP"]
+      "technologies": [
+        "Python",
+        "Transformers",
+        "BERT",
+        "Spanish Language Models",
+        "Zero-shot Learning",
+        "Few-shot Learning",
+        "NER",
+        "Text Classification",
+        "Medical NLP"
+      ]
     },
     {
       "id": "generative-ai-research",
@@ -558,7 +889,7 @@
       "endDate": "2025-06",
       "description": [
         {
-          "es": "Enfocado en optimizar procesos de investigación universitaria a través del desarrollo de agentes de IA personalizados y sistemas de evaluación automatizados.",
+          "es": "Optimizar procesos de investigación universitaria mediante agentes de IA personalizados y sistemas de evaluación automatizados.",
           "en": "Focused on optimizing university research processes through custom AI agent development and automated evaluation systems."
         },
         {
@@ -566,21 +897,21 @@
           "en": "Built locally-deployed RAG systems using Ollama models and integrated Gemini API calls to answer domain-specific research questions."
         },
         {
-          "es": "Diseñar arquitectura de evaluación de LLM para evaluar la calidad y precisión de respuestas en diferentes contextos de investigación utilizando Prometheus, BERT score y OpenAI API.",
+          "es": "Diseñar una arquitectura de evaluación de LLMs que mide la calidad y precisión de las respuestas en distintos contextos de investigación, utilizando Prometheus, BERTScore y la API de OpenAI.",
           "en": "Designed LLM evaluation architecture to assess response quality and accuracy across different research contexts using Prometheus, BERT score and OpenAI API."
         },
         {
-          "es": "Automatizar procesos de evaluación estudiantil desarrollando sistemas de evaluación basados en LLM que califican respuestas contra rúbricas establecidas y respuestas esperadas.",
+          "es": "Automatizar la evaluación estudiantil con sistemas basados en LLM que califican las respuestas según rúbricas y respuestas esperadas.",
           "en": "Automated student assessment processes by developing LLM-based evaluation systems that grade responses against established rubrics and expected answers."
         }
       ],
       "achievements_short": [
         {
-          "es": "Construí sistemas RAG locales con Ollama y API Gemini para preguntas específicas de investigación",
+          "es": "Construí sistemas RAG locales con Ollama y la API de Gemini para responder preguntas de investigación",
           "en": "Built locally-deployed RAG systems using Ollama and Gemini API for domain-specific research questions"
         },
         {
-          "es": "Diseñé arquitectura de evaluación LLM usando Prometheus, BERT score y OpenAI API para calidad de respuestas",
+          "es": "Diseñé una arquitectura de evaluación de LLMs con Prometheus, BERTScore y la API de OpenAI",
           "en": "Designed LLM evaluation architecture using Prometheus, BERT score and OpenAI API for response quality assessment"
         },
         {
@@ -588,17 +919,26 @@
           "en": "Developed custom AI agents to optimize university research processes"
         },
         {
-          "es": "Automatizé la evaluación estudiantil con LLMs alineados a rúbricas y respuestas esperadas",
+          "es": "Automaticé la evaluación estudiantil con LLMs que califican según rúbricas y respuestas esperadas",
           "en": "Automated student assessment using LLMs aligned with rubrics and expected answers"
         }
       ],
-      "technologies": ["Python", "Ollama", "Gemini API", "RAG", "Prometheus", "BERT", "OpenAI API", "LLM Evaluation"]
+      "technologies": [
+        "Python",
+        "Ollama",
+        "Gemini API",
+        "RAG",
+        "Prometheus",
+        "BERT",
+        "OpenAI API",
+        "LLM Evaluation"
+      ]
     },
     {
       "id": "cornell-summer-research",
       "featured": true,
       "title": {
-        "es": "Interno de Investigación de Verano",
+        "es": "Pasante de Investigación de Verano",
         "en": "Summer Research Intern"
       },
       "institution": {
@@ -614,25 +954,30 @@
       "endDate": "2024-08",
       "description": [
         {
-          "es": "Diseñar una arquitectura de Descubrimiento de Datos para explorar y modificar conjuntos de datos en varios formatos bajo la supervisión del profesor Sainyam Galhotra, Ph.D.",
+          "es": "Diseñar una arquitectura de Data Discovery para explorar y modificar conjuntos de datos en varios formatos, bajo la supervisión del profesor Sainyam Galhotra, Ph.D.",
           "en": "Designed a Data Discovery architecture to explore and modify datasets in various formats under Professor Sainyam Galhotra Ph.D."
         },
         {
-          "es": "Desarrollar la primera versión de la arquitectura incluyendo la carga y puntuación a través de búsqueda semántica de múltiples bases de datos.",
+          "es": "Desarrollar la primera versión de la arquitectura, con carga de datos y puntuación mediante búsqueda semántica sobre múltiples bases de datos.",
           "en": "Developed the first version of the architecture including the upload and scoring through semantic search of multiple databases."
         }
       ],
       "achievements_short": [
         {
-          "es": "Diseñé arquitectura de Data Discovery para explorar datasets en múltiples formatos",
+          "es": "Diseñé una arquitectura de Data Discovery para explorar datasets en múltiples formatos",
           "en": "Designed Data Discovery architecture to explore and modify datasets in various formats"
         },
         {
-          "es": "Desarrollé sistema de carga y puntuación con búsqueda semántica para múltiples bases de datos",
+          "es": "Desarrollé un sistema de carga y puntuación con búsqueda semántica sobre múltiples bases de datos",
           "en": "Developed upload and scoring system through semantic search across multiple databases"
         }
       ],
-      "technologies": ["Python", "Data Discovery", "Semantic Search", "Database Management"]
+      "technologies": [
+        "Python",
+        "Data Discovery",
+        "Semantic Search",
+        "Database Management"
+      ]
     }
   ],
   "teaching": [
@@ -644,8 +989,8 @@
         "en": "Graduate Teaching Assistant"
       },
       "course": {
-        "es": "Aplicaciones Basadas en LLM",
-        "en": "LLM-Based Applications"
+        "es": "Aplicaciones Basadas en LLM y Construcción de Agentes",
+        "en": "LLM-Based Applications & Agent Development"
       },
       "institution": "Universidad de los Andes",
       "location": "Bogotá, Colombia",
@@ -653,8 +998,16 @@
       "endDate": "present",
       "description": [
         {
-          "es": "Supervisar a más de 100 estudiantes de maestría en dos cursos enfocados en aplicaciones de modelos de lenguaje grandes: uno centrado en sistemas RAG y otro en desarrollo de agentes.",
-          "en": "Supervised over 100 master's students across two courses focused on large language model applications: one centered on RAG systems and the other on agent development."
+          "es": "Asistente graduado durante tres semestres de dos cursos secuenciales de maestría de 8 semanas cada uno, 'Aplicaciones Basadas en LLM' (sistemas RAG) y 'Construcción de Agentes', apoyando a más de 200 estudiantes de maestría.",
+          "en": "Graduate TA across three semesters for two sequential 8-week master's courses, 'LLM-Based Applications' (RAG systems) and 'Agent Development', supporting over 200 master's students."
+        },
+        {
+          "es": "Crear tutoriales y materiales para el módulo de sistemas RAG con LangChain, LangGraph y LangSmith: técnicas de retrieval, indexación y evaluación con RAGAS.",
+          "en": "Created tutorials and course materials for the RAG systems module using LangChain, LangGraph, and LangSmith, covering retrieval techniques, indexing, and evaluation with RAGAS."
+        },
+        {
+          "es": "Crear tutoriales y materiales para el módulo de desarrollo de agentes con LangGraph y LangSmith: diseño de agentes, uso de herramientas y orquestación de flujos multi-agente.",
+          "en": "Created tutorials and course materials for the agent development module using LangGraph and LangSmith, covering agent design, tool use, and multi-agent workflow orchestration."
         },
         {
           "es": "Evaluar el desempeño estudiantil en proyectos prácticos y ejercicios de implementación a lo largo de ambos cursos.",
@@ -663,12 +1016,12 @@
       ],
       "achievements_short": [
         {
-          "es": "Supervisé 100+ estudiantes de maestría en cursos de RAG y desarrollo de agentes",
-          "en": "Supervised 100+ master's students in RAG and agent development courses"
+          "es": "Diseñé el currículo práctico de dos cursos secuenciales de maestría sobre sistemas RAG y agentes de IA para 200+ estudiantes en 3 semestres",
+          "en": "Designed the hands-on curriculum for two sequential master's courses on RAG systems and AI agents, reaching 200+ students across 3 semesters"
         },
         {
-          "es": "Evalué desempeño estudiantil en proyectos prácticos de implementación LLM",
-          "en": "Evaluated student performance on practical LLM implementation projects"
+          "es": "Construí tutoriales, proyectos y pipelines de evaluación con RAGAS usando LangChain, LangGraph y LangSmith",
+          "en": "Built tutorials, projects, and RAGAS-based evaluation pipelines with LangChain, LangGraph, and LangSmith"
         }
       ]
     },
@@ -692,7 +1045,7 @@
       "endDate": "2024-12",
       "description": [
         {
-          "es": "Supervisar aproximadamente 40 tutores y 70 asistentes de cátedra como parte del equipo de 7 personas que supervisa las operaciones en CupiTaller, el centro de apoyo en programación de la Universidad de los Andes, bajo el profesor Eduardo Rosales, Ph.D.",
+          "es": "Supervisar aproximadamente 40 tutores y 70 asistentes de cátedra como parte del equipo de 7 personas que coordina CupiTaller, el centro de apoyo en programación de la Universidad de los Andes, bajo la dirección del profesor Eduardo Rosales, Ph.D.",
           "en": "Supervised approximately 40 tutors and 70 teaching assistants as part of the 7-person team overseeing operations at CupiTaller, the university' programming support center, under Professor Eduardo Rosales, Ph.D."
         },
         {
@@ -700,13 +1053,13 @@
           "en": "Designed programming projects for 'Introducción a la Programación', a course with +1100 students each semester."
         },
         {
-          "es": "Limpiar, enriquecer y procesar conjuntos de datos esenciales para cada proyecto, asegurando precisión, completitud y consistencia de los datos.",
+          "es": "Limpiar, enriquecer y procesar los conjuntos de datos de cada proyecto, asegurando su precisión, completitud y consistencia.",
           "en": "Cleaned, enriched, and processed datasets essential for each project, ensuring data accuracy completeness and consistency."
         }
       ],
       "achievements_short": [
         {
-          "es": "Supervisé 110+ tutores y asistentes como parte del equipo de liderazgo en CupiTaller",
+          "es": "Supervisé 110+ tutores y asistentes como parte del equipo que coordina CupiTaller",
           "en": "Supervised 110+ tutors and teaching assistants as part of CupiTaller leadership team"
         },
         {
@@ -714,7 +1067,7 @@
           "en": "Designed programming projects for course serving 1100+ students per semester"
         },
         {
-          "es": "Procesé datasets para proyectos educativos asegurando precisión y consistencia de datos",
+          "es": "Procesé los datasets de los proyectos del curso, asegurando su precisión y consistencia",
           "en": "Processed datasets for educational projects ensuring data accuracy and consistency"
         }
       ]
@@ -739,21 +1092,21 @@
       "endDate": "2023-08",
       "description": [
         {
-          "es": "Proporcionar 5 horas semanales de tutoría de programación en Python en el centro de ayuda de programación de la Universidad.",
+          "es": "Dictar 5 horas semanales de tutoría de programación en Python en el centro de apoyo de la universidad.",
           "en": "Provided 5 hours of weekly Python programming tutoring at the University's programming help center."
         },
         {
-          "es": "Instruir a más de 100 estudiantes, ayudándoles a desarrollar habilidades fundamentales de codificación en Python.",
+          "es": "Acompañar a más de 100 estudiantes en el desarrollo de sus fundamentos de programación en Python.",
           "en": "Instructed more than 100 students, helping them develop fundamental coding skills in Python."
         }
       ],
       "achievements_short": [
         {
-          "es": "Brindé 5 horas semanales de tutoría Python durante 2 años en centro universitario",
+          "es": "Dicté 5 horas semanales de tutoría de Python durante 2 años en el centro de apoyo de la universidad",
           "en": "Provided 5 weekly hours of Python tutoring for 2 years at university programming center"
         },
         {
-          "es": "Instruí 100+ estudiantes desarrollando habilidades fundamentales de programación",
+          "es": "Acompañé a 100+ estudiantes en sus fundamentos de programación",
           "en": "Instructed 100+ students developing fundamental Python programming skills"
         }
       ]
@@ -775,7 +1128,7 @@
       "endDate": "2022-12",
       "description": [
         {
-          "es": "Proporcionar apoyo al profesor durante los laboratorios de enseñanza de programación, asistiendo aproximadamente a 40 estudiantes cada semestre.",
+          "es": "Apoyar al profesor en los laboratorios de programación, asistiendo a unos 40 estudiantes por semestre.",
           "en": "Provided support to the professor during programming teaching laboratories, assisting approximately 40 students each semester."
         },
         {
@@ -785,7 +1138,7 @@
       ],
       "achievements_short": [
         {
-          "es": "Asistí profesor en laboratorios de programación con 40 estudiantes por semestre",
+          "es": "Apoyé al profesor en laboratorios de programación con 40 estudiantes por semestre",
           "en": "Assisted professor in programming laboratories with 40 students per semester"
         },
         {
@@ -815,7 +1168,7 @@
           "en": "Corrected and graded tests, activities, and assessments"
         },
         {
-          "es": "Guié aproximadamente 40 estudiantes hacia una comprensión profunda de los Fundamentos de Infraestructura Tecnológica",
+          "es": "Acompañé a unos 40 estudiantes para afianzar su comprensión de los fundamentos de infraestructura tecnológica",
           "en": "Guided approximately 40 students to a thorough understanding of Fundamentals of Technological Infrastructure"
         }
       ],
@@ -825,7 +1178,7 @@
           "en": "Corrected tests and activities for technological infrastructure fundamentals course"
         },
         {
-          "es": "Guié 40 estudiantes hacia comprensión profunda de fundamentos tecnológicos",
+          "es": "Acompañé a 40 estudiantes en los fundamentos de infraestructura tecnológica",
           "en": "Guided 40 students toward deep understanding of technological infrastructure fundamentals"
         }
       ]
@@ -833,10 +1186,24 @@
   ],
   "awards": [
     {
+      "id": "mitacs-globalink-2026",
+      "title": "Mitacs Globalink Research Internship",
+      "description": {
+        "es": "Beca internacional competitiva de Mitacs para realizar una pasantía de investigación de 12 semanas en el Lee Language Lab de Ontario Tech University, bajo la supervisión de la profesora Annie En-Shiun Lee, Ph.D.",
+        "en": "Competitive international Mitacs award funding a 12-week research internship at the Lee Language Lab, Ontario Tech University, under the supervision of Professor Annie En-Shiun Lee, Ph.D."
+      },
+      "institution": "Ontario Tech University",
+      "location": {
+        "es": "Oshawa, Canadá",
+        "en": "Oshawa, Canada"
+      },
+      "date": "2026-05"
+    },
+    {
       "id": "cum-laude-bachelor",
       "title": "Cum Laude",
       "description": {
-        "es": "El título Cum Laude se otorga a los estudiantes con un GPA en el 3% más alto de todos los estudiantes que se han graduado de la Universidad de los Andes en una facultad determinada en los últimos cinco años.",
+        "es": "Distinción otorgada a quienes se gradúan con un GPA en el 3% más alto de su facultad en la Universidad de los Andes durante los últimos cinco años.",
         "en": "A Cum Laude degree is awarded to students with a GPA in the highest 3% GPA of all the students that have graduated from Universidad de Los Andes in a given faculty in the last five years."
       },
       "institution": "Universidad de los Andes",
@@ -869,10 +1236,14 @@
       "location": "Bogotá, Colombia",
       "date": "2025-05-09",
       "type": "poster",
-      "coauthors": ["Nicolás Suarez", "Esteban Leiva", "Ernesto Pérez"],
+      "coauthors": [
+        "Nicolás Suarez",
+        "Esteban Leiva",
+        "Ernesto Pérez"
+      ],
       "affiliation": "Universidad de los Andes, Precia PPV S.A.",
       "abstract": {
-        "es": "Presentación de poster sobre la aplicación de algoritmos de Machine Learning para acelerar el cálculo del riesgo de crédito en contratos derivados, con enfoque en Credit Value Adjustment (CVA), demostrando mejoras significativas en tiempos de ejecución manteniendo la precisión.",
+        "es": "Presentación de póster sobre la aplicación de Machine Learning para acelerar el cálculo del riesgo de crédito en contratos derivados, con foco en Credit Value Adjustment (CVA), logrando mejoras significativas en tiempos de ejecución sin perder precisión.",
         "en": "Poster presentation on the application of Machine Learning algorithms to accelerate credit risk calculation in derivative contracts, focusing on Credit Value Adjustment (CVA), demonstrating significant improvements in execution times while maintaining accuracy."
       },
       "url": "https://analyticsforum.uniandes.edu.co/",

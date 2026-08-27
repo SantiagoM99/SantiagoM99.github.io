@@ -4,7 +4,7 @@ company: Vice Dean's Office of Student Affairs, Universidad de los Andes
 date: 2025-01-01-01
 excerpt: ''
 location: Bogotá, Colombia
-period: 2025-01 - present
+period: 2025-01 - 2026-03
 permalink: /experience/work-2025-01-data-scientist-graduate-research-assistant
 technologies:
 - Power BI
@@ -20,8 +20,7 @@ venue: Vice Dean's Office of Student Affairs, Universidad de los Andes
 
 ### Key Achievements
 
-* Process academic data and develop Power BI dashboards under the guidance of Professor Marcela Hernández Hoyos, Ph.D. and Professor Juan Pablo Reyes Gómez, Ph.D., delivering actionable insights on student performance and institutional metrics.
-* Designed and developed Power BI dashboards to deliver actionable insights into student history, performance trends, and institutional matters.
+* Processed academic data and developed Power BI dashboards under the guidance of Professor Marcela Hernández Hoyos, Ph.D. and Professor Juan Pablo Reyes Gómez, Ph.D., delivering actionable insights on student performance and institutional metrics.
 * Optimized ETL pipeline performance by 87% (reduced processing time from 15 to 2 minutes) by migrating from Pandas to Polars for data retrieval and storage from Azure Blob Storage.
 * Enabled the university to save approximately $100K USD annually by replacing an external academic counseling platform.
 * Co-implemented a risk detection system that alerts stakeholders about over 1000 critical student cases.
