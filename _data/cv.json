@@ -806,7 +806,7 @@
       "description": [
         {
           "es": "Investigar cómo mejorar modelos de lenguaje para el dominio médico en español, con foco en clasificación de textos y extracción de entidades nombradas, bajo la supervisión del profesor Rubén Manrique, Ph.D.",
-          "en": "Research on improving natural language model capabilities for Spanish medical contexts, focusing on text classification and named entity extraction tasks under Professor Rubén Manrique Ph.D."
+          "en": "Research on improving natural language model capabilities for Spanish medical contexts, focusing on text classification and named entity extraction tasks under Professor Ruben Manrique Ph.D."
         },
         {
           "es": "Desarrollar y entrenar modelos especializados desde cero para tareas específicas del dominio médico en español.",
