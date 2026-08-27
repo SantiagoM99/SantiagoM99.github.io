@@ -24,7 +24,7 @@
     },
     "research_interests": {
       "es": "Mi investigación se centra en NLP multilingüe y sistemas multimodales para lenguas de bajos recursos y poco representadas, con énfasis en la transferencia cross-lingüe y la evaluación rigurosa con fundamento cultural. En paralelo, desarrollo sistemas de machine learning en producción para la educación superior, desde learning analytics hasta la predicción del éxito estudiantil.",
-      "en": "My research focuses on multilingual NLP and multimodal systems that work for low-resource and underrepresented languages, with an emphasis on cross-lingual transfer and rigorous, culturally grounded evaluation. In parallel, I build production machine learning for higher education, from learning analytics to student-success prediction."
+      "en": "My research focuses on multilingual NLP and multimodal systems that work for low-resource and underrepresented languages, with an emphasis on cross-lingual transfer and rigorous, culturally grounded evaluation. In parallel, I build production machine learning systems for higher education, from learning analytics to student-success prediction."
     }
   },
   "education": [
