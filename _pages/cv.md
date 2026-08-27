@@ -13,7 +13,7 @@ title: Curriculum Vitae
       <a href="/files/CV.pdf" class="btn btn--primary" target="_blank">
         <i class="fa fa-file-pdf-o"></i> Download PDF CV
       </a>
-      <a href="/files/Resume_Santiago_Martinez.pdf" class="btn btn--inverse" target="_blank">
+      <a href="/files/Resume.pdf" class="btn btn--inverse" target="_blank">
         <i class="fa fa-file-text-o"></i> Download PDF Resume
       </a>
     </div>
