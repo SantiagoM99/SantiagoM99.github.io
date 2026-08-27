@@ -14,6 +14,4 @@ type: Teaching Assistant
 ### Responsibilities
 
 * Graduate TA across three semesters for two sequential 8-week master's courses, 'LLM-Based Applications' (RAG systems) and 'Agent Development', supporting over 200 master's students.
-* Created tutorials and course materials for the RAG systems module using LangChain, LangGraph, and LangSmith, covering retrieval techniques, indexing, and evaluation with RAGAS.
-* Created tutorials and course materials for the agent development module using LangGraph and LangSmith, covering agent design, tool use, and multi-agent workflow orchestration.
-* Evaluated student performance on practical projects and implementation exercises throughout both courses.
+* Created the tutorials, projects, and course materials for the RAG systems and agent development modules, built on LangChain, LangGraph, LangSmith, and RAGAS.

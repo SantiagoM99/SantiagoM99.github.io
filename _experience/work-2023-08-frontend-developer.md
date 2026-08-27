@@ -18,8 +18,7 @@ venue: Research Center of the Faculty of Engineering, Universidad de los Andes
 
 ### Key Achievements
 
-* Co-developed and implemented responsive and user-friendly frontend solutions for a software project at the university using Angular.
-* Implemented dynamic access controls, tailoring user permissions based on roles and responsibilities.
+* Co-developed the Angular frontend of a faculty research project, including dynamic role-based access control.
 
 
 

@@ -14,5 +14,4 @@ type: Teaching Assistant
 
 ### Responsibilities
 
-* Provided 5 hours of weekly Python programming tutoring at the University's programming help center.
-* Instructed more than 100 students, helping them develop fundamental coding skills in Python.
+* Tutored over 100 students in Python programming fundamentals, 5 hours a week for two years at the university's programming support center.

@@ -13,6 +13,4 @@ type: Teaching Assistant
 
 ### Responsibilities
 
-* Supervised approximately 40 tutors and 70 teaching assistants as part of the 7-person team overseeing operations at CupiTaller, the university' programming support center, under Professor Eduardo Rosales, Ph.D.
-* Designed programming projects for 'Introducción a la Programación', a course with +1100 students each semester.
-* Cleaned, enriched, and processed datasets essential for each project, ensuring data accuracy completeness and consistency.
+* As part of the 7-person team coordinating CupiTaller, the university's programming support center, supervised around 110 tutors and TAs and designed the projects for the introductory course of over 1,100 students per semester.

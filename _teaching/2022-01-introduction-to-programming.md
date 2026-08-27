@@ -13,5 +13,4 @@ type: Teaching Assistant
 
 ### Responsibilities
 
-* Provided support to the professor during programming teaching laboratories, assisting approximately 40 students each semester.
-* Corrected and graded basic programming projects.
+* Assisted the professor in programming labs of about 40 students per semester, grading the course projects.

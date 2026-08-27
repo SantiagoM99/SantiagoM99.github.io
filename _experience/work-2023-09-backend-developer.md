@@ -18,8 +18,7 @@ venue: Digital Transformation, Universidad de los Andes
 
 ### Key Achievements
 
-* Applied expertise in Azure Functions and Python to actively contribute to software development projects, particularly focusing on seamless interaction with the Open AI API.
-* Created comprehensive documentation for the project's infrastructure, emphasizing clarity and transparency. This initiative facilitated smoother collaboration among team members and enhanced the overall understanding of the software architecture.
+* Developed OpenAI-powered backend services with Python and Azure Functions, documenting the project's infrastructure so the team could build on it.
 
 
 

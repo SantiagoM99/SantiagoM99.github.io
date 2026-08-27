@@ -13,5 +13,4 @@ type: Teaching Assistant
 
 ### Responsibilities
 
-* Corrected and graded tests, activities, and assessments
-* Guided approximately 40 students to a thorough understanding of Fundamentals of Technological Infrastructure
+* Graded exams and coursework while guiding about 40 students through the fundamentals of technological infrastructure.

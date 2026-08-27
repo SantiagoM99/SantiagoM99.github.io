@@ -26,9 +26,9 @@ awards:
 - date: 2024-06
   description:
     en: Financial support awarded to participate in the Summer Undergraduate Research
-      Fellowship (SURF) program at Cornell University
+      Fellowship (SURF) program at Cornell University.
     es: Apoyo financiero otorgado para participar en el programa Summer Undergraduate
-      Research Fellowship (SURF) en Cornell University
+      Research Fellowship (SURF) en Cornell University.
   id: surf-cornell
   institution: Cornell University
   location:
@@ -209,10 +209,6 @@ experience:
     es: Diseñar e implementar una infraestructura completa en AWS, con pipelines ETL
       robustos que integran múltiples fuentes de datos (bases de datos, servidores
       FSx) y despliegue automatizado de modelos con AWS Glue y funciones Lambda.
-  - en: Conduct data exploration and engineering to optimize model accuracy and efficiency
-      across development and production environments.
-    es: Explorar y transformar datos para mejorar la precisión y la eficiencia del
-      modelo en los entornos de desarrollo y producción.
   - en: Presented our work at the Analytics Forum 2025 on model optimization and infrastructure
       architecture, including the use of MLPs, AWS pipelines, and data transformation
       strategies.
@@ -251,24 +247,17 @@ experience:
     es: Practicante de Machine Learning
   type: internship
 - achievements:
-  - en: Co-implemented the ETL process (initially in Pandas, later migrated to Polars)
-      to retrieve data from Azure Blob Storage, structure it, and store it in a relational
-      database.
-    es: Co-implementar el proceso ETL (inicialmente en Pandas, luego migrado a Polars)
-      para obtener datos de Azure Blob Storage, estructurarlos y almacenarlos en una
-      base de datos relacional.
-  - en: Developed and conducted integrity tests to ensure the coherence and accuracy
-      of a multidimensional model, validating against the original data.
-    es: Desarrollar y ejecutar pruebas de integridad para asegurar la coherencia y
-      precisión de un modelo multidimensional, contrastándolo con los datos originales.
+  - en: Co-implemented the ETL process that moves institutional data from Azure Blob
+      Storage into a relational database, with integrity tests validating the multidimensional
+      model against the original data.
+    es: Co-implementar el proceso ETL que lleva los datos institucionales desde Azure
+      Blob Storage a una base de datos relacional, con pruebas de integridad que contrastan
+      el modelo multidimensional con los datos originales.
   achievements_short:
-  - en: Implemented ETL pipeline from Azure Blob Storage to relational database using
-      Polars
-    es: Implementé pipeline ETL desde Azure Blob Storage a base de datos relacional
-      usando Polars
-  - en: Developed integrity tests ensuring multidimensional model accuracy and data
-      coherence
-    es: Desarrollé pruebas de integridad para validar el modelo multidimensional
+  - en: Co-implemented the institutional ETL into a relational database, with integrity
+      tests for the multidimensional model
+    es: Co-implementé el ETL institucional hacia una base relacional, con pruebas
+      de integridad del modelo multidimensional
   company:
     en: Vice Dean's Office of Student Affairs, Universidad de los Andes
     es: Vicedecanatura de Estudiantes, Universidad de los Andes
@@ -288,25 +277,14 @@ experience:
     es: Científico de Datos - Asistente de Investigación de Pregrado
   type: part-time
 - achievements:
-  - en: Applied expertise in Azure Functions and Python to actively contribute to
-      software development projects, particularly focusing on seamless interaction
-      with the Open AI API.
-    es: Contribuir a proyectos de desarrollo de software con Azure Functions y Python,
-      en particular a la integración con la API de OpenAI.
-  - en: Created comprehensive documentation for the project's infrastructure, emphasizing
-      clarity and transparency. This initiative facilitated smoother collaboration
-      among team members and enhanced the overall understanding of the software architecture.
-    es: Documentar la infraestructura del proyecto con énfasis en la claridad, facilitando
-      la colaboración del equipo y la comprensión de la arquitectura del software.
+  - en: Developed OpenAI-powered backend services with Python and Azure Functions,
+      documenting the project's infrastructure so the team could build on it.
+    es: Desarrollar servicios backend con Python y Azure Functions alrededor de la
+      API de OpenAI, documentando la infraestructura del proyecto para facilitar el
+      trabajo del equipo.
   achievements_short:
-  - en: Developed backend solutions using Azure Functions and OpenAI API for university
-      software projects
-    es: Desarrollé soluciones backend con Azure Functions y la API de OpenAI para
-      proyectos universitarios
-  - en: Created comprehensive infrastructure documentation improving team collaboration
-      and architecture understanding
-    es: Documenté la infraestructura del proyecto, facilitando la colaboración del
-      equipo
+  - en: Built OpenAI-powered backend services with Python and Azure Functions
+    es: Desarrollé servicios backend con Python, Azure Functions y la API de OpenAI
   company:
     en: Digital Transformation, Universidad de los Andes
     es: Transformación Digital, Universidad de los Andes
@@ -325,20 +303,13 @@ experience:
     es: Desarrollador Backend
   type: part-time
 - achievements:
-  - en: Co-developed and implemented responsive and user-friendly frontend solutions
-      for a software project at the university using Angular.
-    es: Co-desarrollar soluciones frontend responsivas e intuitivas en Angular para
-      un proyecto de software de la Universidad de los Andes.
-  - en: Implemented dynamic access controls, tailoring user permissions based on roles
-      and responsibilities.
-    es: Implementar controles de acceso dinámicos que adaptan los permisos según el
-      rol y las responsabilidades de cada usuario.
+  - en: Co-developed the Angular frontend of a faculty research project, including
+      dynamic role-based access control.
+    es: Co-desarrollar el frontend en Angular de un proyecto de investigación de la
+      facultad, incluido el control de acceso dinámico por roles.
   achievements_short:
-  - en: Developed responsive frontend solutions using Angular for university research
-      project
-    es: Desarrollé soluciones frontend responsivas en Angular para un proyecto universitario
-  - en: Implemented dynamic access control system with role-based user permissions
-    es: Implementé un control de acceso dinámico basado en roles de usuario
+  - en: Co-developed the Angular frontend with role-based access control
+    es: Co-desarrollé el frontend en Angular con control de acceso por roles
   company:
     en: Research Center of the Faculty of Engineering, Universidad de los Andes
     es: Centro de Investigación de la Facultad de Ingeniería, Universidad de los Andes
@@ -357,22 +328,16 @@ experience:
     es: Desarrollador Frontend
   type: part-time
 - achievements:
-  - en: Facilitated effective communication between directors and 5 exchange students
-      by providing translation services.
-    es: Facilitar la comunicación entre los directores y 5 estudiantes de intercambio,
-      sirviendo de intérprete y traductor.
-  - en: Collaborated on software development projects utilizing OpenAI and Azure Functions,
-      successfully integrating the developed software into an interactive chatbot.
-    es: Colaborar en proyectos de desarrollo de software con OpenAI y Azure Functions,
-      integrando el resultado en un chatbot interactivo.
+  - en: Interpreted between directors and 5 exchange students while helping integrate
+      OpenAI and Azure Functions into an interactive chatbot.
+    es: Servir de intérprete entre los directores y 5 estudiantes de intercambio,
+      colaborando a la vez en la integración de OpenAI y Azure Functions en un chatbot
+      interactivo.
   achievements_short:
-  - en: Facilitated communication between directors and 5 exchange students through
-      translation services
-    es: Facilité la comunicación entre directores y 5 estudiantes de intercambio como
-      intérprete
-  - en: Integrated OpenAI and Azure Functions into interactive chatbot for university
-      applications
-    es: Integré OpenAI y Azure Functions en un chatbot interactivo para la universidad
+  - en: Interpreter for 5 exchange students; helped integrate OpenAI and Azure Functions
+      into a chatbot
+    es: Intérprete de 5 estudiantes de intercambio; integré OpenAI y Azure Functions
+      en un chatbot
   company:
     en: Digital Transformation, Universidad de los Andes
     es: Transformación Digital, Universidad de los Andes
@@ -1026,21 +991,12 @@ teaching:
     es: Asistente graduado durante tres semestres de dos cursos secuenciales de maestría
       de 8 semanas cada uno, 'Aplicaciones Basadas en LLM' (sistemas RAG) y 'Construcción
       de Agentes', apoyando a más de 200 estudiantes de maestría.
-  - en: Created tutorials and course materials for the RAG systems module using LangChain,
-      LangGraph, and LangSmith, covering retrieval techniques, indexing, and evaluation
-      with RAGAS.
-    es: 'Crear tutoriales y materiales para el módulo de sistemas RAG con LangChain,
-      LangGraph y LangSmith: técnicas de retrieval, indexación y evaluación con RAGAS.'
-  - en: Created tutorials and course materials for the agent development module using
-      LangGraph and LangSmith, covering agent design, tool use, and multi-agent workflow
-      orchestration.
-    es: 'Crear tutoriales y materiales para el módulo de desarrollo de agentes con
-      LangGraph y LangSmith: diseño de agentes, uso de herramientas y orquestación
-      de flujos multi-agente.'
-  - en: Evaluated student performance on practical projects and implementation exercises
-      throughout both courses.
-    es: Evaluar el desempeño estudiantil en proyectos prácticos y ejercicios de implementación
-      a lo largo de ambos cursos.
+  - en: Created the tutorials, projects, and course materials for the RAG systems
+      and agent development modules, built on LangChain, LangGraph, LangSmith, and
+      RAGAS.
+    es: Crear los tutoriales, proyectos y materiales de los módulos de sistemas RAG
+      y de desarrollo de agentes, construidos sobre LangChain, LangGraph, LangSmith
+      y RAGAS.
   endDate: present
   featured: true
   id: ta-llm-applications
@@ -1051,33 +1007,21 @@ teaching:
     en: Graduate Teaching Assistant
     es: Asistente de Cátedra Graduado
 - achievements_short:
-  - en: Supervised 110+ tutors and teaching assistants as part of CupiTaller leadership
-      team
-    es: Supervisé 110+ tutores y asistentes como parte del equipo que coordina CupiTaller
-  - en: Designed programming projects for course serving 1100+ students per semester
-    es: Diseñé proyectos de programación para curso con 1100+ estudiantes por semestre
-  - en: Processed datasets for educational projects ensuring data accuracy and consistency
-    es: Procesé los datasets de los proyectos del curso, asegurando su precisión y
-      consistencia
+  - en: 'Helped coordinate CupiTaller: supervised 110+ tutors and designed projects
+      for 1,100+ students per semester'
+    es: 'Coordiné CupiTaller: 110+ tutores supervisados y proyectos para 1100+ estudiantes
+      por semestre'
   course:
     en: CupiTaller Programming Support Center
     es: Centro de Apoyo en Programación CupiTaller
   description:
-  - en: Supervised approximately 40 tutors and 70 teaching assistants as part of the
-      7-person team overseeing operations at CupiTaller, the university' programming
-      support center, under Professor Eduardo Rosales, Ph.D.
-    es: Supervisar aproximadamente 40 tutores y 70 asistentes de cátedra como parte
-      del equipo de 7 personas que coordina CupiTaller, el centro de apoyo en programación
-      de la Universidad de los Andes, bajo la dirección del profesor Eduardo Rosales,
-      Ph.D.
-  - en: Designed programming projects for 'Introducción a la Programación', a course
-      with +1100 students each semester.
-    es: Diseñar proyectos de programación para 'Introducción a la Programación', un
-      curso con más de 1100 estudiantes cada semestre.
-  - en: Cleaned, enriched, and processed datasets essential for each project, ensuring
-      data accuracy completeness and consistency.
-    es: Limpiar, enriquecer y procesar los conjuntos de datos de cada proyecto, asegurando
-      su precisión, completitud y consistencia.
+  - en: As part of the 7-person team coordinating CupiTaller, the university's programming
+      support center, supervised around 110 tutors and TAs and designed the projects
+      for the introductory course of over 1,100 students per semester.
+    es: Como parte del equipo de 7 personas que coordina CupiTaller, el centro de
+      apoyo en programación de la universidad, supervisar a unos 110 tutores y asistentes
+      y diseñar los proyectos del curso introductorio, de más de 1100 estudiantes
+      por semestre.
   endDate: 2024-12
   featured: false
   id: cupitaller-supervisor
@@ -1090,24 +1034,17 @@ teaching:
     en: Undergraduate Research Assistant
     es: Asistente de Investigación de Pregrado
 - achievements_short:
-  - en: Provided 5 weekly hours of Python tutoring for 2 years at university programming
-      center
-    es: Dicté 5 horas semanales de tutoría de Python durante 2 años en el centro de
-      apoyo de la universidad
-  - en: Instructed 100+ students developing fundamental Python programming skills
-    es: Acompañé a 100+ estudiantes en sus fundamentos de programación
+  - en: Tutored 100+ students in Python over 2 years
+    es: Tutoría de Python a 100+ estudiantes durante 2 años
   course:
     en: Programming Support Center
     es: Centro de Apoyo en Programación
   description:
-  - en: Provided 5 hours of weekly Python programming tutoring at the University's
-      programming help center.
-    es: Dictar 5 horas semanales de tutoría de programación en Python en el centro
-      de apoyo de la universidad.
-  - en: Instructed more than 100 students, helping them develop fundamental coding
-      skills in Python.
-    es: Acompañar a más de 100 estudiantes en el desarrollo de sus fundamentos de
-      programación en Python.
+  - en: Tutored over 100 students in Python programming fundamentals, 5 hours a week
+      for two years at the university's programming support center.
+    es: Acompañar a más de 100 estudiantes en los fundamentos de programación en Python,
+      con 5 horas semanales de tutoría durante dos años en el centro de apoyo de la
+      universidad.
   endDate: 2023-08
   featured: false
   id: ta-programming-tutor
@@ -1120,20 +1057,16 @@ teaching:
     en: Undergraduate Teaching Assistant - Programming Tutor
     es: Asistente de Cátedra de Pregrado - Tutor de Programación
 - achievements_short:
-  - en: Assisted professor in programming laboratories with 40 students per semester
-    es: Apoyé al profesor en laboratorios de programación con 40 estudiantes por semestre
-  - en: Corrected and graded basic programming projects for introductory course
-    es: Corregí y califiqué proyectos básicos de programación para curso introductorio
+  - en: Assisted programming labs of 40 students per semester
+    es: Apoyé laboratorios de programación de 40 estudiantes por semestre
   course:
     en: Introduction to Programming
     es: Introducción a la Programación
   description:
-  - en: Provided support to the professor during programming teaching laboratories,
-      assisting approximately 40 students each semester.
+  - en: Assisted the professor in programming labs of about 40 students per semester,
+      grading the course projects.
     es: Apoyar al profesor en los laboratorios de programación, asistiendo a unos
-      40 estudiantes por semestre.
-  - en: Corrected and graded basic programming projects.
-    es: Corregir y calificar proyectos básicos de programación.
+      40 estudiantes por semestre y calificando los proyectos del curso.
   endDate: 2022-12
   featured: false
   id: ta-intro-programming
@@ -1144,22 +1077,16 @@ teaching:
     en: Undergraduate Teaching Assistant
     es: Asistente de Cátedra de Pregrado
 - achievements_short:
-  - en: Corrected tests and activities for technological infrastructure fundamentals
-      course
-    es: Corregí exámenes y actividades para curso de infraestructura tecnológica
-  - en: Guided 40 students toward deep understanding of technological infrastructure
-      fundamentals
-    es: Acompañé a 40 estudiantes en los fundamentos de infraestructura tecnológica
+  - en: Graded coursework and guided 40 students through infrastructure fundamentals
+    es: Califiqué evaluaciones y acompañé a 40 estudiantes en fundamentos de infraestructura
   course:
     en: Fundamentals of Technological Infrastructure
     es: Fundamentos de Infraestructura Tecnológica
   description:
-  - en: Corrected and graded tests, activities, and assessments
-    es: Corregí y calificé exámenes, actividades y evaluaciones
-  - en: Guided approximately 40 students to a thorough understanding of Fundamentals
-      of Technological Infrastructure
-    es: Acompañé a unos 40 estudiantes para afianzar su comprensión de los fundamentos
-      de infraestructura tecnológica
+  - en: Graded exams and coursework while guiding about 40 students through the fundamentals
+      of technological infrastructure.
+    es: Calificar exámenes y actividades y acompañar a unos 40 estudiantes en los
+      fundamentos de infraestructura tecnológica.
   endDate: 2023-06
   featured: false
   id: ta-infrastructure
