@@ -23,10 +23,8 @@ venue: Universidad de los Andes
 
 ### Description
 
-* Automated student assessment processes by developing LLM-based evaluation systems that grade responses against established rubrics and expected answers.
-* Designed LLM evaluation architecture to assess response quality and accuracy across different research contexts using Prometheus, BERTScore, and the OpenAI API.
-* Built locally-deployed RAG systems using Ollama models and integrated Gemini API calls to answer domain-specific research questions.
-* Focused on optimizing university research processes through custom AI agent development and automated evaluation systems.
+* Designed an LLM-as-judge evaluation architecture that scores response quality and grades student work against rubrics, using Prometheus and BERTScore.
+* Built locally deployed RAG systems and custom AI agents that answer domain-specific research questions.
 
 
 

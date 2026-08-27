@@ -853,38 +853,22 @@
       "endDate": "2025-06",
       "description": [
         {
-          "es": "Automatizar la evaluación estudiantil con sistemas basados en LLM que califican las respuestas según rúbricas y respuestas esperadas.",
-          "en": "Automated student assessment processes by developing LLM-based evaluation systems that grade responses against established rubrics and expected answers."
+          "es": "Diseñar una arquitectura de evaluación con LLM como juez que mide la calidad de las respuestas y califica trabajos estudiantiles contra rúbricas, con Prometheus y BERTScore.",
+          "en": "Designed an LLM-as-judge evaluation architecture that scores response quality and grades student work against rubrics, using Prometheus and BERTScore."
         },
         {
-          "es": "Diseñar una arquitectura de evaluación de LLMs que mide la calidad y precisión de las respuestas en distintos contextos de investigación, utilizando Prometheus, BERTScore y la API de OpenAI.",
-          "en": "Designed LLM evaluation architecture to assess response quality and accuracy across different research contexts using Prometheus, BERTScore, and the OpenAI API."
-        },
-        {
-          "es": "Construir sistemas RAG desplegados localmente utilizando modelos Ollama e integrar llamadas a la API de Gemini para responder preguntas específicas de dominio de investigación.",
-          "en": "Built locally-deployed RAG systems using Ollama models and integrated Gemini API calls to answer domain-specific research questions."
-        },
-        {
-          "es": "Optimizar procesos de investigación universitaria mediante agentes de IA personalizados y sistemas de evaluación automatizados.",
-          "en": "Focused on optimizing university research processes through custom AI agent development and automated evaluation systems."
+          "es": "Construir sistemas RAG desplegados localmente y agentes de IA a la medida para responder preguntas de investigación del dominio.",
+          "en": "Built locally deployed RAG systems and custom AI agents that answer domain-specific research questions."
         }
       ],
       "achievements_short": [
         {
-          "es": "Automaticé la evaluación estudiantil con LLMs que califican según rúbricas y respuestas esperadas",
-          "en": "Automated student assessment using LLMs aligned with rubrics and expected answers"
+          "es": "Diseñé una arquitectura de evaluación con LLM como juez que califica trabajos contra rúbricas",
+          "en": "Designed an LLM-as-judge evaluation architecture that grades student work against rubrics"
         },
         {
-          "es": "Diseñé una arquitectura de evaluación de LLMs con Prometheus, BERTScore y la API de OpenAI",
-          "en": "Designed LLM evaluation architecture using Prometheus, BERTScore, and the OpenAI API for response quality assessment"
-        },
-        {
-          "es": "Construí sistemas RAG locales con Ollama y la API de Gemini para responder preguntas de investigación",
-          "en": "Built locally-deployed RAG systems using Ollama and Gemini API for domain-specific research questions"
-        },
-        {
-          "es": "Desarrollé agentes de IA personalizados para optimizar procesos de investigación universitaria",
-          "en": "Developed custom AI agents to optimize university research processes"
+          "es": "Construí sistemas RAG locales y agentes de IA a la medida para preguntas de investigación del dominio",
+          "en": "Built locally deployed RAG systems and custom AI agents for domain-specific research questions"
         }
       ],
       "technologies": [
