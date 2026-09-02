@@ -152,14 +152,14 @@ experience:
   - en: Optimized ETL pipeline performance by 87% (reduced processing time from 15
       to 2 minutes) by migrating from Pandas to Polars for data retrieval and storage
       from Azure Blob Storage.
-    es: Optimizar el rendimiento del pipeline ETL en un 87% (reduciendo el tiempo
-      de procesamiento de 15 a 2 minutos) al migrar de Pandas a Polars para la obtención
-      y almacenamiento de datos desde Azure Blob Storage.
+    es: Optimicé el rendimiento del pipeline ETL en un 87% (reduciendo el tiempo de
+      procesamiento de 15 a 2 minutos) al migrar de Pandas a Polars para la obtención
+      y el almacenamiento de datos desde Azure Blob Storage.
   - en: Processed academic data and developed Power BI dashboards under the guidance
       of Professor Marcela Hernández Hoyos, Ph.D. and Professor Juan Pablo Reyes Gómez,
       Ph.D., delivering actionable insights on student performance and institutional
       metrics.
-    es: Procesar datos académicos y desarrollar dashboards en Power BI bajo la tutoría
+    es: Procesé datos académicos y desarrollé dashboards en Power BI bajo la tutoría
       de la profesora Marcela Hernández Hoyos, Ph.D., y el profesor Juan Pablo Reyes
       Gómez, Ph.D., generando insights accionables sobre el desempeño estudiantil
       y las métricas institucionales.
@@ -197,22 +197,22 @@ experience:
     es: Científico de Datos - Asistente de Investigación Graduado
   type: full-time
 - achievements:
-  - en: Co-develop and train a Multi-layer Perceptron (MLP) to reduce the calculation
-      time of a critical financial metric by 70%, providing clients with significantly
-      faster access to preliminary estimates.
-    es: Co-desarrollar y entrenar un Perceptrón Multicapa (MLP) que redujo en un 70%
+  - en: Co-developed and trained a Multi-layer Perceptron (MLP) that reduced the calculation
+      time of a critical financial metric by 70%, giving clients significantly faster
+      access to preliminary estimates.
+    es: Co-desarrollé y entrené un Perceptrón Multicapa (MLP) que redujo en un 70%
       el tiempo de cálculo de una métrica financiera crítica, acelerando el acceso
       de los clientes a las estimaciones preliminares.
   - en: Presented our work at the Analytics Forum 2025 on model optimization and infrastructure
       architecture, including the use of MLPs, AWS pipelines, and data transformation
       strategies.
-    es: 'Presentar el trabajo del equipo sobre optimización de modelos y arquitectura
+    es: 'Presenté el trabajo del equipo sobre optimización de modelos y arquitectura
       de infraestructura en el Analytics Forum 2025: uso de MLPs, pipelines en AWS
       y estrategias de transformación de datos.'
-  - en: Design and implement end-to-end AWS infrastructure including robust ETL pipelines
-      integrating multiple data sources (databases, FSx servers) and automate model
-      deployment using AWS Glue and Lambda functions.
-    es: Diseñar e implementar una infraestructura completa en AWS, con pipelines ETL
+  - en: Designed and implemented end-to-end AWS infrastructure, including robust ETL
+      pipelines integrating multiple data sources (databases, FSx servers), and automated
+      model deployment using AWS Glue and Lambda functions.
+    es: Diseñé e implementé una infraestructura completa en AWS, con pipelines ETL
       robustos que integran múltiples fuentes de datos (bases de datos, servidores
       FSx) y despliegue automatizado de modelos con AWS Glue y funciones Lambda.
   achievements_short:
@@ -221,8 +221,8 @@ experience:
     es: Desarrollé un MLP que redujo en un 70% el tiempo de cálculo de una métrica
       financiera para clientes
   - en: Presented our work on models and AWS infrastructure at Analytics Forum 2025
-    es: Presentamos nuestro trabajo de machine learning y arquitectura AWS en el Analytics
-      Forum 2025
+    es: Presenté el trabajo del equipo sobre machine learning y arquitectura AWS en
+      el Analytics Forum 2025
   - en: Implemented end-to-end AWS infrastructure with automated ETL pipelines using
       Glue and Lambda
     es: Implementé una infraestructura completa en AWS con pipelines ETL automatizados
@@ -250,7 +250,7 @@ experience:
   - en: Co-implemented the ETL process that moves institutional data from Azure Blob
       Storage into a relational database, with integrity tests validating the multidimensional
       model against the original data.
-    es: Co-implementar el proceso ETL que lleva los datos institucionales desde Azure
+    es: Co-implementé el proceso ETL que lleva los datos institucionales desde Azure
       Blob Storage a una base de datos relacional, con pruebas de integridad que contrastan
       el modelo multidimensional con los datos originales.
   achievements_short:
@@ -279,7 +279,7 @@ experience:
 - achievements:
   - en: Developed OpenAI-powered backend services with Python and Azure Functions,
       documenting the project's infrastructure so the team could build on it.
-    es: Desarrollar servicios backend con Python y Azure Functions alrededor de la
+    es: Desarrollé servicios backend con Python y Azure Functions alrededor de la
       API de OpenAI, documentando la infraestructura del proyecto para facilitar el
       trabajo del equipo.
   achievements_short:
@@ -305,7 +305,7 @@ experience:
 - achievements:
   - en: Co-developed the Angular frontend of a faculty research project, including
       dynamic role-based access control.
-    es: Co-desarrollar el frontend en Angular de un proyecto de investigación de la
+    es: Co-desarrollé el frontend en Angular de un proyecto de investigación de la
       facultad, incluido el control de acceso dinámico por roles.
   achievements_short:
   - en: Co-developed the Angular frontend with role-based access control
@@ -330,9 +330,8 @@ experience:
 - achievements:
   - en: Interpreted between directors and 5 exchange students while helping integrate
       OpenAI and Azure Functions into an interactive chatbot.
-    es: Servir de intérprete entre los directores y 5 estudiantes de intercambio,
-      colaborando a la vez en la integración de OpenAI y Azure Functions en un chatbot
-      interactivo.
+    es: Serví de intérprete entre los directores y 5 estudiantes de intercambio, colaborando
+      a la vez en la integración de OpenAI y Azure Functions en un chatbot interactivo.
   achievements_short:
   - en: Interpreter for 5 exchange students; helped integrate OpenAI and Azure Functions
       into a chatbot
@@ -756,18 +755,18 @@ research:
     en: Mitacs Globalink Research Intern - Collaborating Researcher
     es: Pasante de Investigación Mitacs Globalink - Investigador Colaborador
 - achievements_short:
-  - en: Researched NLP model enhancement for Spanish medical contexts focusing on
-      NER and text classification
-    es: Investigué la mejora de modelos NLP para el dominio médico en español, con
+  - en: Research NLP model enhancement for Spanish medical contexts focusing on NER
+      and text classification
+    es: Investigo la mejora de modelos NLP para el dominio médico en español, con
       foco en NER y clasificación
-  - en: Developed specialized models from scratch and compared with LLMs using zero-shot
+  - en: Develop specialized models from scratch and compare them with LLMs using zero-shot
       and few-shot learning
-    es: Desarrollé modelos especializados desde cero y los comparé con LLMs en zero-shot
+    es: Desarrollo modelos especializados desde cero y los comparo con LLMs en zero-shot
       y few-shot
   description:
-  - en: Research on improving natural language model capabilities for Spanish medical
-      contexts, focusing on text classification and named entity extraction tasks
-      under Professor Ruben Manrique Ph.D.
+  - en: Research how to improve natural language models for Spanish medical contexts,
+      focusing on text classification and named entity extraction tasks under Professor
+      Ruben Manrique Ph.D.
     es: Investigar cómo mejorar modelos de lenguaje para el dominio médico en español,
       con foco en clasificación de textos y extracción de entidades nombradas, bajo
       la supervisión del profesor Rubén Manrique, Ph.D.
@@ -812,13 +811,13 @@ research:
   description:
   - en: Designed an LLM-as-judge evaluation architecture that scores response quality
       and grades student work against rubrics, using Prometheus and BERTScore.
-    es: Diseñar una arquitectura de evaluación con LLM como juez que mide la calidad
+    es: Diseñé una arquitectura de evaluación con LLM como juez que mide la calidad
       de las respuestas y califica trabajos estudiantiles contra rúbricas, con Prometheus
       y BERTScore.
   - en: Built locally deployed RAG systems and custom AI agents that answer domain-specific
       research questions.
-    es: Construir sistemas RAG desplegados localmente y agentes de IA a la medida
-      para responder preguntas de investigación del dominio.
+    es: Construí sistemas RAG desplegados localmente y agentes de IA a la medida para
+      responder preguntas de investigación del dominio.
   endDate: 2025-06
   featured: true
   id: generative-ai-research
@@ -850,12 +849,12 @@ research:
   description:
   - en: Designed a Data Discovery architecture to explore and modify datasets in various
       formats under Professor Sainyam Galhotra Ph.D.
-    es: Diseñar una arquitectura de Data Discovery para explorar y modificar conjuntos
+    es: Diseñé una arquitectura de Data Discovery para explorar y modificar conjuntos
       de datos en varios formatos, bajo la supervisión del profesor Sainyam Galhotra,
       Ph.D.
   - en: Developed the first version of the architecture including the upload and scoring
       through semantic search of multiple databases.
-    es: Desarrollar la primera versión de la arquitectura, con carga de datos y puntuación
+    es: Desarrollé la primera versión de la arquitectura, con carga de datos y puntuación
       mediante búsqueda semántica sobre múltiples bases de datos.
   endDate: 2024-08
   featured: true
@@ -1001,10 +1000,10 @@ teaching:
   - en: As part of the 7-person team coordinating CupiTaller, the university's programming
       support center, supervised around 110 tutors and TAs and designed the projects
       for the introductory course of over 1,100 students per semester.
-    es: Como parte del equipo de 7 personas que coordina CupiTaller, el centro de
-      apoyo en programación de la universidad, supervisar a unos 110 tutores y asistentes
-      y diseñar los proyectos del curso introductorio, de más de 1100 estudiantes
-      por semestre.
+    es: Como parte del equipo de 7 personas que coordinaba CupiTaller, el centro de
+      apoyo en programación de la universidad, supervisé a unos 110 tutores y asistentes
+      y diseñé los proyectos del curso introductorio, de más de 1100 estudiantes por
+      semestre.
   endDate: 2024-12
   featured: false
   id: cupitaller-supervisor
@@ -1025,7 +1024,7 @@ teaching:
   description:
   - en: Tutored over 100 students in Python programming fundamentals, 5 hours a week
       for two years at the university's programming support center.
-    es: Acompañar a más de 100 estudiantes en los fundamentos de programación en Python,
+    es: Acompañé a más de 100 estudiantes en los fundamentos de programación en Python,
       con 5 horas semanales de tutoría durante dos años en el centro de apoyo de la
       universidad.
   endDate: 2023-08
@@ -1048,8 +1047,8 @@ teaching:
   description:
   - en: Assisted the professor in programming labs of about 40 students per semester,
       grading the course projects.
-    es: Apoyar al profesor en los laboratorios de programación, asistiendo a unos
-      40 estudiantes por semestre y calificando los proyectos del curso.
+    es: Apoyé al profesor en los laboratorios de programación, asistiendo a unos 40
+      estudiantes por semestre y calificando los proyectos del curso.
   endDate: 2022-12
   featured: false
   id: ta-intro-programming
@@ -1068,8 +1067,8 @@ teaching:
   description:
   - en: Graded exams and coursework while guiding about 40 students through the fundamentals
       of technological infrastructure.
-    es: Calificar exámenes y actividades y acompañar a unos 40 estudiantes en los
-      fundamentos de infraestructura tecnológica.
+    es: Califiqué exámenes y actividades y acompañé a unos 40 estudiantes en los fundamentos
+      de infraestructura tecnológica.
   endDate: 2023-06
   featured: false
   id: ta-infrastructure
