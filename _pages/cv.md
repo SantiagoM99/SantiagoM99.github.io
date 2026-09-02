@@ -10,11 +10,11 @@ title: Curriculum Vitae
 <div class="cv-container">
   <div class="cv-header">
     <div class="cv-download-links">
-      <a href="/files/CV.pdf" class="btn btn--primary" target="_blank">
-        <i class="fa fa-file-pdf-o"></i> Download PDF CV
+      <a href="/files/CV.pdf" class="btn btn--primary" target="_blank" rel="noopener">
+        <i class="fas fa-file-pdf"></i> View CV (PDF)
       </a>
-      <a href="/files/Resume.pdf" class="btn btn--inverse" target="_blank">
-        <i class="fa fa-file-text-o"></i> Download PDF Resume
+      <a href="/files/Resume.pdf" class="btn btn--inverse" target="_blank" rel="noopener">
+        <i class="fas fa-file-lines"></i> View Resume (PDF)
       </a>
     </div>
   </div>
