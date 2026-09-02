@@ -182,3 +182,49 @@
     }
   }
 }
+
+
+/* CV and resume links in the sidebar: two quiet chips instead of boxed buttons.
+   The old .cv-download-btn style stays in place for publication and talk pages. */
+.cv-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+
+  /* below 925px the sidebar becomes a centered card, so the chips center too */
+  @media screen and (max-width: 924px) {
+    justify-content: center;
+  }
+}
+
+.cv-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  text-decoration: none;
+  color: var(--global-text-color);
+  transition: border-color 0.2s ease, color 0.2s ease;
+
+  i {
+    font-size: 0.85em;
+    color: var(--global-link-color);
+    transition: color 0.2s ease;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: var(--global-link-color);
+    color: var(--global-link-color);
+    text-decoration: none;
+
+    i {
+      color: var(--global-link-color-hover);
+    }
+  }
+}

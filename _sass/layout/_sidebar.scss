@@ -426,42 +426,6 @@
       }
     }
   }
-  
-  /* Botones CV - ABAJO, horizontales MISMO TAMAÑO y más largos */
-  .cv-download-section {
-    margin-top: 1.5rem;            /* Separación de los links */
-    
-    .cv-download-buttons {
-      display: flex !important;
-      flex-direction: row !important;   /* HORIZONTAL */
-      gap: 1rem !important;             /* Espacio entre botones */
-      justify-content: center !important; /* Centrados */
-      align-items: center;
-    }
-    
-    .cv-download-btn {
-      /* MISMO TAMAÑO para ambos botones y MÁS LARGOS */
-      width: 180px !important;          /* Más largo que antes */
-      max-width: 180px !important;
-      min-width: 180px !important;
-      padding: 0.75rem 1rem !important; /* Padding original */
-      font-size: 0.85rem !important;    /* Tamaño original */
-      gap: 0.5rem !important;           /* Gap original */
-      
-      /* Asegurar que el texto se centre bien */
-      justify-content: center !important;
-      text-align: center;
-      
-      i {
-        font-size: 0.9em !important;   /* Tamaño original */
-      }
-      
-      span {
-        font-size: 1em;
-        white-space: nowrap;            /* No quebrar el texto */
-      }
-    }
-  }
 }
 
 /* Ajustes adicionales para transición suave */
@@ -534,24 +498,6 @@
     display: block !important;
     width: 100% !important;
     margin-top: 1rem;
-    
-    /* Layout mobile normal para CV buttons */
-    .cv-download-section {
-      margin-top: 1rem;
-      
-      .cv-download-buttons {
-        flex-direction: column !important;
-        align-items: stretch;
-        gap: 0.5rem !important;
-      }
-      
-      .cv-download-btn {
-        width: 100% !important;
-        max-width: 100% !important;
-        min-width: auto !important;
-        justify-content: center !important;
-      }
-    }
   }
 }
 
