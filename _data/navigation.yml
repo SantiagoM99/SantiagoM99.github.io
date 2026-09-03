@@ -14,11 +14,11 @@ main:
   - title: "Talks"
     url: /talks/
 
-  - title: "Experience"
-    url: /experience/
-
   - title: "Research"
     url: /research-experience/
+
+  - title: "Experience"
+    url: /experience/
 
   - title: "Teaching"
     url: /teaching/    
