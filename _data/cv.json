@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.3",
-    "lastUpdated": "2026-08-25",
+    "version": "1.4",
+    "lastUpdated": "2026-09-02",
     "defaultLanguage": "en",
     "availableLanguages": [
       "es",
@@ -11,8 +11,8 @@
   "personal": {
     "name": "Santiago Martínez Novoa",
     "title": {
-      "es": "Ingeniero de Sistemas y Computación",
-      "en": "Systems and Computing Engineer"
+      "es": "Investigador en Machine Learning | NLP Multilingüe e IA Multimodal",
+      "en": "Machine Learning Researcher | Multilingual NLP & Multimodal AI"
     },
     "contact": {
       "email": "s.martinezn@uniandes.edu.co",

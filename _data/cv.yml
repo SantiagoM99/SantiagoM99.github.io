@@ -359,8 +359,8 @@ metadata:
   - es
   - en
   defaultLanguage: en
-  lastUpdated: '2026-08-25'
-  version: '1.3'
+  lastUpdated: '2026-09-02'
+  version: '1.4'
 personal:
   contact:
     email: s.martinezn@uniandes.edu.co
@@ -382,8 +382,8 @@ personal:
       desarrollo sistemas de datos y de machine learning en producción para la educación
       superior, desde learning analytics hasta la predicción del éxito estudiantil.
   title:
-    en: Systems and Computing Engineer
-    es: Ingeniero de Sistemas y Computación
+    en: Machine Learning Researcher | Multilingual NLP & Multimodal AI
+    es: Investigador en Machine Learning | NLP Multilingüe e IA Multimodal
 publications:
   conferences:
   - _category_key: conferences
