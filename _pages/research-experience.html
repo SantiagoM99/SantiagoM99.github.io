@@ -9,9 +9,11 @@ author_profile: true
 
 {% assign research_posts = site.experience | where: "type", "research" | sort: "date" | reverse %}
 
+<div class="timeline">
 {% for post in research_posts %}
-  {% include cv-archive-single.html %}
+  {% include timeline-item.html %}
 {% endfor %}
+</div>
 
 {% if research_posts.size == 0 %}
   <p>No research experience entries found.</p>

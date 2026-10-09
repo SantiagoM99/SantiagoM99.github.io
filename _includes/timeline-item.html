@@ -1,0 +1,55 @@
+{% include base_path %}
+
+{% comment %}
+  Entrada de la linea de tiempo (Work, Research, Talks). Año a la izquierda como en
+  Publications; punto relleno y fondo suave si el rol sigue en curso. Las pastillas
+  usan .archive__tag, las mismas de la pagina de detalle. Los campos current,
+  start_year, highlights y total los genera cv_json_to_markdown_html.py.
+{% endcomment %}
+
+<article class="tl-item{% if post.current %} tl-item--current{% endif %}{% if post.header.teaser %} tl-item--photo{% endif %}">
+  <div class="tl-item__year">{% if post.start_year %}{{ post.start_year }}{% else %}{{ post.date | date: "%Y" }}{% endif %}</div>
+
+  <div class="tl-item__body">
+    <h3 class="tl-item__title"><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></h3>
+
+    {% if post.collection == 'talks' %}
+      <p class="tl-item__org"><span class="pub__badge">{{ post.type }}</span> {{ post.venue }}</p>
+      <p class="tl-item__meta">{{ post.location }} · {{ post.date | date: "%B %Y" }}</p>
+    {% elsif post.type == 'research' %}
+      <p class="tl-item__org">{{ post.institution }}{% if post.research_group and post.research_group != 'N/A' %} · {{ post.research_group }}{% endif %}</p>
+      <p class="tl-item__meta">{{ post.location }} · {{ post.period }}{% if post.supervisor %} · Supervisor: {{ post.supervisor }}{% endif %}</p>
+    {% else %}
+      <p class="tl-item__org">{{ post.company }}</p>
+      <p class="tl-item__meta">{{ post.location }} · {{ post.period }}</p>
+    {% endif %}
+
+    {% if post.highlights and post.highlights.size > 0 %}
+      <ul class="tl-item__highlights">
+        {% for item in post.highlights %}<li>{{ item }}</li>{% endfor %}
+      </ul>
+    {% endif %}
+
+    <p class="pub__links tl-item__links">
+      {% if post.collection == 'talks' %}
+        {% if post.slidesurl and post.slidesurl != '' %}<a href="{{ base_path }}{{ post.slidesurl }}" target="_blank" rel="noopener">{% if post.type == 'poster' %}Poster{% else %}Slides{% endif %}</a>{% endif %}
+        {% if post.paperurl and post.paperurl != '' %}<a href="{{ base_path }}{{ post.paperurl }}">Paper</a>{% endif %}
+        <a href="{{ base_path }}{{ post.url }}">Details</a>
+      {% elsif post.total > post.highlights.size %}
+        <a href="{{ base_path }}{{ post.url }}">All {{ post.total }} contributions</a>
+      {% else %}
+        <a href="{{ base_path }}{{ post.url }}">Details</a>
+      {% endif %}
+    </p>
+
+    {% if post.technologies and post.technologies.size > 0 %}
+      <div class="archive__item-tags tl-item__tags">{% for tech in post.technologies limit: 5 %}<span class="archive__tag">{{ tech }}</span>{% endfor %}</div>
+    {% endif %}
+  </div>
+
+  {% if post.header.teaser %}
+    <a class="tl-item__photo" href="{{ base_path }}{{ post.url }}" tabindex="-1" aria-hidden="true">
+      <img src="{{ base_path }}{{ post.header.teaser }}" alt="" loading="lazy">
+    </a>
+  {% endif %}
+</article>

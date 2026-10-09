@@ -9,9 +9,11 @@ author_profile: true
 
 {% assign work_posts = site.experience | where: "type", "work" | sort: "date" | reverse %}
 
+<div class="timeline">
 {% for post in work_posts %}
-  {% include cv-archive-single.html %}
+  {% include timeline-item.html %}
 {% endfor %}
+</div>
 
 {% if work_posts.size == 0 %}
   <p>No work experience entries found.</p>

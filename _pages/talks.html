@@ -11,6 +11,8 @@ author_profile: true
 
 {% endif %}
 
+<div class="timeline">
 {% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+  {% include timeline-item.html %}
 {% endfor %}
+</div>

@@ -271,6 +271,23 @@ def publication_permalinks(cv_data):
     return links
 
 
+def timeline_fields(entry, bullets):
+    """Campos del listado en linea de tiempo: dos logros visibles y el total del CV.
+
+    Prefiere `achievements_short` (la version de una linea del Resume); si la entrada
+    no la tiene, usa las primeras viñetas del CV, que ya estan ordenadas por impacto.
+    """
+    short = [item['en'] for item in entry.get('achievements_short', [])]
+    full = [item['en'] for item in bullets]
+    highlights = (short or full)[:2]
+    return {
+        'current': entry['endDate'] == 'present',
+        'start_year': entry['startDate'][:4],
+        'highlights': highlights,
+        'total': len(full),
+    }
+
+
 def generate_talks(cv_data, output_dir="_talks"):
     """Genera archivos .md para talks/presentations, con galeria de fotos si las hay"""
     if not os.path.exists(output_dir):
@@ -525,7 +542,8 @@ def generate_experience(cv_data, output_dir="_experience"):
             'period': pretty_period(start_date, end_date),
             'venue': company,  # Para compatibilidad con el template
             'technologies': exp.get('technologies', []),
-            'excerpt': excerpt
+            'excerpt': excerpt,
+            **timeline_fields(exp, exp.get('achievements', [])),
         }
         
         content = f"""---
@@ -599,7 +617,8 @@ def generate_experience(cv_data, output_dir="_experience"):
             'venue': institution,  # Para compatibilidad con el template
             'research_group': research_group,
             'technologies': research.get('technologies', []),
-            'excerpt': excerpt
+            'excerpt': excerpt,
+            **timeline_fields(research, research.get('description', [])),
         }
         
         # Solo agregar supervisor si existe y no está vacío

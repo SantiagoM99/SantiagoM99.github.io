@@ -4,6 +4,20 @@
    Todo se apoya en las variables --global-* para funcionar en claro y oscuro.
    ========================================================================== */
 
+/* Acentos del sitio. Se definen aqui y no se usa --global-link-color-hover porque
+   en el tema claro su valor es un mix() de Sass sin evaluar (texto, no un color). */
+:root {
+  --accent: #2f7f93;
+  --accent-strong: #236072;
+  --accent-soft: rgba(82, 173, 200, 0.09);
+}
+
+html[data-theme="dark"] {
+  --accent: #52adc8;
+  --accent-strong: #8fd0e3;
+  --accent-soft: rgba(82, 173, 200, 0.1);
+}
+
 /* --------------------------------------------------------------------------
    Publicaciones
    -------------------------------------------------------------------------- */
@@ -231,8 +245,203 @@
 
 
 /* --------------------------------------------------------------------------
-   Galeria y visor de slides de cada presentacion
+   Listados en linea de tiempo, y galeria y visor de slides de cada presentacion
    -------------------------------------------------------------------------- */
+
+/* Linea de tiempo de Work, Research y Talks: año a la izquierda como en
+   Publications, una linea vertical y un punto por entrada (relleno si sigue en curso). */
+.timeline {
+  /* el fondo del rol en curso sube 0.6em sobre su texto; sin este espacio toca el
+     titulo. Es padding y no margin porque un margin colapsa con el del titulo. */
+  padding-top: 1em;
+}
+
+.tl-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3.4rem 1fr;
+  column-gap: 1.6rem;
+  padding-bottom: 1.6em;
+
+  /* la linea vertical */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.5em;
+    bottom: -0.5em;
+    left: calc(3.4rem + 0.8rem - 1px);
+    width: 2px;
+    background: var(--global-text-color-light);
+    opacity: 0.35;
+  }
+
+  &:last-child::before {
+    display: none;
+  }
+
+  /* el punto */
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0.42em;
+    left: calc(3.4rem + 0.8rem - 6px);
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid var(--global-text-color-light);
+    background: var(--global-bg-color);
+  }
+
+  p {
+    margin: 0 0 0.15em;
+  }
+}
+
+.tl-item--current {
+  &::after {
+    border-color: var(--accent);
+    background: var(--accent);
+    box-shadow: 0 0 0 4px var(--accent-soft);
+  }
+
+  .tl-item__body {
+    margin: -0.6em 0 0 -0.8em;
+    padding: 0.6em 0.8em 0.4em;
+    border-radius: 6px;
+    background: var(--accent-soft);
+  }
+}
+
+.tl-item--photo {
+  grid-template-columns: 3.4rem 1fr 9rem;
+}
+
+.tl-item__year {
+  font-family: $sans-serif-narrow;
+  font-size: 0.85em;
+  font-weight: 700;
+  line-height: 1.75;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.tl-item .tl-item__title {
+  margin: 0 0 0.2em;
+  font-family: $sans-serif-narrow;
+  font-size: 1.05em;
+  font-weight: 700;
+  line-height: 1.4;
+
+  a {
+    color: var(--global-text-color);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-link-color);
+      text-decoration: underline;
+    }
+  }
+}
+
+.tl-item .tl-item__org {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: var(--accent-strong);
+
+  .pub__badge {
+    margin: 0 0.35em 0 0;
+    vertical-align: 0.1em;
+  }
+}
+
+.tl-item .tl-item__meta {
+  font-size: 0.82em;
+  color: var(--global-text-color-light);
+}
+
+.tl-item .tl-item__highlights {
+  margin: 0.5em 0 0.3em;
+  padding-left: 1.1em;
+  font-size: 0.86em;
+  line-height: 1.55;
+
+  li {
+    margin-bottom: 0.25em;
+
+    &::marker {
+      color: var(--accent);
+    }
+  }
+}
+
+.tl-item .tl-item__links {
+  margin-top: 0.25em;
+  font-size: 0.8em;
+
+  a {
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  a + a::before {
+    content: "·";
+    margin: 0 0.55em;
+    color: var(--global-text-color-light);
+    font-weight: 400;
+  }
+}
+
+.tl-item .tl-item__tags {
+  margin: 0.5em 0 0;
+}
+
+.tl-item__photo {
+  display: block;
+  align-self: start;
+  margin-left: 1rem;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid var(--global-border-color);
+  line-height: 0;
+
+  img {
+    width: 100%;
+    margin: 0;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+}
+
+/* En pantallas angostas el año sube sobre la entrada y la linea queda al borde */
+@media (max-width: 37.5em) {
+  .tl-item,
+  .tl-item--photo {
+    grid-template-columns: 1fr;
+    padding-left: 1.4rem;
+
+    &::before {
+      left: 5px;
+    }
+
+    &::after {
+      left: 0;
+    }
+  }
+
+  .tl-item__year {
+    line-height: 1.4;
+  }
+
+  .tl-item__photo {
+    margin: 0.6em 0 0;
+    max-width: 16rem;
+  }
+}
 
 .presentation-gallery {
   display: grid;
@@ -312,5 +521,14 @@
 .page__content .presentation-slides__note {
   font-size: 0.8em;
   color: var(--global-text-color-light);
+}
+
+/* Pastillas de tecnologias mas pequeñas y menos redondas (lista y detalle, para que
+   coincidan). _archive.scss las define en 0.8em con radio de 20px; este bloque gana
+   por ir despues. */
+.archive__item-tags .archive__tag {
+  padding: 0.25em 0.65em;
+  font-size: 0.72em;
+  border-radius: 7px;
 }
 
