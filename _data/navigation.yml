@@ -11,9 +11,6 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Talks"
-    url: /talks/
-
   - title: "Research"
     url: /research-experience/
 
@@ -21,7 +18,10 @@ main:
     url: /experience/
 
   - title: "Teaching"
-    url: /teaching/    
+    url: /teaching/
+
+  - title: "Talks"
+    url: /talks/
     
   # - title: "Portfolio"
   #   url: /portfolio/
