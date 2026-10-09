@@ -614,3 +614,68 @@ html[data-theme="dark"] {
   padding-bottom: 0;
 }
 
+/* Distinctions del inicio: año a la izquierda como en Publications y una linea corta
+   (description_short del JSON) que dice por que se otorgo cada premio. */
+.award-list {
+  margin-top: 0.8em;
+}
+
+.award {
+  display: grid;
+  grid-template-columns: 3.4rem 1.4rem 1fr;
+  column-gap: 0.8rem;
+  padding: 0.7em 0;
+  border-bottom: 1px solid var(--global-border-color);
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  p {
+    margin: 0 0 0.15em;
+  }
+}
+
+.award__year {
+  font-family: $sans-serif-narrow;
+  font-size: 0.85em;
+  font-weight: 700;
+  line-height: 1.75;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.award .award__title {
+  font-size: 0.95em;
+  line-height: 1.5;
+  color: var(--global-text-color);
+}
+
+.award__institution {
+  color: var(--accent-strong);
+  font-weight: 600;
+}
+
+.award .award__why {
+  font-size: 0.86em;
+  line-height: 1.5;
+  color: var(--global-text-color-light);
+}
+
+.award__icon {
+  margin-top: 0.3em;
+  color: var(--accent);
+  font-size: 0.95em;
+  text-align: center;
+}
+
+@media (max-width: 37.5em) {
+  .award {
+    grid-template-columns: 1.4rem 1fr;
+    row-gap: 0.1em;
+  }
+
+  .award__year {
+    grid-column: 1 / -1;
+  }
+}

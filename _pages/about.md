@@ -57,28 +57,23 @@ In my free time, I enjoy playing chess and bowling.
   
   <div class="awards-section">
     <h2><i class="fas fa-trophy"></i> Distinctions</h2>
-    <div class="awards-grid">
-      <div class="award-item">
-        <i class="fas fa-medal award-icon"></i>
-        <div class="award-details">
-          <strong class="award-title">Mitacs Globalink Research Internship</strong><br>
-          <span class="award-institution">Ontario Tech University</span> | <span class="award-date">2026-05</span>
+    <div class="award-list">
+      {% comment %} Se genera desde _data/cv.json (awards), en el orden del JSON; el icono sale de `kind` {% endcomment %}
+      {% for award in site.data.cv.awards %}
+      <div class="award">
+        <div class="award__year">{{ award.date | slice: 0, 4 }}</div>
+        {% case award.kind %}
+          {% when 'award' %}{% assign award_icon = 'fa-trophy' %}
+          {% when 'fellowship' %}{% assign award_icon = 'fa-flask' %}
+          {% else %}{% assign award_icon = 'fa-medal' %}
+        {% endcase %}
+        <i class="fas {{ award_icon }} award__icon" aria-hidden="true"></i>
+        <div class="award__body">
+          <p class="award__title"><strong>{{ award.title.en | default: award.title }}</strong> · <span class="award__institution">{{ award.institution.en | default: award.institution }}</span></p>
+          {% if award.description_short %}<p class="award__why">{{ award.description_short.en }}</p>{% endif %}
         </div>
       </div>
-      <div class="award-item">
-        <i class="fas fa-medal award-icon"></i>
-        <div class="award-details">
-          <strong class="award-title">Cum Laude</strong><br>
-          <span class="award-institution">Universidad de los Andes</span> | <span class="award-date">2025-04</span>
-        </div>
-      </div>
-      <div class="award-item">
-        <i class="fas fa-medal award-icon"></i>
-        <div class="award-details">
-          <strong class="award-title">Summer Undergraduate Research Fellowship (SURF)</strong><br>
-          <span class="award-institution">Cornell University</span> | <span class="award-date">2024-06</span>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </div>
