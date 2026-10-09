@@ -1028,8 +1028,8 @@
       "endDate": "2024-12",
       "description": [
         {
-          "es": "Como parte del equipo de 7 personas que coordinaba CupiTaller, el centro de apoyo en programación de la universidad, supervisé a unos 110 tutores y asistentes y diseñé los proyectos del curso introductorio, de más de 1100 estudiantes por semestre.",
-          "en": "As part of the 7-person team coordinating CupiTaller, the university's programming support center, supervised around 110 tutors and TAs and designed the projects for the introductory course of over 1,100 students per semester."
+          "es": "Como parte del equipo de 7 personas que coordinaba CupiTaller, el centro de apoyo en programación de la universidad, supervisé a más de 110 tutores y asistentes y diseñé los proyectos del curso introductorio, de más de 1100 estudiantes por semestre.",
+          "en": "As part of the 7-person team coordinating CupiTaller, the university's programming support center, supervised over 110 tutors and TAs and designed the projects for the introductory course of over 1,100 students per semester."
         }
       ],
       "achievements_short": [
@@ -1040,8 +1040,8 @@
       ],
       "reach": {
         "figure": {
-          "es": "~110 tutores",
-          "en": "~110 tutors"
+          "es": "110+ tutores",
+          "en": "110+ tutors"
         },
         "detail": {
           "es": "1.100+ estudiantes por semestre",

@@ -12,7 +12,7 @@ level: undergraduate
 location: Bogotá, Colombia
 period: Jan 2024 - Dec 2024
 permalink: /teaching/2024-01-cupitaller-programming-support-center
-reach: ~110 tutors
+reach: 110+ tutors
 reach_detail: 1,100+ students per semester
 role: Undergraduate Research Assistant
 start_year: '2024'
@@ -23,4 +23,4 @@ type: Teaching Assistant
 
 ### Responsibilities
 
-* As part of the 7-person team coordinating CupiTaller, the university's programming support center, supervised around 110 tutors and TAs and designed the projects for the introductory course of over 1,100 students per semester.
+* As part of the 7-person team coordinating CupiTaller, the university's programming support center, supervised over 110 tutors and TAs and designed the projects for the introductory course of over 1,100 students per semester.
