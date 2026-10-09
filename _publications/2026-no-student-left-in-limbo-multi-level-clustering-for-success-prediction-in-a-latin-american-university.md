@@ -18,6 +18,9 @@ excerpt: AIED 2026, WideAIED Track, Communications in Computer and Information S
   Springer, pp. 63–77 (2026)
 paperurl: https://doi.org/10.1007/978-3-032-29791-4_5
 permalink: /publication/2026-no-student-left-in-limbo-multi-level-clustering-for-success-prediction-in-a-latin-american-university
+photos: []
+slides: []
+slides_note: ''
 slidesurl: ''
 status: ''
 tags: []
@@ -28,9 +31,13 @@ venue: AIED 2026, WideAIED Track, Communications in Computer and Information Sci
 year: '2026'
 ---
 
+{% include presentation-gallery.html %}
+
 ## Abstract
 
 No abstract available.
+
+{% include presentation-slides.html %}
 
 ## Details
 

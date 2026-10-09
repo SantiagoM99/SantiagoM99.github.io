@@ -1,4 +1,25 @@
 awards:
+- date: 2026-08
+  description:
+    en: Universidad de los Andes recognition for team impact on the university community.
+      Awarded for “No Estás Solx,” a student-built peer-support platform serving 56,000+
+      active students with ~1,000 daily connections to institutional support.
+    es: Reconocimiento de la Universidad de los Andes al impacto de un equipo en la
+      comunidad universitaria. Otorgado por “No Estás Solx”, una plataforma de acompañamiento
+      entre pares construida por estudiantes que atiende a más de 56.000 estudiantes
+      activos, con cerca de 1.000 conexiones diarias a los apoyos institucionales.
+  description_short:
+    en: Uniandes internal impact award, for a peer-support platform serving 56,000+
+      students.
+    es: Reconocimiento interno de impacto de Uniandes, por una plataforma de acompañamiento
+      entre pares que atiende a más de 56.000 estudiantes.
+  id: dejar-huella-2026
+  institution: Universidad de los Andes
+  kind: award
+  location: Bogotá, Colombia
+  title:
+    en: Dejar Huella Award
+    es: Reconocimiento Dejar Huella
 - date: 2026-05
   description:
     en: Competitive international Mitacs award funding a 12-week research internship
@@ -7,8 +28,14 @@ awards:
     es: Beca internacional competitiva de Mitacs para realizar una pasantía de investigación
       de 12 semanas en el Lee Language Lab de Ontario Tech University, bajo la supervisión
       de la profesora Annie En-Shiun Lee, Ph.D.
+  description_short:
+    en: Competitive international award funding a 12-week research internship at the
+      Lee Language Lab.
+    es: Beca internacional competitiva que financia una pasantía de investigación
+      de 12 semanas en el Lee Language Lab.
   id: mitacs-globalink-2026
   institution: Ontario Tech University
+  kind: fellowship
   location:
     en: Oshawa, Canada
     es: Oshawa, Canadá
@@ -19,8 +46,12 @@ awards:
       at Universidad de los Andes over the last five years.
     es: Distinción otorgada a quienes se gradúan con un GPA en el 3% más alto de su
       facultad en la Universidad de los Andes durante los últimos cinco años.
+  description_short:
+    en: Graduated with a GPA in the top 3% of the faculty over the last five years.
+    es: Grado con un GPA en el 3% más alto de la facultad en los últimos cinco años.
   id: cum-laude-bachelor
   institution: Universidad de los Andes
+  kind: honor
   location: Bogotá, Colombia
   title: Cum Laude
 - date: 2024-06
@@ -29,8 +60,14 @@ awards:
       Fellowship (SURF) program at Cornell University.
     es: Apoyo financiero otorgado para participar en el programa Summer Undergraduate
       Research Fellowship (SURF) en Cornell University.
+  description_short:
+    en: Funding to join Cornell University's Summer Undergraduate Research Fellowship
+      program.
+    es: Apoyo financiero para participar en el programa Summer Undergraduate Research
+      Fellowship de Cornell University.
   id: surf-cornell
   institution: Cornell University
+  kind: fellowship
   location:
     en: Ithaca, United States
     es: Ithaca, Estados Unidos
@@ -90,13 +127,16 @@ experience:
       de los datos, construir definiciones a nivel de columna y definir reglas de
       calidad para revisar, corregir y monitorear sus productos de datos.'
   - en: 'Manage the unit''s data end to end, from source systems to published products:
-      the institutional information behind the academic advising platform and university-wide
-      data products such as academic percentiles and student dropout indicators.'
+      the institutional information behind “No Estás Solx,” the academic advising
+      platform, and university-wide data products such as academic percentiles and
+      student dropout indicators; the platform team received the 2026 Dejar Huella
+      Award.'
     es: 'Gestionar los datos de la unidad de extremo a extremo, desde los sistemas
       fuente hasta los productos publicados: la información institucional detrás de
-      la plataforma de consejería académica y de productos de datos transversales
-      para la universidad, como los percentiles académicos y los indicadores de deserción
-      estudiantil.'
+      “No Estás Solx”, la plataforma de consejería académica, y de productos de datos
+      transversales para la universidad, como los percentiles académicos y los indicadores
+      de deserción estudiantil; el equipo de la plataforma recibió el Reconocimiento
+      Dejar Huella 2026.'
   - en: Lead the team's research line, which has produced two peer-reviewed publications
       (AIED 2026 and WEEF 2026) and a journal article in preparation.
     es: Liderar la línea de investigación del equipo, que ha producido dos publicaciones
@@ -115,6 +155,11 @@ experience:
       publications (AIED & WEEF 2026)'
     es: 'Lidero la línea de investigación del equipo: modelos ML de deserción detrás
       de 2 publicaciones arbitradas (AIED y WEEF 2026)'
+  - en: Manage the data behind “No Estás Solx,” a peer-support platform serving 56,000+
+      students; the team received the 2026 Dejar Huella Award
+    es: Gestiono los datos de “No Estás Solx”, una plataforma de acompañamiento entre
+      pares para más de 56.000 estudiantes; el equipo recibió el Reconocimiento Dejar
+      Huella 2026
   company:
     en: EdTech Node, Universidad de los Andes
     es: Nodo EdTech, Universidad de los Andes
@@ -359,8 +404,8 @@ metadata:
   - es
   - en
   defaultLanguage: en
-  lastUpdated: '2026-09-02'
-  version: '1.4'
+  lastUpdated: '2026-10-08'
+  version: '1.5'
 personal:
   contact:
     email: s.martinezn@uniandes.edu.co
@@ -490,6 +535,20 @@ publications:
         of the World Engineering Education Forum, WEEF (IFEES & GEDC) 2026, Cartagena
         de Indias, Colombia.'
     id: conference-weef-sasp
+    presentation:
+      date: '2026-09-23'
+      format:
+        en: Oral presentation
+        es: Presentación oral
+      photos:
+      - caption:
+          en: Presenting SASP at WEEF 2026, Cartagena de Indias.
+          es: Presentando SASP en WEEF 2026, Cartagena de Indias.
+        file: images/presentations/weef-2026-1.jpg
+      slides: files/slides/weef-2026-sasp.pdf
+      slides_note:
+        en: Dashboard screenshots use synthetic student data.
+        es: Las capturas del tablero usan datos sintéticos de estudiantes.
     status: in_press
   - _category_key: conferences
     bibtex_website: https://santiagom99.github.io/files/paper-aied-limbo.bib
@@ -695,6 +754,12 @@ publications:
         MeSHClass-ES and AnatEM-ES: Open Resources for Spanish Biomedical NLP. In
         BioNLP 2026, pp. 617-629. Association for Computational Linguistics. https://doi.org/10.18653/v1/2026.bionlp-1.49'
     id: workshop-bionlp-meshclass
+    presentation:
+      date: '2026-07-04'
+      format:
+        en: Oral presentation (virtual)
+        es: Presentación oral (virtual)
+      slides: files/slides/bionlp-2026-meshclass.pdf
     status: published
 research:
 - achievements_short:
@@ -945,6 +1010,12 @@ talks:
   event: Analytics Forum 2025 - Universidad de los Andes
   id: analytics-forum-2025-poster
   location: Bogotá, Colombia
+  photos:
+  - caption:
+      en: Presenting the poster at Analytics Forum 2025, Universidad de los Andes.
+      es: Presentando el póster en el Analytics Forum 2025, Universidad de los Andes.
+    file: images/presentations/analytics-forum-2025-1.jpg
+  slides: files/slides/analytics-forum-2025-poster.pdf
   title:
     en: Accelerating Credit Value Adjustment with Machine Learning
     es: Acelerando el Credit Value Adjustment con Machine Learning
@@ -984,6 +1055,13 @@ teaching:
   id: ta-llm-applications
   institution: Universidad de los Andes
   location: Bogotá, Colombia
+  reach:
+    detail:
+      en: 3 semesters
+      es: 3 semestres
+    figure:
+      en: 200+ students
+      es: 200+ estudiantes
   startDate: 2025-06
   title:
     en: Graduate Teaching Assistant
@@ -1011,6 +1089,13 @@ teaching:
     en: Systems and Computing Engineering Department, Universidad de los Andes
     es: Departamento de Ingeniería de Sistemas y Computación, Universidad de los Andes
   location: Bogotá, Colombia
+  reach:
+    detail:
+      en: 1,100+ students per semester
+      es: 1.100+ estudiantes por semestre
+    figure:
+      en: ~110 tutors
+      es: ~110 tutores
   startDate: 2024-01
   title:
     en: Undergraduate Research Assistant
@@ -1034,6 +1119,13 @@ teaching:
     en: Systems and Computing Engineering Department, Universidad de los Andes
     es: Departamento de Ingeniería de Sistemas y Computación, Universidad de los Andes
   location: Bogotá, Colombia
+  reach:
+    detail:
+      en: 2 years
+      es: 2 años
+    figure:
+      en: 100+ students
+      es: 100+ estudiantes
   startDate: 2021-08
   title:
     en: Undergraduate Teaching Assistant - Programming Tutor
@@ -1054,6 +1146,10 @@ teaching:
   id: ta-intro-programming
   institution: Universidad de los Andes
   location: Bogotá, Colombia
+  reach:
+    figure:
+      en: ~40 students per semester
+      es: ~40 estudiantes por semestre
   startDate: 2022-01
   title:
     en: Undergraduate Teaching Assistant
@@ -1074,6 +1170,13 @@ teaching:
   id: ta-infrastructure
   institution: Universidad de los Andes
   location: Bogotá, Colombia
+  reach:
+    detail:
+      en: 1 semester
+      es: 1 semestre
+    figure:
+      en: ~40 students
+      es: ~40 estudiantes
   startDate: 2023-01
   title:
     en: Undergraduate Teaching Assistant

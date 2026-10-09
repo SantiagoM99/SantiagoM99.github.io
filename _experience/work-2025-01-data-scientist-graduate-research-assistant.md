@@ -1,11 +1,16 @@
 ---
 collection: experience
 company: Vice Dean's Office of Student Affairs, Universidad de los Andes
+current: false
 date: 2025-01-01-01
 excerpt: ''
+highlights:
+- Replaced external counseling platform, saving the university ~$100K USD annually
+- Co-implemented system alerting over 1000 critical student cases
 location: Bogotá, Colombia
 period: Jan 2025 - Mar 2026
 permalink: /experience/work-2025-01-data-scientist-graduate-research-assistant
+start_year: '2025'
 technologies:
 - Power BI
 - Python
@@ -14,6 +19,7 @@ technologies:
 - Databricks
 - SQL
 title: Data Scientist - Graduate Research Assistant
+total: 5
 type: work
 venue: Vice Dean's Office of Student Affairs, Universidad de los Andes
 ---

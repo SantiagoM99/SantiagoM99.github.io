@@ -15,6 +15,9 @@ doiurl: ''
 excerpt: Findings of EMNLP 2026, Budapest, Hungary (2026)
 paperurl: ''
 permalink: /publication/2026-online-language-adaptive-sampling-for-better-distributed-cross-lingual-gains
+photos: []
+slides: []
+slides_note: ''
 slidesurl: ''
 status: To appear
 tags: []
@@ -23,9 +26,13 @@ venue: Findings of EMNLP 2026, Budapest, Hungary
 year: '2026'
 ---
 
+{% include presentation-gallery.html %}
+
 ## Abstract
 
 No abstract available.
+
+{% include presentation-slides.html %}
 
 ## Details
 

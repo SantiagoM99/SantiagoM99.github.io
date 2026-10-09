@@ -15,6 +15,9 @@ doiurl: ''
 excerpt: arXiv:2601.09059 (2026)
 paperurl: https://arxiv.org/abs/2601.09059
 permalink: /publication/2026-efficient-multilingual-dialogue-processing-via-translation-pipelines-and-distilled-language-models
+photos: []
+slides: []
+slides_note: ''
 slidesurl: ''
 status: ''
 tags: []
@@ -24,9 +27,13 @@ venue: arXiv:2601.09059
 year: '2026'
 ---
 
+{% include presentation-gallery.html %}
+
 ## Abstract
 
 This paper presents team Kl33n3x's multilingual dialogue summarization and question answering system developed for the NLPAI4Health 2025 shared task. The approach employs a three-stage pipeline: forward translation from Indic languages to English, multitask text generation using a 2.55B parameter distilled language model, and reverse translation back to source languages. By leveraging knowledge distillation techniques, this work demonstrates that compact models can achieve highly competitive performance across nine languages. The system achieved strong win rates across the competition's tasks, with particularly robust performance on Marathi (86.7% QnA), Tamil (86.7% QnA), and Hindi (80.0% QnA), demonstrating the effectiveness of translation-based approaches for low-resource language processing without task-specific fine-tuning.
+
+{% include presentation-slides.html %}
 
 ## Details
 

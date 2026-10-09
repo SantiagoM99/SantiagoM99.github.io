@@ -14,6 +14,9 @@ doiurl: ''
 excerpt: Undergraduate thesis, Universidad de los Andes (2024)
 paperurl: https://hdl.handle.net/1992/75910
 permalink: /publication/2024-detection-and-segmentation-of-malignant-melanoma-regions-in-dermoscopic-images-using-machine-learning
+photos: []
+slides: []
+slides_note: ''
 slidesurl: ''
 status: ''
 tags: []
@@ -23,9 +26,13 @@ venue: Undergraduate thesis, Universidad de los Andes
 year: '2024'
 ---
 
+{% include presentation-gallery.html %}
+
 ## Abstract
 
 No abstract available.
+
+{% include presentation-slides.html %}
 
 ## Details
 

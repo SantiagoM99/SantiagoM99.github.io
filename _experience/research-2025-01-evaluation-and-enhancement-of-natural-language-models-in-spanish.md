@@ -1,12 +1,19 @@
 ---
 collection: experience
+current: true
 date: 2025-01-01-01
 excerpt: ''
+highlights:
+- Research NLP model enhancement for Spanish medical contexts focusing on NER and
+  text classification
+- Develop specialized models from scratch and compare them with LLMs using zero-shot
+  and few-shot learning
 institution: Universidad de los Andes
 location: Bogotá, Colombia
 period: Jan 2025 - Present
 permalink: /experience/research-2025-01-evaluation-and-enhancement-of-natural-language-models-in-spanish
 research_group: FLAG Research Lab - A.I. and Machine Learning
+start_year: '2025'
 supervisor: Rubén Manrique Ph.D
 technologies:
 - Python
@@ -19,6 +26,7 @@ technologies:
 - Text Classification
 - Medical NLP
 title: Evaluation and Enhancement of Natural Language Models in Spanish
+total: 3
 type: research
 venue: Universidad de los Andes
 ---

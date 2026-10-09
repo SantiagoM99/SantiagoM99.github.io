@@ -1,17 +1,23 @@
 ---
 collection: experience
 company: Digital Transformation, Universidad de los Andes
+current: false
 date: 2023-06-01-01
 excerpt: ''
+highlights:
+- Interpreter for 5 exchange students; helped integrate OpenAI and Azure Functions
+  into a chatbot
 location: Bogotá, Colombia
 period: Jun 2023 - Aug 2023
 permalink: /experience/work-2023-06-cross-cultural-liaison-and-software-developer
+start_year: '2023'
 technologies:
 - OpenAI API
 - Azure Functions
 - Translation
 - Chatbot Development
 title: Cross-Cultural Liaison and Software Developer
+total: 1
 type: work
 venue: Digital Transformation, Universidad de los Andes
 ---

@@ -1,12 +1,17 @@
 ---
 collection: experience
+current: false
 date: 2024-06-01-01
 excerpt: ''
+highlights:
+- Designed Data Discovery architecture to explore and modify datasets in various formats
+- Developed upload and scoring system through semantic search across multiple databases
 institution: College of Computing and Information Science, Cornell University
 location: Ithaca, United States
 period: Jun 2024 - Aug 2024
 permalink: /experience/research-2024-06-summer-research-intern
 research_group: N/A
+start_year: '2024'
 supervisor: Sainyam Galhotra Ph.D.
 technologies:
 - Python
@@ -14,6 +19,7 @@ technologies:
 - Semantic Search
 - Database Management
 title: Summer Research Intern
+total: 2
 type: research
 venue: College of Computing and Information Science, Cornell University
 ---

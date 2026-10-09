@@ -1,12 +1,19 @@
 ---
 collection: experience
+current: false
 date: 2025-01-01-01
 excerpt: ''
+highlights:
+- Designed an LLM-as-judge evaluation architecture that grades student work against
+  rubrics
+- Built locally deployed RAG systems and custom AI agents for domain-specific research
+  questions
 institution: Universidad de los Andes
 location: Bogotá, Colombia
 period: Jan 2025 - Jun 2025
 permalink: /experience/research-2025-01-generative-artificial-intelligence-for-research-research-assistant
 research_group: Augmented Artificial Intelligence Initiative
+start_year: '2025'
 technologies:
 - Python
 - Ollama
@@ -17,6 +24,7 @@ technologies:
 - OpenAI API
 - LLM Evaluation
 title: Generative Artificial Intelligence for Research - Research Assistant
+total: 2
 type: research
 venue: Universidad de los Andes
 ---

@@ -1,12 +1,19 @@
 ---
 collection: experience
+current: true
 date: 2026-05-01-01
 excerpt: ''
+highlights:
+- Co-authored a Findings of EMNLP 2026 paper on adaptive language sampling; leading
+  its follow-up on when to stop cross-lingual realignment, under review at ARR
+- 'Co-developing M2-ALIGN: extending vision-language models to 11 languages while
+  preserving their multilingual reasoning'
 institution: Ontario Tech University
 location: Oshawa, Canada
 period: May 2026 - Present
 permalink: /experience/research-2026-05-mitacs-globalink-research-intern-collaborating-researcher
 research_group: Lee Language Lab
+start_year: '2026'
 supervisor: Annie En-Shiun Lee Ph.D.
 technologies:
 - Python
@@ -16,6 +23,7 @@ technologies:
 - Multilingual NLP
 - Vision-Language Models
 title: Mitacs Globalink Research Intern - Collaborating Researcher
+total: 4
 type: research
 venue: Ontario Tech University
 ---

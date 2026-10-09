@@ -1,11 +1,16 @@
 ---
 collection: experience
 company: Precia PPV S.A
+current: false
 date: 2024-08-01-01
 excerpt: ''
+highlights:
+- Developed MLP model reducing financial calculation time by 70% for client applications
+- Presented our work on models and AWS infrastructure at Analytics Forum 2025
 location: Bogotá, Colombia
 period: Aug 2024 - Dec 2024
 permalink: /experience/work-2024-08-machine-learning-intern
+start_year: '2024'
 technologies:
 - Python
 - AWS
@@ -14,6 +19,7 @@ technologies:
 - Machine Learning
 - ETL
 title: Machine Learning Intern
+total: 3
 type: work
 venue: Precia PPV S.A
 ---

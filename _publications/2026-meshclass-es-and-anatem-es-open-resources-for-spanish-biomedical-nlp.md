@@ -14,7 +14,38 @@ doiurl: https://doi.org/10.18653/v1/2026.bionlp-1.49
 excerpt: BioNLP 2026 (ACL Workshop), San Diego, California, pp. 617–629 (2026)
 paperurl: https://aclanthology.org/2026.bionlp-1.49/
 permalink: /publication/2026-meshclass-es-and-anatem-es-open-resources-for-spanish-biomedical-nlp
-slidesurl: ''
+photos: []
+slides:
+- /images/slides/bionlp-2026-meshclass/slide-01.jpg
+- /images/slides/bionlp-2026-meshclass/slide-02.jpg
+- /images/slides/bionlp-2026-meshclass/slide-03.jpg
+- /images/slides/bionlp-2026-meshclass/slide-04.jpg
+- /images/slides/bionlp-2026-meshclass/slide-05.jpg
+- /images/slides/bionlp-2026-meshclass/slide-06.jpg
+- /images/slides/bionlp-2026-meshclass/slide-07.jpg
+- /images/slides/bionlp-2026-meshclass/slide-08.jpg
+- /images/slides/bionlp-2026-meshclass/slide-09.jpg
+- /images/slides/bionlp-2026-meshclass/slide-10.jpg
+- /images/slides/bionlp-2026-meshclass/slide-11.jpg
+- /images/slides/bionlp-2026-meshclass/slide-12.jpg
+- /images/slides/bionlp-2026-meshclass/slide-13.jpg
+- /images/slides/bionlp-2026-meshclass/slide-14.jpg
+- /images/slides/bionlp-2026-meshclass/slide-15.jpg
+- /images/slides/bionlp-2026-meshclass/slide-16.jpg
+- /images/slides/bionlp-2026-meshclass/slide-17.jpg
+- /images/slides/bionlp-2026-meshclass/slide-18.jpg
+- /images/slides/bionlp-2026-meshclass/slide-19.jpg
+- /images/slides/bionlp-2026-meshclass/slide-20.jpg
+- /images/slides/bionlp-2026-meshclass/slide-21.jpg
+- /images/slides/bionlp-2026-meshclass/slide-22.jpg
+- /images/slides/bionlp-2026-meshclass/slide-23.jpg
+- /images/slides/bionlp-2026-meshclass/slide-24.jpg
+- /images/slides/bionlp-2026-meshclass/slide-25.jpg
+- /images/slides/bionlp-2026-meshclass/slide-26.jpg
+- /images/slides/bionlp-2026-meshclass/slide-27.jpg
+- /images/slides/bionlp-2026-meshclass/slide-28.jpg
+slides_note: ''
+slidesurl: /files/slides/bionlp-2026-meshclass.pdf
 status: ''
 tags: []
 title: 'MeSHClass-ES and AnatEM-ES: Open Resources for Spanish Biomedical NLP'
@@ -22,15 +53,20 @@ venue: BioNLP 2026 (ACL Workshop), San Diego, California, pp. 617–629
 year: '2026'
 ---
 
+{% include presentation-gallery.html %}
+
 ## Abstract
 
 Despite Spanish being one of the most widely spoken languages in the world, biomedical NLP resources and systematic evaluations remain limited relative to English. We address this gap by constructing and releasing two Spanish biomedical corpora: (1) MeSHClass-ES, a 29,063 abstract bilingual corpus translated from PubMed with Opus-MT, and (2) AnatEM-ES, the AnatEM anatomical entity corpus translated with a chunk-level LLM-based pipeline that jointly preserves BIO annotations across 13,849 entity mentions. Both corpora achieve a mean COMET score of 0.73 despite using different translation systems. We benchmark nine encoder models spanning general-domain Spanish, domain-specific, and multilingual architectures for both tasks. RigoBERTa-2.0 leads both tasks (micro-F1 classification 0.69, tied with SciBETO-large; NER F1 0.66). Both domain pretraining and model capacity drive performance, with the gap slightly more pronounced for NER (4-point spread) than classification (3-point spread). XLM-RoBERTa-large emerges as a competitive multilingual baseline. A parallel evaluation of four open-weight decoders (7-9B) reveals a task-dependent encoder-decoder gap: QLoRA-adapted Gemma-2-9B reaches 88% of the best encoder on classification (micro-F1 .61 vs .69), but for NER every decoder configuration we tested stays at or below 40% of the best encoder F1. We release both corpora on the HuggingFace Hub, translation pipelines, and evaluation code on GitHub.
+
+{% include presentation-slides.html %}
 
 ## Details
 
 **Author:** Santiago Martínez Novoa, Lina Gómez Mesa, Juan Prieto, Rubén Manrique
 **Year:** 2026
 **Publication Type:** Paper presented at BioNLP 2026 (Biomedical Natural Language Processing Workshop, ACL), San Diego, California, pp. 617-629  
+**Presented:** Oral presentation (virtual), July 4, 2026  
 
 
 ## Citation
@@ -39,5 +75,6 @@ Martínez Novoa, S., Gómez Mesa, L., Prieto, J., & Manrique, R. (2026). MeSHCla
 
 <div class='cv-download-buttons'>
 <a href='https://aclanthology.org/2026.bionlp-1.49/' class='cv-download-btn' target='_blank'><i class='fas fa-external-link'></i> See Paper</a>
+<a href='{{ base_path }}/files/slides/bionlp-2026-meshclass.pdf' class='cv-download-btn' target='_blank'><i class='fas fa-file-pdf'></i> Slides</a>
 <a href='https://santiagom99.github.io/files/paper-bionlp-meshclass.bib' class='cv-download-btn' target='_blank'><i class='fas fa-code'></i> Download BibTeX</a>
 </div>

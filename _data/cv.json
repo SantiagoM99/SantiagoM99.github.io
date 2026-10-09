@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.4",
-    "lastUpdated": "2026-09-02",
+    "version": "1.5",
+    "lastUpdated": "2026-10-08",
     "defaultLanguage": "en",
     "availableLanguages": [
       "es",
@@ -122,8 +122,8 @@
           "en": "Lead the unit's adoption of institutional data governance and quality policies: establishing data ownership and origin with source units, building column-level definitions, and defining quality rules to audit, correct, and monitor its data products."
         },
         {
-          "es": "Gestionar los datos de la unidad de extremo a extremo, desde los sistemas fuente hasta los productos publicados: la información institucional detrás de la plataforma de consejería académica y de productos de datos transversales para la universidad, como los percentiles académicos y los indicadores de deserción estudiantil.",
-          "en": "Manage the unit's data end to end, from source systems to published products: the institutional information behind the academic advising platform and university-wide data products such as academic percentiles and student dropout indicators."
+          "es": "Gestionar los datos de la unidad de extremo a extremo, desde los sistemas fuente hasta los productos publicados: la información institucional detrás de “No Estás Solx”, la plataforma de consejería académica, y de productos de datos transversales para la universidad, como los percentiles académicos y los indicadores de deserción estudiantil; el equipo de la plataforma recibió el Reconocimiento Dejar Huella 2026.",
+          "en": "Manage the unit's data end to end, from source systems to published products: the institutional information behind “No Estás Solx,” the academic advising platform, and university-wide data products such as academic percentiles and student dropout indicators; the platform team received the 2026 Dejar Huella Award."
         },
         {
           "es": "Liderar la línea de investigación del equipo, que ha producido dos publicaciones arbitradas (AIED 2026 y WEEF 2026) y un artículo de revista en preparación.",
@@ -142,6 +142,10 @@
         {
           "es": "Lidero la línea de investigación del equipo: modelos ML de deserción detrás de 2 publicaciones arbitradas (AIED y WEEF 2026)",
           "en": "Lead the team's research line: dropout-prediction ML models behind 2 peer-reviewed publications (AIED & WEEF 2026)"
+        },
+        {
+          "en": "Manage the data behind “No Estás Solx,” a peer-support platform serving 56,000+ students; the team received the 2026 Dejar Huella Award",
+          "es": "Gestiono los datos de “No Estás Solx”, una plataforma de acompañamiento entre pares para más de 56.000 estudiantes; el equipo recibió el Reconocimiento Dejar Huella 2026"
         }
       ],
       "technologies": [
@@ -554,7 +558,28 @@
         "formatted_citations": {
           "apa_style": "Martínez Novoa, S., Melo Barrero, F., Ruiz Giraldo, M., Velásquez Marín, S., Carvajal Chaves, N., Hernández Hoyos, M., & Reyes, J. P. (2026). Centralizing the Student Lens: Design and Evaluation of a Learning Analytics Dashboard for Academic Advising in Higher Education. To appear in Proceedings of the World Engineering Education Forum, WEEF (IFEES & GEDC) 2026, Cartagena de Indias, Colombia."
         },
-        "bibtex_website": "https://santiagom99.github.io/files/paper-weef-sasp.bib"
+        "bibtex_website": "https://santiagom99.github.io/files/paper-weef-sasp.bib",
+        "presentation": {
+          "format": {
+            "es": "Presentación oral",
+            "en": "Oral presentation"
+          },
+          "date": "2026-09-23",
+          "slides": "files/slides/weef-2026-sasp.pdf",
+          "slides_note": {
+            "es": "Las capturas del tablero usan datos sintéticos de estudiantes.",
+            "en": "Dashboard screenshots use synthetic student data."
+          },
+          "photos": [
+            {
+              "file": "images/presentations/weef-2026-1.jpg",
+              "caption": {
+                "es": "Presentando SASP en WEEF 2026, Cartagena de Indias.",
+                "en": "Presenting SASP at WEEF 2026, Cartagena de Indias."
+              }
+            }
+          ]
+        }
       },
       {
         "id": "conference-aied-limbo",
@@ -635,7 +660,15 @@
         "formatted_citations": {
           "apa_style": "Martínez Novoa, S., Gómez Mesa, L., Prieto, J., & Manrique, R. (2026). MeSHClass-ES and AnatEM-ES: Open Resources for Spanish Biomedical NLP. In BioNLP 2026, pp. 617-629. Association for Computational Linguistics. https://doi.org/10.18653/v1/2026.bionlp-1.49"
         },
-        "bibtex_website": "https://santiagom99.github.io/files/paper-bionlp-meshclass.bib"
+        "bibtex_website": "https://santiagom99.github.io/files/paper-bionlp-meshclass.bib",
+        "presentation": {
+          "format": {
+            "es": "Presentación oral (virtual)",
+            "en": "Oral presentation (virtual)"
+          },
+          "slides": "files/slides/bionlp-2026-meshclass.pdf",
+          "date": "2026-07-04"
+        }
       }
     ],
     "preprints": [
@@ -963,7 +996,17 @@
           "es": "Construí tutoriales, proyectos y pipelines de evaluación con RAGAS usando LangChain, LangGraph y LangSmith",
           "en": "Built tutorials, projects, and RAGAS-based evaluation pipelines with LangChain, LangGraph, and LangSmith"
         }
-      ]
+      ],
+      "reach": {
+        "figure": {
+          "es": "200+ estudiantes",
+          "en": "200+ students"
+        },
+        "detail": {
+          "es": "3 semestres",
+          "en": "3 semesters"
+        }
+      }
     },
     {
       "id": "cupitaller-supervisor",
@@ -994,7 +1037,17 @@
           "es": "Coordiné CupiTaller: 110+ tutores supervisados y proyectos para 1100+ estudiantes por semestre",
           "en": "Helped coordinate CupiTaller: supervised 110+ tutors and designed projects for 1,100+ students per semester"
         }
-      ]
+      ],
+      "reach": {
+        "figure": {
+          "es": "~110 tutores",
+          "en": "~110 tutors"
+        },
+        "detail": {
+          "es": "1.100+ estudiantes por semestre",
+          "en": "1,100+ students per semester"
+        }
+      }
     },
     {
       "id": "ta-programming-tutor",
@@ -1025,7 +1078,17 @@
           "es": "Tutoría de Python a 100+ estudiantes durante 2 años",
           "en": "Tutored 100+ students in Python over 2 years"
         }
-      ]
+      ],
+      "reach": {
+        "figure": {
+          "es": "100+ estudiantes",
+          "en": "100+ students"
+        },
+        "detail": {
+          "es": "2 años",
+          "en": "2 years"
+        }
+      }
     },
     {
       "id": "ta-intro-programming",
@@ -1053,7 +1116,13 @@
           "es": "Apoyé laboratorios de programación de 40 estudiantes por semestre",
           "en": "Assisted programming labs of 40 students per semester"
         }
-      ]
+      ],
+      "reach": {
+        "figure": {
+          "es": "~40 estudiantes por semestre",
+          "en": "~40 students per semester"
+        }
+      }
     },
     {
       "id": "ta-infrastructure",
@@ -1081,10 +1150,39 @@
           "es": "Califiqué evaluaciones y acompañé a 40 estudiantes en fundamentos de infraestructura",
           "en": "Graded coursework and guided 40 students through infrastructure fundamentals"
         }
-      ]
+      ],
+      "reach": {
+        "figure": {
+          "es": "~40 estudiantes",
+          "en": "~40 students"
+        },
+        "detail": {
+          "es": "1 semestre",
+          "en": "1 semester"
+        }
+      }
     }
   ],
   "awards": [
+    {
+      "id": "dejar-huella-2026",
+      "title": {
+        "es": "Reconocimiento Dejar Huella",
+        "en": "Dejar Huella Award"
+      },
+      "description": {
+        "es": "Reconocimiento de la Universidad de los Andes al impacto de un equipo en la comunidad universitaria. Otorgado por “No Estás Solx”, una plataforma de acompañamiento entre pares construida por estudiantes que atiende a más de 56.000 estudiantes activos, con cerca de 1.000 conexiones diarias a los apoyos institucionales.",
+        "en": "Universidad de los Andes recognition for team impact on the university community. Awarded for “No Estás Solx,” a student-built peer-support platform serving 56,000+ active students with ~1,000 daily connections to institutional support."
+      },
+      "description_short": {
+        "es": "Reconocimiento interno de impacto de Uniandes, por una plataforma de acompañamiento entre pares que atiende a más de 56.000 estudiantes.",
+        "en": "Uniandes internal impact award, for a peer-support platform serving 56,000+ students."
+      },
+      "institution": "Universidad de los Andes",
+      "location": "Bogotá, Colombia",
+      "date": "2026-08",
+      "kind": "award"
+    },
     {
       "id": "mitacs-globalink-2026",
       "title": "Mitacs Globalink Research Internship",
@@ -1097,7 +1195,12 @@
         "es": "Oshawa, Canadá",
         "en": "Oshawa, Canada"
       },
-      "date": "2026-05"
+      "date": "2026-05",
+      "description_short": {
+        "en": "Competitive international award funding a 12-week research internship at the Lee Language Lab.",
+        "es": "Beca internacional competitiva que financia una pasantía de investigación de 12 semanas en el Lee Language Lab."
+      },
+      "kind": "fellowship"
     },
     {
       "id": "cum-laude-bachelor",
@@ -1108,7 +1211,12 @@
       },
       "institution": "Universidad de los Andes",
       "location": "Bogotá, Colombia",
-      "date": "2025-04"
+      "date": "2025-04",
+      "description_short": {
+        "en": "Graduated with a GPA in the top 3% of the faculty over the last five years.",
+        "es": "Grado con un GPA en el 3% más alto de la facultad en los últimos cinco años."
+      },
+      "kind": "honor"
     },
     {
       "id": "surf-cornell",
@@ -1122,7 +1230,12 @@
         "es": "Ithaca, Estados Unidos",
         "en": "Ithaca, United States"
       },
-      "date": "2024-06"
+      "date": "2024-06",
+      "description_short": {
+        "en": "Funding to join Cornell University's Summer Undergraduate Research Fellowship program.",
+        "es": "Apoyo financiero para participar en el programa Summer Undergraduate Research Fellowship de Cornell University."
+      },
+      "kind": "fellowship"
     }
   ],
   "talks": [
@@ -1150,7 +1263,17 @@
       "venue_details": {
         "es": "Edificio Mario Laserna, Sesión de Posters y Networking",
         "en": "Mario Laserna Building, Posters and Networking Session"
-      }
+      },
+      "photos": [
+        {
+          "file": "images/presentations/analytics-forum-2025-1.jpg",
+          "caption": {
+            "es": "Presentando el póster en el Analytics Forum 2025, Universidad de los Andes.",
+            "en": "Presenting the poster at Analytics Forum 2025, Universidad de los Andes."
+          }
+        }
+      ],
+      "slides": "files/slides/analytics-forum-2025-poster.pdf"
     }
   ]
 }

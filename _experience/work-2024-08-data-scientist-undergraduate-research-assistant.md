@@ -1,11 +1,16 @@
 ---
 collection: experience
 company: Vice Dean's Office of Student Affairs, Universidad de los Andes
+current: false
 date: 2024-08-01-01
 excerpt: ''
+highlights:
+- Co-implemented the institutional ETL into a relational database, with integrity
+  tests for the multidimensional model
 location: Bogotá, Colombia
 period: Aug 2024 - Dec 2024
 permalink: /experience/work-2024-08-data-scientist-undergraduate-research-assistant
+start_year: '2024'
 technologies:
 - Python
 - Pandas
@@ -13,6 +18,7 @@ technologies:
 - Azure Blob Storage
 - SQL
 title: Data Scientist - Undergraduate Research Assistant
+total: 1
 type: work
 venue: Vice Dean's Office of Student Affairs, Universidad de los Andes
 ---
