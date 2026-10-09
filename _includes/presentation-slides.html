@@ -1,0 +1,23 @@
+{% include base_path %}
+
+{% comment %}
+  Visor de diapositivas: carrusel horizontal con scroll-snap, sin JS. Se usan
+  imagenes y no un iframe del PDF porque Safari en iOS solo muestra la primera
+  pagina de un PDF incrustado.
+{% endcomment %}
+
+{% if page.slides and page.slides.size > 0 %}
+<h2 id="slides">Slides</h2>
+<div class="presentation-slides" tabindex="0" aria-label="Slides, scroll horizontally">
+  {% for slide in page.slides %}
+  <figure class="presentation-slides__slide">
+    <img src="{{ base_path }}{{ slide }}" alt="Slide {{ forloop.index }}" loading="lazy">
+    <figcaption>{{ forloop.index }} / {{ page.slides.size }}</figcaption>
+  </figure>
+  {% endfor %}
+</div>
+<p class="presentation-slides__note">
+  Scroll sideways to browse.{% if page.slidesurl and page.slidesurl != '' %} <a href="{{ base_path }}{{ page.slidesurl }}" target="_blank" rel="noopener">Open as PDF</a>.{% endif %}
+  {% if page.slides_note and page.slides_note != '' %}{{ page.slides_note }}{% endif %}
+</p>
+{% endif %}

@@ -56,6 +56,35 @@ def localized(value, lang='en'):
         return value.get(lang, '') or value.get('es', '')
     return str(value) if value else ''
 
+def presentation_media(media):
+    """Fotos y slides de una presentacion (entrada de talks o `presentation` de una
+    publicacion) en el formato que esperan presentation-gallery/-slides.html.
+
+    Las rutas del JSON son relativas a la raiz del sitio. Un archivo que falta hace
+    fallar el build: una foto o unas slides rotas no deben publicarse en silencio.
+    """
+    for path in [photo['file'] for photo in media.get('photos', [])] + [media.get('slides', '')]:
+        if path and not os.path.exists(path):
+            raise FileNotFoundError(f"{path} aparece en cv.json pero no existe en el sitio")
+
+    slides = media.get('slides', '')
+    # scripts/render_slides.sh deja las paginas del PDF en images/slides/<nombre>/
+    slide_dir = f"images/slides/{os.path.splitext(os.path.basename(slides))[0]}"
+    slide_images = sorted(
+        f"/{slide_dir}/{name}" for name in os.listdir(slide_dir) if name.endswith('.jpg')
+    ) if slides and os.path.isdir(slide_dir) else []
+
+    return {
+        'photos': [
+            {'url': f"/{photo['file']}", 'caption': photo.get('caption', {}).get('en', '')}
+            for photo in media.get('photos', [])
+        ],
+        'slidesurl': f"/{slides}" if slides else '',
+        'slides': slide_images,
+        'slides_note': media.get('slides_note', {}).get('en', ''),
+    }
+
+
 def generate_publications(cv_data, output_dir="_publications"):
     """Genera archivos .md para publicaciones - Vista simplificada"""
     if not os.path.exists(output_dir):
@@ -135,6 +164,9 @@ def generate_publications(cv_data, output_dir="_publications"):
         doi = pub.get('doi', '')
         arxiv_id = citation.get('arxiv_id', '')
 
+        presentation = pub.get('presentation', {})
+        media = presentation_media(presentation)
+
         # Front matter - SOLO información esencial para vista de archivo
         front_matter = {
             'title': title,
@@ -151,12 +183,14 @@ def generate_publications(cv_data, output_dir="_publications"):
             'doiurl': f"https://doi.org/{doi}" if doi else '',
             'arxivurl': citation.get('url', '') if arxiv_id else '',
             'arxivid': arxiv_id,
-            'slidesurl': '',
             'paperurl': paperurl,
             'citation': pub.get("formatted_citations", {}).get("apa_style", ""),
             'tags': keywords,
             'bibtexurl': bibtex_path if bibtex_path else '',
+            **media,
         }
+        if media['photos']:
+            front_matter['header'] = {'teaser': media['photos'][0]['url']}
 
         # CONTENIDO COMPLETO - Solo visible al hacer clic
         supervisor_line = ""
@@ -172,12 +206,22 @@ def generate_publications(cv_data, output_dir="_publications"):
 
         pub_type_line = f"**Publication Type:** {excerpt}  \n" if excerpt and excerpt != venue else ""
 
+        presented_line = ""
+        if presentation.get('format'):
+            presented_line = f"**Presented:** {presentation['format']['en']}"
+            if presentation.get('date'):
+                presented_on = datetime.strptime(presentation['date'], '%Y-%m-%d').strftime('%B %-d, %Y')
+                presented_line += f", {presented_on}"
+            presented_line += "  \n"
+
         # Clean resources section
         resources_section = ""
-        if paperurl or bibtex_path:
+        if paperurl or bibtex_path or media['slidesurl']:
             resources_section = "\n<div class='cv-download-buttons'>\n"
             if paperurl:
                 resources_section += f"<a href='{paperurl}' class='cv-download-btn' target='_blank'><i class='fas fa-external-link'></i> See Paper</a>\n"
+            if media['slidesurl']:
+                resources_section += f"<a href='{{{{ base_path }}}}{media['slidesurl']}' class='cv-download-btn' target='_blank'><i class='fas fa-file-pdf'></i> Slides</a>\n"
             if bibtex_path:
                 resources_section += f"<a href='{bibtex_path}' class='cv-download-btn' target='_blank'><i class='fas fa-code'></i> Download BibTeX</a>\n"
             resources_section += "</div>\n"
@@ -192,15 +236,19 @@ def generate_publications(cv_data, output_dir="_publications"):
         content = f"""---
 {yaml.dump(front_matter, default_flow_style=False, allow_unicode=True)}---
 
+{{% include presentation-gallery.html %}}
+
 ## Abstract
 
 {abstract if abstract else 'No abstract available.'}
+
+{{% include presentation-slides.html %}}
 
 ## Details
 
 **Author:** {author}
 **Year:** {year}
-{institution_line}{pub_type_line}{supervisor_line}{keywords_line}
+{institution_line}{pub_type_line}{presented_line}{supervisor_line}{keywords_line}
 
 ## Citation
 
@@ -213,32 +261,44 @@ def generate_publications(cv_data, output_dir="_publications"):
         print(f"✅ Generated publication: {filename}")
 
 
+def publication_permalinks(cv_data):
+    """Mapa id de publicacion -> permalink de su pagina en el sitio."""
+    links = {}
+    for pubs_list in cv_data.get('publications', {}).values():
+        for pub in pubs_list if isinstance(pubs_list, list) else []:
+            citation = pub['citation_info']
+            links[pub['id']] = f"/publication/{citation['year']}-{sanitize_filename(citation['title'])}"
+    return links
+
+
 def generate_talks(cv_data, output_dir="_talks"):
-    """Genera archivos .md para talks/presentations - Vista simplificada"""
+    """Genera archivos .md para talks/presentations, con galeria de fotos si las hay"""
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
-    
+
     # Limpiar directorio existente
     for file in os.listdir(output_dir):
         if file.endswith('.md'):
             os.remove(os.path.join(output_dir, file))
-    
+
+    paper_pages = publication_permalinks(cv_data)
+
     for talk in cv_data.get('talks', []):
         title = talk['title']['en']
         date = talk['date']
         event = talk['event']
         location = talk['location']
         talk_type = talk['type']
-        
+
         filename = f"{date}-{sanitize_filename(title)}.md"
         filepath = os.path.join(output_dir, filename)
-        
+
         abstract = talk.get('abstract', {}).get('en', '')
         talk_url = talk.get('url', '')
-        slides_name = talk.get('id', '')
-        
-        slides_path = f"{{{{ base_path }}}}/files/slides/{slides_name}.pdf"
-        # Front matter - SOLO información esencial para vista de archivo
+
+        paper_url = paper_pages.get(talk.get('publication_id', ''), '')
+        media = presentation_media(talk)
+
         front_matter = {
             'title': title,
             'collection': 'talks',
@@ -247,27 +307,34 @@ def generate_talks(cv_data, output_dir="_talks"):
             'venue': event,
             'date': date,
             'location': location,
-            'slidesurl': slides_path if os.path.exists(slides_path) else '',
-            'paperurl': talk_url
+            'paperurl': paper_url,
+            'eventurl': talk_url,
+            **media,
         }
-        
-        # CONTENIDO COMPLETO - Solo visible al hacer clic
+        if media['photos']:
+            # archive-single-talk.html usa el teaser como miniatura en /talks/
+            front_matter['header'] = {'teaser': media['photos'][0]['url']}
+
         coauthors_line = ""
         if talk.get('coauthors'):
             coauthors_line = f"**Co-authors:** {', '.join(talk['coauthors'])}  \n"
-        
-        # Clean resources section for talks
+
+        buttons = []
+        if paper_url:
+            buttons.append(f"<a href='{{{{ base_path }}}}{paper_url}' class='cv-download-btn'><i class='fas fa-file-lines'></i> Paper</a>")
+        if media['slidesurl']:
+            label = 'Poster' if talk_type == 'poster' else 'Slides'
+            buttons.append(f"<a href='{{{{ base_path }}}}{media['slidesurl']}' class='cv-download-btn' target='_blank'><i class='fas fa-file-pdf'></i> {label}</a>")
+        if talk_url:
+            buttons.append(f"<a href='{talk_url}' class='cv-download-btn' target='_blank'><i class='fas fa-circle-info'></i> Event</a>")
         resources_section = ""
-        if talk_url or slides_path:
-            resources_section = "\n<div class='cv-download-buttons'>\n"
-            if talk_url:
-                resources_section += f"<a href='{talk_url}' class='cv-download-btn' target='_blank'><i class='fas fa-info-circle'></i> More Info</a>\n"
-            if slides_path:
-                resources_section += f"<a href='{slides_path}' class='cv-download-btn' target='_blank'><i class='fas fa-file-powerpoint'></i> Download {talk_type}</a>\n"
-            resources_section += "</div>\n"
-        
+        if buttons:
+            resources_section = "\n<div class='cv-download-buttons'>\n" + "\n".join(buttons) + "\n</div>\n"
+
         content = f"""---
-{yaml.dump(front_matter, default_flow_style=False, allow_unicode=True)}---
+{yaml.dump(front_matter, default_flow_style=False, allow_unicode=True, sort_keys=False)}---
+
+{{% include presentation-gallery.html %}}
 
 ## Abstract
 
@@ -279,11 +346,13 @@ def generate_talks(cv_data, output_dir="_talks"):
 **Type:** {talk_type.title()}  
 **Location:** {location}  
 **Date:** {date}  
-{coauthors_line}{resources_section}"""
-        
+{coauthors_line}{resources_section}
+{{% include presentation-slides.html %}}
+"""
+
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(content)
-        
+
         print(f"✅ Generated talk: {filename}")
 
 

@@ -34,6 +34,9 @@
       {% if post.paperurl and post.paperurl != '' and post.doiurl == '' and post.arxivurl == '' %}
         <a href="{{ post.paperurl }}" target="_blank" rel="noopener">Full text</a>
       {% endif %}
+      {% if post.slidesurl and post.slidesurl != '' %}
+        <a href="{{ base_path }}{{ post.slidesurl }}" target="_blank" rel="noopener">Slides</a>
+      {% endif %}
       {% if post.bibtexurl and post.bibtexurl != '' %}
         <a href="{{ post.bibtexurl }}" target="_blank" rel="noopener">BibTeX</a>
       {% endif %}

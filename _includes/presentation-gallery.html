@@ -1,0 +1,19 @@
+{% include base_path %}
+
+{% comment %}
+  Fotos de la presentacion (front matter `photos`, generado desde cv.json). Cada foto
+  abre a tamaño completo en otra pestaña; sin lightbox para no cargar JS.
+{% endcomment %}
+
+{% if page.photos and page.photos.size > 0 %}
+<div class="presentation-gallery{% if page.photos.size == 1 %} presentation-gallery--single{% endif %}">
+  {% for photo in page.photos %}
+  <figure class="presentation-gallery__item">
+    <a href="{{ base_path }}{{ photo.url }}" target="_blank" rel="noopener">
+      <img src="{{ base_path }}{{ photo.url }}" alt="{{ photo.caption | escape }}" loading="lazy">
+    </a>
+    {% if photo.caption and photo.caption != '' %}<figcaption>{{ photo.caption }}</figcaption>{% endif %}
+  </figure>
+  {% endfor %}
+</div>
+{% endif %}
