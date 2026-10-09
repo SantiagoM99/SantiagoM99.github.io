@@ -7,6 +7,25 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include cv-archive-single.html %}
-{% endfor %}
+{% assign courses = site.teaching | sort: "date" | reverse %}
+{% assign graduate = courses | where: "level", "graduate" %}
+{% assign undergraduate = courses | where: "level", "undergraduate" %}
+
+{% comment %} La institucion se dice una vez solo si todos los cursos son de Uniandes {% endcomment %}
+{% assign all_uniandes = true %}
+{% for c in courses %}{% unless c.institution contains "Universidad de los Andes" %}{% assign all_uniandes = false %}{% endunless %}{% endfor %}
+{% if all_uniandes %}<p class="pub-intro">All positions at Universidad de los Andes, Bogotá.</p>{% endif %}
+
+{% if graduate.size > 0 %}
+<section class="pub-group">
+  <h2 class="pub-group__title">Graduate</h2>
+  {% for post in graduate %}{% include teaching-item.html %}{% endfor %}
+</section>
+{% endif %}
+
+{% if undergraduate.size > 0 %}
+<section class="pub-group">
+  <h2 class="pub-group__title">Undergraduate</h2>
+  {% for post in undergraduate %}{% include teaching-item.html %}{% endfor %}
+</section>
+{% endif %}

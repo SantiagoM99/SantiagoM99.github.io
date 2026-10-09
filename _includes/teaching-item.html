@@ -1,0 +1,23 @@
+{% include base_path %}
+
+{% comment %}
+  Curso en /teaching/: el curso es el titulo con la fecha a la derecha, el rol y la
+  cifra de alcance (campo `reach` del JSON) debajo, y una linea con un logro.
+{% endcomment %}
+
+<article class="course">
+  <div class="course__head">
+    <h3 class="course__title">
+      <i class="fas {% if post.level == 'graduate' %}fa-chalkboard{% else %}fa-laptop-code{% endif %} course__icon" aria-hidden="true"></i>
+      <a href="{{ base_path }}{{ post.url }}">{{ post.course_name }}</a>
+    </h3>
+    <span class="course__period">{{ post.period }}</span>
+  </div>
+  <p class="course__role">{{ post.role }}{% if post.reach and post.reach != '' %} · <strong class="course__reach">{{ post.reach }}</strong>{% if post.reach_detail and post.reach_detail != '' %}, {{ post.reach_detail }}{% endif %}{% endif %}</p>
+  {% comment %} El primer logro suele repetir la cifra de alcance; si hay un segundo, va ese {% endcomment %}
+  {% if post.highlights.size > 1 %}
+    <p class="course__summary">{{ post.highlights[1] }}</p>
+  {% elsif post.highlights.size == 1 %}
+    <p class="course__summary">{{ post.highlights[0] }}</p>
+  {% endif %}
+</article>

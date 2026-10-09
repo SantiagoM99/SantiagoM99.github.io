@@ -245,7 +245,7 @@ html[data-theme="dark"] {
 
 
 /* --------------------------------------------------------------------------
-   Listados en linea de tiempo, y galeria y visor de slides de cada presentacion
+   Listados en linea de tiempo, Teaching, y galeria y visor de slides de cada presentacion
    -------------------------------------------------------------------------- */
 
 /* Linea de tiempo de Work, Research y Talks: año a la izquierda como en
@@ -441,6 +441,79 @@ html[data-theme="dark"] {
     margin: 0.6em 0 0;
     max-width: 16rem;
   }
+}
+
+/* Teaching: lista agrupada por nivel; el curso es el titulo y la fecha va a la derecha */
+.course {
+  padding: 0.85em 0 0.85em 0.9em;
+  border-bottom: 1px solid var(--global-border-color);
+  border-left: 3px solid transparent;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  &:hover {
+    border-left-color: var(--accent);
+  }
+
+  p {
+    margin: 0 0 0.15em;
+  }
+}
+
+.course__head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  column-gap: 1em;
+}
+
+.course .course__title {
+  margin: 0 0 0.1em;
+  font-family: $sans-serif-narrow;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.45;
+
+  a {
+    color: var(--global-text-color);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+  }
+}
+
+.course__icon {
+  width: 1.3em;
+  color: var(--accent);
+  font-size: 0.9em;
+}
+
+.course__period {
+  font-family: $sans-serif-narrow;
+  font-size: 0.8em;
+  color: var(--accent);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.course .course__role {
+  font-size: 0.86em;
+  color: var(--global-text-color-light);
+}
+
+.course .course__reach {
+  color: var(--accent-strong);
+}
+
+.course .course__summary {
+  font-size: 0.86em;
+  line-height: 1.55;
 }
 
 .presentation-gallery {

@@ -783,7 +783,12 @@ def generate_teaching(cv_data, output_dir="_teaching"):
             'location': teaching['location'],
             'period': pretty_period(start_date, end_date),
             'course_name': course_name,
-            'excerpt': excerpt
+            'role': title,
+            'level': 'graduate' if title.startswith('Graduate') else 'undergraduate',
+            'reach': localized(teaching.get('reach', {}).get('figure', '')),
+            'reach_detail': localized(teaching.get('reach', {}).get('detail', '')),
+            'excerpt': excerpt,
+            **timeline_fields(teaching, teaching.get('description', [])),
         }
         
         # Contenido simplificado sin duplicar información
