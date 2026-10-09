@@ -38,13 +38,14 @@ html[data-theme="dark"] {
   gap: 0.6em;
   margin: 0 0 0.2em;
   padding-bottom: 0.35em;
-  border-bottom: 2px solid var(--global-border-color);
+  border-bottom: 2px solid var(--accent);
   font-family: $sans-serif-narrow;
-  font-size: 0.82em;
+  font-size: 0.85em;
   font-weight: 700;
   letter-spacing: 0.11em;
   text-transform: uppercase;
-  color: var(--global-text-color-light);
+  /* encabeza su grupo: no puede verse mas tenue que las entradas que agrupa */
+  color: var(--accent-strong);
 }
 
 .pub-group__count {
@@ -73,7 +74,7 @@ html[data-theme="dark"] {
   font-size: 0.85em;
   font-weight: 700;
   line-height: 1.75;
-  color: var(--global-text-color-light);
+  color: var(--accent);
   font-variant-numeric: tabular-nums;
 }
 
@@ -603,5 +604,13 @@ html[data-theme="dark"] {
   padding: 0.25em 0.65em;
   font-size: 0.72em;
   border-radius: 7px;
+}
+
+/* Titulo de las paginas de listado: _archive.scss deja ~100px entre el titulo y el
+   contenido (margen de 1.5em + relleno para una linea decorativa que ya no existe) y
+   el titulo quedaba flotando solo. Este bloque gana por ir despues. */
+.archive .page__title {
+  margin-bottom: 0.6em !important;
+  padding-bottom: 0;
 }
 
