@@ -37,7 +37,7 @@ In my free time, I enjoy playing chess and bowling.
           <div class="degree-details">
             <strong class="degree-title">M.Sc. Information Engineering</strong><br>
             <span class="institution-name">Universidad de los Andes</span><br>
-            <span class="education-date">2025 - 2026 | Expected conferral April 2027</span><br><span class='gpa-line'>GPA: 4.78/5.00</span>
+            <span class="education-date">2025 - 2026 | Expected</span><br><span class='gpa-line'>GPA: 4.78/5.00</span>
           </div>
         </div>
       </div>

@@ -73,10 +73,7 @@ awards:
     es: Ithaca, Estados Unidos
   title: Summer Undergraduate Research Fellowship (SURF)
 education:
-- conferral:
-    en: April 2027
-    es: abril de 2027
-  degree:
+- degree:
     en: M.Sc. Information Engineering
     es: Maestría en Ingeniería de Información
   endDate: '2026'
