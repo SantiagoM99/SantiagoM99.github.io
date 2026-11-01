@@ -73,11 +73,14 @@ awards:
     es: Ithaca, Estados Unidos
   title: Summer Undergraduate Research Fellowship (SURF)
 education:
-- degree:
+- conferral:
+    en: April 2027
+    es: abril de 2027
+  degree:
     en: M.Sc. Information Engineering
     es: Maestría en Ingeniería de Información
   endDate: '2026'
-  gpa: 4.80/5.00
+  gpa: 4.78/5.00
   honors: []
   id: master-uniandes
   institution: Universidad de los Andes
@@ -404,8 +407,8 @@ metadata:
   - es
   - en
   defaultLanguage: en
-  lastUpdated: '2026-10-08'
-  version: '1.5'
+  lastUpdated: '2026-11-01'
+  version: '1.6'
 personal:
   contact:
     email: s.martinezn@uniandes.edu.co
@@ -416,24 +419,30 @@ personal:
     website: https://santiagom99.github.io/
   name: Santiago Martínez Novoa
   research_interests:
-    en: My research focuses on multilingual NLP and multimodal systems that work for
-      low-resource and underrepresented languages, with an emphasis on cross-lingual
-      transfer and rigorous, culturally grounded evaluation. In parallel, I build
-      production data and machine learning systems for higher education, from learning
-      analytics to student-success prediction.
-    es: Mi investigación se centra en NLP multilingüe y sistemas multimodales para
-      lenguas de bajos recursos y poco representadas, con énfasis en la transferencia
-      cross-lingüe y la evaluación rigurosa con fundamento cultural. En paralelo,
-      desarrollo sistemas de datos y de machine learning en producción para la educación
-      superior, desde learning analytics hasta la predicción del éxito estudiantil.
+    en: 'My research focuses on making language models reliable for the people and
+      languages they serve worst. I study multilingual NLP and cross-lingual transfer
+      for low-resource languages, and how to evaluate models where labeled data is
+      scarce: deciding when a model is good enough without labels, LLM-as-judge and
+      rubric-based evaluation, and culturally grounded benchmarks. I apply this in
+      high-stakes settings such as health and education, where I also build production
+      machine learning systems for academic advising and student success.'
+    es: 'Mi investigación busca que los modelos de lenguaje sean confiables para las
+      personas y lenguas peor atendidas. Estudio NLP multilingüe y transferencia cross-lingüe
+      hacia lenguas de bajos recursos, y cómo evaluar modelos con pocos datos etiquetados:
+      decidir sin etiquetas cuándo un modelo basta, LLM-as-judge, evaluación con rúbricas
+      y benchmarks con fundamento cultural. Lo aplico en contextos de alto impacto
+      como la salud y la educación, donde también construyo sistemas de machine learning
+      en producción para la consejería académica y el éxito estudiantil.'
   title:
-    en: Machine Learning Researcher | Multilingual NLP & Multimodal AI
-    es: Investigador en Machine Learning | NLP Multilingüe e IA Multimodal
+    en: Machine Learning Researcher | Multilingual NLP & Trustworthy LLM Evaluation
+    es: Investigador en Machine Learning | NLP Multilingüe y Evaluación Confiable
+      de LLMs
 publications:
   conferences:
   - _category_key: conferences
     bibtex_website: https://santiagom99.github.io/files/paper-emnlp-sampling.bib
     citation_info:
+      arxiv_id: '2609.14969'
       authors:
       - Quang Phuoc Nguyen
       - Félix Gaschi
@@ -456,15 +465,44 @@ publications:
           de 2026. Tasa de aceptación de Findings: 14.3%'
       title: Online Language Adaptive Sampling for Better Distributed Cross-lingual
         Gains
+      url: https://arxiv.org/abs/2609.14969
       venue: Findings of EMNLP 2026, Budapest, Hungary
       year: '2026'
     formatted_citations:
       apa_style: 'Nguyen, Q. P., Gaschi, F., Anugraha, D., Martínez Novoa, S., & Lee,
         E.-S. A. (2026). Online Language Adaptive Sampling for Better Distributed
         Cross-lingual Gains. To appear in Findings of the Association for Computational
-        Linguistics: EMNLP 2026, Budapest, Hungary.'
+        Linguistics: EMNLP 2026, Budapest, Hungary. arXiv:2609.14969.'
     id: conference-emnlp-findings-sampling
     status: in_press
+  - _category_key: conferences
+    citation_info:
+      authors:
+      - Juan Camilo Prieto
+      - Santiago Martínez Novoa
+      - Lina Gómez Mesa
+      - Rubén Manrique
+      authors_citation:
+      - Prieto, J. C.
+      - Martínez Novoa, S.
+      - Gómez Mesa, L.
+      - Manrique, R.
+      date: '2026-10-13'
+      document_type:
+        en: Paper under review for EACL 2027 (European Chapter of the Association
+          for Computational Linguistics), Resources and Evaluation track
+        es: Artículo en revisión para EACL 2027 (European Chapter of the Association
+          for Computational Linguistics), track Resources and Evaluation
+      title: 'SciBETO: A Domain-Specific RoBERTa Model Trained on Spanish Scientific
+        Texts'
+      venue: EACL 2027
+      year: '2026'
+    formatted_citations:
+      apa_style: 'Prieto, J. C., Martínez Novoa, S., Gómez Mesa, L., & Manrique, R.
+        (2026). SciBETO: A Domain-Specific RoBERTa Model Trained on Spanish Scientific
+        Texts. Under review for EACL 2027.'
+    id: conference-eacl-scibeto
+    status: under_review
   - _category_key: conferences
     bibtex_website: https://santiagom99.github.io/files/paper-weef-sasp.bib
     citation_info:
@@ -842,7 +880,7 @@ research:
   - en: Conduct comparative evaluations between highly-trained models and large language
       models (LLMs) using prompting techniques such as zero-shot and few-shot learning.
     es: Comparar modelos especializados con large language models (LLMs) en esquemas
-      de zero-shot y few-shot learning.
+      zero-shot y few-shot.
   endDate: present
   featured: false
   id: flag-nlp-research
@@ -1043,14 +1081,14 @@ teaching:
       200 master's students.
     es: Asistente graduado durante tres semestres de dos cursos secuenciales de maestría
       de 8 semanas cada uno, 'Aplicaciones Basadas en LLM' (sistemas RAG) y 'Construcción
-      de Agentes', apoyando a más de 200 estudiantes de maestría.
+      de Agentes', con más de 200 estudiantes.
   - en: Created the tutorials, projects, and course materials for the RAG systems
       and agent development modules, built on LangChain, LangGraph, LangSmith, and
       RAGAS.
-    es: Crear los tutoriales, proyectos y materiales de los módulos de sistemas RAG
+    es: Creé los tutoriales, proyectos y materiales de los módulos de sistemas RAG
       y de desarrollo de agentes, construidos sobre LangChain, LangGraph, LangSmith
       y RAGAS.
-  endDate: present
+  endDate: 2026-10
   featured: true
   id: ta-llm-applications
   institution: Universidad de los Andes

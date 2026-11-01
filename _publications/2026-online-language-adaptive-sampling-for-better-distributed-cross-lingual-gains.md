@@ -1,19 +1,19 @@
 ---
-arxivid: ''
-arxivurl: ''
+arxivid: '2609.14969'
+arxivurl: https://arxiv.org/abs/2609.14969
 authors: Nguyen, Q. P., Gaschi, F., Anugraha, D., Martínez Novoa, S., Lee, E.-S. A.
 bibtexurl: https://santiagom99.github.io/files/paper-emnlp-sampling.bib
 category: conferences
 citation: 'Nguyen, Q. P., Gaschi, F., Anugraha, D., Martínez Novoa, S., & Lee, E.-S.
   A. (2026). Online Language Adaptive Sampling for Better Distributed Cross-lingual
   Gains. To appear in Findings of the Association for Computational Linguistics: EMNLP
-  2026, Budapest, Hungary.'
+  2026, Budapest, Hungary. arXiv:2609.14969.'
 collection: publications
 date: '2026-10-24'
 doi: ''
 doiurl: ''
 excerpt: Findings of EMNLP 2026, Budapest, Hungary (2026)
-paperurl: ''
+paperurl: https://arxiv.org/abs/2609.14969
 permalink: /publication/2026-online-language-adaptive-sampling-for-better-distributed-cross-lingual-gains
 photos: []
 slides: []
@@ -43,8 +43,9 @@ No abstract available.
 
 ## Citation
 
-Nguyen, Q. P., Gaschi, F., Anugraha, D., Martínez Novoa, S., & Lee, E.-S. A. (2026). Online Language Adaptive Sampling for Better Distributed Cross-lingual Gains. To appear in Findings of the Association for Computational Linguistics: EMNLP 2026, Budapest, Hungary.
+Nguyen, Q. P., Gaschi, F., Anugraha, D., Martínez Novoa, S., & Lee, E.-S. A. (2026). Online Language Adaptive Sampling for Better Distributed Cross-lingual Gains. To appear in Findings of the Association for Computational Linguistics: EMNLP 2026, Budapest, Hungary. arXiv:2609.14969.
 
 <div class='cv-download-buttons'>
+<a href='https://arxiv.org/abs/2609.14969' class='cv-download-btn' target='_blank'><i class='fas fa-external-link'></i> See Paper</a>
 <a href='https://santiagom99.github.io/files/paper-emnlp-sampling.bib' class='cv-download-btn' target='_blank'><i class='fas fa-code'></i> Download BibTeX</a>
 </div>

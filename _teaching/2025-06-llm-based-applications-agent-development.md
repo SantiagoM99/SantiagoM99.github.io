@@ -1,7 +1,7 @@
 ---
 collection: teaching
 course_name: LLM-Based Applications & Agent Development
-current: true
+current: false
 date: 2025-06-01-01
 excerpt: ''
 highlights:
@@ -12,7 +12,7 @@ highlights:
 institution: Universidad de los Andes
 level: graduate
 location: Bogotá, Colombia
-period: Jun 2025 - Present
+period: Jun 2025 - Oct 2026
 permalink: /teaching/2025-06-llm-based-applications-agent-development
 reach: 200+ students
 reach_detail: 3 semesters
