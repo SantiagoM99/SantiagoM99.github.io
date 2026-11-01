@@ -8,7 +8,7 @@ title: About me
 ---
 
 
-I am a Data Scientist at the EdTech Node of Universidad de los Andes, where I am also pursuing an M.Sc. in Information Engineering. My research focuses on multilingual NLP and multimodal systems that work for low-resource and underrepresented languages, with an emphasis on cross-lingual transfer and rigorous, culturally grounded evaluation. I pursue this line as a collaborating researcher at the Lee Language Lab (Ontario Tech University), which I joined through a Mitacs Globalink Research Internship.
+I am a Data Scientist at the EdTech Node of Universidad de los Andes, where I am also pursuing an M.Sc. in Information Engineering. My research focuses on making language models reliable for the people and languages they serve worst: multilingual NLP and cross-lingual transfer for low-resource languages, and how to evaluate models where labeled data is scarce, from label-free model selection to LLM-as-judge, rubric-based evaluation, and culturally grounded benchmarks. I pursue this line as a collaborating researcher at the Lee Language Lab (Ontario Tech University), which I joined through a Mitacs Globalink Research Internship.
 
 In parallel, I build production data and machine learning systems for higher education: learning analytics, student-success prediction, and university-wide data products that support academic advising, work that has led to peer-reviewed publications at AIED and WEEF. More broadly, I care about human-centered AI that serves people, from underrepresented language communities to university classrooms.
 
@@ -37,7 +37,7 @@ In my free time, I enjoy playing chess and bowling.
           <div class="degree-details">
             <strong class="degree-title">M.Sc. Information Engineering</strong><br>
             <span class="institution-name">Universidad de los Andes</span><br>
-            <span class="education-date">2025 - 2026 | Expected</span><br><span class='gpa-line'>GPA: 4.80/5.00</span>
+            <span class="education-date">2025 - 2026 | Expected conferral April 2027</span><br><span class='gpa-line'>GPA: 4.78/5.00</span>
           </div>
         </div>
       </div>
