@@ -181,7 +181,7 @@ def generate_publications(cv_data, output_dir="_publications"):
             'status': STATUS_LABELS.get(status_key, ''),
             'doi': doi,
             'doiurl': f"https://doi.org/{doi}" if doi else '',
-            'arxivurl': citation.get('url', '') if arxiv_id else '',
+            'arxivurl': citation.get('url') or f"https://arxiv.org/abs/{arxiv_id}" if arxiv_id else '',
             'arxivid': arxiv_id,
             'paperurl': paperurl,
             'citation': pub.get("formatted_citations", {}).get("apa_style", ""),

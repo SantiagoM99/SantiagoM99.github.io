@@ -454,24 +454,27 @@ publications:
       - Lee, E.-S. A.
       date: '2026-10-24'
       document_type:
-        en: 'Paper accepted at Findings of EMNLP 2026 (Conference on Empirical Methods
-          in Natural Language Processing), Budapest, Hungary, October 24-29, 2026.
-          Findings acceptance rate: 14.3%'
-        es: 'Artículo aceptado en Findings of EMNLP 2026 (Conference on Empirical
+        en: 'Paper published in Findings of EMNLP 2026 (Conference on Empirical Methods
+          in Natural Language Processing), Budapest, Hungary, October 24-29, 2026,
+          pp. 36873-36891. Findings acceptance rate: 14.3%'
+        es: 'Artículo publicado en Findings of EMNLP 2026 (Conference on Empirical
           Methods in Natural Language Processing), Budapest, Hungría, 24-29 de octubre
-          de 2026. Tasa de aceptación de Findings: 14.3%'
+          de 2026, pp. 36873-36891. Tasa de aceptación de Findings: 14.3%'
+      repository:
+        name: ACL Anthology
+        url: https://aclanthology.org/2026.findings-emnlp.1724/
       title: Online Language Adaptive Sampling for Better Distributed Cross-lingual
         Gains
-      url: https://arxiv.org/abs/2609.14969
-      venue: Findings of EMNLP 2026, Budapest, Hungary
+      venue: Findings of EMNLP 2026, Budapest, Hungary, pp. 36873–36891
       year: '2026'
+    doi: 10.18653/2026.findings-emnlp.1724
     formatted_citations:
       apa_style: 'Nguyen, Q. P., Gaschi, F., Anugraha, D., Martínez Novoa, S., & Lee,
         E.-S. A. (2026). Online Language Adaptive Sampling for Better Distributed
-        Cross-lingual Gains. To appear in Findings of the Association for Computational
-        Linguistics: EMNLP 2026, Budapest, Hungary. arXiv:2609.14969.'
+        Cross-lingual Gains. In Findings of the Association for Computational Linguistics:
+        EMNLP 2026, pp. 36873-36891. Association for Computational Linguistics. https://doi.org/10.18653/2026.findings-emnlp.1724'
     id: conference-emnlp-findings-sampling
-    status: in_press
+    status: published
   - _category_key: conferences
     citation_info:
       authors:
