@@ -538,8 +538,8 @@
             "es": "Artículo aceptado en la conferencia principal de EACL 2027 (European Chapter of the Association for Computational Linguistics), track Resources and Evaluation",
             "en": "Paper accepted at the EACL 2027 main conference (European Chapter of the Association for Computational Linguistics), Resources and Evaluation track"
           },
-          "year": "2026",
-          "date": "2026-10-13",
+          "year": "2027",
+          "date": "2027-01-01",
           "authors_citation": [
             "Prieto, J. C.",
             "Martínez Novoa, S.",
@@ -549,7 +549,7 @@
           "venue": "EACL 2027, Main Conference"
         },
         "formatted_citations": {
-          "apa_style": "Prieto, J. C., Martínez Novoa, S., Gómez Mesa, L., & Manrique, R. (2026). SciBETO: A Domain-Specific RoBERTa Model Trained on Spanish Scientific Texts. In Proceedings of EACL 2027 (to appear)."
+          "apa_style": "Prieto, J. C., Martínez Novoa, S., Gómez Mesa, L., & Manrique, R. (2027). SciBETO: A Domain-Specific RoBERTa Model Trained on Spanish Scientific Texts. In Proceedings of EACL 2027 (to appear)."
         }
       },
       {
