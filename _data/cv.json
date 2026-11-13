@@ -525,7 +525,7 @@
       },
       {
         "id": "conference-eacl-scibeto",
-        "status": "under_review",
+        "status": "in_press",
         "citation_info": {
           "authors": [
             "Juan Camilo Prieto",
@@ -535,8 +535,8 @@
           ],
           "title": "SciBETO: A Domain-Specific RoBERTa Model Trained on Spanish Scientific Texts",
           "document_type": {
-            "es": "Artículo en revisión para EACL 2027 (European Chapter of the Association for Computational Linguistics), track Resources and Evaluation",
-            "en": "Paper under review for EACL 2027 (European Chapter of the Association for Computational Linguistics), Resources and Evaluation track"
+            "es": "Artículo aceptado en EACL 2027 (European Chapter of the Association for Computational Linguistics), track Resources and Evaluation",
+            "en": "Paper accepted at EACL 2027 (European Chapter of the Association for Computational Linguistics), Resources and Evaluation track"
           },
           "year": "2026",
           "date": "2026-10-13",
@@ -549,7 +549,7 @@
           "venue": "EACL 2027"
         },
         "formatted_citations": {
-          "apa_style": "Prieto, J. C., Martínez Novoa, S., Gómez Mesa, L., & Manrique, R. (2026). SciBETO: A Domain-Specific RoBERTa Model Trained on Spanish Scientific Texts. Under review for EACL 2027."
+          "apa_style": "Prieto, J. C., Martínez Novoa, S., Gómez Mesa, L., & Manrique, R. (2026). SciBETO: A Domain-Specific RoBERTa Model Trained on Spanish Scientific Texts. Accepted at EACL 2027."
         }
       },
       {

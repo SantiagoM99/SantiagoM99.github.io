@@ -5,8 +5,8 @@ authors: Prieto, J. C., Martínez Novoa, S., Gómez Mesa, L., Manrique, R.
 bibtexurl: ''
 category: conferences
 citation: 'Prieto, J. C., Martínez Novoa, S., Gómez Mesa, L., & Manrique, R. (2026).
-  SciBETO: A Domain-Specific RoBERTa Model Trained on Spanish Scientific Texts. Under
-  review for EACL 2027.'
+  SciBETO: A Domain-Specific RoBERTa Model Trained on Spanish Scientific Texts. Accepted
+  at EACL 2027.'
 collection: publications
 date: '2026-10-13'
 doi: ''
@@ -18,7 +18,7 @@ photos: []
 slides: []
 slides_note: ''
 slidesurl: ''
-status: Under review
+status: To appear
 tags: []
 title: 'SciBETO: A Domain-Specific RoBERTa Model Trained on Spanish Scientific Texts'
 venue: EACL 2027
@@ -37,9 +37,9 @@ No abstract available.
 
 **Author:** Juan Camilo Prieto, Santiago Martínez Novoa, Lina Gómez Mesa, Rubén Manrique
 **Year:** 2026
-**Publication Type:** Paper under review for EACL 2027 (European Chapter of the Association for Computational Linguistics), Resources and Evaluation track  
+**Publication Type:** Paper accepted at EACL 2027 (European Chapter of the Association for Computational Linguistics), Resources and Evaluation track  
 
 
 ## Citation
 
-Prieto, J. C., Martínez Novoa, S., Gómez Mesa, L., & Manrique, R. (2026). SciBETO: A Domain-Specific RoBERTa Model Trained on Spanish Scientific Texts. Under review for EACL 2027.
+Prieto, J. C., Martínez Novoa, S., Gómez Mesa, L., & Manrique, R. (2026). SciBETO: A Domain-Specific RoBERTa Model Trained on Spanish Scientific Texts. Accepted at EACL 2027.
